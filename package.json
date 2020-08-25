@@ -1,0 +1,19 @@
+{
+	"main": "dist/index.js",
+	"license": "MIT",
+	"devDependencies": {
+		"@types/react": "^16.8"
+	},
+	"peerDependencies": {
+		"framer": "^1.0",
+		"react": "^16.8"
+	},
+	"framer": {
+		"id": "0830bb9f-b698-4a43-ad61-542a09716c16"
+	},
+	"author": "Sven Wiegand",
+	"dependencies": {
+		"@framer/framer.default": "^1.76.0",
+		"@material-ui/core": "^4.11.0"
+	}
+}
