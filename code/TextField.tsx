@@ -1,7 +1,7 @@
 import * as React from "react"
 import { addPropertyControls, ControlType } from "framer"
 import MuiTextField from "@material-ui/core/TextField"
-import { withTheme } from "./Theme"
+import { withTheme } from "./utils/theme"
 
 interface Props {
     autoFocus: boolean
