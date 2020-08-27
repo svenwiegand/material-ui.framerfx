@@ -6,13 +6,18 @@ export const PropertyControl = {
         title: "Auto focus",
         defaultValue: false
     } as ControlDescription,
+    checked: {
+        type: ControlType.Boolean,
+        title: "Checked",
+        defaultValue: false
+    } as ControlDescription,
     color: {
         type: ControlType.Enum,
         title: "Color",
         options: ["primary", "secondary"],
         defaultValue: "primary"
     } as ControlDescription,
-    defaultValue: {
+    defaultStringValue: {
         type: ControlType.String,
         title: "Value",
         defaultValue: ""
@@ -37,10 +42,20 @@ export const PropertyControl = {
         title: "Label",
         defaultValue: "Label"
     } as ControlDescription,
+    labelPlacement: {
+        type: ControlType.Enum,
+        title: "Label placement",
+        options: ["bottom", "end", "start", "top"],
+        defaultValue: "end"
+    } as ControlDescription,
     multiline: {
         type: ControlType.Boolean,
         title: "Multiline",
         defaultValue: false
+    } as ControlDescription,
+    onChange: {
+        type: ControlType.EventHandler,
+        title: "onChange",
     } as ControlDescription,
     placeholder: {
         type: ControlType.String,
@@ -68,9 +83,31 @@ export const PropertyControl = {
 
 type PropertyControl = typeof PropertyControl
 type PropertyControlKey = keyof PropertyControl
+type PropertyControlAlias = [string, PropertyControlKey]
+type PropertyControlDescription = [string, ControlDescription]
+type PropertyControlReference = keyof PropertyControl | PropertyControlAlias | PropertyControlDescription
 
-export function propertyControls(...keys: PropertyControlKey[]) {
-    var picked: Partial<typeof PropertyControl> = {}
-    keys.forEach((key) => picked[key] = PropertyControl[key])
+function isTuple(ctrl: PropertyControlReference): boolean {
+    return typeof ctrl === 'object' && ctrl !== null && ctrl.length === 2
+}
+
+function isControlDescription(ctrl: PropertyControlReference): ctrl is PropertyControlDescription {
+    return isTuple(ctrl) && (ctrl as PropertyControlDescription)[1].type !== undefined
+}
+
+function isControlAlias(ctrl: PropertyControlReference): ctrl is PropertyControlAlias {
+    return isTuple(ctrl) && !isControlDescription(ctrl)
+}
+
+export function propertyControls(...ctrls: PropertyControlReference[]) {
+    var picked: Record<string, ControlDescription> = {}
+    ctrls.forEach((ctrl) => {
+        if (isControlDescription(ctrl))
+            picked[ctrl[0]] = ctrl[1]
+        else if (isControlAlias(ctrl))
+            picked[ctrl[0]] = PropertyControl[ctrl[1]]
+        else
+            picked[ctrl] = PropertyControl[ctrl]
+    })
     return picked;
 }
