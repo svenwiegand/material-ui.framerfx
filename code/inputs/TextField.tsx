@@ -5,13 +5,13 @@ import { withTheme } from "../common/theme"
 import { propertyControls } from "../common/propertyControl"
 
 export function TextField(props: any) {
-    const { width, height } = props
-    return withTheme(<MuiTextField fullWidth {...props} />)
+    const { width, height, ...other } = props
+    return withTheme(<MuiTextField fullWidth {...other} />)
 }
 
 addPropertyControls(TextField, propertyControls(
     "label",
-    "defaultValue",
+    ["defaultValue", "defaultStringValue"],
     "placeholder",
     "helperText",
     "variant",

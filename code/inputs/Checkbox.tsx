@@ -1,0 +1,37 @@
+import * as React from "react"
+import { addPropertyControls, ControlType, ControlDescription } from "framer"
+import { withTheme } from "../common/theme"
+import { propertyControls } from "../common/propertyControl"
+import { FormControlLabel, Checkbox as MuiCheckbox } from "@material-ui/core"
+
+export function Checkbox(props: any) {
+    const { label, checked, onChange, ...other } = props
+    const [state, setState] = React.useState(checked)
+    const handleChange = (event: React.ChangeEvent<HTMLInputElement>) => {
+        setState(event.target.checked)
+        if (onChange) onChange()
+    }
+    const checkbox = <MuiCheckbox checked={state} onChange={handleChange} {...other} />
+    return withTheme(
+        <FormControlLabel
+            control={checkbox}
+            label={label}
+        />
+    )
+}
+
+addPropertyControls(Checkbox, propertyControls(
+    "label",
+    "labelPlacement",
+    "checked",
+    ["indeterminate", {
+        type: ControlType.Boolean,
+        label: "Indeterminate",
+        defaultValue: false
+    } as ControlDescription],
+    "color",
+    "disabled",
+    "required",
+    "size",
+    "onChange"
+))
