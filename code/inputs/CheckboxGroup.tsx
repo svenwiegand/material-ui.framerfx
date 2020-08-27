@@ -4,6 +4,7 @@ import { withTheme } from "../common/theme"
 import { propertyControls, PropertyControl } from "../common/propertyControl"
 import { Checkbox as MuiCheckbox, FormControlLabel, FormLabel, FormGroup, FormControl, FormHelperText } from "@material-ui/core"
 import { SetStateAction, Dispatch } from "react"
+import { useDerivedState } from "../common/state"
 
 interface CheckboxState {
     label: string,
@@ -50,23 +51,18 @@ export function CheckboxGroup(props: Props) {
     const { label, helperText, error, required, checkboxLabels, ...checkBoxProps } = props
 
     const stateFromLabels = () => checkboxLabels.map((label) => getCheckboxStateFromLabel(label).checked)
-    const [state, setState] = React.useState(stateFromLabels)
-    const [prevCheckboxLabels, setPrevCheckboxLabels] = React.useState(checkboxLabels)
+    const state = useDerivedState(stateFromLabels(), checkboxLabels)
+    state.updateIfDefaultValueChanged(stateFromLabels(), checkboxLabels)
 
     const checkboxes = checkboxLabels.map((checkboxLabel, n) => {
-        const checkboxState = () => state[n]
+        const checkboxState = () => state.value[n]
         const setCheckboxState = (checked: boolean) => {
-            const newState = [...state]
+            const newState = [...state.value]
             newState[n] = checked
-            setState(newState)
+            state.setValue(newState)
         }
         return buildCheckbox(checkboxLabel, checkboxState, setCheckboxState, checkBoxProps)
     })
-
-    if (checkboxLabels !== prevCheckboxLabels) {
-        setState(stateFromLabels)
-        setPrevCheckboxLabels(checkboxLabels)
-    }
 
     return withTheme(
         <FormControl component="fieldset" error={error} required={required}>
