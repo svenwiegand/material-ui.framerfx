@@ -23,7 +23,7 @@
             "codeComponentProps" : {
               "autoFocus" : false,
               "color" : "primary",
-              "defaultValue" : "",
+              "defaultValue" : "Ein langer ",
               "disabled" : false,
               "error" : false,
               "helperText" : "",
@@ -150,7 +150,7 @@
             "codeComponentProps" : {
               "autoFocus" : false,
               "color" : "primary",
-              "defaultValue" : "",
+              "defaultValue" : "Wert",
               "disabled" : false,
               "error" : false,
               "helperText" : "",
@@ -274,7 +274,7 @@
             "codeComponentIdentifier" : ".\/inputs\/Checkbox.tsx_Checkbox",
             "codeComponentPackageVersion" : "1.76.0",
             "codeComponentProps" : {
-              "checked" : false,
+              "checked" : true,
               "color" : "primary",
               "disabled" : false,
               "indeterminate" : false,

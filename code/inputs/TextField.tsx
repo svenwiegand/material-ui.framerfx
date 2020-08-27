@@ -5,8 +5,16 @@ import { withTheme } from "../common/theme"
 import { propertyControls } from "../common/propertyControl"
 
 export function TextField(props: any) {
-    const { width, height, ...other } = props
-    return withTheme(<MuiTextField fullWidth {...other} />)
+    const { defaultValue, width, height, ...other } = props
+    const [value, setValue] = React.useState(defaultValue)
+    const [prevDefaultValue, setPrevDefaultValue] = React.useState(defaultValue)
+    if(defaultValue !== prevDefaultValue) {
+        setValue(defaultValue)
+        setPrevDefaultValue(defaultValue)
+    }
+
+    const handleChange = (event: React.ChangeEvent<HTMLInputElement>) => setValue(event.target.value)
+    return withTheme(<MuiTextField value={value} onChange={handleChange} fullWidth {...other} />)
 }
 
 addPropertyControls(TextField, propertyControls(
