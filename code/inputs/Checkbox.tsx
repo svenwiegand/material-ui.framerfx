@@ -5,7 +5,7 @@ import { propertyControls } from "../common/propertyControl"
 import { FormControlLabel, Checkbox as MuiCheckbox } from "@material-ui/core"
 
 export function Checkbox(props: any) {
-    const { label, checked, onChange, ...other } = props
+    const { label, labelPlacement, checked, onChange, ...other } = props
     const [state, setState] = React.useState(checked)
     const handleChange = (event: React.ChangeEvent<HTMLInputElement>) => {
         setState(event.target.checked)
@@ -16,13 +16,13 @@ export function Checkbox(props: any) {
         <FormControlLabel
             control={checkbox}
             label={label}
+            labelPlacement={labelPlacement}
         />
     )
 }
 
 addPropertyControls(Checkbox, propertyControls(
     "label",
-    "labelPlacement",
     "checked",
     ["indeterminate", {
         type: ControlType.Boolean,
@@ -32,6 +32,7 @@ addPropertyControls(Checkbox, propertyControls(
     "color",
     "disabled",
     "required",
+    "labelPlacement",
     "size",
     "onChange"
 ))

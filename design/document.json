@@ -218,7 +218,7 @@
               "disabled" : false,
               "indeterminate" : false,
               "label" : "Passwort automatisch generieren und per E-Mail zustellen",
-              "labelPlacement" : "start",
+              "labelPlacement" : "end",
               "required" : false,
               "size" : "medium"
             },
@@ -324,6 +324,89 @@
             "right" : null,
             "rotation" : 0,
             "top" : 138,
+            "visible" : true,
+            "width" : 1,
+            "widthType" : 3
+          },
+          {
+            "__class" : "CodeComponentNode",
+            "aspectRatio" : null,
+            "bottom" : null,
+            "centerAnchorX" : 0.24933333333333332,
+            "centerAnchorY" : 0.38530734632683661,
+            "clip" : true,
+            "codeComponentIdentifier" : ".\/inputs\/CheckboxGroup.tsx_CheckboxGroup",
+            "codeComponentPackageVersion" : "1.76.0",
+            "codeComponentProps" : {
+              "checkboxLabels" : [
+                {
+                  "enabled" : true,
+                  "type" : "string",
+                  "value" : "Erster Punkt (x)"
+                },
+                {
+                  "enabled" : true,
+                  "type" : "string",
+                  "value" : "Zweiter Punkt (-)"
+                },
+                {
+                  "enabled" : true,
+                  "type" : "string",
+                  "value" : "Dritter Punkt"
+                },
+                {
+                  "enabled" : true,
+                  "type" : "string",
+                  "value" : "Vierter Punkt (x)"
+                }
+              ],
+              "color" : "primary",
+              "disabled" : false,
+              "error" : false,
+              "helperText" : "Helper Text",
+              "label" : "Testlabel",
+              "labelPlacement" : "end",
+              "required" : false,
+              "size" : "medium"
+            },
+            "codeOverrideEnabled" : false,
+            "constraintsLocked" : false,
+            "duplicatedFrom" : [
+              "eI7by3XUq"
+            ],
+            "exportOptions" : [
+
+            ],
+            "fillColor" : "rgba(255,255,255,1)",
+            "fillEnabled" : false,
+            "fillImage" : null,
+            "fillImageOriginalName" : null,
+            "fillImagePixelHeight" : null,
+            "fillImagePixelWidth" : null,
+            "fillImageResize" : "fill",
+            "fillType" : "color",
+            "height" : 122,
+            "heightType" : 0,
+            "id" : "m8BEfD1dn",
+            "intrinsicHeight" : null,
+            "intrinsicWidth" : null,
+            "left" : 20,
+            "locked" : false,
+            "name" : null,
+            "opacity" : 1,
+            "originalid" : null,
+            "parentid" : "P1s0K6yGc",
+            "previewSettings" : null,
+            "radius" : 0,
+            "radiusBottomLeft" : 0,
+            "radiusBottomRight" : 0,
+            "radiusIsRelative" : false,
+            "radiusPerCorner" : false,
+            "radiusTopLeft" : 0,
+            "radiusTopRight" : 0,
+            "right" : null,
+            "rotation" : 0,
+            "top" : 196,
             "visible" : true,
             "width" : 1,
             "widthType" : 3

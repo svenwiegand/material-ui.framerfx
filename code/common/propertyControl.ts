@@ -34,13 +34,13 @@ export const PropertyControl = {
     } as ControlDescription,
     helperText: {
         type: ControlType.String,
-        title: "Helper text",
+        title: "",
         defaultValue: ""
     } as ControlDescription,
     label: {
         type: ControlType.String,
         title: "Label",
-        defaultValue: "Label"
+        defaultValue: ""
     } as ControlDescription,
     labelPlacement: {
         type: ControlType.Enum,
