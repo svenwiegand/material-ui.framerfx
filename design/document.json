@@ -812,15 +812,17 @@
             "__class" : "CodeComponentNode",
             "aspectRatio" : null,
             "bottom" : null,
-            "centerAnchorX" : 0.53333333333333333,
-            "centerAnchorY" : 0.37181409295352325,
+            "centerAnchorX" : 0.52000000000000002,
+            "centerAnchorY" : 0.36806596701649175,
             "clip" : true,
             "codeComponentIdentifier" : ".\/inputs\/Button.tsx_Button",
             "codeComponentPackageVersion" : "1.76.0",
             "codeComponentProps" : {
               "color" : "primary",
               "disabled" : false,
+              "disableElevation" : false,
               "endIcon" : "",
+              "fullWidth" : false,
               "href" : "",
               "label" : "Abbrechen",
               "onClick" : [
@@ -836,7 +838,7 @@
                       "value" : "event"
                     }
                   },
-                  "identifier" : "8d9d92f0-ddf3-4832-a6bf-c7cbd4333df3"
+                  "identifier" : "3a4e16b3-7f9e-4c6c-8c6d-738ae623b223"
                 }
               ],
               "size" : "medium",
@@ -859,7 +861,7 @@
             "fillImagePixelWidth" : null,
             "fillImageResize" : "fill",
             "fillType" : "color",
-            "height" : 36,
+            "height" : 31,
             "heightType" : 0,
             "id" : "mrbxnw_27",
             "intrinsicHeight" : null,
@@ -878,11 +880,11 @@
             "radiusPerCorner" : false,
             "radiusTopLeft" : 0,
             "radiusTopRight" : 0,
-            "right" : 111,
+            "right" : 115,
             "rotation" : 0,
             "top" : 230,
             "visible" : true,
-            "width" : 128,
+            "width" : 130,
             "widthType" : 0
           },
           {
@@ -896,7 +898,7 @@
             "codeComponentPackageVersion" : "1.76.0",
             "codeComponentProps" : {
               "align" : "center",
-              "color" : "initial",
+              "color" : "textSecondary",
               "gutterBottom" : false,
               "noWrap" : false,
               "paragraph" : false,

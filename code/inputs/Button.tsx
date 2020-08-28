@@ -50,11 +50,25 @@ addPropertyControls(Button, propertyControls(
     ["variant", {
         type: ControlType.Enum,
         title: "Variant",
-        options: ["standard", "contained", "outlined"],
+        options: ["text", "contained", "outlined"],
         defaultValue: "contained"
     }],
     "color",
     "disabled",
-    "size",
+    ["disableElevation", {
+        type: ControlType.Boolean,
+        title: "Disable elevation",
+        defaultValue: false
+    }],
+    ["size", {
+        type: ControlType.Enum,
+        title: "Size",
+        options: ["small", "medium", "large"]
+    }],
+    ["fullWidth", {
+        type: ControlType.Boolean,
+        title: "Full width",
+        defaultValue: false
+    } as ControlDescription],
     "onClick"
 ))
