@@ -900,7 +900,8 @@
               "noWrap" : false,
               "paragraph" : false,
               "text" : "Eine kurze Zeile",
-              "variant" : "h1"
+              "variant" : "h1",
+              "weight" : "inherit"
             },
             "codeOverrideEnabled" : false,
             "constraintsLocked" : false,

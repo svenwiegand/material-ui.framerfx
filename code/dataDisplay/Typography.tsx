@@ -4,9 +4,10 @@ import { withTheme } from "../common/theme"
 import { Typography as MuiTypography } from '@material-ui/core'
 
 export function Typography(props) {
-    const { text, ...typoProps } = props
+    const { text, weight, ...typoProps } = props
     return withTheme(
         <MuiTypography
+            style={{fontWeight: weight}}
             {...typoProps}
         >
             {text}   
@@ -31,6 +32,13 @@ addPropertyControls(Typography, {
         title: "Color",
         options: ["initial", "inherit", "primary", "secondary", "textPrimary", "textSecondary", "error"],
         defaultValue: "initial"
+    },
+    weight: {
+        type: ControlType.Enum,
+        title: "Weight",
+        optionTitles: ["inherit", "thin", "extra light", "light", "regular", "medium", "semi bold", "bold", "extra bold", "heavy"],
+        options: ["inherit", 100, 200, 300, 400, 500, 600, 700, 800, 900],
+        defaultValue: 0
     },
     align: {
         type: ControlType.Enum,
