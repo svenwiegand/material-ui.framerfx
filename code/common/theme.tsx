@@ -62,6 +62,11 @@ export const theme = createMuiTheme({
         warning,
         error,
     },
+    typography: {
+        button: {
+            textTransform: "none"
+        }
+    }
 })
 
 export const useStyles = makeStyles((theme: MuiTheme) =>
