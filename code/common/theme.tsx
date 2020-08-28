@@ -1,4 +1,5 @@
 import * as React from "react"
+import { colors } from "../canvas"
 
 import {
     createMuiTheme,
@@ -7,36 +8,49 @@ import {
     Theme as MuiTheme,
     ThemeProvider,
 } from "@material-ui/core/styles"
+import { Color } from "framer"
+
+const colorPattern = /(rgb\(\d+, \d+, \d+\))/
+function color(colorKey: string): string {
+    const cssColorDef = colors[colorKey]
+    if (cssColorDef) {
+        const [fullMatch, rgb] = colorPattern.exec(cssColorDef)
+        const c = Color(rgb)
+        return Color.toHexString(c)
+    } else {
+        return "#000000"
+    }
+}
 
 const primary = {
-    light: "#0096FF",
-    main: "#006EE6",
-    dark: "#1455B4",
+    light: color("primary.light"),
+    main: color("primary.main"),
+    dark: color("primary.dark"),
 }
 const secondary = {
-    light: "#E0E0E0",
-    main: "#9E9E9E",
-    dark: "#424242",
+    light: color("secondary.light"),
+    main: color("secondary.main"),
+    dark: color("secondary.dark"),
 }
 const info = {
-    light: "#00B4FF",
-    main: "#0078FF",
-    dark: "#0064D2",
+    light: color("info.light"),
+    main: color("info.main"),
+    dark: color("info.dark"),
 }
 const success = {
-    light: "#7DA11A",
-    main: "#8BB31D",
-    dark: "#AECA61",
+    light: color("success.light"),
+    main: color("success.main"),
+    dark: color("success.dark"),
 }
 const warning = {
-    light: "#E88735",
-    main: "#F0AC43",
-    dark: "#F4C34C",
+    light: color("warning.light"),
+    main: color("warning.main"),
+    dark: color("warning.dark"),
 }
 const error = {
-    light: "#FF7070",
-    main: "#FF4747",
-    dark: "#FF3333",
+    light: color("error.light"),
+    main: color("error.main"),
+    dark: color("error.dark"),
 }
 
 export const theme = createMuiTheme({
