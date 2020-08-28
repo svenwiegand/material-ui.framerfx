@@ -23,17 +23,20 @@ interface Props {
     helperText: string,
     error: boolean,
     required: boolean,
-    radioLabels: string[]
+    radioLabels: string[],
+    onChange: (selection: number) => void
 }
 export function RadioGroup(props: Props) {
-    const { label, selection, helperText, error, required, radioLabels, ...radioProps } = props
+    const { label, selection, helperText, error, required, radioLabels, onChange, ...radioProps } = props
     const state = useDerivedState(selection.toString(), selection)
     state.updateIfDefaultValueChanged(selection.toString(), selection)
     const radios = radioLabels.map((radioLabel, n) => {
         return buildRadio(radioLabel, (n + 1).toString(), radioProps)
     })
     const handleChange = (event: React.ChangeEvent<HTMLInputElement>) => {
-        state.setValue((event.target as HTMLInputElement).value)
+        const value = (event.target as HTMLInputElement).value
+        state.setValue(value)
+        if (onChange) onChange(Number.parseInt(value))
     }
 
     return withTheme(
