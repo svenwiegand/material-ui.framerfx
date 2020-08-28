@@ -1,5 +1,5 @@
 import * as React from "react"
-import { addPropertyControls } from "framer"
+import { addPropertyControls, ControlType, ControlDescription } from "framer"
 import MuiTextField from "@material-ui/core/TextField"
 import { withTheme } from "../common/theme"
 import { propertyControls } from "../common/propertyControl"
@@ -21,6 +21,12 @@ addPropertyControls(TextField, propertyControls(
     "variant",
     "color",
     "multiline",
+    ["type", {
+        type: ControlType.Enum,
+        title: "Type",
+        options: ["text", "number", "password"],
+        default: "text"
+    } as ControlDescription],
     "disabled",
     "required",
     "error",

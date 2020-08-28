@@ -48,6 +48,7 @@
               "placeholder" : "",
               "required" : false,
               "size" : "medium",
+              "type" : "text",
               "variant" : "standard"
             },
             "codeOverrideEnabled" : false,
@@ -5762,6 +5763,7 @@
               "placeholder" : "",
               "required" : false,
               "size" : "medium",
+              "type" : "text",
               "variant" : "standard"
             },
             "codeOverrideEnabled" : false,

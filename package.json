@@ -9,11 +9,14 @@
 		"react": "^16.8"
 	},
 	"framer": {
-		"id": "0830bb9f-b698-4a43-ad61-542a09716c16"
+		"id": "0830bb9f-b698-4a43-ad61-542a09716c16",
+		"displayName": "orgavision Material-UI"
 	},
 	"author": "Sven Wiegand",
 	"dependencies": {
 		"@framer/framer.default": "^1.76.0",
 		"@material-ui/core": "^4.11.0"
-	}
+	},
+	"name": "@framer/4hpyr6fd.orgavision-material-ui",
+	"version": "1.0.0"
 }
