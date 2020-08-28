@@ -54,8 +54,7 @@ addPropertyControls(RadioGroup, propertyControls(
     "label",
     ["selection", {
         type: ControlType.Number,
-        title: "Selection",
-        placeholder: "Number of selected option",
+        title: "Selection #",
         defaultValue: 1
     } as ControlDescription],
     "helperText",

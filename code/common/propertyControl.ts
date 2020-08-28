@@ -1,5 +1,9 @@
 import { ControlType, ControlDescription } from "framer"
 
+export type InputColor = "primary" | "secondary"
+export type LabelPlacement = "top" | "end" | "bottom" | "start"
+export type InputVariant = "filled" | "outlined" | "standard"
+
 export const PropertyControl = {
     autoFocus: {
         type: ControlType.Boolean,

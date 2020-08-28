@@ -1,50 +1,66 @@
 import * as React from "react"
-import { Frame, addPropertyControls, ControlType } from "framer"
+import { addPropertyControls, ControlType } from "framer"
+import { withTheme } from "../common/theme"
+import { propertyControls, InputVariant } from "../common/propertyControl"
+import { useDerivedStateCalculatedFromProp } from "../common/state"
+import { FormControl, InputLabel, Select as MuiSelect, MenuItem, FormHelperText } from "@material-ui/core"
 
-// Learn more: https://framer.com/api
-
-export function Select(props) {
-    const { text, tint, onTap, ...rest } = props
-
-    return (
-        <Frame
-            {...rest}
-            background={tint}
-            onTap={onTap}
-            whileHover={{
-                scale: 1.1,
-            }}
-            style={{
-                color: "#fff",
-                fontSize: 16,
-                fontWeight: 600,
-            }}
-        >
-            {text}
-        </Frame>
+interface Props {
+    label: string
+    options: string[]
+    defaultOption: number
+    helperText: string
+    variant: InputVariant
+    onChange: (option: string) => void
+    width: number
+    height: number
+    id: string
+}
+export function Select(props: Props) {
+    const { label, helperText, options, defaultOption, onChange, width, height, id, ...controlProps } = props
+    const state = useDerivedStateCalculatedFromProp(defaultOption.toString(), defaultOption, onChange)
+    state.updateIfDefaultValueChanged(defaultOption.toString(), defaultOption)
+    const handleChange = (event: React.ChangeEvent<HTMLInputElement>) => state.setValue(event.target.value)
+    return withTheme(
+        <FormControl fullWidth {...controlProps}>
+            <InputLabel id={id + "_label"}>{label}</InputLabel>
+            <MuiSelect 
+                labelId={id + "_label"}
+                id={id + "_select"}
+                label={label}
+                value={state.value > "0" ? state.value : ""}
+                onChange={handleChange}
+            >
+                {options.map((option, n) => <MenuItem value={(n + 1).toString()}>{option}</MenuItem>)}
+            </MuiSelect>
+            <FormHelperText>{helperText}</FormHelperText>
+        </FormControl>
     )
 }
 
-Select.defaultProps = {
-    height: 128,
-    width: 240,
-    text: "Get started!",
-    tint: "#0099ff",
-}
-
-// Learn more: https://framer.com/api/property-controls/
-addPropertyControls(Select, {
-    text: {
-        title: "Text",
-        type: ControlType.String,
-        defaultValue: "Hello Framer!",
-    },
-    tint: {
-        title: "Tint",
-        type: ControlType.Color,
-        defaultValue: "#0099ff",
-    },
-    onTap: {
-        type: ControlType.EventHandler,
-    },
-})
+addPropertyControls(Select, propertyControls(
+    "label",
+    ["options", {
+        type: ControlType.Array,
+        propertyControl: {
+            type: ControlType.String,
+            placeholder: "Label",
+            defaultValue: ""
+        },
+        title: "Options",
+        defaultValue: []
+    }],
+    ["defaultOption", {
+        type: ControlType.Number,
+        title: "Selection #",
+        defaultValue: 0
+    }],
+    "helperText",
+    "variant",
+    "color",
+    "disabled",
+    "required",
+    "error",
+    "size",
+    "onChange"
+))
