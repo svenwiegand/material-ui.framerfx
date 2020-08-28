@@ -65,6 +65,10 @@ export const PropertyControl = {
         type: ControlType.EventHandler,
         title: "onClick",
     } as ControlDescription,
+    onTap: {
+        type: ControlType.EventHandler,
+        title: "onTap",
+    } as ControlDescription,
     placeholder: {
         type: ControlType.String,
         title: "Placeholder",
