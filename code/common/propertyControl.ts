@@ -1,6 +1,6 @@
 import { ControlType, ControlDescription } from "framer"
 
-export type InputColor = "primary" | "secondary"
+export type InputColor = "primary" | "secondary" | "default"
 export type LabelPlacement = "top" | "end" | "bottom" | "start"
 export type InputVariant = "filled" | "outlined" | "standard"
 
@@ -18,7 +18,7 @@ export const PropertyControl = {
     color: {
         type: ControlType.Enum,
         title: "Color",
-        options: ["primary", "secondary"],
+        options: ["primary", "secondary", "default"],
         defaultValue: "primary"
     } as ControlDescription,
     defaultStringValue: {
@@ -60,6 +60,10 @@ export const PropertyControl = {
     onChange: {
         type: ControlType.EventHandler,
         title: "onChange",
+    } as ControlDescription,
+    onClick: {
+        type: ControlType.EventHandler,
+        title: "onClick",
     } as ControlDescription,
     placeholder: {
         type: ControlType.String,
