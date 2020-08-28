@@ -63,8 +63,99 @@ export const theme = createMuiTheme({
         error,
     },
     typography: {
+        fontFamily: [
+            "FiraGO", 
+            "FiraSans", 
+            "-apple-system", 
+            "BlinkMacSystemFont", 
+            "Segoe UI", 
+            "Roboto",
+            "Helvetica Neue",
+            "Arial",
+            "sans-serif",
+            "Apple Color Emoji",
+            "Segoe UI Emoji",
+            "Segoe UI Symbol"
+        ].join(","),
+        h1: {
+            fontSize: 32,
+            lineHeight: "38px",
+            fontWeight: 600,
+            letterSpacing: -0.24
+        },
+        h2: {
+            fontSize: 24,
+            lineHeight: "28px",
+            fontWeight: 600,
+            letterSpacing: 0.16
+        },
+        h3: {
+            fontSize: 18,
+            lineHeight: "28px",
+            fontWeight: 600,
+            letterSpacing: 0.24
+        },
+        h4: {
+            fontSize: 15,
+            lineHeight: "25px",
+            fontWeight: 600,
+            letterSpacing: 0.16
+        },
+        h5: {
+            fontSize: 14,
+            lineHeight: "17px",
+            fontWeight: 500,
+            letterSpacing: 0.16
+        },
+        h6: {
+            fontSize: 12,
+            lineHeight: "14px",
+            fontWeight: 500,
+            letterSpacing: 0.16
+        },
+        subtitle1: {
+            fontSize: 13,
+            lineHeight: "18px",
+            fontWeight: 400,
+            letterSpacing: 0.16
+        },
+        subtitle2: {
+            fontSize: 12,
+            lineHeight: "16px",
+            fontWeight: 400,
+            letterSpacing: 0.32
+        },
+        body1: {
+            fontSize: 15,
+            lineHeight: "25px",
+            fontWeight: 400,
+            letterSpacing: -0.12
+        },
+        body2: {
+            fontSize: 15,
+            lineHeight: "21px",
+            fontWeight: 400,
+            letterSpacing: -0.12
+        },
         button: {
+            fontSize: 15,
+            lineHeight: "15px",
+            fontWeight: 400,
+            letterSpacing: 0,
             textTransform: "none"
+        },
+        caption: {
+            fontSize: 13,
+            lineHeight: "18px",
+            fontWeight: 400,
+            letterSpacing: 0.16,
+            textAlign: "center"
+        },
+        overline: {
+            fontSize: 12,
+            lineHeight: "16px",
+            fontWeight: 400,
+            letterSpacing: 0.32
         }
     }
 })
