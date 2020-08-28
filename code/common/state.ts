@@ -33,13 +33,21 @@ export interface DerivedState<T, Prop = undefined> {
  * updated. If not specified, `defaultValue` will be compared directly instead. This one is important if the `defaultValue` is an 
  * object which is calculated from a property. In this case each calculation will result in another object even if the property 
  * did not change at all and thus the state would always be changed.
+ * @param onChange change listener that should be called each time the state is updated.
  */
-export function useDerivedState<T, Prop = undefined>(defaultValue: T, defaultValueProp?: Prop): DerivedState<T, Prop> {
+export function useDerivedStateCalculatedFromProp<T, Prop = undefined>(
+    defaultValue: T, 
+    defaultValueProp?: Prop,
+    onChange?: (newValue: T) => void
+): DerivedState<T, Prop> {
     const [value, setValue] = React.useState(defaultValue)
     const [prevDefaultValue, setPrevDefaultValue] = React.useState(defaultValueProp ? defaultValueProp : defaultValue)
     return new class implements DerivedState<T, Prop> {
         value = value
-        setValue = setValue
+        setValue = (newState: T) => {
+            setValue(newState)
+            onChange && onChange(newState)
+        }
         defaultValue = prevDefaultValue
         setDefaultValue = setPrevDefaultValue
         updateIfDefaultValueChanged(newDefaultValue: T, newDefaultValueProp?: Prop) {
@@ -50,4 +58,9 @@ export function useDerivedState<T, Prop = undefined>(defaultValue: T, defaultVal
             }
         }
     }
+}
+
+/** Shorthand for {@link useDerivedStateCalculatedFromProp} */
+export function useDerivedState<T>(defaultValue: T, onChange?: (newValue: T) => void): DerivedState<T> {
+    return useDerivedStateCalculatedFromProp(defaultValue, undefined, onChange)
 }

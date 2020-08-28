@@ -6,8 +6,8 @@ import { propertyControls } from "../common/propertyControl"
 import { useDerivedState } from "../common/state"
 
 export function TextField(props: any) {
-    const { defaultValue, width, height, ...other } = props
-    const state = useDerivedState(defaultValue)
+    const { defaultValue, onChange, width, height, ...other } = props
+    const state = useDerivedState(defaultValue, onChange)
     state.updateIfDefaultValueChanged(defaultValue)
     const handleChange = (event: React.ChangeEvent<HTMLInputElement>) => state.setValue(event.target.value)
     return withTheme(<MuiTextField value={state.value} onChange={handleChange} fullWidth {...other} />)
@@ -26,4 +26,5 @@ addPropertyControls(TextField, propertyControls(
     "error",
     "autoFocus",
     "size",
+    "onChange"
 ))

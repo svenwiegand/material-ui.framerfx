@@ -7,12 +7,9 @@ import { useDerivedState } from "../common/state"
 
 export function Checkbox(props: any) {
     const { label, labelPlacement, checked, onChange, ...other } = props
-    const state = useDerivedState(checked)
+    const state = useDerivedState(checked, onChange)
     state.updateIfDefaultValueChanged(checked)
-    const handleChange = (event: React.ChangeEvent<HTMLInputElement>) => {
-        state.setValue(event.target.checked)
-        if (onChange) onChange()
-    }
+    const handleChange = (event: React.ChangeEvent<HTMLInputElement>) => state.setValue(event.target.checked)
     const checkbox = <MuiCheckbox checked={state.value} onChange={handleChange} {...other} />
     return withTheme(
         <FormControlLabel

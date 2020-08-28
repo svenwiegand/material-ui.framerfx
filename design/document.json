@@ -29,6 +29,22 @@
               "helperText" : "",
               "label" : "Label",
               "multiline" : false,
+              "onChange" : [
+                {
+                  "actionIdentifier" : "framer\/useLog",
+                  "controls" : {
+                    "message" : {
+                      "type" : "string",
+                      "value" : ""
+                    },
+                    "type" : {
+                      "type" : "enum",
+                      "value" : "event"
+                    }
+                  },
+                  "identifier" : "ba0e07e6-1b75-43b1-92b1-422113cc0a27"
+                }
+              ],
               "placeholder" : "",
               "required" : false,
               "size" : "medium",
@@ -92,6 +108,22 @@
               "indeterminate" : false,
               "label" : "Passwort automatisch generieren und per E-Mail zustellen",
               "labelPlacement" : "end",
+              "onChange" : [
+                {
+                  "actionIdentifier" : "framer\/useLog",
+                  "controls" : {
+                    "message" : {
+                      "type" : "string",
+                      "value" : ""
+                    },
+                    "type" : {
+                      "type" : "enum",
+                      "value" : "event"
+                    }
+                  },
+                  "identifier" : "ab2ee2e4-ff73-4924-847b-08e61c2f6f76"
+                }
+              ],
               "required" : false,
               "size" : "medium"
             },
@@ -239,6 +271,22 @@
               "helperText" : "Helper Text",
               "label" : "Testlabel",
               "labelPlacement" : "end",
+              "onChange" : [
+                {
+                  "actionIdentifier" : "framer\/useLog",
+                  "controls" : {
+                    "message" : {
+                      "type" : "string",
+                      "value" : ""
+                    },
+                    "type" : {
+                      "type" : "enum",
+                      "value" : "event"
+                    }
+                  },
+                  "identifier" : "b5b9ad8d-f918-44af-b028-c1952f8cb613"
+                }
+              ],
               "required" : false,
               "size" : "medium"
             },
@@ -360,6 +408,22 @@
               "helperText" : "Helper Text",
               "label" : "Radio Buttons",
               "labelPlacement" : "end",
+              "onChange" : [
+                {
+                  "actionIdentifier" : "framer\/useLog",
+                  "controls" : {
+                    "message" : {
+                      "type" : "string",
+                      "value" : ""
+                    },
+                    "type" : {
+                      "type" : "enum",
+                      "value" : "event"
+                    }
+                  },
+                  "identifier" : "779c3f8b-0388-45f9-9c78-c4fca8b92c9d"
+                }
+              ],
               "radioLabels" : [
                 {
                   "enabled" : true,

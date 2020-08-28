@@ -3,7 +3,7 @@ import { addPropertyControls, ControlType, ControlDescription } from "framer"
 import { withTheme } from "../common/theme"
 import { propertyControls } from "../common/propertyControl"
 import { Radio as MuiRadio, FormControlLabel, FormLabel, RadioGroup as MuiRadioGroup, FormControl, FormHelperText } from "@material-ui/core"
-import { useDerivedState } from "../common/state"
+import { useDerivedStateCalculatedFromProp } from "../common/state"
 
 function buildRadio(label: string, value: string, props) {
     const radio = <MuiRadio
@@ -28,15 +28,15 @@ interface Props {
 }
 export function RadioGroup(props: Props) {
     const { label, selection, helperText, error, required, radioLabels, onChange, ...radioProps } = props
-    const state = useDerivedState(selection.toString(), selection)
+    const state = useDerivedStateCalculatedFromProp(selection.toString(), selection, (newValue: string) => {
+        onChange && onChange(Number.parseInt(newValue))
+    })
     state.updateIfDefaultValueChanged(selection.toString(), selection)
     const radios = radioLabels.map((radioLabel, n) => {
         return buildRadio(radioLabel, (n + 1).toString(), radioProps)
     })
     const handleChange = (event: React.ChangeEvent<HTMLInputElement>) => {
-        const value = (event.target as HTMLInputElement).value
-        state.setValue(value)
-        if (onChange) onChange(Number.parseInt(value))
+        state.setValue((event.target as HTMLInputElement).value)
     }
 
     return withTheme(
