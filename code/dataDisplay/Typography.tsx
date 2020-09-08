@@ -19,6 +19,7 @@ addPropertyControls(Typography, {
     text: {
         type: ControlType.String,
         title: "Text",
+        displayTextArea: true,
         defaultValue: ""
     },
     variant: {

@@ -15,7 +15,12 @@ export function TextField(props: any) {
 
 addPropertyControls(TextField, propertyControls(
     "label",
-    ["defaultValue", "defaultStringValue"],
+    ["defaultValue", {
+        type: ControlType.String,
+        title: "Value",
+        displayTextArea: true,
+        defaultValue: ""
+    }],
     "placeholder",
     "helperText",
     "variant",
