@@ -3,14 +3,18 @@ import { addPropertyControls, ControlType } from "framer"
 import { withTheme } from "../common/theme"
 import { Typography as MuiTypography } from '@material-ui/core'
 
+
 export function Typography(props) {
-    const { text, weight, ...typoProps } = props
+    const { weight, ...typoProps } = props
+    const text: string = props.text
+    console.log(text)
+    const lines = text.split("\n").map(line => line.trim().length > 0 ? (<div>{line}</div>) : <br />)
     return withTheme(
         <MuiTypography
             style={{fontWeight: weight}}
             {...typoProps}
         >
-            {text}   
+            {lines}
         </MuiTypography>
     )
 }
