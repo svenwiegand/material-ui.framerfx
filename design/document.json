@@ -1356,6 +1356,10 @@
                   "type" : "string",
                   "value" : "Datum"
                 },
+                "$control__margin" : {
+                  "type" : "enum",
+                  "value" : "none"
+                },
                 "$control__multiline" : {
                   "type" : "boolean",
                   "value" : false

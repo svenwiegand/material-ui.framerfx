@@ -17,7 +17,6 @@ export function DatePicker(props: any) {
     return withTheme(<MuiPickersUtilsProvider utils={DateFnsUtils}>
         <KeyboardDatePicker
             format={format}
-            margin="normal"
             value={state.value}
             onChange={handleChange}
             {...other}          
@@ -51,6 +50,7 @@ addPropertyControls(DatePicker, propertyControls(
         defaultValue: false
     }],
     "color",
+    "margin",
     "disabled",
     "required",
     "error",

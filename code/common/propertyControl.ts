@@ -18,8 +18,8 @@ export const PropertyControl = {
     color: {
         type: ControlType.Enum,
         title: "Color",
-        options: ["primary", "secondary", "default"],
-        defaultValue: "primary"
+        options: ["inherit", "primary", "secondary", "default"],
+        defaultValue: "inherit"
     } as ControlDescription,
     defaultStringValue: {
         type: ControlType.String,
@@ -51,6 +51,12 @@ export const PropertyControl = {
         title: "Label placement",
         options: ["bottom", "end", "start", "top"],
         defaultValue: "end"
+    } as ControlDescription,
+    margin: {
+        type: ControlType.Enum,
+        title: "Margin",
+        options: ["none", "dense", "normal"],
+        defaultValue: "normal"
     } as ControlDescription,
     multiline: {
         type: ControlType.Boolean,
