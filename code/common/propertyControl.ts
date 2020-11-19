@@ -19,7 +19,7 @@ export const PropertyControl = {
         type: ControlType.Enum,
         title: "Color",
         options: ["inherit", "primary", "secondary", "default"],
-        defaultValue: "inherit"
+        defaultValue: "primary"
     } as ControlDescription,
     defaultStringValue: {
         type: ControlType.String,
