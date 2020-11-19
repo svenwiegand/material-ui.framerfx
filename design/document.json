@@ -8,31 +8,47 @@
           {
             "__class" : "FrameNode",
             "aspectRatio" : null,
-            "blendingEnabled" : 0,
-            "blendingMode" : "normal",
             "bottom" : null,
             "centerAnchorX" : 0,
             "centerAnchorY" : 0,
             "children" : [
               {
                 "__class" : "CodeComponentNode",
-                "aspectRatio" : null,
-                "bottom" : null,
-                "centerAnchorX" : 0.5,
-                "centerAnchorY" : 0.065967016491754127,
-                "clip" : true,
-                "codeComponentIdentifier" : ".\/inputs\/TextField.tsx_TextField",
-                "codeComponentPackageVersion" : "1.76.0",
-                "codeComponentProps" : {
-                  "autoFocus" : false,
-                  "color" : "primary",
-                  "defaultValue" : "Wert",
-                  "disabled" : false,
-                  "error" : true,
-                  "helperText" : "",
-                  "label" : "Label",
-                  "multiline" : false,
-                  "onChange" : [
+                "$control__autoFocus" : {
+                  "type" : "boolean",
+                  "value" : false
+                },
+                "$control__color" : {
+                  "type" : "enum",
+                  "value" : "primary"
+                },
+                "$control__defaultValue" : {
+                  "type" : "string",
+                  "value" : "Wert"
+                },
+                "$control__disabled" : {
+                  "type" : "boolean",
+                  "value" : false
+                },
+                "$control__error" : {
+                  "type" : "boolean",
+                  "value" : true
+                },
+                "$control__helperText" : {
+                  "type" : "string",
+                  "value" : ""
+                },
+                "$control__label" : {
+                  "type" : "string",
+                  "value" : "Label"
+                },
+                "$control__multiline" : {
+                  "type" : "boolean",
+                  "value" : false
+                },
+                "$control__onChange" : {
+                  "type" : "eventhandler",
+                  "value" : [
                     {
                       "actionIdentifier" : "framer\/useLog",
                       "controls" : {
@@ -47,13 +63,35 @@
                       },
                       "identifier" : "ba0e07e6-1b75-43b1-92b1-422113cc0a27"
                     }
-                  ],
-                  "placeholder" : "",
-                  "required" : false,
-                  "size" : "medium",
-                  "type" : "text",
-                  "variant" : "standard"
+                  ]
                 },
+                "$control__placeholder" : {
+                  "type" : "string",
+                  "value" : ""
+                },
+                "$control__required" : {
+                  "type" : "boolean",
+                  "value" : false
+                },
+                "$control__size" : {
+                  "type" : "enum",
+                  "value" : "medium"
+                },
+                "$control__type" : {
+                  "type" : "enum",
+                  "value" : "text"
+                },
+                "$control__variant" : {
+                  "type" : "enum",
+                  "value" : "standard"
+                },
+                "aspectRatio" : null,
+                "bottom" : null,
+                "centerAnchorX" : 0.5,
+                "centerAnchorY" : 0.065967016491754127,
+                "clip" : true,
+                "codeComponentIdentifier" : ".\/inputs\/TextField.tsx_TextField",
+                "codeComponentPackageVersion" : "1.76.0",
                 "codeOverrideEnabled" : false,
                 "constraintsLocked" : false,
                 "duplicatedFrom" : [
@@ -98,21 +136,33 @@
               },
               {
                 "__class" : "CodeComponentNode",
-                "aspectRatio" : null,
-                "bottom" : null,
-                "centerAnchorX" : 0.14799999999999999,
-                "centerAnchorY" : 0.16041979010494753,
-                "clip" : true,
-                "codeComponentIdentifier" : ".\/inputs\/Checkbox.tsx_Checkbox",
-                "codeComponentPackageVersion" : "1.76.0",
-                "codeComponentProps" : {
-                  "checked" : false,
-                  "color" : "primary",
-                  "disabled" : false,
-                  "indeterminate" : false,
-                  "label" : "Passwort automatisch generieren und per E-Mail zustellen",
-                  "labelPlacement" : "end",
-                  "onChange" : [
+                "$control__checked" : {
+                  "type" : "boolean",
+                  "value" : false
+                },
+                "$control__color" : {
+                  "type" : "enum",
+                  "value" : "primary"
+                },
+                "$control__disabled" : {
+                  "type" : "boolean",
+                  "value" : false
+                },
+                "$control__indeterminate" : {
+                  "type" : "boolean",
+                  "value" : false
+                },
+                "$control__label" : {
+                  "type" : "string",
+                  "value" : "Passwort automatisch generieren und per E-Mail zustellen"
+                },
+                "$control__labelPlacement" : {
+                  "type" : "enum",
+                  "value" : "end"
+                },
+                "$control__onChange" : {
+                  "type" : "eventhandler",
+                  "value" : [
                     {
                       "actionIdentifier" : "framer\/useLog",
                       "controls" : {
@@ -127,10 +177,23 @@
                       },
                       "identifier" : "ab2ee2e4-ff73-4924-847b-08e61c2f6f76"
                     }
-                  ],
-                  "required" : false,
-                  "size" : "medium"
+                  ]
                 },
+                "$control__required" : {
+                  "type" : "boolean",
+                  "value" : false
+                },
+                "$control__size" : {
+                  "type" : "enum",
+                  "value" : "medium"
+                },
+                "aspectRatio" : null,
+                "bottom" : null,
+                "centerAnchorX" : 0.14799999999999999,
+                "centerAnchorY" : 0.16041979010494753,
+                "clip" : true,
+                "codeComponentIdentifier" : ".\/inputs\/Checkbox.tsx_Checkbox",
+                "codeComponentPackageVersion" : "1.76.0",
                 "codeOverrideEnabled" : false,
                 "constraintsLocked" : false,
                 "duplicatedFrom" : [
@@ -175,6 +238,44 @@
               },
               {
                 "__class" : "CodeComponentNode",
+                "$control__checked" : {
+                  "type" : "boolean",
+                  "value" : true
+                },
+                "$control__color" : {
+                  "type" : "enum",
+                  "value" : "primary"
+                },
+                "$control__disabled" : {
+                  "type" : "boolean",
+                  "value" : false
+                },
+                "$control__indeterminate" : {
+                  "type" : "boolean",
+                  "value" : false
+                },
+                "$control__label" : {
+                  "type" : "string",
+                  "value" : "Das ist ein langes Label und ich will mal sehen, wann und wo das umbricht"
+                },
+                "$control__labelPlacement" : {
+                  "type" : "enum",
+                  "value" : "end"
+                },
+                "$control__onChange" : {
+                  "type" : "eventhandler",
+                  "value" : [
+
+                  ]
+                },
+                "$control__required" : {
+                  "type" : "boolean",
+                  "value" : false
+                },
+                "$control__size" : {
+                  "type" : "enum",
+                  "value" : "medium"
+                },
                 "aspectRatio" : null,
                 "bottom" : null,
                 "centerAnchorX" : 0.47866666666666668,
@@ -182,19 +283,6 @@
                 "clip" : true,
                 "codeComponentIdentifier" : ".\/inputs\/Checkbox.tsx_Checkbox",
                 "codeComponentPackageVersion" : "1.76.0",
-                "codeComponentProps" : {
-                  "checked" : true,
-                  "color" : "primary",
-                  "disabled" : false,
-                  "indeterminate" : false,
-                  "label" : "Das ist ein langes Label und ich will mal sehen, wann und wo das umbricht",
-                  "labelPlacement" : "end",
-                  "onChange" : [
-
-                  ],
-                  "required" : false,
-                  "size" : "medium"
-                },
                 "codeOverrideEnabled" : false,
                 "constraintsLocked" : false,
                 "duplicatedFrom" : [
@@ -239,43 +327,58 @@
               },
               {
                 "__class" : "CodeComponentNode",
-                "aspectRatio" : null,
-                "bottom" : null,
-                "centerAnchorX" : 0.24133333333333334,
-                "centerAnchorY" : 0.43478260869565216,
-                "clip" : true,
-                "codeComponentIdentifier" : ".\/inputs\/CheckboxGroup.tsx_CheckboxGroup",
-                "codeComponentPackageVersion" : "1.76.0",
-                "codeComponentProps" : {
-                  "checkboxLabels" : [
+                "$control__checkboxLabels" : {
+                  "type" : "array",
+                  "value" : [
                     {
-                      "enabled" : true,
+                      "id" : "migrated_array_value_m8BEfD1dn_checkboxLabels_0",
                       "type" : "string",
                       "value" : "Erster Punkt (x)"
                     },
                     {
-                      "enabled" : true,
+                      "id" : "migrated_array_value_m8BEfD1dn_checkboxLabels_1",
                       "type" : "string",
                       "value" : "Zweiter Punkt (-)"
                     },
                     {
-                      "enabled" : true,
+                      "id" : "migrated_array_value_m8BEfD1dn_checkboxLabels_2",
                       "type" : "string",
                       "value" : "Dritter Punkt"
                     },
                     {
-                      "enabled" : true,
+                      "id" : "migrated_array_value_m8BEfD1dn_checkboxLabels_3",
                       "type" : "string",
                       "value" : "Vierter Punkt (x)"
                     }
-                  ],
-                  "color" : "primary",
-                  "disabled" : false,
-                  "error" : false,
-                  "helperText" : "Helper Text",
-                  "label" : "Testlabel",
-                  "labelPlacement" : "end",
-                  "onChange" : [
+                  ]
+                },
+                "$control__color" : {
+                  "type" : "enum",
+                  "value" : "primary"
+                },
+                "$control__disabled" : {
+                  "type" : "boolean",
+                  "value" : false
+                },
+                "$control__error" : {
+                  "type" : "boolean",
+                  "value" : false
+                },
+                "$control__helperText" : {
+                  "type" : "string",
+                  "value" : "Helper Text"
+                },
+                "$control__label" : {
+                  "type" : "string",
+                  "value" : "Testlabel"
+                },
+                "$control__labelPlacement" : {
+                  "type" : "enum",
+                  "value" : "end"
+                },
+                "$control__onChange" : {
+                  "type" : "eventhandler",
+                  "value" : [
                     {
                       "actionIdentifier" : "framer\/useLog",
                       "controls" : {
@@ -290,10 +393,23 @@
                       },
                       "identifier" : "b5b9ad8d-f918-44af-b028-c1952f8cb613"
                     }
-                  ],
-                  "required" : false,
-                  "size" : "medium"
+                  ]
                 },
+                "$control__required" : {
+                  "type" : "boolean",
+                  "value" : false
+                },
+                "$control__size" : {
+                  "type" : "enum",
+                  "value" : "medium"
+                },
+                "aspectRatio" : null,
+                "bottom" : null,
+                "centerAnchorX" : 0.24133333333333334,
+                "centerAnchorY" : 0.43478260869565216,
+                "clip" : true,
+                "codeComponentIdentifier" : ".\/inputs\/CheckboxGroup.tsx_CheckboxGroup",
+                "codeComponentPackageVersion" : "1.76.0",
                 "codeOverrideEnabled" : false,
                 "constraintsLocked" : false,
                 "duplicatedFrom" : [
@@ -338,6 +454,37 @@
               },
               {
                 "__class" : "CodeComponentNode",
+                "$control__checked" : {
+                  "type" : "boolean",
+                  "value" : true
+                },
+                "$control__color" : {
+                  "type" : "enum",
+                  "value" : "primary"
+                },
+                "$control__disabled" : {
+                  "type" : "boolean",
+                  "value" : false
+                },
+                "$control__label" : {
+                  "type" : "string",
+                  "value" : "Mein erster Radio-Button"
+                },
+                "$control__labelPlacement" : {
+                  "type" : "enum",
+                  "value" : "end"
+                },
+                "$control__onChange" : {
+                  "type" : "eventhandler"
+                },
+                "$control__required" : {
+                  "type" : "boolean",
+                  "value" : false
+                },
+                "$control__size" : {
+                  "type" : "enum",
+                  "value" : "medium"
+                },
                 "aspectRatio" : null,
                 "bottom" : 305,
                 "centerAnchorX" : 0.27600000000000002,
@@ -345,15 +492,6 @@
                 "clip" : true,
                 "codeComponentIdentifier" : ".\/inputs\/Radio.tsx_Radio",
                 "codeComponentPackageVersion" : "1.76.0",
-                "codeComponentProps" : {
-                  "checked" : true,
-                  "color" : "primary",
-                  "disabled" : false,
-                  "label" : "Mein erster Radio-Button",
-                  "labelPlacement" : "end",
-                  "required" : false,
-                  "size" : "medium"
-                },
                 "codeOverrideEnabled" : false,
                 "constraintsLocked" : false,
                 "duplicatedFrom" : [
@@ -398,21 +536,33 @@
               },
               {
                 "__class" : "CodeComponentNode",
-                "aspectRatio" : null,
-                "bottom" : 47,
-                "centerAnchorX" : 0.26000000000000001,
-                "centerAnchorY" : 0.80659670164917541,
-                "clip" : true,
-                "codeComponentIdentifier" : ".\/inputs\/RadioGroup.tsx_RadioGroup",
-                "codeComponentPackageVersion" : "1.76.0",
-                "codeComponentProps" : {
-                  "color" : "primary",
-                  "disabled" : false,
-                  "error" : false,
-                  "helperText" : "Helper Text",
-                  "label" : "Radio Buttons",
-                  "labelPlacement" : "end",
-                  "onChange" : [
+                "$control__color" : {
+                  "type" : "enum",
+                  "value" : "primary"
+                },
+                "$control__disabled" : {
+                  "type" : "boolean",
+                  "value" : false
+                },
+                "$control__error" : {
+                  "type" : "boolean",
+                  "value" : false
+                },
+                "$control__helperText" : {
+                  "type" : "string",
+                  "value" : "Helper Text"
+                },
+                "$control__label" : {
+                  "type" : "string",
+                  "value" : "Radio Buttons"
+                },
+                "$control__labelPlacement" : {
+                  "type" : "enum",
+                  "value" : "end"
+                },
+                "$control__onChange" : {
+                  "type" : "eventhandler",
+                  "value" : [
                     {
                       "actionIdentifier" : "framer\/useLog",
                       "controls" : {
@@ -427,28 +577,47 @@
                       },
                       "identifier" : "779c3f8b-0388-45f9-9c78-c4fca8b92c9d"
                     }
-                  ],
-                  "radioLabels" : [
+                  ]
+                },
+                "$control__radioLabels" : {
+                  "type" : "array",
+                  "value" : [
                     {
-                      "enabled" : true,
+                      "id" : "migrated_array_value_wTHxOgJOx_radioLabels_0",
                       "type" : "string",
                       "value" : "First Option"
                     },
                     {
-                      "enabled" : true,
+                      "id" : "migrated_array_value_wTHxOgJOx_radioLabels_1",
                       "type" : "string",
                       "value" : "Second Option"
                     },
                     {
-                      "enabled" : true,
+                      "id" : "migrated_array_value_wTHxOgJOx_radioLabels_2",
                       "type" : "string",
                       "value" : "Third Option"
                     }
-                  ],
-                  "required" : false,
-                  "selection" : 2,
-                  "size" : "medium"
+                  ]
                 },
+                "$control__required" : {
+                  "type" : "boolean",
+                  "value" : false
+                },
+                "$control__selection" : {
+                  "type" : "number",
+                  "value" : 2
+                },
+                "$control__size" : {
+                  "type" : "enum",
+                  "value" : "medium"
+                },
+                "aspectRatio" : null,
+                "bottom" : 47,
+                "centerAnchorX" : 0.26000000000000001,
+                "centerAnchorY" : 0.80659670164917541,
+                "clip" : true,
+                "codeComponentIdentifier" : ".\/inputs\/RadioGroup.tsx_RadioGroup",
+                "codeComponentPackageVersion" : "1.76.0",
                 "codeOverrideEnabled" : false,
                 "constraintsLocked" : false,
                 "duplicatedFrom" : [
@@ -558,29 +727,39 @@
           {
             "__class" : "FrameNode",
             "aspectRatio" : null,
-            "blendingEnabled" : 0,
-            "blendingMode" : "normal",
             "bottom" : null,
             "centerAnchorX" : 0,
             "centerAnchorY" : 0,
             "children" : [
               {
                 "__class" : "CodeComponentNode",
-                "aspectRatio" : null,
-                "bottom" : null,
-                "centerAnchorX" : 0.5,
-                "centerAnchorY" : 0.088455772113943024,
-                "clip" : true,
-                "codeComponentIdentifier" : ".\/inputs\/Select.tsx_Select",
-                "codeComponentPackageVersion" : "1.76.0",
-                "codeComponentProps" : {
-                  "color" : "primary",
-                  "defaultOption" : 0,
-                  "disabled" : false,
-                  "error" : false,
-                  "helperText" : "Helper Text",
-                  "label" : "Label",
-                  "onChange" : [
+                "$control__color" : {
+                  "type" : "enum",
+                  "value" : "primary"
+                },
+                "$control__defaultOption" : {
+                  "type" : "number",
+                  "value" : 0
+                },
+                "$control__disabled" : {
+                  "type" : "boolean",
+                  "value" : false
+                },
+                "$control__error" : {
+                  "type" : "boolean",
+                  "value" : false
+                },
+                "$control__helperText" : {
+                  "type" : "string",
+                  "value" : "Helper Text"
+                },
+                "$control__label" : {
+                  "type" : "string",
+                  "value" : "Label"
+                },
+                "$control__onChange" : {
+                  "type" : "eventhandler",
+                  "value" : [
                     {
                       "actionIdentifier" : "framer\/useLog",
                       "controls" : {
@@ -595,28 +774,47 @@
                       },
                       "identifier" : "3ddb11e6-b119-4a31-866b-58548cdbd5d1"
                     }
-                  ],
-                  "options" : [
+                  ]
+                },
+                "$control__options" : {
+                  "type" : "array",
+                  "value" : [
                     {
-                      "enabled" : true,
+                      "id" : "migrated_array_value_Ua9wPaXmM_options_0",
                       "type" : "string",
                       "value" : "Deutschland"
                     },
                     {
-                      "enabled" : true,
+                      "id" : "migrated_array_value_Ua9wPaXmM_options_1",
                       "type" : "string",
                       "value" : "Frankreich"
                     },
                     {
-                      "enabled" : true,
+                      "id" : "migrated_array_value_Ua9wPaXmM_options_2",
                       "type" : "string",
                       "value" : "Großbritannien"
                     }
-                  ],
-                  "required" : false,
-                  "size" : "medium",
-                  "variant" : "filled"
+                  ]
                 },
+                "$control__required" : {
+                  "type" : "boolean",
+                  "value" : false
+                },
+                "$control__size" : {
+                  "type" : "enum",
+                  "value" : "medium"
+                },
+                "$control__variant" : {
+                  "type" : "enum",
+                  "value" : "filled"
+                },
+                "aspectRatio" : null,
+                "bottom" : null,
+                "centerAnchorX" : 0.5,
+                "centerAnchorY" : 0.088455772113943024,
+                "clip" : true,
+                "codeComponentIdentifier" : ".\/inputs\/Select.tsx_Select",
+                "codeComponentPackageVersion" : "1.76.0",
                 "codeOverrideEnabled" : false,
                 "constraintsLocked" : false,
                 "duplicatedFrom" : [
@@ -661,21 +859,33 @@
               },
               {
                 "__class" : "CodeComponentNode",
-                "aspectRatio" : null,
-                "bottom" : null,
-                "centerAnchorX" : 0.5,
-                "centerAnchorY" : 0.22038980509745126,
-                "clip" : true,
-                "codeComponentIdentifier" : ".\/inputs\/Select.tsx_Select",
-                "codeComponentPackageVersion" : "1.76.0",
-                "codeComponentProps" : {
-                  "color" : "primary",
-                  "defaultOption" : 2,
-                  "disabled" : false,
-                  "error" : false,
-                  "helperText" : "Wähle Deine bevorzugte Sprache",
-                  "label" : "Sprache",
-                  "onChange" : [
+                "$control__color" : {
+                  "type" : "enum",
+                  "value" : "primary"
+                },
+                "$control__defaultOption" : {
+                  "type" : "number",
+                  "value" : 2
+                },
+                "$control__disabled" : {
+                  "type" : "boolean",
+                  "value" : false
+                },
+                "$control__error" : {
+                  "type" : "boolean",
+                  "value" : false
+                },
+                "$control__helperText" : {
+                  "type" : "string",
+                  "value" : "Wähle Deine bevorzugte Sprache"
+                },
+                "$control__label" : {
+                  "type" : "string",
+                  "value" : "Sprache"
+                },
+                "$control__onChange" : {
+                  "type" : "eventhandler",
+                  "value" : [
                     {
                       "actionIdentifier" : "framer\/useLog",
                       "controls" : {
@@ -690,28 +900,47 @@
                       },
                       "identifier" : "3ddb11e6-b119-4a31-866b-58548cdbd5d1"
                     }
-                  ],
-                  "options" : [
+                  ]
+                },
+                "$control__options" : {
+                  "type" : "array",
+                  "value" : [
                     {
-                      "enabled" : true,
+                      "id" : "migrated_array_value_Lr626efKM_options_0",
                       "type" : "string",
                       "value" : "Deutsch"
                     },
                     {
-                      "enabled" : true,
+                      "id" : "migrated_array_value_Lr626efKM_options_1",
                       "type" : "string",
                       "value" : "Englisch"
                     },
                     {
-                      "enabled" : true,
+                      "id" : "migrated_array_value_Lr626efKM_options_2",
                       "type" : "string",
                       "value" : "Französisch"
                     }
-                  ],
-                  "required" : false,
-                  "size" : "medium",
-                  "variant" : "outlined"
+                  ]
                 },
+                "$control__required" : {
+                  "type" : "boolean",
+                  "value" : false
+                },
+                "$control__size" : {
+                  "type" : "enum",
+                  "value" : "medium"
+                },
+                "$control__variant" : {
+                  "type" : "enum",
+                  "value" : "outlined"
+                },
+                "aspectRatio" : null,
+                "bottom" : null,
+                "centerAnchorX" : 0.5,
+                "centerAnchorY" : 0.22038980509745126,
+                "clip" : true,
+                "codeComponentIdentifier" : ".\/inputs\/Select.tsx_Select",
+                "codeComponentPackageVersion" : "1.76.0",
                 "codeOverrideEnabled" : false,
                 "constraintsLocked" : false,
                 "duplicatedFrom" : [
@@ -757,6 +986,18 @@
               },
               {
                 "__class" : "CodeComponentNode",
+                "$control__color" : {
+                  "type" : "color",
+                  "value" : "var(--token-b3018294-2656-434f-97bc-223c9bdc026e, rgb(0, 110, 230)) \/* {\"name\":\"primary.main\"} *\/"
+                },
+                "$control__fontSize" : {
+                  "type" : "number",
+                  "value" : 24
+                },
+                "$control__icon" : {
+                  "type" : "string",
+                  "value" : "add_circle"
+                },
                 "aspectRatio" : null,
                 "bottom" : null,
                 "centerAnchorX" : 0.26666666666666666,
@@ -764,11 +1005,6 @@
                 "clip" : true,
                 "codeComponentIdentifier" : ".\/dataDisplay\/Icon.tsx_Icon",
                 "codeComponentPackageVersion" : "1.76.0",
-                "codeComponentProps" : {
-                  "color" : "var(--token-b3018294-2656-434f-97bc-223c9bdc026e, rgb(0, 110, 230)) \/* {\"name\":\"primary.main\"} *\/",
-                  "fontSize" : 24,
-                  "icon" : "add_circle"
-                },
                 "codeOverrideEnabled" : false,
                 "constraintsLocked" : false,
                 "duplicatedFrom" : [
@@ -813,22 +1049,37 @@
               },
               {
                 "__class" : "CodeComponentNode",
-                "aspectRatio" : null,
-                "bottom" : null,
-                "centerAnchorX" : 0.52000000000000002,
-                "centerAnchorY" : 0.36806596701649175,
-                "clip" : true,
-                "codeComponentIdentifier" : ".\/inputs\/Button.tsx_Button",
-                "codeComponentPackageVersion" : "1.76.0",
-                "codeComponentProps" : {
-                  "color" : "primary",
-                  "disabled" : false,
-                  "disableElevation" : false,
-                  "endIcon" : "",
-                  "fullWidth" : false,
-                  "href" : "",
-                  "label" : "Abbrechen",
-                  "onClick" : [
+                "$control__color" : {
+                  "type" : "enum",
+                  "value" : "primary"
+                },
+                "$control__disabled" : {
+                  "type" : "boolean",
+                  "value" : false
+                },
+                "$control__disableElevation" : {
+                  "type" : "boolean",
+                  "value" : false
+                },
+                "$control__endIcon" : {
+                  "type" : "string",
+                  "value" : ""
+                },
+                "$control__fullWidth" : {
+                  "type" : "boolean",
+                  "value" : false
+                },
+                "$control__href" : {
+                  "type" : "string",
+                  "value" : ""
+                },
+                "$control__label" : {
+                  "type" : "string",
+                  "value" : "Abbrechen"
+                },
+                "$control__onClick" : {
+                  "type" : "eventhandler",
+                  "value" : [
                     {
                       "actionIdentifier" : "framer\/useLog",
                       "controls" : {
@@ -843,11 +1094,27 @@
                       },
                       "identifier" : "3a4e16b3-7f9e-4c6c-8c6d-738ae623b223"
                     }
-                  ],
-                  "size" : "medium",
-                  "startIcon" : "close",
-                  "variant" : "outlined"
+                  ]
                 },
+                "$control__size" : {
+                  "type" : "enum",
+                  "value" : "medium"
+                },
+                "$control__startIcon" : {
+                  "type" : "string",
+                  "value" : "close"
+                },
+                "$control__variant" : {
+                  "type" : "enum",
+                  "value" : "outlined"
+                },
+                "aspectRatio" : null,
+                "bottom" : null,
+                "centerAnchorX" : 0.52000000000000002,
+                "centerAnchorY" : 0.36806596701649175,
+                "clip" : true,
+                "codeComponentIdentifier" : ".\/inputs\/Button.tsx_Button",
+                "codeComponentPackageVersion" : "1.76.0",
                 "codeOverrideEnabled" : false,
                 "constraintsLocked" : false,
                 "duplicatedFrom" : [
@@ -892,6 +1159,38 @@
               },
               {
                 "__class" : "CodeComponentNode",
+                "$control__align" : {
+                  "type" : "enum",
+                  "value" : "center"
+                },
+                "$control__color" : {
+                  "type" : "enum",
+                  "value" : "textSecondary"
+                },
+                "$control__gutterBottom" : {
+                  "type" : "boolean",
+                  "value" : false
+                },
+                "$control__noWrap" : {
+                  "type" : "boolean",
+                  "value" : false
+                },
+                "$control__paragraph" : {
+                  "type" : "boolean",
+                  "value" : false
+                },
+                "$control__text" : {
+                  "type" : "string",
+                  "value" : ""
+                },
+                "$control__variant" : {
+                  "type" : "enum",
+                  "value" : "h1"
+                },
+                "$control__weight" : {
+                  "type" : "enum",
+                  "value" : "inherit"
+                },
                 "aspectRatio" : null,
                 "bottom" : null,
                 "centerAnchorX" : 0.5,
@@ -899,16 +1198,6 @@
                 "clip" : true,
                 "codeComponentIdentifier" : ".\/dataDisplay\/Typography.tsx_Typography",
                 "codeComponentPackageVersion" : "1.76.0",
-                "codeComponentProps" : {
-                  "align" : "center",
-                  "color" : "textSecondary",
-                  "gutterBottom" : false,
-                  "noWrap" : false,
-                  "paragraph" : false,
-                  "text" : "",
-                  "variant" : "h1",
-                  "weight" : "inherit"
-                },
                 "codeOverrideEnabled" : false,
                 "constraintsLocked" : false,
                 "duplicatedFrom" : [
@@ -953,6 +1242,33 @@
               },
               {
                 "__class" : "CodeComponentNode",
+                "$control__color" : {
+                  "type" : "color",
+                  "value" : "#b5b5b5"
+                },
+                "$control__icon" : {
+                  "type" : "string",
+                  "value" : "person"
+                },
+                "$control__letters" : {
+                  "type" : "string",
+                  "value" : "MD"
+                },
+                "$control__onClick" : {
+                  "type" : "eventhandler"
+                },
+                "$control__size" : {
+                  "type" : "enum",
+                  "value" : "native"
+                },
+                "$control__src" : {
+                  "type" : "image",
+                  "value" : "data:framer\/asset-reference,Bq7szvSwlkWm6RnI8sfFVg27vM.jpg"
+                },
+                "$control__variant" : {
+                  "type" : "enum",
+                  "value" : "circle"
+                },
                 "aspectRatio" : null,
                 "bottom" : null,
                 "centerAnchorX" : 0.5013333333333333,
@@ -960,14 +1276,6 @@
                 "clip" : true,
                 "codeComponentIdentifier" : ".\/dataDisplay\/Avatar.tsx_Avatar",
                 "codeComponentPackageVersion" : "1.76.0",
-                "codeComponentProps" : {
-                  "color" : "#b5b5b5",
-                  "icon" : "person",
-                  "letters" : "MD",
-                  "size" : "native",
-                  "src" : "data:framer\/asset-reference,Bq7szvSwlkWm6RnI8sfFVg27vM.jpg",
-                  "variant" : "circle"
-                },
                 "codeOverrideEnabled" : false,
                 "constraintsLocked" : false,
                 "duplicatedFrom" : [
@@ -1009,6 +1317,120 @@
                 "visible" : true,
                 "width" : 40,
                 "widthType" : 0
+              },
+              {
+                "__class" : "CodeComponentNode",
+                "$control__autoFocus" : {
+                  "type" : "boolean",
+                  "value" : false
+                },
+                "$control__color" : {
+                  "type" : "enum",
+                  "value" : "default"
+                },
+                "$control__defaultValue" : {
+                  "type" : "string",
+                  "value" : "19.11.2020"
+                },
+                "$control__disabled" : {
+                  "type" : "boolean",
+                  "value" : false
+                },
+                "$control__disableToolbar" : {
+                  "type" : "boolean",
+                  "value" : false
+                },
+                "$control__error" : {
+                  "type" : "boolean",
+                  "value" : false
+                },
+                "$control__format" : {
+                  "type" : "string",
+                  "value" : "dd.MM.yyyy"
+                },
+                "$control__helperText" : {
+                  "type" : "string",
+                  "value" : "Ein helper Text"
+                },
+                "$control__label" : {
+                  "type" : "string",
+                  "value" : "Datum"
+                },
+                "$control__multiline" : {
+                  "type" : "boolean",
+                  "value" : false
+                },
+                "$control__onChange" : {
+                  "type" : "eventhandler"
+                },
+                "$control__placeholder" : {
+                  "type" : "string",
+                  "value" : ""
+                },
+                "$control__required" : {
+                  "type" : "boolean",
+                  "value" : false
+                },
+                "$control__size" : {
+                  "type" : "enum",
+                  "value" : "medium"
+                },
+                "$control__type" : {
+                  "type" : "enum",
+                  "value" : "text"
+                },
+                "$control__variant" : {
+                  "type" : "enum",
+                  "value" : "dialog"
+                },
+                "aspectRatio" : null,
+                "bottom" : 214,
+                "centerAnchorX" : 0.24504623513870541,
+                "centerAnchorY" : 0.61619190404797597,
+                "clip" : true,
+                "codeComponentIdentifier" : ".\/inputs\/DatePicker.tsx_DatePicker",
+                "codeComponentPackageVersion" : "1.79.0",
+                "codeOverrideEnabled" : false,
+                "constraintsLocked" : false,
+                "duplicatedFrom" : [
+                  "iCcPzThkb"
+                ],
+                "exportOptions" : [
+
+                ],
+                "fillColor" : "rgba(255,255,255,1)",
+                "fillEnabled" : false,
+                "fillImage" : null,
+                "fillImageOriginalName" : null,
+                "fillImagePixelHeight" : null,
+                "fillImagePixelWidth" : null,
+                "fillImageResize" : "fill",
+                "fillType" : "color",
+                "height" : 84,
+                "heightType" : 0,
+                "id" : "KTkA2t0UX",
+                "intrinsicHeight" : null,
+                "intrinsicWidth" : null,
+                "left" : 66,
+                "locked" : false,
+                "name" : null,
+                "opacity" : 1,
+                "originalid" : null,
+                "parentid" : "sFk8H4RoG",
+                "previewSettings" : null,
+                "radius" : 0,
+                "radiusBottomLeft" : 0,
+                "radiusBottomRight" : 0,
+                "radiusIsRelative" : false,
+                "radiusPerCorner" : false,
+                "radiusTopLeft" : 0,
+                "radiusTopRight" : 0,
+                "right" : null,
+                "rotation" : 0,
+                "top" : null,
+                "visible" : true,
+                "width" : 239,
+                "widthType" : 0
               }
             ],
             "clip" : true,
@@ -1028,7 +1450,7 @@
             "fillImagePixelWidth" : null,
             "fillImageResize" : "fill",
             "fillType" : "color",
-            "framePreset" : "iPhone_375_667",
+            "framePreset" : null,
             "guidesX" : [
 
             ],
@@ -1073,14 +1495,12 @@
             "stackGap" : 10,
             "top" : 1348,
             "visible" : true,
-            "width" : 375,
+            "width" : 757,
             "widthType" : 0
           },
           {
             "__class" : "FrameNode",
             "aspectRatio" : null,
-            "blendingEnabled" : 0,
-            "blendingMode" : "normal",
             "bottom" : null,
             "centerAnchorX" : 0.40562500000000001,
             "centerAnchorY" : 1.5491666666666666,
@@ -1088,8 +1508,6 @@
               {
                 "__class" : "FrameNode",
                 "aspectRatio" : null,
-                "blendingEnabled" : 0,
-                "blendingMode" : "normal",
                 "bottom" : null,
                 "centerAnchorX" : 0.25624999999999998,
                 "centerAnchorY" : 0.25075987841945291,
@@ -1097,8 +1515,6 @@
                   {
                     "__class" : "FrameNode",
                     "aspectRatio" : null,
-                    "blendingEnabled" : 0,
-                    "blendingMode" : "normal",
                     "bottom" : null,
                     "centerAnchorX" : 0.5,
                     "centerAnchorY" : 0.25,
@@ -1106,8 +1522,6 @@
                       {
                         "__class" : "FrameNode",
                         "aspectRatio" : null,
-                        "blendingEnabled" : 0,
-                        "blendingMode" : "normal",
                         "bottom" : null,
                         "centerAnchorX" : 0.5,
                         "centerAnchorY" : 0.16379310344827586,
@@ -1258,8 +1672,6 @@
                       {
                         "__class" : "FrameNode",
                         "aspectRatio" : null,
-                        "blendingEnabled" : 0,
-                        "blendingMode" : "normal",
                         "bottom" : 64,
                         "centerAnchorX" : 0.55970149253731338,
                         "centerAnchorY" : 0.54022988505747127,
@@ -1373,7 +1785,7 @@
                                 ],
                                 "cached" : {
                                   "html" : "<div data-offset-key=\"6qbs8-0-0\" class=\"public-DraftStyleDefault-block public-DraftStyleDefault-ltr\"><span data-offset-key=\"6qbs8-0-0\" style=\"tab-size:4;font-family:&quot;Fira Code&quot;, serif;-webkit-text-fill-color:rgb(0, 0, 0);font-size:14px;letter-spacing:0px;line-height:1.2;font-weight:400;font-style:normal\"><span data-text=\"true\">primary.light<\/span><\/span><\/div>",
-                                  "os" : "macos 10_15 framerx",
+                                  "os" : "macos 10_16 framerx",
                                   "size" : {
                                     "height" : 16,
                                     "width" : 111
@@ -1415,8 +1827,6 @@
                       {
                         "__class" : "FrameNode",
                         "aspectRatio" : null,
-                        "blendingEnabled" : 0,
-                        "blendingMode" : "normal",
                         "bottom" : 22,
                         "centerAnchorX" : 0.55970149253731338,
                         "centerAnchorY" : 0.7816091954022989,
@@ -1424,11 +1834,9 @@
                           {
                             "__class" : "FrameNode",
                             "aspectRatio" : 1,
-                            "blendingEnabled" : 0,
-                            "blendingMode" : "normal",
                             "borderBottom" : 1,
                             "borderColor" : "rgba(0, 0, 0, 0.12)",
-                            "borderEnabled" : 1,
+                            "borderEnabled" : true,
                             "borderLeft" : 1,
                             "borderPerSide" : false,
                             "borderRight" : 1,
@@ -1569,7 +1977,7 @@
                               ],
                               "cached" : {
                                 "html" : "<div data-offset-key=\"6qbs8-0-0\" class=\"public-DraftStyleDefault-block public-DraftStyleDefault-ltr\"><span data-offset-key=\"6qbs8-0-0\" style=\"tab-size:4;font-family:&quot;Fira Code&quot;, serif;-webkit-text-fill-color:rgb(0, 0, 0);font-size:14px;letter-spacing:0px;line-height:1.2;font-weight:400;font-style:normal\"><span data-text=\"true\">primary.main<\/span><\/span><\/div>",
-                                "os" : "macos 10_15 framerx",
+                                "os" : "macos 10_16 framerx",
                                 "size" : {
                                   "height" : 16,
                                   "width" : 102
@@ -1653,8 +2061,6 @@
                       {
                         "__class" : "FrameNode",
                         "aspectRatio" : null,
-                        "blendingEnabled" : 0,
-                        "blendingMode" : "normal",
                         "bottom" : -20,
                         "centerAnchorX" : 0.55970149253731338,
                         "centerAnchorY" : 1.0229885057471264,
@@ -1769,7 +2175,7 @@
                                 ],
                                 "cached" : {
                                   "html" : "<div data-offset-key=\"6qbs8-0-0\" class=\"public-DraftStyleDefault-block public-DraftStyleDefault-ltr\"><span data-offset-key=\"6qbs8-0-0\" style=\"tab-size:4;font-family:&quot;Fira Code&quot;, serif;-webkit-text-fill-color:rgb(0, 0, 0);font-size:14px;letter-spacing:0px;line-height:1.2;font-weight:400;font-style:normal\"><span data-text=\"true\">primary.dark<\/span><\/span><\/div>",
-                                  "os" : "macos 10_15 framerx",
+                                  "os" : "macos 10_16 framerx",
                                   "size" : {
                                     "height" : 16,
                                     "width" : 102
@@ -1873,8 +2279,6 @@
                   {
                     "__class" : "FrameNode",
                     "aspectRatio" : null,
-                    "blendingEnabled" : 0,
-                    "blendingMode" : "normal",
                     "bottom" : 0,
                     "centerAnchorX" : 0.5,
                     "centerAnchorY" : 0.75,
@@ -1882,8 +2286,6 @@
                       {
                         "__class" : "FrameNode",
                         "aspectRatio" : null,
-                        "blendingEnabled" : 0,
-                        "blendingMode" : "normal",
                         "bottom" : -78,
                         "centerAnchorX" : 0.55970149253731338,
                         "centerAnchorY" : 1.3103448275862069,
@@ -2022,8 +2424,6 @@
                       {
                         "__class" : "FrameNode",
                         "aspectRatio" : null,
-                        "blendingEnabled" : 0,
-                        "blendingMode" : "normal",
                         "bottom" : -120,
                         "centerAnchorX" : 0.55970149253731338,
                         "centerAnchorY" : 1.5977011494252873,
@@ -2138,7 +2538,7 @@
                                 ],
                                 "cached" : {
                                   "html" : "<div data-offset-key=\"6qbs8-0-0\" class=\"public-DraftStyleDefault-block public-DraftStyleDefault-ltr\"><span data-offset-key=\"6qbs8-0-0\" style=\"tab-size:4;font-family:&quot;Fira Code&quot;, serif;-webkit-text-fill-color:rgb(0, 0, 0);font-size:14px;letter-spacing:0px;line-height:1.2;font-weight:400;font-style:normal\"><span data-text=\"true\">secondary.light<\/span><\/span><\/div>",
-                                  "os" : "macos 10_15 framerx",
+                                  "os" : "macos 10_16 framerx",
                                   "size" : {
                                     "height" : 16,
                                     "width" : 128
@@ -2180,8 +2580,6 @@
                       {
                         "__class" : "FrameNode",
                         "aspectRatio" : null,
-                        "blendingEnabled" : 0,
-                        "blendingMode" : "normal",
                         "bottom" : -162,
                         "centerAnchorX" : 0.55970149253731338,
                         "centerAnchorY" : 1.8390804597701149,
@@ -2295,7 +2693,7 @@
                                 ],
                                 "cached" : {
                                   "html" : "<div data-offset-key=\"6qbs8-0-0\" class=\"public-DraftStyleDefault-block public-DraftStyleDefault-ltr\"><span data-offset-key=\"6qbs8-0-0\" style=\"tab-size:4;font-family:&quot;Fira Code&quot;, serif;-webkit-text-fill-color:rgb(0, 0, 0);font-size:14px;letter-spacing:0px;line-height:1.2;font-weight:400;font-style:normal\"><span data-text=\"true\">secondary.main<\/span><\/span><\/div>",
-                                  "os" : "macos 10_15 framerx",
+                                  "os" : "macos 10_16 framerx",
                                   "size" : {
                                     "height" : 16,
                                     "width" : 119
@@ -2337,8 +2735,6 @@
                       {
                         "__class" : "FrameNode",
                         "aspectRatio" : null,
-                        "blendingEnabled" : 0,
-                        "blendingMode" : "normal",
                         "bottom" : -204,
                         "centerAnchorX" : 0.55970149253731338,
                         "centerAnchorY" : 2.0804597701149423,
@@ -2454,7 +2850,7 @@
                                 ],
                                 "cached" : {
                                   "html" : "<div data-offset-key=\"6qbs8-0-0\" class=\"public-DraftStyleDefault-block public-DraftStyleDefault-ltr\"><span data-offset-key=\"6qbs8-0-0\" style=\"tab-size:4;font-family:&quot;Fira Code&quot;, serif;-webkit-text-fill-color:rgb(0, 0, 0);font-size:14px;letter-spacing:0px;line-height:1.2;font-weight:400;font-style:normal\"><span data-text=\"true\">secondary.dark<\/span><\/span><\/div>",
-                                  "os" : "macos 10_15 framerx",
+                                  "os" : "macos 10_16 framerx",
                                   "size" : {
                                     "height" : 16,
                                     "width" : 119
@@ -2624,8 +3020,6 @@
               {
                 "__class" : "FrameNode",
                 "aspectRatio" : null,
-                "blendingEnabled" : 0,
-                "blendingMode" : "normal",
                 "bottom" : 58,
                 "centerAnchorX" : 0.74375000000000002,
                 "centerAnchorY" : 0.47112462006079026,
@@ -2633,8 +3027,6 @@
                   {
                     "__class" : "FrameNode",
                     "aspectRatio" : null,
-                    "blendingEnabled" : 0,
-                    "blendingMode" : "normal",
                     "bottom" : null,
                     "centerAnchorX" : 0.5,
                     "centerAnchorY" : 0.125,
@@ -2642,8 +3034,6 @@
                       {
                         "__class" : "FrameNode",
                         "aspectRatio" : null,
-                        "blendingEnabled" : 0,
-                        "blendingMode" : "normal",
                         "bottom" : -78,
                         "centerAnchorX" : 0.55970149253731338,
                         "centerAnchorY" : 1.3103448275862069,
@@ -2783,8 +3173,6 @@
                       {
                         "__class" : "FrameNode",
                         "aspectRatio" : null,
-                        "blendingEnabled" : 0,
-                        "blendingMode" : "normal",
                         "bottom" : -120,
                         "centerAnchorX" : 0.55970149253731338,
                         "centerAnchorY" : 1.5977011494252873,
@@ -2900,7 +3288,7 @@
                                 ],
                                 "cached" : {
                                   "html" : "<div data-offset-key=\"6qbs8-0-0\" class=\"public-DraftStyleDefault-block public-DraftStyleDefault-ltr\"><span data-offset-key=\"6qbs8-0-0\" style=\"tab-size:4;font-family:&quot;Fira Code&quot;, serif;-webkit-text-fill-color:rgb(0, 0, 0);font-size:14px;letter-spacing:0px;line-height:1.2;font-weight:400;font-style:normal\"><span data-text=\"true\">info.light<\/span><\/span><\/div>",
-                                  "os" : "macos 10_15 framerx",
+                                  "os" : "macos 10_16 framerx",
                                   "size" : {
                                     "height" : 16,
                                     "width" : 86
@@ -2942,8 +3330,6 @@
                       {
                         "__class" : "FrameNode",
                         "aspectRatio" : null,
-                        "blendingEnabled" : 0,
-                        "blendingMode" : "normal",
                         "bottom" : -162,
                         "centerAnchorX" : 0.55970149253731338,
                         "centerAnchorY" : 1.8390804597701149,
@@ -3058,7 +3444,7 @@
                                 ],
                                 "cached" : {
                                   "html" : "<div data-offset-key=\"6qbs8-0-0\" class=\"public-DraftStyleDefault-block public-DraftStyleDefault-ltr\"><span data-offset-key=\"6qbs8-0-0\" style=\"tab-size:4;font-family:&quot;Fira Code&quot;, serif;-webkit-text-fill-color:rgb(0, 0, 0);font-size:14px;letter-spacing:0px;line-height:1.2;font-weight:400;font-style:normal\"><span data-text=\"true\">info.main<\/span><\/span><\/div>",
-                                  "os" : "macos 10_15 framerx",
+                                  "os" : "macos 10_16 framerx",
                                   "size" : {
                                     "height" : 16,
                                     "width" : 77
@@ -3100,8 +3486,6 @@
                       {
                         "__class" : "FrameNode",
                         "aspectRatio" : null,
-                        "blendingEnabled" : 0,
-                        "blendingMode" : "normal",
                         "bottom" : -204,
                         "centerAnchorX" : 0.55970149253731338,
                         "centerAnchorY" : 2.0804597701149423,
@@ -3218,7 +3602,7 @@
                                 ],
                                 "cached" : {
                                   "html" : "<div data-offset-key=\"6qbs8-0-0\" class=\"public-DraftStyleDefault-block public-DraftStyleDefault-ltr\"><span data-offset-key=\"6qbs8-0-0\" style=\"tab-size:4;font-family:&quot;Fira Code&quot;, serif;-webkit-text-fill-color:rgb(0, 0, 0);font-size:14px;letter-spacing:0px;line-height:1.2;font-weight:400;font-style:normal\"><span data-text=\"true\">info.dark<\/span><\/span><\/div>",
-                                  "os" : "macos 10_15 framerx",
+                                  "os" : "macos 10_16 framerx",
                                   "size" : {
                                     "height" : 16,
                                     "width" : 77
@@ -3326,8 +3710,6 @@
                   {
                     "__class" : "FrameNode",
                     "aspectRatio" : null,
-                    "blendingEnabled" : 0,
-                    "blendingMode" : "normal",
                     "bottom" : null,
                     "centerAnchorX" : 0.5,
                     "centerAnchorY" : 0.375,
@@ -3335,8 +3717,6 @@
                       {
                         "__class" : "FrameNode",
                         "aspectRatio" : null,
-                        "blendingEnabled" : 0,
-                        "blendingMode" : "normal",
                         "bottom" : -78,
                         "centerAnchorX" : 0.55970149253731338,
                         "centerAnchorY" : 1.3103448275862069,
@@ -3477,8 +3857,6 @@
                       {
                         "__class" : "FrameNode",
                         "aspectRatio" : null,
-                        "blendingEnabled" : 0,
-                        "blendingMode" : "normal",
                         "bottom" : -120,
                         "centerAnchorX" : 0.55970149253731338,
                         "centerAnchorY" : 1.5977011494252873,
@@ -3595,7 +3973,7 @@
                                 ],
                                 "cached" : {
                                   "html" : "<div data-offset-key=\"6qbs8-0-0\" class=\"public-DraftStyleDefault-block public-DraftStyleDefault-ltr\"><span data-offset-key=\"6qbs8-0-0\" style=\"tab-size:4;font-family:&quot;Fira Code&quot;, serif;-webkit-text-fill-color:rgb(0, 0, 0);font-size:14px;letter-spacing:0px;line-height:1.2;font-weight:400;font-style:normal\"><span data-text=\"true\">success.light<\/span><\/span><\/div>",
-                                  "os" : "macos 10_15 framerx",
+                                  "os" : "macos 10_16 framerx",
                                   "size" : {
                                     "height" : 16,
                                     "width" : 111
@@ -3637,8 +4015,6 @@
                       {
                         "__class" : "FrameNode",
                         "aspectRatio" : null,
-                        "blendingEnabled" : 0,
-                        "blendingMode" : "normal",
                         "bottom" : -162,
                         "centerAnchorX" : 0.55970149253731338,
                         "centerAnchorY" : 1.8390804597701149,
@@ -3754,7 +4130,7 @@
                                 ],
                                 "cached" : {
                                   "html" : "<div data-offset-key=\"6qbs8-0-0\" class=\"public-DraftStyleDefault-block public-DraftStyleDefault-ltr\"><span data-offset-key=\"6qbs8-0-0\" style=\"tab-size:4;font-family:&quot;Fira Code&quot;, serif;-webkit-text-fill-color:rgb(0, 0, 0);font-size:14px;letter-spacing:0px;line-height:1.2;font-weight:400;font-style:normal\"><span data-text=\"true\">success.main<\/span><\/span><\/div>",
-                                  "os" : "macos 10_15 framerx",
+                                  "os" : "macos 10_16 framerx",
                                   "size" : {
                                     "height" : 16,
                                     "width" : 102
@@ -3796,8 +4172,6 @@
                       {
                         "__class" : "FrameNode",
                         "aspectRatio" : null,
-                        "blendingEnabled" : 0,
-                        "blendingMode" : "normal",
                         "bottom" : -204,
                         "centerAnchorX" : 0.55970149253731338,
                         "centerAnchorY" : 2.0804597701149423,
@@ -3915,7 +4289,7 @@
                                 ],
                                 "cached" : {
                                   "html" : "<div data-offset-key=\"6qbs8-0-0\" class=\"public-DraftStyleDefault-block public-DraftStyleDefault-ltr\"><span data-offset-key=\"6qbs8-0-0\" style=\"tab-size:4;font-family:&quot;Fira Code&quot;, serif;-webkit-text-fill-color:rgb(0, 0, 0);font-size:14px;letter-spacing:0px;line-height:1.2;font-weight:400;font-style:normal\"><span data-text=\"true\">success.dark<\/span><\/span><\/div>",
-                                  "os" : "macos 10_15 framerx",
+                                  "os" : "macos 10_16 framerx",
                                   "size" : {
                                     "height" : 16,
                                     "width" : 102
@@ -4024,8 +4398,6 @@
                   {
                     "__class" : "FrameNode",
                     "aspectRatio" : null,
-                    "blendingEnabled" : 0,
-                    "blendingMode" : "normal",
                     "bottom" : 145,
                     "centerAnchorX" : 0.5,
                     "centerAnchorY" : 0.625,
@@ -4033,8 +4405,6 @@
                       {
                         "__class" : "FrameNode",
                         "aspectRatio" : null,
-                        "blendingEnabled" : 0,
-                        "blendingMode" : "normal",
                         "bottom" : null,
                         "centerAnchorX" : 0.5,
                         "centerAnchorY" : 0.065517241379310351,
@@ -4176,8 +4546,6 @@
                       {
                         "__class" : "FrameNode",
                         "aspectRatio" : null,
-                        "blendingEnabled" : 0,
-                        "blendingMode" : "normal",
                         "bottom" : -120,
                         "centerAnchorX" : 0.55970149253731338,
                         "centerAnchorY" : 1.5977011494252873,
@@ -4295,7 +4663,7 @@
                                 ],
                                 "cached" : {
                                   "html" : "<div data-offset-key=\"6qbs8-0-0\" class=\"public-DraftStyleDefault-block public-DraftStyleDefault-ltr\"><span data-offset-key=\"6qbs8-0-0\" style=\"tab-size:4;font-family:&quot;Fira Code&quot;, serif;-webkit-text-fill-color:rgb(0, 0, 0);font-size:14px;letter-spacing:0px;line-height:1.2;font-weight:400;font-style:normal\"><span data-text=\"true\">warning.light<\/span><\/span><\/div>",
-                                  "os" : "macos 10_15 framerx",
+                                  "os" : "macos 10_16 framerx",
                                   "size" : {
                                     "height" : 16,
                                     "width" : 111
@@ -4337,8 +4705,6 @@
                       {
                         "__class" : "FrameNode",
                         "aspectRatio" : null,
-                        "blendingEnabled" : 0,
-                        "blendingMode" : "normal",
                         "bottom" : -162,
                         "centerAnchorX" : 0.55970149253731338,
                         "centerAnchorY" : 1.8390804597701149,
@@ -4455,7 +4821,7 @@
                                 ],
                                 "cached" : {
                                   "html" : "<div data-offset-key=\"6qbs8-0-0\" class=\"public-DraftStyleDefault-block public-DraftStyleDefault-ltr\"><span data-offset-key=\"6qbs8-0-0\" style=\"tab-size:4;font-family:&quot;Fira Code&quot;, serif;-webkit-text-fill-color:rgb(0, 0, 0);font-size:14px;letter-spacing:0px;line-height:1.2;font-weight:400;font-style:normal\"><span data-text=\"true\">warning.main<\/span><\/span><\/div>",
-                                  "os" : "macos 10_15 framerx",
+                                  "os" : "macos 10_16 framerx",
                                   "size" : {
                                     "height" : 16,
                                     "width" : 102
@@ -4497,8 +4863,6 @@
                       {
                         "__class" : "FrameNode",
                         "aspectRatio" : null,
-                        "blendingEnabled" : 0,
-                        "blendingMode" : "normal",
                         "bottom" : -204,
                         "centerAnchorX" : 0.55970149253731338,
                         "centerAnchorY" : 2.0804597701149423,
@@ -4617,7 +4981,7 @@
                                 ],
                                 "cached" : {
                                   "html" : "<div data-offset-key=\"6qbs8-0-0\" class=\"public-DraftStyleDefault-block public-DraftStyleDefault-ltr\"><span data-offset-key=\"6qbs8-0-0\" style=\"tab-size:4;font-family:&quot;Fira Code&quot;, serif;-webkit-text-fill-color:rgb(0, 0, 0);font-size:14px;letter-spacing:0px;line-height:1.2;font-weight:400;font-style:normal\"><span data-text=\"true\">warning.dark<\/span><\/span><\/div>",
-                                  "os" : "macos 10_15 framerx",
+                                  "os" : "macos 10_16 framerx",
                                   "size" : {
                                     "height" : 16,
                                     "width" : 102
@@ -4727,8 +5091,6 @@
                   {
                     "__class" : "FrameNode",
                     "aspectRatio" : null,
-                    "blendingEnabled" : 0,
-                    "blendingMode" : "normal",
                     "bottom" : -5,
                     "centerAnchorX" : 0.5,
                     "centerAnchorY" : 0.88362068965517238,
@@ -4736,8 +5098,6 @@
                       {
                         "__class" : "FrameNode",
                         "aspectRatio" : null,
-                        "blendingEnabled" : 0,
-                        "blendingMode" : "normal",
                         "bottom" : null,
                         "centerAnchorX" : 0.5,
                         "centerAnchorY" : 0.065517241379310351,
@@ -4880,8 +5240,6 @@
                       {
                         "__class" : "FrameNode",
                         "aspectRatio" : null,
-                        "blendingEnabled" : 0,
-                        "blendingMode" : "normal",
                         "bottom" : -120,
                         "centerAnchorX" : 0.55970149253731338,
                         "centerAnchorY" : 1.5977011494252873,
@@ -5000,7 +5358,7 @@
                                 ],
                                 "cached" : {
                                   "html" : "<div data-offset-key=\"6qbs8-0-0\" class=\"public-DraftStyleDefault-block public-DraftStyleDefault-ltr\"><span data-offset-key=\"6qbs8-0-0\" style=\"tab-size:4;font-family:&quot;Fira Code&quot;, serif;-webkit-text-fill-color:rgb(0, 0, 0);font-size:14px;letter-spacing:0px;line-height:1.2;font-weight:400;font-style:normal\"><span data-text=\"true\">error.light<\/span><\/span><\/div>",
-                                  "os" : "macos 10_15 framerx",
+                                  "os" : "macos 10_16 framerx",
                                   "size" : {
                                     "height" : 16,
                                     "width" : 94
@@ -5042,8 +5400,6 @@
                       {
                         "__class" : "FrameNode",
                         "aspectRatio" : null,
-                        "blendingEnabled" : 0,
-                        "blendingMode" : "normal",
                         "bottom" : -162,
                         "centerAnchorX" : 0.55970149253731338,
                         "centerAnchorY" : 1.8390804597701149,
@@ -5161,7 +5517,7 @@
                                 ],
                                 "cached" : {
                                   "html" : "<div data-offset-key=\"6qbs8-0-0\" class=\"public-DraftStyleDefault-block public-DraftStyleDefault-ltr\"><span data-offset-key=\"6qbs8-0-0\" style=\"tab-size:4;font-family:&quot;Fira Code&quot;, serif;-webkit-text-fill-color:rgb(0, 0, 0);font-size:14px;letter-spacing:0px;line-height:1.2;font-weight:400;font-style:normal\"><span data-text=\"true\">error.main<\/span><\/span><\/div>",
-                                  "os" : "macos 10_15 framerx",
+                                  "os" : "macos 10_16 framerx",
                                   "size" : {
                                     "height" : 16,
                                     "width" : 86
@@ -5203,8 +5559,6 @@
                       {
                         "__class" : "FrameNode",
                         "aspectRatio" : null,
-                        "blendingEnabled" : 0,
-                        "blendingMode" : "normal",
                         "bottom" : -204,
                         "centerAnchorX" : 0.55970149253731338,
                         "centerAnchorY" : 2.0804597701149423,
@@ -5324,7 +5678,7 @@
                                 ],
                                 "cached" : {
                                   "html" : "<div data-offset-key=\"6qbs8-0-0\" class=\"public-DraftStyleDefault-block public-DraftStyleDefault-ltr\"><span data-offset-key=\"6qbs8-0-0\" style=\"tab-size:4;font-family:&quot;Fira Code&quot;, serif;-webkit-text-fill-color:rgb(0, 0, 0);font-size:14px;letter-spacing:0px;line-height:1.2;font-weight:400;font-style:normal\"><span data-text=\"true\">error.dark<\/span><\/span><\/div>",
-                                  "os" : "macos 10_15 framerx",
+                                  "os" : "macos 10_16 framerx",
                                   "size" : {
                                     "height" : 16,
                                     "width" : 86
@@ -5499,8 +5853,6 @@
               {
                 "__class" : "FrameNode",
                 "aspectRatio" : null,
-                "blendingEnabled" : 0,
-                "blendingMode" : "normal",
                 "bottom" : 58,
                 "centerAnchorX" : 0.74375000000000002,
                 "centerAnchorY" : 0.47112462006079026,
@@ -5508,8 +5860,6 @@
                   {
                     "__class" : "FrameNode",
                     "aspectRatio" : null,
-                    "blendingEnabled" : 0,
-                    "blendingMode" : "normal",
                     "bottom" : null,
                     "centerAnchorX" : 0.5,
                     "centerAnchorY" : 0.125,
@@ -5517,8 +5867,6 @@
                       {
                         "__class" : "FrameNode",
                         "aspectRatio" : null,
-                        "blendingEnabled" : 0,
-                        "blendingMode" : "normal",
                         "bottom" : -78,
                         "centerAnchorX" : 0.55970149253731338,
                         "centerAnchorY" : 1.3103448275862069,
@@ -5659,8 +6007,6 @@
                       {
                         "__class" : "FrameNode",
                         "aspectRatio" : null,
-                        "blendingEnabled" : 0,
-                        "blendingMode" : "normal",
                         "bottom" : -120,
                         "centerAnchorX" : 0.55970149253731338,
                         "centerAnchorY" : 1.5977011494252873,
@@ -5777,7 +6123,7 @@
                                 ],
                                 "cached" : {
                                   "html" : "<div data-offset-key=\"6qbs8-0-0\" class=\"public-DraftStyleDefault-block public-DraftStyleDefault-ltr\"><span data-offset-key=\"6qbs8-0-0\" style=\"tab-size:4;font-family:&quot;Fira Code&quot;, serif;-webkit-text-fill-color:rgb(0, 0, 0);font-size:14px;letter-spacing:0px;line-height:1.2;font-weight:400;font-style:normal\"><span data-text=\"true\">text.primary<\/span><\/span><\/div>",
-                                  "os" : "macos 10_15 framerx",
+                                  "os" : "macos 10_16 framerx",
                                   "size" : {
                                     "height" : 16,
                                     "width" : 102
@@ -5819,8 +6165,6 @@
                       {
                         "__class" : "FrameNode",
                         "aspectRatio" : null,
-                        "blendingEnabled" : 0,
-                        "blendingMode" : "normal",
                         "bottom" : -162,
                         "centerAnchorX" : 0.55970149253731338,
                         "centerAnchorY" : 1.8390804597701149,
@@ -5936,7 +6280,7 @@
                                 ],
                                 "cached" : {
                                   "html" : "<div data-offset-key=\"6qbs8-0-0\" class=\"public-DraftStyleDefault-block public-DraftStyleDefault-ltr\"><span data-offset-key=\"6qbs8-0-0\" style=\"tab-size:4;font-family:&quot;Fira Code&quot;, serif;-webkit-text-fill-color:rgb(0, 0, 0);font-size:14px;letter-spacing:0px;line-height:1.2;font-weight:400;font-style:normal\"><span data-text=\"true\">text.secondary<\/span><\/span><\/div>",
-                                  "os" : "macos 10_15 framerx",
+                                  "os" : "macos 10_16 framerx",
                                   "size" : {
                                     "height" : 16,
                                     "width" : 119
@@ -5978,8 +6322,6 @@
                       {
                         "__class" : "FrameNode",
                         "aspectRatio" : null,
-                        "blendingEnabled" : 0,
-                        "blendingMode" : "normal",
                         "bottom" : -204,
                         "centerAnchorX" : 0.55970149253731338,
                         "centerAnchorY" : 2.0804597701149423,
@@ -6097,7 +6439,7 @@
                                 ],
                                 "cached" : {
                                   "html" : "<div data-offset-key=\"6qbs8-0-0\" class=\"public-DraftStyleDefault-block public-DraftStyleDefault-ltr\"><span data-offset-key=\"6qbs8-0-0\" style=\"tab-size:4;font-family:&quot;Fira Code&quot;, serif;-webkit-text-fill-color:rgb(0, 0, 0);font-size:14px;letter-spacing:0px;line-height:1.2;font-weight:400;font-style:normal\"><span data-text=\"true\">text.disabled<\/span><\/span><\/div>",
-                                  "os" : "macos 10_15 framerx",
+                                  "os" : "macos 10_16 framerx",
                                   "size" : {
                                     "height" : 16,
                                     "width" : 111
@@ -6206,8 +6548,6 @@
                   {
                     "__class" : "FrameNode",
                     "aspectRatio" : null,
-                    "blendingEnabled" : 0,
-                    "blendingMode" : "normal",
                     "bottom" : null,
                     "centerAnchorX" : 0.5,
                     "centerAnchorY" : 0.43706896551724139,
@@ -6215,8 +6555,6 @@
                       {
                         "__class" : "FrameNode",
                         "aspectRatio" : null,
-                        "blendingEnabled" : 0,
-                        "blendingMode" : "normal",
                         "bottom" : -78,
                         "centerAnchorX" : 0.55970149253731338,
                         "centerAnchorY" : 1.3103448275862069,
@@ -6358,8 +6696,6 @@
                       {
                         "__class" : "FrameNode",
                         "aspectRatio" : null,
-                        "blendingEnabled" : 0,
-                        "blendingMode" : "normal",
                         "bottom" : -120,
                         "centerAnchorX" : 0.55970149253731338,
                         "centerAnchorY" : 1.5977011494252873,
@@ -6477,7 +6813,7 @@
                                 ],
                                 "cached" : {
                                   "html" : "<div data-offset-key=\"6qbs8-0-0\" class=\"public-DraftStyleDefault-block public-DraftStyleDefault-ltr\"><span data-offset-key=\"6qbs8-0-0\" style=\"tab-size:4;font-family:&quot;Fira Code&quot;, serif;-webkit-text-fill-color:rgb(0, 0, 0);font-size:14px;letter-spacing:0px;line-height:1.2;font-weight:400;font-style:normal\"><span data-text=\"true\">action.active<\/span><\/span><\/div>",
-                                  "os" : "macos 10_15 framerx",
+                                  "os" : "macos 10_16 framerx",
                                   "size" : {
                                     "height" : 16,
                                     "width" : 111
@@ -6519,8 +6855,6 @@
                       {
                         "__class" : "FrameNode",
                         "aspectRatio" : null,
-                        "blendingEnabled" : 0,
-                        "blendingMode" : "normal",
                         "bottom" : -162,
                         "centerAnchorX" : 0.55970149253731338,
                         "centerAnchorY" : 1.8390804597701149,
@@ -6637,7 +6971,7 @@
                                 ],
                                 "cached" : {
                                   "html" : "<div data-offset-key=\"6qbs8-0-0\" class=\"public-DraftStyleDefault-block public-DraftStyleDefault-ltr\"><span data-offset-key=\"6qbs8-0-0\" style=\"tab-size:4;font-family:&quot;Fira Code&quot;, serif;-webkit-text-fill-color:rgb(0, 0, 0);font-size:14px;letter-spacing:0px;line-height:1.2;font-weight:400;font-style:normal\"><span data-text=\"true\">action.hover<\/span><\/span><\/div>",
-                                  "os" : "macos 10_15 framerx",
+                                  "os" : "macos 10_16 framerx",
                                   "size" : {
                                     "height" : 16,
                                     "width" : 102
@@ -6679,8 +7013,6 @@
                       {
                         "__class" : "FrameNode",
                         "aspectRatio" : null,
-                        "blendingEnabled" : 0,
-                        "blendingMode" : "normal",
                         "bottom" : -204,
                         "centerAnchorX" : 0.55970149253731338,
                         "centerAnchorY" : 2.0804597701149423,
@@ -6799,7 +7131,7 @@
                                 ],
                                 "cached" : {
                                   "html" : "<div data-offset-key=\"6qbs8-0-0\" class=\"public-DraftStyleDefault-block public-DraftStyleDefault-ltr\"><span data-offset-key=\"6qbs8-0-0\" style=\"tab-size:4;font-family:&quot;Fira Code&quot;, serif;-webkit-text-fill-color:rgb(0, 0, 0);font-size:14px;letter-spacing:0px;line-height:1.2;font-weight:400;font-style:normal\"><span data-text=\"true\">action.selected<\/span><\/span><\/div>",
-                                  "os" : "macos 10_15 framerx",
+                                  "os" : "macos 10_16 framerx",
                                   "size" : {
                                     "height" : 16,
                                     "width" : 128
@@ -6841,8 +7173,6 @@
                       {
                         "__class" : "FrameNode",
                         "aspectRatio" : null,
-                        "blendingEnabled" : 0,
-                        "blendingMode" : "normal",
                         "bottom" : -204,
                         "centerAnchorX" : 0.55970149253731338,
                         "centerAnchorY" : 2.0804597701149423,
@@ -6962,7 +7292,7 @@
                                 ],
                                 "cached" : {
                                   "html" : "<div data-offset-key=\"6qbs8-0-0\" class=\"public-DraftStyleDefault-block public-DraftStyleDefault-ltr\"><span data-offset-key=\"6qbs8-0-0\" style=\"tab-size:4;font-family:&quot;Fira Code&quot;, serif;-webkit-text-fill-color:rgb(0, 0, 0);font-size:14px;letter-spacing:0px;line-height:1.2;font-weight:400;font-style:normal\"><span data-text=\"true\">action.disabled<\/span><\/span><\/div>",
-                                  "os" : "macos 10_15 framerx",
+                                  "os" : "macos 10_16 framerx",
                                   "size" : {
                                     "height" : 16,
                                     "width" : 128
@@ -7004,8 +7334,6 @@
                       {
                         "__class" : "FrameNode",
                         "aspectRatio" : null,
-                        "blendingEnabled" : 0,
-                        "blendingMode" : "normal",
                         "bottom" : -204,
                         "centerAnchorX" : 0.55970149253731338,
                         "centerAnchorY" : 2.0804597701149423,
@@ -7126,7 +7454,7 @@
                                 ],
                                 "cached" : {
                                   "html" : "<div data-offset-key=\"6qbs8-0-0\" class=\"public-DraftStyleDefault-block public-DraftStyleDefault-ltr\"><span data-offset-key=\"6qbs8-0-0\" style=\"tab-size:4;font-family:&quot;Fira Code&quot;, serif;-webkit-text-fill-color:rgb(0, 0, 0);font-size:14px;letter-spacing:0px;line-height:1.2;font-weight:400;font-style:normal\"><span data-text=\"true\">action.disabledBackground<\/span><\/span><\/div>",
-                                  "os" : "macos 10_15 framerx",
+                                  "os" : "macos 10_16 framerx",
                                   "size" : {
                                     "height" : 16,
                                     "width" : 211
@@ -7236,8 +7564,6 @@
                   {
                     "__class" : "FrameNode",
                     "aspectRatio" : null,
-                    "blendingEnabled" : 0,
-                    "blendingMode" : "normal",
                     "bottom" : 109,
                     "centerAnchorX" : 0.5,
                     "centerAnchorY" : 0.71810344827586203,
@@ -7245,8 +7571,6 @@
                       {
                         "__class" : "FrameNode",
                         "aspectRatio" : null,
-                        "blendingEnabled" : 0,
-                        "blendingMode" : "normal",
                         "bottom" : null,
                         "centerAnchorX" : 0.5,
                         "centerAnchorY" : 0.065517241379310351,
@@ -7389,8 +7713,6 @@
                       {
                         "__class" : "FrameNode",
                         "aspectRatio" : null,
-                        "blendingEnabled" : 0,
-                        "blendingMode" : "normal",
                         "bottom" : -120,
                         "centerAnchorX" : 0.55970149253731338,
                         "centerAnchorY" : 1.5977011494252873,
@@ -7509,7 +7831,7 @@
                                 ],
                                 "cached" : {
                                   "html" : "<div data-offset-key=\"6qbs8-0-0\" class=\"public-DraftStyleDefault-block public-DraftStyleDefault-ltr\"><span data-offset-key=\"6qbs8-0-0\" style=\"tab-size:4;font-family:&quot;Fira Code&quot;, serif;-webkit-text-fill-color:rgb(0, 0, 0);font-size:14px;letter-spacing:0px;line-height:1.2;font-weight:400;font-style:normal\"><span data-text=\"true\">background.default<\/span><\/span><\/div>",
-                                  "os" : "macos 10_15 framerx",
+                                  "os" : "macos 10_16 framerx",
                                   "size" : {
                                     "height" : 16,
                                     "width" : 153
@@ -7551,8 +7873,6 @@
                       {
                         "__class" : "FrameNode",
                         "aspectRatio" : null,
-                        "blendingEnabled" : 0,
-                        "blendingMode" : "normal",
                         "bottom" : -162,
                         "centerAnchorX" : 0.55970149253731338,
                         "centerAnchorY" : 1.8390804597701149,
@@ -7670,7 +7990,7 @@
                                 ],
                                 "cached" : {
                                   "html" : "<div data-offset-key=\"6qbs8-0-0\" class=\"public-DraftStyleDefault-block public-DraftStyleDefault-ltr\"><span data-offset-key=\"6qbs8-0-0\" style=\"tab-size:4;font-family:&quot;Fira Code&quot;, serif;-webkit-text-fill-color:rgb(0, 0, 0);font-size:14px;letter-spacing:0px;line-height:1.2;font-weight:400;font-style:normal\"><span data-text=\"true\">background.paper<\/span><\/span><\/div>",
-                                  "os" : "macos 10_15 framerx",
+                                  "os" : "macos 10_16 framerx",
                                   "size" : {
                                     "height" : 16,
                                     "width" : 136
@@ -7781,8 +8101,6 @@
                   {
                     "__class" : "FrameNode",
                     "aspectRatio" : null,
-                    "blendingEnabled" : 0,
-                    "blendingMode" : "normal",
                     "bottom" : 36,
                     "centerAnchorX" : 0.5,
                     "centerAnchorY" : 0.875,
@@ -7790,8 +8108,6 @@
                       {
                         "__class" : "FrameNode",
                         "aspectRatio" : null,
-                        "blendingEnabled" : 0,
-                        "blendingMode" : "normal",
                         "bottom" : null,
                         "centerAnchorX" : 0.5,
                         "centerAnchorY" : 0.065517241379310351,
@@ -7935,8 +8251,6 @@
                       {
                         "__class" : "FrameNode",
                         "aspectRatio" : null,
-                        "blendingEnabled" : 0,
-                        "blendingMode" : "normal",
                         "bottom" : -120,
                         "centerAnchorX" : 0.55970149253731338,
                         "centerAnchorY" : 1.5977011494252873,
@@ -8058,7 +8372,7 @@
                                 ],
                                 "cached" : {
                                   "html" : "<div data-offset-key=\"6qbs8-0-0\" class=\"public-DraftStyleDefault-block public-DraftStyleDefault-ltr\"><span data-offset-key=\"6qbs8-0-0\" style=\"tab-size:4;font-family:&quot;Fira Code&quot;, serif;-webkit-text-fill-color:rgb(0, 0, 0);font-size:14px;letter-spacing:0px;line-height:1.2;font-weight:400;font-style:normal\"><span data-text=\"true\">divider<\/span><\/span><\/div>",
-                                  "os" : "macos 10_15 framerx",
+                                  "os" : "macos 10_16 framerx",
                                   "size" : {
                                     "height" : 16,
                                     "width" : 60
@@ -8301,8 +8615,6 @@
           {
             "__class" : "FrameNode",
             "aspectRatio" : null,
-            "blendingEnabled" : 0,
-            "blendingMode" : "normal",
             "bottom" : null,
             "centerAnchorX" : 0,
             "centerAnchorY" : 0,
@@ -8592,5 +8904,5 @@
     ],
     "visible" : false
   },
-  "version" : 69
+  "version" : 74
 }
