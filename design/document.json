@@ -413,6 +413,9 @@
                 "$control__onChangeChecked" : {
                   "type" : "eventhandler"
                 },
+                "$control__onChangeSelection" : {
+                  "type" : "eventhandler"
+                },
                 "$control__required" : {
                   "type" : "boolean",
                   "value" : false
@@ -599,6 +602,9 @@
                       "identifier" : "779c3f8b-0388-45f9-9c78-c4fca8b92c9d"
                     }
                   ]
+                },
+                "$control__onChangeSelection" : {
+                  "type" : "eventhandler"
                 },
                 "$control__radioLabels" : {
                   "type" : "array",
@@ -1392,6 +1398,9 @@
                   "value" : false
                 },
                 "$control__onChange" : {
+                  "type" : "eventhandler"
+                },
+                "$control__onChangeDate" : {
                   "type" : "eventhandler"
                 },
                 "$control__placeholder" : {

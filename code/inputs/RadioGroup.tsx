@@ -1,7 +1,7 @@
 import * as React from "react"
 import { addPropertyControls, ControlType, ControlDescription } from "framer"
 import { withTheme } from "../common/theme"
-import { propertyControls } from "../common/propertyControl"
+import { eventHandler, propertyControls } from "../common/propertyControl"
 import { Radio as MuiRadio, FormControlLabel, FormLabel, RadioGroup as MuiRadioGroup, FormControl, FormHelperText } from "@material-ui/core"
 import { useDerivedStateCalculatedFromProp } from "../common/state"
 
@@ -24,12 +24,12 @@ interface Props {
     error: boolean,
     required: boolean,
     radioLabels: string[],
-    onChange: (selection: number) => void
+    onChangeSelection: (selection: number) => void
 }
 export function RadioGroup(props: Props) {
-    const { label, selection, helperText, error, required, radioLabels, onChange, ...radioProps } = props
+    const { label, selection, helperText, error, required, radioLabels, onChangeSelection, ...radioProps } = props
     const state = useDerivedStateCalculatedFromProp(selection.toString(), selection, (newValue: string) => {
-        onChange && onChange(Number.parseInt(newValue))
+        onChangeSelection && onChangeSelection(Number.parseInt(newValue))
     })
     state.updateIfDefaultValueChanged(selection.toString(), selection)
     const radios = radioLabels.map((radioLabel, n) => {
@@ -74,5 +74,5 @@ addPropertyControls(RadioGroup, propertyControls(
     "error",
     "labelPlacement",
     "size",
-    "onChange"
+    eventHandler("onChangeSelection")
 ))

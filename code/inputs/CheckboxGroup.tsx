@@ -1,7 +1,7 @@
 import * as React from "react"
 import { addPropertyControls, ControlType, ControlDescription } from "framer"
 import { withTheme } from "../common/theme"
-import { propertyControls, PropertyControl } from "../common/propertyControl"
+import { propertyControls, PropertyControl, eventHandler } from "../common/propertyControl"
 import { Checkbox as MuiCheckbox, FormControlLabel, FormLabel, FormGroup, FormControl, FormHelperText } from "@material-ui/core"
 import { SetStateAction, Dispatch } from "react"
 import { useDerivedStateCalculatedFromProp } from "../common/state"
@@ -46,10 +46,10 @@ interface Props {
     error: boolean,
     required: boolean,
     checkboxLabels: string[],
-    onChange: (event: {checked: boolean[]}) => void
+    onChangeSelection: (event: {checked: boolean[]}) => void
 }
 export function CheckboxGroup(props: Props) {
-    const { label, helperText, error, required, checkboxLabels, onChange, ...checkBoxProps } = props
+    const { label, helperText, error, required, checkboxLabels, onChangeSelection, ...checkBoxProps } = props
 
     const stateFromLabels = () => checkboxLabels.map((label) => getCheckboxStateFromLabel(label).checked)
     const state = useDerivedStateCalculatedFromProp(stateFromLabels(), checkboxLabels, (checked) => {checked})
@@ -95,5 +95,5 @@ addPropertyControls(CheckboxGroup, propertyControls(
     "error",
     "labelPlacement",
     "size",
-    "onChange"
+    eventHandler("onChangeSelection")
 ))

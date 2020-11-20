@@ -63,10 +63,6 @@ export const PropertyControl = {
         title: "Multiline",
         defaultValue: false
     } as ControlDescription,
-    onChange: {
-        type: ControlType.EventHandler,
-        title: "onChange",
-    } as ControlDescription,
     onClick: {
         type: ControlType.EventHandler,
         title: "onClick",
