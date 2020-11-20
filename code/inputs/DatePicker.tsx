@@ -4,21 +4,25 @@ import DateFnsUtils from "@date-io/date-fns"
 import { KeyboardDatePicker, MuiPickersUtilsProvider } from "@material-ui/pickers"
 import { withTheme } from "../common/theme"
 import { propertyControls } from "../common/propertyControl"
-import { useDerivedState } from "../common/state"
+import { useDerivedStateCalculatedFromProp } from "../common/state"
 
 const dateUtil = new DateFnsUtils()
 
-export function DatePicker(props: any) {
-    const { defaultValue, format, onChange, width, height, ...other } = props
+interface Props {
+    defaultValue: string | null,
+    format: string,
+    onChange: (date: Date | null) => void
+}
+export function DatePicker(props: Props) {
+    const { defaultValue, format, onChange, ...other } = props
     const defaultDate = defaultValue ? dateUtil.parse(defaultValue, format) : null as Date
-    const state = useDerivedState(defaultDate, onChange)
-    state.updateIfDefaultValueChanged(defaultValue)
-    const handleChange = (date: Date, value: string) => state.setValue(date)
+    const state = useDerivedStateCalculatedFromProp(defaultDate, defaultValue, onChange)
+    state.updateIfDefaultValueChanged(defaultDate, defaultValue)
     return withTheme(<MuiPickersUtilsProvider utils={DateFnsUtils}>
         <KeyboardDatePicker
             format={format}
             value={state.value}
-            onChange={handleChange}
+            onChange={state.setValue}
             {...other}          
         />
     </MuiPickersUtilsProvider>)

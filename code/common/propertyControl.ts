@@ -129,3 +129,10 @@ export function propertyControls(...ctrls: PropertyControlReference[]) {
     })
     return picked;
 }
+
+export const eventHandler = (propertyName: string, title?: string) => [
+    propertyName, {
+        type: ControlType.EventHandler,
+        title: title ? title : propertyName
+    }
+] as PropertyControlReference
