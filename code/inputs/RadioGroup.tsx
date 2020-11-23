@@ -35,7 +35,6 @@ export function RadioGroup(props: Props) {
         return buildRadio(radioLabel, (n + 1).toString(), radioProps)
     })
     const handleChange = (event: React.ChangeEvent<HTMLInputElement>) => {
-        console.log((event.target as HTMLInputElement).value)
         state.setValue(Number((event.target as HTMLInputElement).value))
     }
 
