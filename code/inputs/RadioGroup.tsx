@@ -3,7 +3,7 @@ import { addPropertyControls, ControlType, ControlDescription } from "framer"
 import { withTheme } from "../common/theme"
 import { eventHandler, propertyControls } from "../common/propertyControl"
 import { Radio as MuiRadio, FormControlLabel, FormLabel, RadioGroup as MuiRadioGroup, FormControl, FormHelperText } from "@material-ui/core"
-import { useDerivedStateCalculatedFromProp } from "../common/state"
+import { useDerivedState } from "../common/state"
 
 function buildRadio(label: string, value: string, props) {
     const radio = <MuiRadio
@@ -14,6 +14,7 @@ function buildRadio(label: string, value: string, props) {
         value={value}
         label={label}
         labelPlacement={props.labelPlacement}
+        key={value}
     />
 }
 
@@ -28,21 +29,20 @@ interface Props {
 }
 export function RadioGroup(props: Props) {
     const { label, selection, helperText, error, required, radioLabels, onChangeSelection, ...radioProps } = props
-    const state = useDerivedStateCalculatedFromProp(selection.toString(), selection, (newValue: string) => {
-        onChangeSelection && onChangeSelection(Number.parseInt(newValue))
-    })
-    state.updateIfDefaultValueChanged(selection.toString(), selection)
+    const state = useDerivedState(selection, onChangeSelection)
+    state.updateIfDefaultValueChanged(selection)
     const radios = radioLabels.map((radioLabel, n) => {
         return buildRadio(radioLabel, (n + 1).toString(), radioProps)
     })
     const handleChange = (event: React.ChangeEvent<HTMLInputElement>) => {
-        state.setValue((event.target as HTMLInputElement).value)
+        console.log((event.target as HTMLInputElement).value)
+        state.setValue(Number((event.target as HTMLInputElement).value))
     }
 
     return withTheme(
         <FormControl component="fieldset" error={error} required={required}>
             <FormLabel component="legend">{label}</FormLabel>
-            <MuiRadioGroup value={state.value} onChange={handleChange}>
+            <MuiRadioGroup value={state.value.toString()} onChange={handleChange}>
                 {radios}
             </MuiRadioGroup>
             <FormHelperText>{helperText}</FormHelperText>
