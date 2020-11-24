@@ -3,7 +3,7 @@ import { addPropertyControls, ControlType, ControlDescription } from "framer"
 import DateFnsUtils from "@date-io/date-fns"
 import { KeyboardDatePicker, MuiPickersUtilsProvider } from "@material-ui/pickers"
 import { withTheme } from "../common/theme"
-import { eventHandler, propertyControls } from "../common/propertyControl"
+import { propEventHandler, propertyControls } from "../common/propertyControl"
 import { useDerivedStateCalculatedFromProp } from "../common/state"
 
 const dateUtil = new DateFnsUtils()
@@ -59,5 +59,5 @@ addPropertyControls(DatePicker, propertyControls(
     "required",
     "error",
     "size",
-    eventHandler("onChangeDate")
+    propEventHandler("onChangeDate")
 ))

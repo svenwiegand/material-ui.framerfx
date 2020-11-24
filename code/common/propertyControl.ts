@@ -126,9 +126,50 @@ export function propertyControls(...ctrls: PropertyControlReference[]) {
     return picked;
 }
 
-export const eventHandler = (propertyName: string, title?: string) => [
+export const propArray = (propertyName: string, title: string, propertyControl: PropertyControlReference, maxCount?: number) => [
+    propertyName, {
+        type: ControlType.Array,
+        title,
+        propertyControl: propertyControl[1]
+    }
+] as PropertyControlDescription
+export const propBoolean = (propertyName: string, title: string, defaultValue?: boolean, enabledTitle?: string, disabledTitle?: string) => [
+    propertyName, {
+        type: ControlType.Boolean,
+        title,
+        defaultValue,
+        enabledTitle,
+        disabledTitle
+    }
+] as PropertyControlDescription
+export const propComponentInstance = (propertyName: string, title?: string) => [
+    propertyName, {
+        type: ControlType.ComponentInstance,
+        title
+    }
+] as PropertyControlDescription
+export const propEnum = 
+    (propertyName: string, title: string, defaultValue: string, options: string[], optionTitles?: string[]) => 
+    [
+        propertyName, {
+            type: ControlType.Enum,
+            title: title,
+            defaultValue,
+            options,
+            optionTitles
+        }
+    ] as PropertyControlDescription
+export const propEventHandler = (propertyName: string, title?: string) => [
     propertyName, {
         type: ControlType.EventHandler,
         title: title ? title : propertyName
     }
-] as PropertyControlReference
+] as PropertyControlDescription
+export const propString = (propertyName: string, title: string, defaultValue?: string, placeholder?: string) => [
+    propertyName, {
+        type: ControlType.String,
+        title,
+        defaultValue,
+        placeholder
+    }
+] as PropertyControlDescription

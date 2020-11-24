@@ -1,7 +1,7 @@
 import * as React from "react"
 import { addPropertyControls, ControlType } from "framer"
 import { withTheme } from "../common/theme"
-import { propertyControls, InputVariant, eventHandler } from "../common/propertyControl"
+import { propertyControls, InputVariant, propEventHandler } from "../common/propertyControl"
 import { useDerivedState, useDerivedStateCalculatedFromProp } from "../common/state"
 import { FormControl, InputLabel, Select as MuiSelect, MenuItem, FormHelperText } from "@material-ui/core"
 
@@ -61,5 +61,5 @@ addPropertyControls(Select, propertyControls(
     "required",
     "error",
     "size",
-    eventHandler("onChangeSelected")
+    propEventHandler("onChangeSelected")
 ))

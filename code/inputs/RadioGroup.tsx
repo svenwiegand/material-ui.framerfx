@@ -1,7 +1,7 @@
 import * as React from "react"
 import { addPropertyControls, ControlType, ControlDescription } from "framer"
 import { withTheme } from "../common/theme"
-import { eventHandler, propertyControls } from "../common/propertyControl"
+import { propEventHandler, propertyControls } from "../common/propertyControl"
 import { Radio as MuiRadio, FormControlLabel, FormLabel, RadioGroup as MuiRadioGroup, FormControl, FormHelperText } from "@material-ui/core"
 import { useDerivedState } from "../common/state"
 
@@ -73,5 +73,5 @@ addPropertyControls(RadioGroup, propertyControls(
     "error",
     "labelPlacement",
     "size",
-    eventHandler("onChangeSelection")
+    propEventHandler("onChangeSelection")
 ))

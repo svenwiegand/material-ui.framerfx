@@ -2,7 +2,7 @@ import * as React from "react"
 import { addPropertyControls, ControlType, ControlDescription } from "framer"
 import MuiTextField from "@material-ui/core/TextField"
 import { withTheme } from "../common/theme"
-import { eventHandler, propertyControls } from "../common/propertyControl"
+import { propEventHandler, propertyControls } from "../common/propertyControl"
 import { useDerivedState } from "../common/state"
 
 interface Props {
@@ -41,5 +41,5 @@ addPropertyControls(TextField, propertyControls(
     "error",
     "autoFocus",
     "size",
-    eventHandler("onChangeText")
+    propEventHandler("onChangeText")
 ))

@@ -1,7 +1,7 @@
 import * as React from "react"
 import { addPropertyControls } from "framer"
 import { withTheme } from "../common/theme"
-import { eventHandler, propertyControls } from "../common/propertyControl"
+import { propEventHandler, propertyControls } from "../common/propertyControl"
 import { FormControlLabel, Radio as MuiRadio } from "@material-ui/core"
 import { useDerivedState } from "../common/state"
 
@@ -34,5 +34,5 @@ addPropertyControls(Radio, propertyControls(
     "required",
     "labelPlacement",
     "size",
-    eventHandler("onChangeChecked")
+    propEventHandler("onChangeChecked")
 ))

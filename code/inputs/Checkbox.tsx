@@ -1,7 +1,7 @@
 import * as React from "react"
 import { addPropertyControls, ControlType, ControlDescription } from "framer"
 import { withTheme } from "../common/theme"
-import { eventHandler, propertyControls } from "../common/propertyControl"
+import { propEventHandler, propertyControls } from "../common/propertyControl"
 import { FormControlLabel, Checkbox as MuiCheckbox } from "@material-ui/core"
 import { useDerivedState } from "../common/state"
 
@@ -40,5 +40,5 @@ addPropertyControls(Checkbox, propertyControls(
     "required",
     "labelPlacement",
     "size",
-    eventHandler("onChangeChecked")
+    propEventHandler("onChangeChecked")
 ))

@@ -4,12 +4,13 @@ import { withTheme } from "../common/theme"
 import { propertyControls } from "../common/propertyControl"
 import { Button as MuiButton, Icon } from "@material-ui/core"
 
-interface Props {
+export interface ButtonProps {
     label: string
     startIcon: string
     endIcon: string
+    onClick: (event: React.MouseEvent<HTMLButtonElement>) => void
 }
-export function Button(props: Props) {
+export function Button(props: ButtonProps) {
     const { label, startIcon, endIcon, ...buttonProps } = props
     const content = label.startsWith("icon:") ? <Icon>{label.substring("icon:".length)}</Icon> : label
     return withTheme(
@@ -23,7 +24,7 @@ export function Button(props: Props) {
     )
 }
 
-addPropertyControls(Button, propertyControls(
+export const buttonPropertyControls = propertyControls(
     ["label", {
         type: ControlType.String,
         title: "Label",
@@ -71,4 +72,12 @@ addPropertyControls(Button, propertyControls(
         defaultValue: false
     } as ControlDescription],
     "onClick"
-))
+)
+export const buttonStylePropertyControls = (() => {
+    const controls = {...buttonPropertyControls}
+    delete controls.href
+    delete controls.onClick
+    return controls
+})()
+
+addPropertyControls(Button, buttonPropertyControls)

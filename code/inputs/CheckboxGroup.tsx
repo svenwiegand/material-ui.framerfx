@@ -1,7 +1,7 @@
 import * as React from "react"
 import { addPropertyControls, ControlType, ControlDescription } from "framer"
 import { withTheme } from "../common/theme"
-import { propertyControls, PropertyControl, eventHandler } from "../common/propertyControl"
+import { propertyControls, PropertyControl, propEventHandler } from "../common/propertyControl"
 import { Checkbox as MuiCheckbox, FormControlLabel, FormLabel, FormGroup, FormControl, FormHelperText } from "@material-ui/core"
 import { SetStateAction, Dispatch } from "react"
 import { useDerivedStateCalculatedFromProp } from "../common/state"
@@ -95,5 +95,5 @@ addPropertyControls(CheckboxGroup, propertyControls(
     "error",
     "labelPlacement",
     "size",
-    eventHandler("onChangeSelection")
+    propEventHandler("onChangeSelection")
 ))
