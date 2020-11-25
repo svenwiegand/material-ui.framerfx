@@ -59,7 +59,7 @@ addPropertyControls(MenuButton, {
         propEnum("horizontalTransformOrigin", "Horizontal transform origin", "left", ["left", "center", "right"]),
         propEnum("verticalAnchorOrigin", "Vertical anchor origin", "top", ["top", "center", "bottom"]),
         propEnum("horizontalAnchorOrigin", "Horizontal anchor origin", "left", ["left", "center", "right"]),
-        propEventHandler("onItemClicked")
+        propEventHandler("onItemClicked"),
         propArray("items", "Items", propString("", "Label", "", "Label or ---")),
     )
 })
