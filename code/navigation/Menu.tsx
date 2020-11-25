@@ -11,7 +11,7 @@ interface MenuProps {
     horizontalAnchorOrigin: PopoverOrigin['horizontal']
     verticalTransformOrigin: PopoverOrigin['vertical']
     horizontalTransformOrigin: PopoverOrigin['horizontal']
-    onClick?: (itemIndex: number) => void
+    onItemClicked?: (itemIndex: number) => void
 }
 
 function createItem(label: string, onClick: () => void) {
@@ -22,7 +22,7 @@ export function MenuButton(props: ButtonProps & MenuProps) {
     const { 
         items,
         verticalAnchorOrigin, horizontalAnchorOrigin, verticalTransformOrigin, horizontalTransformOrigin, 
-        onClick,
+        onItemClicked,
         ...buttonProps 
     } = props
     const [anchor, setAnchor] = React.useState<null | HTMLElement>(null)
@@ -32,7 +32,7 @@ export function MenuButton(props: ButtonProps & MenuProps) {
     const handleClose = () => setAnchor(null)
     const handleItemClick = (index: number) => () => {
         handleClose()
-        onClick && onClick(index)
+        onItemClicked && onItemClicked(index)
     }
 
     return withTheme(
@@ -55,11 +55,11 @@ export function MenuButton(props: ButtonProps & MenuProps) {
 addPropertyControls(MenuButton, {
     ... buttonStylePropertyControls,
     ... propertyControls(
-        propArray("items", "Items", propString("", "Label", "", "Label or ---")),
         propEnum("verticalTransformOrigin", "Vertical transform origin", "top", ["top", "center", "bottom"]),
         propEnum("horizontalTransformOrigin", "Horizontal transform origin", "left", ["left", "center", "right"]),
         propEnum("verticalAnchorOrigin", "Vertical anchor origin", "top", ["top", "center", "bottom"]),
         propEnum("horizontalAnchorOrigin", "Horizontal anchor origin", "left", ["left", "center", "right"]),
-        propEventHandler("onClick")
+        propEventHandler("onItemClicked")
+        propArray("items", "Items", propString("", "Label", "", "Label or ---")),
     )
 })
