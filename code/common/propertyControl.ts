@@ -165,6 +165,16 @@ export const propEventHandler = (propertyName: string, title?: string) => [
         title: title ? title : propertyName
     }
 ] as PropertyControlDescription
+export const propNumber = (propertyName: string, title: string, defaultValue?: number, min?: number, max?: number, step?: number) => [
+    propertyName, {
+        type: ControlType.Number,
+        title,
+        defaultValue,
+        min,
+        max,
+        step
+    }
+] as PropertyControlDescription 
 export const propString = (propertyName: string, title: string, defaultValue?: string, placeholder?: string) => [
     propertyName, {
         type: ControlType.String,

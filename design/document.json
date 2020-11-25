@@ -1534,6 +1534,9 @@
                 "$control__onClick" : {
                   "type" : "eventhandler"
                 },
+                "$control__onItemClicked" : {
+                  "type" : "eventhandler"
+                },
                 "$control__size" : {
                   "type" : "enum",
                   "value" : "small"
@@ -1555,9 +1558,9 @@
                   "value" : "top"
                 },
                 "aspectRatio" : null,
-                "bottom" : -36,
-                "centerAnchorX" : 0.66248256624825663,
-                "centerAnchorY" : 0.89792663476874002,
+                "bottom" : 181,
+                "centerAnchorX" : 0.5,
+                "centerAnchorY" : 0.71139430284857574,
                 "clip" : true,
                 "codeComponentIdentifier" : ".\/navigation\/Menu.tsx_MenuButton",
                 "codeComponentPackageVersion" : "1.79.0",
@@ -1577,7 +1580,7 @@
                 "fillImagePixelWidth" : null,
                 "fillImageResize" : "fill",
                 "fillType" : "color",
-                "height" : 200,
+                "height" : 23,
                 "heightType" : 0,
                 "id" : "TwYAUoUHg",
                 "intrinsicHeight" : null,
@@ -1596,11 +1599,74 @@
                 "radiusPerCorner" : false,
                 "radiusTopLeft" : 0,
                 "radiusTopRight" : 0,
-                "right" : 46,
+                "right" : null,
                 "rotation" : 0,
                 "top" : null,
                 "visible" : true,
-                "width" : 392,
+                "width" : 71,
+                "widthType" : 0
+              },
+              {
+                "__class" : "CodeComponentNode",
+                "$control__defaultValue" : {
+                  "type" : "number",
+                  "value" : 0
+                },
+                "$control__max" : {
+                  "type" : "number",
+                  "value" : 100
+                },
+                "$control__min" : {
+                  "type" : "number",
+                  "value" : 0
+                },
+                "aspectRatio" : null,
+                "bottom" : 136,
+                "centerAnchorX" : 0.50066050198150591,
+                "centerAnchorY" : 0.76986506746626682,
+                "clip" : true,
+                "codeComponentIdentifier" : ".\/inputs\/Slider.tsx_Slider",
+                "codeComponentPackageVersion" : "1.79.0",
+                "codeOverrideEnabled" : false,
+                "constraintsLocked" : false,
+                "duplicatedFrom" : [
+                  "Yj9qkmm0n"
+                ],
+                "exportOptions" : [
+
+                ],
+                "fillColor" : "rgba(255,255,255,1)",
+                "fillEnabled" : false,
+                "fillImage" : null,
+                "fillImageOriginalName" : null,
+                "fillImagePixelHeight" : null,
+                "fillImagePixelWidth" : null,
+                "fillImageResize" : "fill",
+                "fillType" : "color",
+                "height" : 35,
+                "heightType" : 0,
+                "id" : "tdrr8huiZ",
+                "intrinsicHeight" : null,
+                "intrinsicWidth" : null,
+                "left" : null,
+                "locked" : false,
+                "name" : null,
+                "opacity" : 1,
+                "originalid" : null,
+                "parentid" : "sFk8H4RoG",
+                "previewSettings" : null,
+                "radius" : 0,
+                "radiusBottomLeft" : 0,
+                "radiusBottomRight" : 0,
+                "radiusIsRelative" : false,
+                "radiusPerCorner" : false,
+                "radiusTopLeft" : 0,
+                "radiusTopRight" : 0,
+                "right" : null,
+                "rotation" : 0,
+                "top" : null,
+                "visible" : true,
+                "width" : 200,
                 "widthType" : 0
               }
             ],
