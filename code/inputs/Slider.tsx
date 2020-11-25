@@ -24,5 +24,6 @@ export function Slider(props: Props) {
 addPropertyControls(Slider, propertyControls(
     propNumber("defaultValue", "Value", 0),
     propNumber("min", "Min", 0),
-    propNumber("max", "Max", 100)
+    propNumber("max", "Max", 100),
+    propEventHandler("onValueChanged")
 ))
