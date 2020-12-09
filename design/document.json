@@ -717,6 +717,7 @@
             "intrinsicWidth" : null,
             "isExternalMaster" : null,
             "isMaster" : false,
+            "isScreen" : true,
             "isTarget" : false,
             "left" : 0,
             "locked" : false,
@@ -1745,6 +1746,65 @@
                 "visible" : true,
                 "width" : 200,
                 "widthType" : 0
+              },
+              {
+                "__class" : "CodeComponentNode",
+                "$control__animation" : {
+                  "type" : "enum",
+                  "value" : "pulse"
+                },
+                "$control__variant" : {
+                  "type" : "enum",
+                  "value" : "rect"
+                },
+                "aspectRatio" : null,
+                "bottom" : 218,
+                "centerAnchorX" : 0.52859135285913528,
+                "centerAnchorY" : 0.72464622641509435,
+                "clip" : true,
+                "codeComponentIdentifier" : ".\/lab\/skeleton.tsx_Skeleton",
+                "codeComponentPackageVersion" : "1.79.0",
+                "codeOverrideEnabled" : false,
+                "constraintsLocked" : false,
+                "duplicatedFrom" : [
+                  "X0bsL8QIJ"
+                ],
+                "exportOptions" : [
+
+                ],
+                "fillColor" : "rgba(255,255,255,1)",
+                "fillEnabled" : false,
+                "fillImage" : null,
+                "fillImageOriginalName" : null,
+                "fillImagePixelHeight" : null,
+                "fillImagePixelWidth" : null,
+                "fillImageResize" : "fill",
+                "fillType" : "color",
+                "height" : 31,
+                "heightType" : 0,
+                "id" : "ZqaK6jexd",
+                "intrinsicHeight" : null,
+                "intrinsicWidth" : null,
+                "left" : null,
+                "locked" : false,
+                "name" : null,
+                "opacity" : 1,
+                "originalid" : null,
+                "parentid" : "sFk8H4RoG",
+                "previewSettings" : null,
+                "radius" : 0,
+                "radiusBottomLeft" : 0,
+                "radiusBottomRight" : 0,
+                "radiusIsRelative" : false,
+                "radiusPerCorner" : false,
+                "radiusTopLeft" : 0,
+                "radiusTopRight" : 0,
+                "right" : 163,
+                "rotation" : 0,
+                "top" : null,
+                "visible" : true,
+                "width" : 350,
+                "widthType" : 0
               }
             ],
             "clip" : true,
@@ -1771,7 +1831,7 @@
             "guidesY" : [
 
             ],
-            "height" : 667,
+            "height" : 888,
             "heightType" : 0,
             "id" : "sFk8H4RoG",
             "intrinsicHeight" : null,
@@ -2099,10 +2159,10 @@
                                 ],
                                 "cached" : {
                                   "html" : "<div data-offset-key=\"6qbs8-0-0\" class=\"public-DraftStyleDefault-block public-DraftStyleDefault-ltr\"><span data-offset-key=\"6qbs8-0-0\" style=\"tab-size:4;font-family:&quot;Fira Code&quot;, serif;-webkit-text-fill-color:rgb(0, 0, 0);font-size:14px;letter-spacing:0px;line-height:1.2;font-weight:400;font-style:normal\"><span data-text=\"true\">primary.light<\/span><\/span><\/div>",
-                                  "os" : "macos 10_16 framerx",
+                                  "os" : "macos 11_0 framerx",
                                   "size" : {
                                     "height" : 16,
-                                    "width" : 111
+                                    "width" : 74
                                   },
                                   "width" : 0
                                 },
@@ -2291,10 +2351,10 @@
                               ],
                               "cached" : {
                                 "html" : "<div data-offset-key=\"6qbs8-0-0\" class=\"public-DraftStyleDefault-block public-DraftStyleDefault-ltr\"><span data-offset-key=\"6qbs8-0-0\" style=\"tab-size:4;font-family:&quot;Fira Code&quot;, serif;-webkit-text-fill-color:rgb(0, 0, 0);font-size:14px;letter-spacing:0px;line-height:1.2;font-weight:400;font-style:normal\"><span data-text=\"true\">primary.main<\/span><\/span><\/div>",
-                                "os" : "macos 10_16 framerx",
+                                "os" : "macos 11_0 framerx",
                                 "size" : {
                                   "height" : 16,
-                                  "width" : 102
+                                  "width" : 76
                                 },
                                 "width" : 0
                               },
@@ -2489,10 +2549,10 @@
                                 ],
                                 "cached" : {
                                   "html" : "<div data-offset-key=\"6qbs8-0-0\" class=\"public-DraftStyleDefault-block public-DraftStyleDefault-ltr\"><span data-offset-key=\"6qbs8-0-0\" style=\"tab-size:4;font-family:&quot;Fira Code&quot;, serif;-webkit-text-fill-color:rgb(0, 0, 0);font-size:14px;letter-spacing:0px;line-height:1.2;font-weight:400;font-style:normal\"><span data-text=\"true\">primary.dark<\/span><\/span><\/div>",
-                                  "os" : "macos 10_16 framerx",
+                                  "os" : "macos 11_0 framerx",
                                   "size" : {
                                     "height" : 16,
-                                    "width" : 102
+                                    "width" : 73
                                   },
                                   "width" : 0
                                 },
@@ -2852,10 +2912,10 @@
                                 ],
                                 "cached" : {
                                   "html" : "<div data-offset-key=\"6qbs8-0-0\" class=\"public-DraftStyleDefault-block public-DraftStyleDefault-ltr\"><span data-offset-key=\"6qbs8-0-0\" style=\"tab-size:4;font-family:&quot;Fira Code&quot;, serif;-webkit-text-fill-color:rgb(0, 0, 0);font-size:14px;letter-spacing:0px;line-height:1.2;font-weight:400;font-style:normal\"><span data-text=\"true\">secondary.light<\/span><\/span><\/div>",
-                                  "os" : "macos 10_16 framerx",
+                                  "os" : "macos 11_0 framerx",
                                   "size" : {
                                     "height" : 16,
-                                    "width" : 128
+                                    "width" : 87
                                   },
                                   "width" : 0
                                 },
@@ -3007,10 +3067,10 @@
                                 ],
                                 "cached" : {
                                   "html" : "<div data-offset-key=\"6qbs8-0-0\" class=\"public-DraftStyleDefault-block public-DraftStyleDefault-ltr\"><span data-offset-key=\"6qbs8-0-0\" style=\"tab-size:4;font-family:&quot;Fira Code&quot;, serif;-webkit-text-fill-color:rgb(0, 0, 0);font-size:14px;letter-spacing:0px;line-height:1.2;font-weight:400;font-style:normal\"><span data-text=\"true\">secondary.main<\/span><\/span><\/div>",
-                                  "os" : "macos 10_16 framerx",
+                                  "os" : "macos 11_0 framerx",
                                   "size" : {
                                     "height" : 16,
-                                    "width" : 119
+                                    "width" : 89
                                   },
                                   "width" : 0
                                 },
@@ -3164,10 +3224,10 @@
                                 ],
                                 "cached" : {
                                   "html" : "<div data-offset-key=\"6qbs8-0-0\" class=\"public-DraftStyleDefault-block public-DraftStyleDefault-ltr\"><span data-offset-key=\"6qbs8-0-0\" style=\"tab-size:4;font-family:&quot;Fira Code&quot;, serif;-webkit-text-fill-color:rgb(0, 0, 0);font-size:14px;letter-spacing:0px;line-height:1.2;font-weight:400;font-style:normal\"><span data-text=\"true\">secondary.dark<\/span><\/span><\/div>",
-                                  "os" : "macos 10_16 framerx",
+                                  "os" : "macos 11_0 framerx",
                                   "size" : {
                                     "height" : 16,
-                                    "width" : 119
+                                    "width" : 86
                                   },
                                   "width" : 0
                                 },
@@ -3602,10 +3662,10 @@
                                 ],
                                 "cached" : {
                                   "html" : "<div data-offset-key=\"6qbs8-0-0\" class=\"public-DraftStyleDefault-block public-DraftStyleDefault-ltr\"><span data-offset-key=\"6qbs8-0-0\" style=\"tab-size:4;font-family:&quot;Fira Code&quot;, serif;-webkit-text-fill-color:rgb(0, 0, 0);font-size:14px;letter-spacing:0px;line-height:1.2;font-weight:400;font-style:normal\"><span data-text=\"true\">info.light<\/span><\/span><\/div>",
-                                  "os" : "macos 10_16 framerx",
+                                  "os" : "macos 11_0 framerx",
                                   "size" : {
                                     "height" : 16,
-                                    "width" : 86
+                                    "width" : 53
                                   },
                                   "width" : 0
                                 },
@@ -3758,10 +3818,10 @@
                                 ],
                                 "cached" : {
                                   "html" : "<div data-offset-key=\"6qbs8-0-0\" class=\"public-DraftStyleDefault-block public-DraftStyleDefault-ltr\"><span data-offset-key=\"6qbs8-0-0\" style=\"tab-size:4;font-family:&quot;Fira Code&quot;, serif;-webkit-text-fill-color:rgb(0, 0, 0);font-size:14px;letter-spacing:0px;line-height:1.2;font-weight:400;font-style:normal\"><span data-text=\"true\">info.main<\/span><\/span><\/div>",
-                                  "os" : "macos 10_16 framerx",
+                                  "os" : "macos 11_0 framerx",
                                   "size" : {
                                     "height" : 16,
-                                    "width" : 77
+                                    "width" : 56
                                   },
                                   "width" : 0
                                 },
@@ -3916,10 +3976,10 @@
                                 ],
                                 "cached" : {
                                   "html" : "<div data-offset-key=\"6qbs8-0-0\" class=\"public-DraftStyleDefault-block public-DraftStyleDefault-ltr\"><span data-offset-key=\"6qbs8-0-0\" style=\"tab-size:4;font-family:&quot;Fira Code&quot;, serif;-webkit-text-fill-color:rgb(0, 0, 0);font-size:14px;letter-spacing:0px;line-height:1.2;font-weight:400;font-style:normal\"><span data-text=\"true\">info.dark<\/span><\/span><\/div>",
-                                  "os" : "macos 10_16 framerx",
+                                  "os" : "macos 11_0 framerx",
                                   "size" : {
                                     "height" : 16,
-                                    "width" : 77
+                                    "width" : 52
                                   },
                                   "width" : 0
                                 },
@@ -4287,10 +4347,10 @@
                                 ],
                                 "cached" : {
                                   "html" : "<div data-offset-key=\"6qbs8-0-0\" class=\"public-DraftStyleDefault-block public-DraftStyleDefault-ltr\"><span data-offset-key=\"6qbs8-0-0\" style=\"tab-size:4;font-family:&quot;Fira Code&quot;, serif;-webkit-text-fill-color:rgb(0, 0, 0);font-size:14px;letter-spacing:0px;line-height:1.2;font-weight:400;font-style:normal\"><span data-text=\"true\">success.light<\/span><\/span><\/div>",
-                                  "os" : "macos 10_16 framerx",
+                                  "os" : "macos 11_0 framerx",
                                   "size" : {
                                     "height" : 16,
-                                    "width" : 111
+                                    "width" : 73
                                   },
                                   "width" : 0
                                 },
@@ -4444,10 +4504,10 @@
                                 ],
                                 "cached" : {
                                   "html" : "<div data-offset-key=\"6qbs8-0-0\" class=\"public-DraftStyleDefault-block public-DraftStyleDefault-ltr\"><span data-offset-key=\"6qbs8-0-0\" style=\"tab-size:4;font-family:&quot;Fira Code&quot;, serif;-webkit-text-fill-color:rgb(0, 0, 0);font-size:14px;letter-spacing:0px;line-height:1.2;font-weight:400;font-style:normal\"><span data-text=\"true\">success.main<\/span><\/span><\/div>",
-                                  "os" : "macos 10_16 framerx",
+                                  "os" : "macos 11_0 framerx",
                                   "size" : {
                                     "height" : 16,
-                                    "width" : 102
+                                    "width" : 75
                                   },
                                   "width" : 0
                                 },
@@ -4603,10 +4663,10 @@
                                 ],
                                 "cached" : {
                                   "html" : "<div data-offset-key=\"6qbs8-0-0\" class=\"public-DraftStyleDefault-block public-DraftStyleDefault-ltr\"><span data-offset-key=\"6qbs8-0-0\" style=\"tab-size:4;font-family:&quot;Fira Code&quot;, serif;-webkit-text-fill-color:rgb(0, 0, 0);font-size:14px;letter-spacing:0px;line-height:1.2;font-weight:400;font-style:normal\"><span data-text=\"true\">success.dark<\/span><\/span><\/div>",
-                                  "os" : "macos 10_16 framerx",
+                                  "os" : "macos 11_0 framerx",
                                   "size" : {
                                     "height" : 16,
-                                    "width" : 102
+                                    "width" : 72
                                   },
                                   "width" : 0
                                 },
@@ -4977,10 +5037,10 @@
                                 ],
                                 "cached" : {
                                   "html" : "<div data-offset-key=\"6qbs8-0-0\" class=\"public-DraftStyleDefault-block public-DraftStyleDefault-ltr\"><span data-offset-key=\"6qbs8-0-0\" style=\"tab-size:4;font-family:&quot;Fira Code&quot;, serif;-webkit-text-fill-color:rgb(0, 0, 0);font-size:14px;letter-spacing:0px;line-height:1.2;font-weight:400;font-style:normal\"><span data-text=\"true\">warning.light<\/span><\/span><\/div>",
-                                  "os" : "macos 10_16 framerx",
+                                  "os" : "macos 11_0 framerx",
                                   "size" : {
                                     "height" : 16,
-                                    "width" : 111
+                                    "width" : 77
                                   },
                                   "width" : 0
                                 },
@@ -5135,10 +5195,10 @@
                                 ],
                                 "cached" : {
                                   "html" : "<div data-offset-key=\"6qbs8-0-0\" class=\"public-DraftStyleDefault-block public-DraftStyleDefault-ltr\"><span data-offset-key=\"6qbs8-0-0\" style=\"tab-size:4;font-family:&quot;Fira Code&quot;, serif;-webkit-text-fill-color:rgb(0, 0, 0);font-size:14px;letter-spacing:0px;line-height:1.2;font-weight:400;font-style:normal\"><span data-text=\"true\">warning.main<\/span><\/span><\/div>",
-                                  "os" : "macos 10_16 framerx",
+                                  "os" : "macos 11_0 framerx",
                                   "size" : {
                                     "height" : 16,
-                                    "width" : 102
+                                    "width" : 79
                                   },
                                   "width" : 0
                                 },
@@ -5295,10 +5355,10 @@
                                 ],
                                 "cached" : {
                                   "html" : "<div data-offset-key=\"6qbs8-0-0\" class=\"public-DraftStyleDefault-block public-DraftStyleDefault-ltr\"><span data-offset-key=\"6qbs8-0-0\" style=\"tab-size:4;font-family:&quot;Fira Code&quot;, serif;-webkit-text-fill-color:rgb(0, 0, 0);font-size:14px;letter-spacing:0px;line-height:1.2;font-weight:400;font-style:normal\"><span data-text=\"true\">warning.dark<\/span><\/span><\/div>",
-                                  "os" : "macos 10_16 framerx",
+                                  "os" : "macos 11_0 framerx",
                                   "size" : {
                                     "height" : 16,
-                                    "width" : 102
+                                    "width" : 76
                                   },
                                   "width" : 0
                                 },
@@ -5672,10 +5732,10 @@
                                 ],
                                 "cached" : {
                                   "html" : "<div data-offset-key=\"6qbs8-0-0\" class=\"public-DraftStyleDefault-block public-DraftStyleDefault-ltr\"><span data-offset-key=\"6qbs8-0-0\" style=\"tab-size:4;font-family:&quot;Fira Code&quot;, serif;-webkit-text-fill-color:rgb(0, 0, 0);font-size:14px;letter-spacing:0px;line-height:1.2;font-weight:400;font-style:normal\"><span data-text=\"true\">error.light<\/span><\/span><\/div>",
-                                  "os" : "macos 10_16 framerx",
+                                  "os" : "macos 11_0 framerx",
                                   "size" : {
                                     "height" : 16,
-                                    "width" : 94
+                                    "width" : 57
                                   },
                                   "width" : 0
                                 },
@@ -5831,10 +5891,10 @@
                                 ],
                                 "cached" : {
                                   "html" : "<div data-offset-key=\"6qbs8-0-0\" class=\"public-DraftStyleDefault-block public-DraftStyleDefault-ltr\"><span data-offset-key=\"6qbs8-0-0\" style=\"tab-size:4;font-family:&quot;Fira Code&quot;, serif;-webkit-text-fill-color:rgb(0, 0, 0);font-size:14px;letter-spacing:0px;line-height:1.2;font-weight:400;font-style:normal\"><span data-text=\"true\">error.main<\/span><\/span><\/div>",
-                                  "os" : "macos 10_16 framerx",
+                                  "os" : "macos 11_0 framerx",
                                   "size" : {
                                     "height" : 16,
-                                    "width" : 86
+                                    "width" : 59
                                   },
                                   "width" : 0
                                 },
@@ -5992,10 +6052,10 @@
                                 ],
                                 "cached" : {
                                   "html" : "<div data-offset-key=\"6qbs8-0-0\" class=\"public-DraftStyleDefault-block public-DraftStyleDefault-ltr\"><span data-offset-key=\"6qbs8-0-0\" style=\"tab-size:4;font-family:&quot;Fira Code&quot;, serif;-webkit-text-fill-color:rgb(0, 0, 0);font-size:14px;letter-spacing:0px;line-height:1.2;font-weight:400;font-style:normal\"><span data-text=\"true\">error.dark<\/span><\/span><\/div>",
-                                  "os" : "macos 10_16 framerx",
+                                  "os" : "macos 11_0 framerx",
                                   "size" : {
                                     "height" : 16,
-                                    "width" : 86
+                                    "width" : 56
                                   },
                                   "width" : 0
                                 },
@@ -6437,10 +6497,10 @@
                                 ],
                                 "cached" : {
                                   "html" : "<div data-offset-key=\"6qbs8-0-0\" class=\"public-DraftStyleDefault-block public-DraftStyleDefault-ltr\"><span data-offset-key=\"6qbs8-0-0\" style=\"tab-size:4;font-family:&quot;Fira Code&quot;, serif;-webkit-text-fill-color:rgb(0, 0, 0);font-size:14px;letter-spacing:0px;line-height:1.2;font-weight:400;font-style:normal\"><span data-text=\"true\">text.primary<\/span><\/span><\/div>",
-                                  "os" : "macos 10_16 framerx",
+                                  "os" : "macos 11_0 framerx",
                                   "size" : {
                                     "height" : 16,
-                                    "width" : 102
+                                    "width" : 70
                                   },
                                   "width" : 0
                                 },
@@ -6594,10 +6654,10 @@
                                 ],
                                 "cached" : {
                                   "html" : "<div data-offset-key=\"6qbs8-0-0\" class=\"public-DraftStyleDefault-block public-DraftStyleDefault-ltr\"><span data-offset-key=\"6qbs8-0-0\" style=\"tab-size:4;font-family:&quot;Fira Code&quot;, serif;-webkit-text-fill-color:rgb(0, 0, 0);font-size:14px;letter-spacing:0px;line-height:1.2;font-weight:400;font-style:normal\"><span data-text=\"true\">text.secondary<\/span><\/span><\/div>",
-                                  "os" : "macos 10_16 framerx",
+                                  "os" : "macos 11_0 framerx",
                                   "size" : {
                                     "height" : 16,
-                                    "width" : 119
+                                    "width" : 83
                                   },
                                   "width" : 0
                                 },
@@ -6753,10 +6813,10 @@
                                 ],
                                 "cached" : {
                                   "html" : "<div data-offset-key=\"6qbs8-0-0\" class=\"public-DraftStyleDefault-block public-DraftStyleDefault-ltr\"><span data-offset-key=\"6qbs8-0-0\" style=\"tab-size:4;font-family:&quot;Fira Code&quot;, serif;-webkit-text-fill-color:rgb(0, 0, 0);font-size:14px;letter-spacing:0px;line-height:1.2;font-weight:400;font-style:normal\"><span data-text=\"true\">text.disabled<\/span><\/span><\/div>",
-                                  "os" : "macos 10_16 framerx",
+                                  "os" : "macos 11_0 framerx",
                                   "size" : {
                                     "height" : 16,
-                                    "width" : 111
+                                    "width" : 73
                                   },
                                   "width" : 0
                                 },
@@ -7127,10 +7187,10 @@
                                 ],
                                 "cached" : {
                                   "html" : "<div data-offset-key=\"6qbs8-0-0\" class=\"public-DraftStyleDefault-block public-DraftStyleDefault-ltr\"><span data-offset-key=\"6qbs8-0-0\" style=\"tab-size:4;font-family:&quot;Fira Code&quot;, serif;-webkit-text-fill-color:rgb(0, 0, 0);font-size:14px;letter-spacing:0px;line-height:1.2;font-weight:400;font-style:normal\"><span data-text=\"true\">action.active<\/span><\/span><\/div>",
-                                  "os" : "macos 10_16 framerx",
+                                  "os" : "macos 11_0 framerx",
                                   "size" : {
                                     "height" : 16,
-                                    "width" : 111
+                                    "width" : 73
                                   },
                                   "width" : 0
                                 },
@@ -7285,10 +7345,10 @@
                                 ],
                                 "cached" : {
                                   "html" : "<div data-offset-key=\"6qbs8-0-0\" class=\"public-DraftStyleDefault-block public-DraftStyleDefault-ltr\"><span data-offset-key=\"6qbs8-0-0\" style=\"tab-size:4;font-family:&quot;Fira Code&quot;, serif;-webkit-text-fill-color:rgb(0, 0, 0);font-size:14px;letter-spacing:0px;line-height:1.2;font-weight:400;font-style:normal\"><span data-text=\"true\">action.hover<\/span><\/span><\/div>",
-                                  "os" : "macos 10_16 framerx",
+                                  "os" : "macos 11_0 framerx",
                                   "size" : {
                                     "height" : 16,
-                                    "width" : 102
+                                    "width" : 71
                                   },
                                   "width" : 0
                                 },
@@ -7445,10 +7505,10 @@
                                 ],
                                 "cached" : {
                                   "html" : "<div data-offset-key=\"6qbs8-0-0\" class=\"public-DraftStyleDefault-block public-DraftStyleDefault-ltr\"><span data-offset-key=\"6qbs8-0-0\" style=\"tab-size:4;font-family:&quot;Fira Code&quot;, serif;-webkit-text-fill-color:rgb(0, 0, 0);font-size:14px;letter-spacing:0px;line-height:1.2;font-weight:400;font-style:normal\"><span data-text=\"true\">action.selected<\/span><\/span><\/div>",
-                                  "os" : "macos 10_16 framerx",
+                                  "os" : "macos 11_0 framerx",
                                   "size" : {
                                     "height" : 16,
-                                    "width" : 128
+                                    "width" : 84
                                   },
                                   "width" : 0
                                 },
@@ -7606,10 +7666,10 @@
                                 ],
                                 "cached" : {
                                   "html" : "<div data-offset-key=\"6qbs8-0-0\" class=\"public-DraftStyleDefault-block public-DraftStyleDefault-ltr\"><span data-offset-key=\"6qbs8-0-0\" style=\"tab-size:4;font-family:&quot;Fira Code&quot;, serif;-webkit-text-fill-color:rgb(0, 0, 0);font-size:14px;letter-spacing:0px;line-height:1.2;font-weight:400;font-style:normal\"><span data-text=\"true\">action.disabled<\/span><\/span><\/div>",
-                                  "os" : "macos 10_16 framerx",
+                                  "os" : "macos 11_0 framerx",
                                   "size" : {
                                     "height" : 16,
-                                    "width" : 128
+                                    "width" : 86
                                   },
                                   "width" : 0
                                 },
@@ -7768,10 +7828,10 @@
                                 ],
                                 "cached" : {
                                   "html" : "<div data-offset-key=\"6qbs8-0-0\" class=\"public-DraftStyleDefault-block public-DraftStyleDefault-ltr\"><span data-offset-key=\"6qbs8-0-0\" style=\"tab-size:4;font-family:&quot;Fira Code&quot;, serif;-webkit-text-fill-color:rgb(0, 0, 0);font-size:14px;letter-spacing:0px;line-height:1.2;font-weight:400;font-style:normal\"><span data-text=\"true\">action.disabledBackground<\/span><\/span><\/div>",
-                                  "os" : "macos 10_16 framerx",
+                                  "os" : "macos 11_0 framerx",
                                   "size" : {
                                     "height" : 16,
-                                    "width" : 211
+                                    "width" : 154
                                   },
                                   "width" : 0
                                 },
@@ -8145,10 +8205,10 @@
                                 ],
                                 "cached" : {
                                   "html" : "<div data-offset-key=\"6qbs8-0-0\" class=\"public-DraftStyleDefault-block public-DraftStyleDefault-ltr\"><span data-offset-key=\"6qbs8-0-0\" style=\"tab-size:4;font-family:&quot;Fira Code&quot;, serif;-webkit-text-fill-color:rgb(0, 0, 0);font-size:14px;letter-spacing:0px;line-height:1.2;font-weight:400;font-style:normal\"><span data-text=\"true\">background.default<\/span><\/span><\/div>",
-                                  "os" : "macos 10_16 framerx",
+                                  "os" : "macos 11_0 framerx",
                                   "size" : {
                                     "height" : 16,
-                                    "width" : 153
+                                    "width" : 110
                                   },
                                   "width" : 0
                                 },
@@ -8304,10 +8364,10 @@
                                 ],
                                 "cached" : {
                                   "html" : "<div data-offset-key=\"6qbs8-0-0\" class=\"public-DraftStyleDefault-block public-DraftStyleDefault-ltr\"><span data-offset-key=\"6qbs8-0-0\" style=\"tab-size:4;font-family:&quot;Fira Code&quot;, serif;-webkit-text-fill-color:rgb(0, 0, 0);font-size:14px;letter-spacing:0px;line-height:1.2;font-weight:400;font-style:normal\"><span data-text=\"true\">background.paper<\/span><\/span><\/div>",
-                                  "os" : "macos 10_16 framerx",
+                                  "os" : "macos 11_0 framerx",
                                   "size" : {
                                     "height" : 16,
-                                    "width" : 136
+                                    "width" : 102
                                   },
                                   "width" : 0
                                 },
@@ -8686,10 +8746,10 @@
                                 ],
                                 "cached" : {
                                   "html" : "<div data-offset-key=\"6qbs8-0-0\" class=\"public-DraftStyleDefault-block public-DraftStyleDefault-ltr\"><span data-offset-key=\"6qbs8-0-0\" style=\"tab-size:4;font-family:&quot;Fira Code&quot;, serif;-webkit-text-fill-color:rgb(0, 0, 0);font-size:14px;letter-spacing:0px;line-height:1.2;font-weight:400;font-style:normal\"><span data-text=\"true\">divider<\/span><\/span><\/div>",
-                                  "os" : "macos 10_16 framerx",
+                                  "os" : "macos 11_0 framerx",
                                   "size" : {
                                     "height" : 16,
-                                    "width" : 60
+                                    "width" : 41
                                   },
                                   "width" : 0
                                 },
@@ -9064,6 +9124,7 @@
             "intrinsicWidth" : null,
             "isExternalMaster" : null,
             "isMaster" : false,
+            "isScreen" : true,
             "isTarget" : false,
             "left" : 0,
             "locked" : false,
@@ -9318,5 +9379,5 @@
     ],
     "visible" : false
   },
-  "version" : 74
+  "version" : 75
 }

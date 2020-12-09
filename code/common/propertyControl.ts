@@ -183,3 +183,71 @@ export const propString = (propertyName: string, title: string, defaultValue?: s
         placeholder
     }
 ] as PropertyControlDescription
+
+
+///////////////////////////////////////////////////////////////////////////////
+// NEW WORLD STARTS HERE
+
+export const Control = {
+    array: (title: string, propertyControl: ControlDescription, maxCount?: number) => ({
+        type: ControlType.Array,
+        title,
+        propertyControl,
+        maxCount
+    } as ControlDescription),
+    boolean: (title: string, defaultValue?: boolean, enabledTitle?: string, disabledTitle?: string) => ({
+        type: ControlType.Boolean,
+        title,
+        defaultValue,
+        enabledTitle,
+        disabledTitle
+    } as ControlDescription),
+    componentInstance: (title: string) => ({
+        type: ControlType.ComponentInstance,
+        title
+    } as ControlDescription),
+    enum: (title: string, options: string[], defaultValue: string, optionTitles?: string[]) => ({
+        type: ControlType.Enum,
+        title,
+        defaultValue,
+        options,
+        optionTitles
+    } as ControlDescription),
+    eventHandler: (title: string) => ({
+        type: ControlType.EventHandler,
+        title
+    } as ControlDescription),
+    number: (title: string, defaultValue?: number, min?: number, max?: number, step?: number) => ({
+        type: ControlType.Number,
+        title,
+        defaultValue,
+        min,
+        max,
+        step
+    } as ControlDescription),
+    string: (title: string, defaultValue?: string, placeholder?: string, displayTextArea?: boolean) => ({
+        type: ControlType.String,
+        title,
+        defaultValue,
+        placeholder,
+        displayTextArea
+    } as ControlDescription)
+}
+
+export const DefaultControl: {[key: string]: ControlDescription} = {
+    autoFocus: Control.boolean("Auto focus", false),
+    checked: Control.boolean("Checked", false),
+    color: Control.enum("Color", ["inherit", "primary", "secondary", "default"], "primary"),
+    defaultStringValue: Control.string("Value", ""),
+    disabled: Control.boolean("Disabled", false),
+    error: Control.boolean("Error", false),
+    helperText: Control.string("Helper text", ""),
+    label: Control.string("label", ""),
+    labelPlacement: Control.enum("Label placement", ["bottom", "end", "start", "top"], "end"),
+    margin: Control.enum("Margin", ["none", "dense", "normal"], "normal"),
+    multiline: Control.boolean("Multiline", false),
+    placeholder: Control.string("Placeholder", ""),
+    required: Control.boolean("Required", false),
+    size: Control.enum("Size", ["medium", "small"], "medium"),
+    inputVariant: Control.enum("Variant", ["filled", "outlined", "standard"], "filled")
+}
