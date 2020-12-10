@@ -26,18 +26,6 @@
   resolved "https://registry.yarnpkg.com/@emotion/hash/-/hash-0.8.0.tgz#bbbff68978fefdbe68ccb533bc8cbe1d1afb5413"
   integrity sha512-kBJtf7PH6aWwZ6fka3zQ0p6SBYzx4fl1LoZXE2RrnYST9Xljm7WfKJrU4g/Xr3Beg72MLrp1AWNUmuYJTL7Cow==
 
-"@framer/4hpyr6fd.font-awesome-pro@^1.2.0":
-  version "1.2.0"
-  resolved "https://registry.framer.com/@framer/4hpyr6fd.font-awesome-pro/-/@framer/4hpyr6fd.font-awesome-pro-1.2.0.tgz#74fb1fd9167c0a8ca4cabdec2955078aef0a9809"
-  integrity sha512-d1k2ltR9wlxgtIe7PmJcLCS5fSH7TFDisrMc6m4GgmWC98RHJ8kF2baKcjFVexeow+EiHlPZoOKSvApz7KYpiA==
-  dependencies:
-    "@framer/framer.default" "^1.76.0"
-
-"@framer/framer.default@^1.76.0":
-  version "1.95.0"
-  resolved "https://registry.framer.com/@framer/framer.default/-/@framer/framer.default-1.95.0.tgz#a331a74c27d4fc44d17790af535622d3a5956ab3"
-  integrity sha512-fVZ6Wbkp2+YuVkrUETNOQB8aMMa2ao4X0IaaIYbyzxxwv9RKkKsK7mDgG9VuxrmAI3JvIyEi2QUDDob7FvVNJw==
-
 "@framer/framer.default@^1.79.0":
   version "1.79.0"
   resolved "https://registry.framer.com/@framer/framer.default/-/@framer/framer.default-1.79.0.tgz#2f979a15f8e1a701a643c2d50e736c40eab8d290"
