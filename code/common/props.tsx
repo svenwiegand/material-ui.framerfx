@@ -8,7 +8,6 @@ interface FormControl {
     color: Color
     disabled: boolean
     error: boolean
-    focused: boolean
     fullWidth: boolean
     required: boolean
     size: Size

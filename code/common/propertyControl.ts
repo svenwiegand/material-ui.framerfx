@@ -241,8 +241,7 @@ export const DefaultControl = {
     defaultStringValue: Control.String("Value", ""),
     disabled: Control.Boolean("Disabled", false),
     error: Control.Boolean("Error", false),
-    focused: Control.Boolean("Focused", false),
-    fullWidth: Control.Boolean("Full width", false),
+    fullWidth: Control.Boolean("Full width", true),
     helperText: Control.String("Helper text", ""),
     label: Control.String("label", ""),
     labelPlacement: Control.Enum("Label placement", ["bottom", "end", "start", "top"], "end"),
@@ -261,7 +260,6 @@ export const FormControlLabelControls: PropertyControls<FormControl> = {
 export const FormControlControls: PropertyControls<FormControl> = {
     variant: DefaultControl.inputVariant,
     color: DefaultControl.color,
-    focused: DefaultControl.focused,
     required: DefaultControl.required,
     error: DefaultControl.error,
     disabled: DefaultControl.disabled,

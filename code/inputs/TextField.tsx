@@ -18,7 +18,7 @@ export function TextField(props: Props) {
     const state = useDerivedState(defaultValue, onChangeText)
     state.updateIfDefaultValueChanged(defaultValue)
     const handleChange = (event: React.ChangeEvent<HTMLInputElement>) => state.setValue(event.target.value)
-    return withTheme(<MuiTextField value={state.value} onChange={handleChange} fullWidth {...other} />)
+    return withTheme(<MuiTextField value={state.value} onChange={handleChange} {...other} />)
 }
 
 addPropertyControls(TextField, {

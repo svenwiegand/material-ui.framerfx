@@ -36,11 +36,11 @@
                 },
                 "$control__focused" : {
                   "type" : "boolean",
-                  "value" : false
+                  "value" : true
                 },
                 "$control__fullWidth" : {
                   "type" : "boolean",
-                  "value" : false
+                  "value" : true
                 },
                 "$control__helperText" : {
                   "type" : "string",
