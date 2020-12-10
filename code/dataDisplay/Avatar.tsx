@@ -1,13 +1,14 @@
 import * as React from "react"
 import { addPropertyControls, ControlType } from "framer"
 import { withTheme } from "../common/theme"
-import { Avatar as MuiAvatar, Icon } from '@material-ui/core'
+import { Avatar as MuiAvatar } from '@material-ui/core'
 import { propertyControls } from "../common/propertyControl"
+import { Icon } from "./Icon"
 
 export function Avatar(props) {
     const { letters, icon, color, size, width, height, ...avatarProps } = props
     const sizeStyle = size === "fill" ? { width: Math.min(width, height), height: Math.min(width, height) } : {}
-    const content = icon > "" ? <Icon>{icon}</Icon> : letters
+    const content = icon > "" ? <Icon icon={icon} /> : letters
     return withTheme(
         <MuiAvatar
             style={{ backgroundColor: color, ...sizeStyle }}

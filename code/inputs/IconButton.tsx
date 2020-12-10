@@ -2,7 +2,8 @@ import * as React from "react"
 import { addPropertyControls, ControlType, ControlDescription } from "framer"
 import { withTheme } from "../common/theme"
 import { propertyControls, propString } from "../common/propertyControl"
-import { IconButton as MuiIconButton, Icon } from "@material-ui/core"
+import { IconButton as MuiIconButton } from "@material-ui/core"
+import { Icon } from "../dataDisplay/Icon"
 
 interface ButtonProps {
     icon: string
@@ -10,12 +11,11 @@ interface ButtonProps {
 }
 export function IconButton(props: ButtonProps) {
     const { icon, ...buttonProps } = props
-    const content = icon.startsWith("fa-") ? <Icon className={"fa " + icon} /> : <Icon>{icon}</Icon>
     return withTheme(
         <MuiIconButton
             {...buttonProps}
         >
-            {content}
+            <Icon icon={icon} />
         </MuiIconButton>
     )
 }

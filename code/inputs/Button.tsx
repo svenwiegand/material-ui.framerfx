@@ -2,7 +2,8 @@ import * as React from "react"
 import { addPropertyControls, ControlType, ControlDescription } from "framer"
 import { withTheme } from "../common/theme"
 import { propertyControls } from "../common/propertyControl"
-import { Button as MuiButton, Icon } from "@material-ui/core"
+import { Button as MuiButton } from "@material-ui/core"
+import { Icon } from "../dataDisplay/Icon"
 
 export interface ButtonProps {
     label: string
@@ -12,11 +13,11 @@ export interface ButtonProps {
 }
 export function Button(props: ButtonProps) {
     const { label, startIcon, endIcon, ...buttonProps } = props
-    const content = label.startsWith("icon:") ? <Icon>{label.substring("icon:".length)}</Icon> : label
+    const content = label.startsWith("icon:") ? <Icon icon={label.substring("icon:".length)} /> : label
     return withTheme(
         <MuiButton
-            startIcon={startIcon > "" ? <Icon>{startIcon}</Icon> : undefined}
-            endIcon={endIcon > "" ? <Icon>{endIcon}</Icon> : undefined}
+            startIcon={startIcon > "" ? <Icon icon={startIcon} /> : undefined}
+            endIcon={endIcon > "" ? <Icon icon={endIcon} /> : undefined}
             {...buttonProps}
         >
             {content}

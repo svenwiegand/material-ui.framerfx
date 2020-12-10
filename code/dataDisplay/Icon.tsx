@@ -18,18 +18,22 @@ if (!document.getElementById(styleId)) {
 }
 
 interface Props {
-    icon: string
-    color: string
-    fontSize: number
+    icon?: string
+    color?: string
+    fontSize?: number
 }
 export function Icon(props) {
     const { icon, color, fontSize, ...iconProps } = props
+    const fontAwesome = icon.match(/^(fa[lrs]?)\-(.*)/)
+    const className = fontAwesome ? fontAwesome[1] + " fa-" + fontAwesome[2] : ""
+    const content = fontAwesome ? "" : icon
     return withTheme(
         <MuiIcon 
             style={{ color, fontSize }}
+            className={className}
             {...iconProps}
         >
-            {icon}
+            {content}
         </MuiIcon>
     )
 }
