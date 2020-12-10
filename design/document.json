@@ -1761,65 +1761,6 @@
               },
               {
                 "__class" : "CodeComponentNode",
-                "$control__animation" : {
-                  "type" : "enum",
-                  "value" : "pulse"
-                },
-                "$control__variant" : {
-                  "type" : "enum",
-                  "value" : "rect"
-                },
-                "aspectRatio" : null,
-                "bottom" : 218,
-                "centerAnchorX" : 0.52859135285913528,
-                "centerAnchorY" : 0.72464622641509435,
-                "clip" : true,
-                "codeComponentIdentifier" : ".\/lab\/skeleton.tsx_Skeleton",
-                "codeComponentPackageVersion" : "1.79.0",
-                "codeOverrideEnabled" : false,
-                "constraintsLocked" : false,
-                "duplicatedFrom" : [
-                  "X0bsL8QIJ"
-                ],
-                "exportOptions" : [
-
-                ],
-                "fillColor" : "rgba(255,255,255,1)",
-                "fillEnabled" : false,
-                "fillImage" : null,
-                "fillImageOriginalName" : null,
-                "fillImagePixelHeight" : null,
-                "fillImagePixelWidth" : null,
-                "fillImageResize" : "fill",
-                "fillType" : "color",
-                "height" : 31,
-                "heightType" : 0,
-                "id" : "ZqaK6jexd",
-                "intrinsicHeight" : null,
-                "intrinsicWidth" : null,
-                "left" : null,
-                "locked" : false,
-                "name" : null,
-                "opacity" : 1,
-                "originalid" : null,
-                "parentid" : "sFk8H4RoG",
-                "previewSettings" : null,
-                "radius" : 0,
-                "radiusBottomLeft" : 0,
-                "radiusBottomRight" : 0,
-                "radiusIsRelative" : false,
-                "radiusPerCorner" : false,
-                "radiusTopLeft" : 0,
-                "radiusTopRight" : 0,
-                "right" : 163,
-                "rotation" : 0,
-                "top" : null,
-                "visible" : true,
-                "width" : 350,
-                "widthType" : 0
-              },
-              {
-                "__class" : "CodeComponentNode",
                 "aspectRatio" : null,
                 "bottom" : 199,
                 "centerAnchorX" : 0.50066050198150591,
@@ -1868,6 +1809,132 @@
                 "visible" : true,
                 "width" : 200,
                 "widthType" : 0
+              },
+              {
+                "__class" : "CodeComponentNode",
+                "$control__animation" : {
+                  "type" : "enum",
+                  "value" : "pulse"
+                },
+                "$control__variant" : {
+                  "type" : "enum",
+                  "value" : "rect"
+                },
+                "aspectRatio" : null,
+                "bottom" : 163,
+                "centerAnchorX" : 0.58158995815899583,
+                "centerAnchorY" : 0.79186320754716977,
+                "clip" : true,
+                "codeComponentIdentifier" : ".\/lab\/Skeleton.tsx_Skeleton",
+                "codeComponentPackageVersion" : "1.79.0",
+                "codeOverrideEnabled" : false,
+                "constraintsLocked" : false,
+                "duplicatedFrom" : [
+                  "AVim9WNsl"
+                ],
+                "exportOptions" : [
+
+                ],
+                "fillColor" : "rgba(255,255,255,1)",
+                "fillEnabled" : false,
+                "fillImage" : null,
+                "fillImageOriginalName" : null,
+                "fillImagePixelHeight" : null,
+                "fillImagePixelWidth" : null,
+                "fillImageResize" : "fill",
+                "fillType" : "color",
+                "height" : 27,
+                "heightType" : 0,
+                "id" : "HsqdjC3JJ",
+                "intrinsicHeight" : null,
+                "intrinsicWidth" : null,
+                "left" : null,
+                "locked" : false,
+                "name" : null,
+                "opacity" : 1,
+                "originalid" : null,
+                "parentid" : "sFk8H4RoG",
+                "previewSettings" : null,
+                "radius" : 0,
+                "radiusBottomLeft" : 0,
+                "radiusBottomRight" : 0,
+                "radiusIsRelative" : false,
+                "radiusPerCorner" : false,
+                "radiusTopLeft" : 0,
+                "radiusTopRight" : 0,
+                "right" : 162,
+                "rotation" : 0,
+                "top" : null,
+                "visible" : true,
+                "width" : 276,
+                "widthType" : 0
+              },
+              {
+                "__class" : "CodeComponentNode",
+                "$control__flexItem" : {
+                  "type" : "boolean",
+                  "value" : false
+                },
+                "$control__light" : {
+                  "type" : "boolean",
+                  "value" : false
+                },
+                "$control__orientation" : {
+                  "type" : "enum",
+                  "value" : "horizontal"
+                },
+                "$control__variant" : {
+                  "type" : "enum",
+                  "value" : "fullWidth"
+                },
+                "aspectRatio" : null,
+                "bottom" : 192,
+                "centerAnchorX" : 0.5,
+                "centerAnchorY" : 0.78322072072072069,
+                "clip" : true,
+                "codeComponentIdentifier" : ".\/dataDisplay\/Divider.tsx_Divider",
+                "codeComponentPackageVersion" : "1.79.0",
+                "codeOverrideEnabled" : false,
+                "constraintsLocked" : false,
+                "duplicatedFrom" : [
+                  "GennIvJV9"
+                ],
+                "exportOptions" : [
+
+                ],
+                "fillColor" : "rgba(255,255,255,1)",
+                "fillEnabled" : false,
+                "fillImage" : null,
+                "fillImageOriginalName" : null,
+                "fillImagePixelHeight" : null,
+                "fillImagePixelWidth" : null,
+                "fillImageResize" : "fill",
+                "fillType" : "color",
+                "height" : 1,
+                "heightType" : 0,
+                "id" : "FR7EV1Rm9",
+                "intrinsicHeight" : 1,
+                "intrinsicWidth" : null,
+                "left" : null,
+                "locked" : false,
+                "name" : null,
+                "opacity" : 1,
+                "originalid" : null,
+                "parentid" : "sFk8H4RoG",
+                "previewSettings" : null,
+                "radius" : 0,
+                "radiusBottomLeft" : 0,
+                "radiusBottomRight" : 0,
+                "radiusIsRelative" : false,
+                "radiusPerCorner" : false,
+                "radiusTopLeft" : 0,
+                "radiusTopRight" : 0,
+                "right" : null,
+                "rotation" : 0,
+                "top" : null,
+                "visible" : true,
+                "width" : 0.94715984147952448,
+                "widthType" : 1
               }
             ],
             "clip" : true,
