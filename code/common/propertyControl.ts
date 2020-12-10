@@ -1,4 +1,4 @@
-import { ControlType, ControlDescription } from "framer"
+import { ControlType, ControlDescription, ComponentInstanceDescription, PropertyControls } from "framer"
 
 export type InputColor = "primary" | "secondary" | "default"
 export type LabelPlacement = "top" | "end" | "bottom" | "start"
@@ -189,65 +189,82 @@ export const propString = (propertyName: string, title: string, defaultValue?: s
 // NEW WORLD STARTS HERE
 
 export const Control = {
-    array: (title: string, propertyControl: ControlDescription, maxCount?: number) => ({
+    Array: <P>(title: string, propertyControl: ComponentInstanceDescription<P>, maxCount?: number): ControlDescription<P> => ({
         type: ControlType.Array,
         title,
         propertyControl,
         maxCount
-    } as ControlDescription),
-    boolean: (title: string, defaultValue?: boolean, enabledTitle?: string, disabledTitle?: string) => ({
+    }),
+    Boolean: <P>(title: string, defaultValue?: boolean, enabledTitle?: string, disabledTitle?: string): ControlDescription<P> => ({
         type: ControlType.Boolean,
         title,
         defaultValue,
         enabledTitle,
         disabledTitle
-    } as ControlDescription),
-    componentInstance: (title: string) => ({
+    }),
+    ComponentInstance: <P>(title: string): ControlDescription<P> => ({
         type: ControlType.ComponentInstance,
         title
-    } as ControlDescription),
-    enum: (title: string, options: string[], defaultValue: string, optionTitles?: string[]) => ({
+    }),
+    Enum: <P>(title: string, options: string[], defaultValue: string, optionTitles?: string[]): ControlDescription<P> => ({
         type: ControlType.Enum,
         title,
         defaultValue,
         options,
         optionTitles
-    } as ControlDescription),
-    eventHandler: (title: string) => ({
+    }),
+    EventHandler: <P>(title?: string): ControlDescription<P> => ({
         type: ControlType.EventHandler,
         title
-    } as ControlDescription),
-    number: (title: string, defaultValue?: number, min?: number, max?: number, step?: number) => ({
+    }),
+    Number: <P>(title: string, defaultValue?: number, min?: number, max?: number, step?: number): ControlDescription<P> => ({
         type: ControlType.Number,
         title,
         defaultValue,
         min,
         max,
         step
-    } as ControlDescription),
-    string: (title: string, defaultValue?: string, placeholder?: string, displayTextArea?: boolean) => ({
+    }),
+    String: <P>(title: string, defaultValue?: string, placeholder?: string, displayTextArea?: boolean): ControlDescription<P> => ({
         type: ControlType.String,
         title,
         defaultValue,
         placeholder,
         displayTextArea
-    } as ControlDescription)
+    })
 }
 
-export const DefaultControl: {[key: string]: ControlDescription} = {
-    autoFocus: Control.boolean("Auto focus", false),
-    checked: Control.boolean("Checked", false),
-    color: Control.enum("Color", ["inherit", "primary", "secondary", "default"], "primary"),
-    defaultStringValue: Control.string("Value", ""),
-    disabled: Control.boolean("Disabled", false),
-    error: Control.boolean("Error", false),
-    helperText: Control.string("Helper text", ""),
-    label: Control.string("label", ""),
-    labelPlacement: Control.enum("Label placement", ["bottom", "end", "start", "top"], "end"),
-    margin: Control.enum("Margin", ["none", "dense", "normal"], "normal"),
-    multiline: Control.boolean("Multiline", false),
-    placeholder: Control.string("Placeholder", ""),
-    required: Control.boolean("Required", false),
-    size: Control.enum("Size", ["medium", "small"], "medium"),
-    inputVariant: Control.enum("Variant", ["filled", "outlined", "standard"], "filled")
+export const DefaultControl = {
+    autoFocus: Control.Boolean("Auto focus", false),
+    checked: Control.Boolean("Checked", false),
+    color: Control.Enum("Color", ["inherit", "primary", "secondary", "default"], "primary"),
+    defaultStringValue: Control.String("Value", ""),
+    disabled: Control.Boolean("Disabled", false),
+    error: Control.Boolean("Error", false),
+    focused: Control.Boolean("Focused", false),
+    fullWidth: Control.Boolean("Full width", false),
+    helperText: Control.String("Helper text", ""),
+    label: Control.String("label", ""),
+    labelPlacement: Control.Enum("Label placement", ["bottom", "end", "start", "top"], "end"),
+    multiline: Control.Boolean("Multiline", false),
+    placeholder: Control.String("Placeholder", ""),
+    required: Control.Boolean("Required", false),
+    size: Control.Enum("Size", ["medium", "small"], "medium"),
+    inputVariant: Control.Enum("Variant", ["filled", "outlined", "standard"], "filled")
+}
+
+export const FormControlLabelControls: PropertyControls<FormControl> = {
+    label: DefaultControl.label,
+    helperText: DefaultControl.helperText
+}
+
+export const FormControlControls: PropertyControls<FormControl> = {
+    variant: DefaultControl.inputVariant,
+    color: DefaultControl.color,
+    focused: DefaultControl.focused,
+    required: DefaultControl.required,
+    error: DefaultControl.error,
+    disabled: DefaultControl.disabled,
+    fullWidth: DefaultControl.fullWidth,
+    size: DefaultControl.size,
 }

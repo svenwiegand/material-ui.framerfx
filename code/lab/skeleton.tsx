@@ -9,6 +9,6 @@ export function Skeleton(props) {
 }
 
 addPropertyControls(Skeleton, {
-    variant: Control.enum("Variant", ["text", "rect", "circle"], "rect"),
-    animation: Control.enum("Animation", ["pulse", "wave", "none"], "pulse"),
+    variant: Control.Enum("Variant", ["text", "rect", "circle"], "rect"),
+    animation: Control.Enum("Animation", ["pulse", "wave", "none"], "pulse"),
 })

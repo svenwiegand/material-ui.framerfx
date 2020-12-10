@@ -32,7 +32,15 @@
                 },
                 "$control__error" : {
                   "type" : "boolean",
-                  "value" : true
+                  "value" : false
+                },
+                "$control__focused" : {
+                  "type" : "boolean",
+                  "value" : false
+                },
+                "$control__fullWidth" : {
+                  "type" : "boolean",
+                  "value" : false
                 },
                 "$control__helperText" : {
                   "type" : "string",
@@ -41,6 +49,10 @@
                 "$control__label" : {
                   "type" : "string",
                   "value" : "Label"
+                },
+                "$control__margin" : {
+                  "type" : "enum",
+                  "value" : "normal"
                 },
                 "$control__multiline" : {
                   "type" : "boolean",
@@ -86,12 +98,12 @@
                 },
                 "$control__variant" : {
                   "type" : "enum",
-                  "value" : "standard"
+                  "value" : "filled"
                 },
                 "aspectRatio" : null,
                 "bottom" : null,
-                "centerAnchorX" : 0.5,
-                "centerAnchorY" : 0.065967016491754127,
+                "centerAnchorX" : 0.32933333333333331,
+                "centerAnchorY" : 0.071214392803598203,
                 "clip" : true,
                 "codeComponentIdentifier" : ".\/inputs\/TextField.tsx_TextField",
                 "codeComponentPackageVersion" : "1.76.0",
@@ -111,12 +123,12 @@
                 "fillImagePixelWidth" : null,
                 "fillImageResize" : "fill",
                 "fillType" : "color",
-                "height" : 48,
+                "height" : 55,
                 "heightType" : 0,
                 "id" : "Afi5dMNx7",
                 "intrinsicHeight" : 56,
                 "intrinsicWidth" : 280,
-                "left" : null,
+                "left" : 20,
                 "locked" : false,
                 "name" : null,
                 "opacity" : 1,
@@ -475,91 +487,6 @@
               },
               {
                 "__class" : "CodeComponentNode",
-                "$control__checked" : {
-                  "type" : "boolean",
-                  "value" : true
-                },
-                "$control__color" : {
-                  "type" : "enum",
-                  "value" : "primary"
-                },
-                "$control__disabled" : {
-                  "type" : "boolean",
-                  "value" : false
-                },
-                "$control__label" : {
-                  "type" : "string",
-                  "value" : "Mein erster Radio-Button"
-                },
-                "$control__labelPlacement" : {
-                  "type" : "enum",
-                  "value" : "end"
-                },
-                "$control__onChange" : {
-                  "type" : "eventhandler"
-                },
-                "$control__onChangeChecked" : {
-                  "type" : "eventhandler"
-                },
-                "$control__required" : {
-                  "type" : "boolean",
-                  "value" : false
-                },
-                "$control__size" : {
-                  "type" : "enum",
-                  "value" : "medium"
-                },
-                "aspectRatio" : null,
-                "bottom" : 305,
-                "centerAnchorX" : 0.27600000000000002,
-                "centerAnchorY" : 0.51124437781109444,
-                "clip" : true,
-                "codeComponentIdentifier" : ".\/inputs\/Radio.tsx_Radio",
-                "codeComponentPackageVersion" : "1.76.0",
-                "codeOverrideEnabled" : false,
-                "constraintsLocked" : false,
-                "duplicatedFrom" : [
-                  "jJMVasqJa"
-                ],
-                "exportOptions" : [
-
-                ],
-                "fillColor" : "rgba(255,255,255,1)",
-                "fillEnabled" : false,
-                "fillImage" : null,
-                "fillImageOriginalName" : null,
-                "fillImagePixelHeight" : null,
-                "fillImagePixelWidth" : null,
-                "fillImageResize" : "fill",
-                "fillType" : "color",
-                "height" : 42,
-                "heightType" : 0,
-                "id" : "DmQTVieQx",
-                "intrinsicHeight" : null,
-                "intrinsicWidth" : null,
-                "left" : 88,
-                "locked" : false,
-                "name" : null,
-                "opacity" : 1,
-                "originalid" : null,
-                "parentid" : "h9x7rZOO3",
-                "previewSettings" : null,
-                "radius" : 0,
-                "radiusBottomLeft" : 0,
-                "radiusBottomRight" : 0,
-                "radiusIsRelative" : false,
-                "radiusPerCorner" : false,
-                "radiusTopLeft" : 0,
-                "radiusTopRight" : 0,
-                "right" : null,
-                "rotation" : 0,
-                "top" : null,
-                "visible" : true,
-                "width" : 1,
-                "widthType" : 3
-              },
-              {
-                "__class" : "CodeComponentNode",
                 "$control__color" : {
                   "type" : "enum",
                   "value" : "primary"
@@ -639,7 +566,7 @@
                   "value" : "medium"
                 },
                 "aspectRatio" : null,
-                "bottom" : 47,
+                "bottom" : null,
                 "centerAnchorX" : 0.26000000000000001,
                 "centerAnchorY" : 0.80659670164917541,
                 "clip" : true,
@@ -666,7 +593,92 @@
                 "id" : "wTHxOgJOx",
                 "intrinsicHeight" : null,
                 "intrinsicWidth" : null,
-                "left" : 20,
+                "left" : 0,
+                "locked" : false,
+                "name" : null,
+                "opacity" : 1,
+                "originalid" : null,
+                "parentid" : "h9x7rZOO3",
+                "previewSettings" : null,
+                "radius" : 0,
+                "radiusBottomLeft" : 0,
+                "radiusBottomRight" : 0,
+                "radiusIsRelative" : false,
+                "radiusPerCorner" : false,
+                "radiusTopLeft" : 0,
+                "radiusTopRight" : 0,
+                "right" : null,
+                "rotation" : 0,
+                "top" : 0,
+                "visible" : true,
+                "width" : 1,
+                "widthType" : 3
+              },
+              {
+                "__class" : "CodeComponentNode",
+                "$control__checked" : {
+                  "type" : "boolean",
+                  "value" : true
+                },
+                "$control__color" : {
+                  "type" : "enum",
+                  "value" : "primary"
+                },
+                "$control__disabled" : {
+                  "type" : "boolean",
+                  "value" : false
+                },
+                "$control__label" : {
+                  "type" : "string",
+                  "value" : "Mein erster Radio-Button"
+                },
+                "$control__labelPlacement" : {
+                  "type" : "enum",
+                  "value" : "end"
+                },
+                "$control__onChange" : {
+                  "type" : "eventhandler"
+                },
+                "$control__onChangeChecked" : {
+                  "type" : "eventhandler"
+                },
+                "$control__required" : {
+                  "type" : "boolean",
+                  "value" : false
+                },
+                "$control__size" : {
+                  "type" : "enum",
+                  "value" : "medium"
+                },
+                "aspectRatio" : null,
+                "bottom" : 305,
+                "centerAnchorX" : 0.27600000000000002,
+                "centerAnchorY" : 0.51124437781109444,
+                "clip" : true,
+                "codeComponentIdentifier" : ".\/inputs\/Radio.tsx_Radio",
+                "codeComponentPackageVersion" : "1.76.0",
+                "codeOverrideEnabled" : false,
+                "constraintsLocked" : false,
+                "duplicatedFrom" : [
+                  "jJMVasqJa"
+                ],
+                "exportOptions" : [
+
+                ],
+                "fillColor" : "rgba(255,255,255,1)",
+                "fillEnabled" : false,
+                "fillImage" : null,
+                "fillImageOriginalName" : null,
+                "fillImagePixelHeight" : null,
+                "fillImagePixelWidth" : null,
+                "fillImageResize" : "fill",
+                "fillType" : "color",
+                "height" : 42,
+                "heightType" : 0,
+                "id" : "DmQTVieQx",
+                "intrinsicHeight" : null,
+                "intrinsicWidth" : null,
+                "left" : 88,
                 "locked" : false,
                 "name" : null,
                 "opacity" : 1,
