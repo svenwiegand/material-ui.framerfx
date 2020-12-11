@@ -7,15 +7,17 @@ import { Icon } from "../dataDisplay/Icon"
 
 interface ButtonProps {
     icon: string
+    size: "small" | "medium"
     onClick: (event: React.MouseEvent<HTMLButtonElement>) => void
 }
 export function IconButton(props: ButtonProps) {
-    const { icon, ...buttonProps } = props
+    const { icon, size, ...buttonProps } = props
     return withTheme(
         <MuiIconButton
+            size={size}
             {...buttonProps}
         >
-            <Icon icon={icon} />
+            <Icon icon={icon} fontSize={size} />
         </MuiIconButton>
     )
 }

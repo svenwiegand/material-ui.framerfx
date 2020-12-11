@@ -27,9 +27,10 @@ export function Icon(props) {
     const fontAwesome = icon.match(/^(fa[lrs]?)\-(.*)/)
     const className = fontAwesome ? fontAwesome[1] + " fa-" + fontAwesome[2] : ""
     const content = fontAwesome ? "" : icon
+    const fontFamily = fontAwesome ? {fontFamily: "'Font Awesome 5 Pro', 'Font Awesome 5', 'Font Awesome', 'Material Icons'"} : {}
     return withTheme(
         <MuiIcon 
-            style={{ color, fontSize }}
+            style={{ color, fontSize, ...fontFamily}}
             className={className}
             {...iconProps}
         >
