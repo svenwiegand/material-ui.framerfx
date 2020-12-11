@@ -22,15 +22,22 @@ interface Props {
     color?: string
     fontSize?: number
 }
+const fontAwesomeWeight = {
+    fal: 300,
+    far: 400,
+    fas: 900,
+    fa: 900,
+}
+const fontAwesomeFamily = "'Font Awesome 5 Pro', 'Font Awesome 5', 'Font Awesome', 'Material Icons'"
 export function Icon(props) {
     const { icon, color, fontSize, ...iconProps } = props
     const fontAwesome = icon.match(/^(fa[lrs]?)\-(.*)/)
     const className = fontAwesome ? fontAwesome[1] + " fa-" + fontAwesome[2] : ""
     const content = fontAwesome ? "" : icon
-    const fontFamily = fontAwesome ? {fontFamily: "'Font Awesome 5 Pro', 'Font Awesome 5', 'Font Awesome', 'Material Icons'"} : {}
+    const fontParameters = fontAwesome ? {fontFamily: fontAwesomeFamily, fontWeight: fontAwesomeWeight[fontAwesome[1]]} : {}
     return withTheme(
         <MuiIcon 
-            style={{ color, fontSize, ...fontFamily}}
+            style={{ color, fontSize, ...fontParameters}}
             className={className}
             {...iconProps}
         >
