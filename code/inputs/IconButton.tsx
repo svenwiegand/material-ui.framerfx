@@ -6,9 +6,9 @@ import { IconButton as MuiIconButton } from "@material-ui/core"
 import { Icon } from "../dataDisplay/Icon"
 
 interface ButtonProps {
-    icon: string
-    size: "small" | "medium"
-    onClick: (event: React.MouseEvent<HTMLButtonElement>) => void
+    icon?: string
+    size?: "small" | "medium"
+    onClick?: (event: React.MouseEvent<HTMLButtonElement>) => void
 }
 export function IconButton(props: ButtonProps) {
     const { icon, size, ...buttonProps } = props

@@ -1761,10 +1761,103 @@
               },
               {
                 "__class" : "CodeComponentNode",
+                "$control__action" : {
+                  "type" : "enum",
+                  "value" : "icon"
+                },
+                "$control__actionIcon" : {
+                  "type" : "string",
+                  "value" : "close"
+                },
+                "$control__avatar" : {
+                  "type" : "enum",
+                  "value" : "avatar"
+                },
+                "$control__avatarColor" : {
+                  "type" : "color",
+                  "value" : "#b5b5b5"
+                },
+                "$control__avatarIcon" : {
+                  "type" : "string",
+                  "value" : "person"
+                },
+                "$control__avatarLetters" : {
+                  "type" : "string",
+                  "value" : "FL"
+                },
+                "$control__avatarSrc" : {
+                  "type" : "image",
+                  "value" : ""
+                },
+                "$control__avatarVariant" : {
+                  "type" : "enum",
+                  "value" : "circle"
+                },
+                "$control__beforeText" : {
+                  "type" : "enum",
+                  "value" : "avatar"
+                },
+                "$control__button" : {
+                  "type" : "boolean",
+                  "value" : true
+                },
+                "$control__dense" : {
+                  "type" : "boolean",
+                  "value" : false
+                },
+                "$control__disabled" : {
+                  "type" : "boolean",
+                  "value" : false
+                },
+                "$control__disableGutters" : {
+                  "type" : "boolean",
+                  "value" : false
+                },
+                "$control__divider" : {
+                  "type" : "boolean",
+                  "value" : false
+                },
+                "$control__icon" : {
+                  "type" : "string",
+                  "value" : "folder"
+                },
+                "$control__listItemIcon" : {
+                  "type" : "string",
+                  "value" : ""
+                },
+                "$control__onActionClick" : {
+                  "type" : "eventhandler"
+                },
+                "$control__onClick" : {
+                  "type" : "eventhandler"
+                },
+                "$control__onSeconaryActionClick" : {
+                  "type" : "eventhandler"
+                },
+                "$control__primary" : {
+                  "type" : "string",
+                  "value" : "First line"
+                },
+                "$control__secondary" : {
+                  "type" : "string",
+                  "value" : "second line"
+                },
+                "$control__secondaryAction" : {
+                  "type" : "enum",
+                  "value" : "none"
+                },
+                "$control__secondaryActionIcon" : {
+                  "type" : "string",
+                  "value" : "delete"
+                },
+                "$control__selected" : {
+                  "type" : "boolean",
+                  "value" : false
+                },
                 "aspectRatio" : null,
-                "bottom" : 199,
-                "centerAnchorX" : 0.50066050198150591,
-                "centerAnchorY" : 0.74831081081081086,
+                "bottom" : 221,
+                "centerAnchorX" : 0.5,
+                "centerAnchorY" : 0.70945945945945943,
                 "clip" : true,
                 "codeComponentIdentifier" : ".\/dataDisplay\/ListItem.tsx_ListItem",
                 "codeComponentPackageVersion" : "1.79.0",
@@ -1784,7 +1877,7 @@
                 "fillImagePixelWidth" : null,
                 "fillImageResize" : "fill",
                 "fillType" : "color",
-                "height" : 49,
+                "height" : 74,
                 "heightType" : 0,
                 "id" : "tst9UPAMK",
                 "intrinsicHeight" : null,
@@ -1807,8 +1900,8 @@
                 "rotation" : 0,
                 "top" : null,
                 "visible" : true,
-                "width" : 200,
-                "widthType" : 0
+                "width" : 1,
+                "widthType" : 3
               },
               {
                 "__class" : "CodeComponentNode",
@@ -9123,107 +9216,7 @@
             "centerAnchorX" : 0,
             "centerAnchorY" : 0,
             "children" : [
-              {
-                "__class" : "CodeComponentNode",
-                "$control__anchor" : {
-                  "type" : "componentinstance"
-                },
-                "$control__color" : {
-                  "type" : "enum",
-                  "value" : "primary"
-                },
-                "$control__disabled" : {
-                  "type" : "boolean",
-                  "value" : false
-                },
-                "$control__disableElevation" : {
-                  "type" : "boolean",
-                  "value" : false
-                },
-                "$control__endIcon" : {
-                  "type" : "string",
-                  "value" : ""
-                },
-                "$control__fullWidth" : {
-                  "type" : "boolean",
-                  "value" : false
-                },
-                "$control__href" : {
-                  "type" : "string",
-                  "value" : ""
-                },
-                "$control__label" : {
-                  "type" : "string",
-                  "value" : ""
-                },
-                "$control__onClick" : {
-                  "type" : "eventhandler"
-                },
-                "$control__open" : {
-                  "type" : "boolean",
-                  "value" : true
-                },
-                "$control__size" : {
-                  "type" : "enum",
-                  "value" : "small"
-                },
-                "$control__startIcon" : {
-                  "type" : "string",
-                  "value" : ""
-                },
-                "$control__variant" : {
-                  "type" : "enum",
-                  "value" : "contained"
-                },
-                "aspectRatio" : null,
-                "bottom" : null,
-                "centerAnchorX" : 0,
-                "centerAnchorY" : 0,
-                "clip" : true,
-                "codeComponentIdentifier" : ".\/navigation\/Menu.tsx_Menu",
-                "codeComponentPackageVersion" : "1.79.0",
-                "codeOverrideEnabled" : false,
-                "constraintsLocked" : false,
-                "duplicatedFrom" : [
-                  "sr7vgtHag"
-                ],
-                "exportOptions" : [
 
-                ],
-                "fillColor" : "rgba(255,255,255,1)",
-                "fillEnabled" : false,
-                "fillImage" : null,
-                "fillImageOriginalName" : null,
-                "fillImagePixelHeight" : null,
-                "fillImagePixelWidth" : null,
-                "fillImageResize" : "fill",
-                "fillType" : "color",
-                "height" : null,
-                "heightType" : 0,
-                "id" : "tYmxnyzMC",
-                "intrinsicHeight" : null,
-                "intrinsicWidth" : null,
-                "left" : null,
-                "locked" : false,
-                "name" : null,
-                "opacity" : 1,
-                "originalid" : null,
-                "parentid" : "Mb7kjUS3r",
-                "previewSettings" : null,
-                "radius" : 0,
-                "radiusBottomLeft" : 0,
-                "radiusBottomRight" : 0,
-                "radiusIsRelative" : false,
-                "radiusPerCorner" : false,
-                "radiusTopLeft" : 0,
-                "radiusTopRight" : 0,
-                "right" : null,
-                "rotation" : 0,
-                "top" : null,
-                "visible" : true,
-                "width" : null,
-                "widthType" : 0
-              }
             ],
             "clip" : true,
             "codeOverrideEnabled" : false,

@@ -202,9 +202,18 @@ export const Control = {
         enabledTitle,
         disabledTitle
     }),
+    Color: <P>(title: string, defaultValue?: string): ControlDescription<P> => ({
+        type: ControlType.Color,
+        title,
+        defaultValue
+    }),
     ComponentInstance: <P>(title: string): ControlDescription<P> => ({
         type: ControlType.ComponentInstance,
         title
+    }),
+    Conditional: <P>(show: (props: P) => boolean, control: ControlDescription<P>) => ({
+        ... control,
+        hidden: (props: P) => !show(props)
     }),
     Enum: <P>(title: string, options: string[], defaultValue: string, optionTitles?: string[]): ControlDescription<P> => ({
         type: ControlType.Enum,
@@ -216,6 +225,11 @@ export const Control = {
     EventHandler: <P>(title?: string): ControlDescription<P> => ({
         type: ControlType.EventHandler,
         title
+    }),
+    Image: <P>(title: string, defaultValue?: string): ControlDescription<P> => ({
+        type: ControlType.Image,
+        title,
+        defaultValue
     }),
     Number: <P>(title: string, defaultValue?: number, min?: number, max?: number, step?: number): ControlDescription<P> => ({
         type: ControlType.Number,
@@ -248,6 +262,7 @@ export const DefaultControl = {
     multiline: Control.Boolean("Multiline", false),
     placeholder: Control.String("Placeholder", ""),
     required: Control.Boolean("Required", false),
+    selected: Control.Boolean("Selected", false),
     size: Control.Enum("Size", ["medium", "small"], "medium"),
     inputVariant: Control.Enum("Variant", ["filled", "outlined", "standard"], "filled")
 }
