@@ -1,4 +1,4 @@
-import { ControlType, ControlDescription, ComponentInstanceDescription, PropertyControls } from "framer"
+import { ControlType, ControlDescription, PropertyControls, NumberControlDescription } from "framer"
 
 export type InputColor = "primary" | "secondary" | "default"
 export type LabelPlacement = "top" | "end" | "bottom" | "start"
@@ -189,7 +189,7 @@ export const propString = (propertyName: string, title: string, defaultValue?: s
 // NEW WORLD STARTS HERE
 
 export const Control = {
-    Array: <P>(title: string, propertyControl: ComponentInstanceDescription<P>, maxCount?: number): ControlDescription<P> => ({
+    Array: <P>(title: string, propertyControl: any, maxCount?: number): ControlDescription<P> => ({
         type: ControlType.Array,
         title,
         propertyControl,
@@ -226,6 +226,24 @@ export const Control = {
         type: ControlType.EventHandler,
         title
     }),
+    FusedNumber: <P>(
+        title: string, 
+        defaultValue: number, 
+        toggleKey: keyof P, 
+        toggleTitles: [string, string], 
+        valueKeys: [keyof P, keyof P, keyof P, keyof P], 
+        valueLabels: [string, string, string, string], 
+        min?: number
+    ): ControlDescription<P> => ({
+        type: ControlType.FusedNumber,
+        title,
+        defaultValue,
+        toggleKey,
+        toggleTitles,
+        valueKeys,
+        valueLabels,
+        min
+    }),
     Image: <P>(title: string, defaultValue?: string): ControlDescription<P> => ({
         type: ControlType.Image,
         title,
@@ -260,6 +278,7 @@ export const DefaultControl = {
     label: Control.String("label", ""),
     labelPlacement: Control.Enum("Label placement", ["bottom", "end", "start", "top"], "end"),
     multiline: Control.Boolean("Multiline", false),
+    padding: Control.FusedNumber("Padding", 0, "mixedPadding", ["Padding", "Padding per edge"], ["paddingTop", "paddingRight", "paddingBottom", "paddingLeft"], ["T", "R", "B", "L"], 0),
     placeholder: Control.String("Placeholder", ""),
     required: Control.Boolean("Required", false),
     selected: Control.Boolean("Selected", false),
