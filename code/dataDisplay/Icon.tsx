@@ -31,14 +31,15 @@ const fontAwesomeWeight = {
 const fontAwesomeFamily = "'Font Awesome 5 Pro', 'Font Awesome 5', 'Font Awesome', 'Material Icons'"
 export function Icon(props) {
     const { icon, color, fontSize, ...iconProps } = props
-    const fontAwesome = icon.match(/^(fa[lrs]?)\-(.*)/)
+    const fontAwesome: Array<string> | null = icon?.match(/^(fa[lrs]?)\-([^,]*)(,[\+\-][0-9]+)?/)
     const className = fontAwesome ? fontAwesome[1] + " fa-" + fontAwesome[2] : ""
-    const content = fontAwesome ? "" : icon
-    const fontParameters = fontAwesome ? {fontFamily: fontAwesomeFamily, fontWeight: fontAwesomeWeight[fontAwesome[1]]} : {}
+    const offset = fontAwesome?.length > 3 ? Number.parseInt(fontAwesome[3]?.substr(1)) : 0
+    console.log(fontAwesome)
+    const content = fontAwesome ? <i className={className} style={{fontSize: "0.7em", marginLeft: offset}} /> : icon
+    const layoutParameters = fontAwesome ? {display: "flex", alignItems: "center", justifyContent: "center"} : {}
     return withTheme(
         <MuiIcon 
-            style={{ color, fontSize, ...fontParameters}}
-            className={className}
+            style={{ color, fontSize, ...layoutParameters }}
             {...iconProps}
         >
             {content}
