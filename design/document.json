@@ -1781,6 +1781,10 @@
                   "type" : "string",
                   "value" : "person"
                 },
+                "$control__avatarIconColor" : {
+                  "type" : "color",
+                  "value" : "var(--token-b3018294-2656-434f-97bc-223c9bdc026e, rgb(0, 110, 230)) \/* {\"name\":\"primary.main\",\"packageIdentifier\":\"@framer\/4hpyr6fd.orgavision-material-ui\"} *\/"
+                },
                 "$control__avatarLetters" : {
                   "type" : "string",
                   "value" : "FL"
@@ -1836,19 +1840,19 @@
                 },
                 "$control__primary" : {
                   "type" : "string",
-                  "value" : "First line"
+                  "value" : "First <strong>line<\/strong>"
                 },
                 "$control__secondary" : {
                   "type" : "string",
-                  "value" : "second line"
+                  "value" : "Secondary <i>text<\/i>"
                 },
                 "$control__secondaryAction" : {
                   "type" : "enum",
-                  "value" : "none"
+                  "value" : "icon"
                 },
                 "$control__secondaryActionIcon" : {
                   "type" : "string",
-                  "value" : "delete"
+                  "value" : "close"
                 },
                 "$control__selected" : {
                   "type" : "boolean",

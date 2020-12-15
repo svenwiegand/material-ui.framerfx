@@ -11,7 +11,7 @@ import {
 import { Color } from "framer"
 
 const colorPattern = /(rgb\(\d+, \d+, \d+\))/
-function color(colorKey: string): string {
+export function color(colorKey: string): string {
     const cssColorDef = colors[colorKey]
     if (cssColorDef) {
         const [fullMatch, rgb] = colorPattern.exec(cssColorDef)
