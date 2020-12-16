@@ -20,7 +20,7 @@ if (!document.getElementById(styleId)) {
 interface Props {
     icon?: string
     color?: string
-    fontSize?: number
+    fontSize?: number | string
 }
 const fontAwesomeWeight = {
     fal: 300,
@@ -34,12 +34,14 @@ export function Icon(props) {
     const fontAwesome: Array<string> | null = icon?.match(/^(fa[lrs]?)\-([^,]*)(,[\+\-][0-9]+)?/)
     const className = fontAwesome ? fontAwesome[1] + " fa-" + fontAwesome[2] : ""
     const offset = fontAwesome?.length > 3 ? Number.parseInt(fontAwesome[3]?.substr(1)) : 0
-    console.log(fontAwesome)
     const content = fontAwesome ? <i className={className} style={{fontSize: "0.7em", marginLeft: offset}} /> : icon
     const layoutParameters = fontAwesome ? {display: "flex", alignItems: "center", justifyContent: "center"} : {}
+    const fontSizeStyle = typeof fontSize === "number" ? {fontSize} : {}
+    const fontSizeProp = typeof fontSize !== "number" ? {fontSize} : {}
     return withTheme(
         <MuiIcon 
-            style={{ color, fontSize, ...layoutParameters }}
+            style={{ color, ...fontSizeStyle, ...layoutParameters, ...fontSizeStyle }}
+            {...fontSizeProp}
             {...iconProps}
         >
             {content}

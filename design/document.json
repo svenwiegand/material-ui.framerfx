@@ -1226,12 +1226,12 @@
                 },
                 "$control__size" : {
                   "type" : "enum",
-                  "value" : "large"
+                  "value" : "medium"
                 },
                 "aspectRatio" : null,
                 "bottom" : null,
-                "centerAnchorX" : 0.50198150594451785,
-                "centerAnchorY" : 0.32882882882882886,
+                "centerAnchorX" : 0.51519154557463676,
+                "centerAnchorY" : 0.40136054421768708,
                 "clip" : true,
                 "codeComponentIdentifier" : ".\/inputs\/IconButton.tsx_IconButton",
                 "codeComponentPackageVersion" : "1.79.0",
@@ -1251,7 +1251,7 @@
                 "fillImagePixelWidth" : null,
                 "fillImageResize" : "fill",
                 "fillType" : "color",
-                "height" : 42,
+                "height" : 48,
                 "heightType" : 0,
                 "id" : "tyYAXk6H3",
                 "intrinsicHeight" : null,
@@ -1270,11 +1270,11 @@
                 "radiusPerCorner" : false,
                 "radiusTopLeft" : 0,
                 "radiusTopRight" : 0,
-                "right" : null,
+                "right" : 343,
                 "rotation" : 0,
                 "top" : 271,
                 "visible" : true,
-                "width" : 42,
+                "width" : 48,
                 "widthType" : 0
               },
               {
