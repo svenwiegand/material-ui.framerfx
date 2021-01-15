@@ -1,11 +1,11 @@
-import MuiTextField from "@material-ui/core/TextField"
+import MuiInputBase from "@material-ui/core/InputBase"
 import { addPropertyControls } from "framer"
 import * as React from "react"
-import { Control, DefaultControl, FormControlControls, FormControlLabelControls } from "../common/propertyControl"
+import { Control, DefaultControl } from "../common/propertyControl"
 import { useDerivedState } from "../common/state"
 import { withTheme } from "../common/theme"
 
-interface Props extends FormControl {
+export interface Props extends FormControl {
     placeholder: string,
     value: string,
     multiline: boolean,
@@ -13,21 +13,23 @@ interface Props extends FormControl {
     type: string,
     onChangeText: (text: string) => void
 }
-export function TextField(props: Props) {
-    const { value: value, onChangeText, ...other } = props
+export function InputBase(props: Props) {
+    const { value, onChangeText, ...other } = props
     const state = useDerivedState(value, onChangeText)
     state.updateIfDefaultValueChanged(value)
     const handleChange = (event: React.ChangeEvent<HTMLInputElement>) => state.setValue(event.target.value)
-    return withTheme(<MuiTextField value={state.value} onChange={handleChange} {...other} />)
+    return withTheme(<MuiInputBase value={state.value} onChange={handleChange} {...other} />)
 }
 
-addPropertyControls(TextField, {
-    ... FormControlLabelControls,
+addPropertyControls(InputBase, {
     placeholder: DefaultControl.placeholder,
     value: Control.String("Value", "", "", true),
     autoFocus: DefaultControl.autoFocus,
-    multiline: Control.Boolean("Multiline"),
+    multiline: Control.Boolean("Multiline", false),
     type: Control.Enum("Type", ["text", "number", "password"], "text"),
-    ... FormControlControls,
+    required: DefaultControl.required,
+    error: DefaultControl.error,
+    disabled: DefaultControl.disabled,
+    fullWidth: DefaultControl.fullWidth,
     onChangeText: Control.EventHandler() 
 })

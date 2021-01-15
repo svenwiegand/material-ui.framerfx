@@ -6,15 +6,15 @@ import { useDerivedState, useDerivedStateCalculatedFromProp } from "../common/st
 import { Slider as MuiSlider } from "@material-ui/core"
 
 interface Props {
-    defaultValue: number
+    value: number
     min: number
     max: number
     onValueChanged: (value: number) => void
 }
 export function Slider(props: Props) {
-    const { defaultValue, onValueChanged, ...otherProps } = props
-    const state = useDerivedState(defaultValue, onValueChanged)
-    state.updateIfDefaultValueChanged(defaultValue)
+    const { value, onValueChanged, ...otherProps } = props
+    const state = useDerivedState(value, onValueChanged)
+    state.updateIfDefaultValueChanged(value)
     const handleChange = (eventy: any, newValue: number) => state.setValue(newValue)
     return withTheme(
         <MuiSlider value={state.value} onChange={handleChange} {...otherProps} />
@@ -22,7 +22,7 @@ export function Slider(props: Props) {
 }
 
 addPropertyControls(Slider, propertyControls(
-    propNumber("defaultValue", "Value", 0),
+    propNumber("value", "Value", 0),
     propNumber("min", "Min", 0),
     propNumber("max", "Max", 100),
     propEventHandler("onValueChanged")

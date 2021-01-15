@@ -96,6 +96,10 @@
                   "type" : "enum",
                   "value" : "text"
                 },
+                "$control__value" : {
+                  "type" : "string",
+                  "value" : ""
+                },
                 "$control__variant" : {
                   "type" : "enum",
                   "value" : "filled"
@@ -145,6 +149,104 @@
                 "right" : null,
                 "rotation" : 0,
                 "top" : 20,
+                "visible" : true,
+                "width" : 1,
+                "widthType" : 3
+              },
+              {
+                "__class" : "CodeComponentNode",
+                "$control__autoFocus" : {
+                  "type" : "boolean",
+                  "value" : false
+                },
+                "$control__color" : {
+                  "type" : "enum",
+                  "value" : "primary"
+                },
+                "$control__defaultValue" : {
+                  "type" : "string",
+                  "value" : "Input"
+                },
+                "$control__disabled" : {
+                  "type" : "boolean",
+                  "value" : false
+                },
+                "$control__error" : {
+                  "type" : "boolean",
+                  "value" : false
+                },
+                "$control__fullWidth" : {
+                  "type" : "boolean",
+                  "value" : true
+                },
+                "$control__multiline" : {
+                  "type" : "boolean",
+                  "value" : false
+                },
+                "$control__onChangeText" : {
+                  "type" : "eventhandler"
+                },
+                "$control__placeholder" : {
+                  "type" : "string",
+                  "value" : "Placeholder"
+                },
+                "$control__required" : {
+                  "type" : "boolean",
+                  "value" : false
+                },
+                "$control__type" : {
+                  "type" : "enum",
+                  "value" : "text"
+                },
+                "$control__value" : {
+                  "type" : "string",
+                  "value" : ""
+                },
+                "aspectRatio" : null,
+                "bottom" : null,
+                "centerAnchorX" : 0.49866666666666687,
+                "centerAnchorY" : 0.1499250374812596,
+                "clip" : true,
+                "codeComponentIdentifier" : ".\/inputs\/InputBase.tsx_InputBase",
+                "codeComponentPackageVersion" : null,
+                "codeOverrideEnabled" : false,
+                "constraintsLocked" : false,
+                "duplicatedFrom" : [
+                  "jEyDXkMBR"
+                ],
+                "exportOptions" : [
+
+                ],
+                "fillColor" : "rgba(255,255,255,1)",
+                "fillEnabled" : false,
+                "fillImage" : null,
+                "fillImageOriginalName" : null,
+                "fillImagePixelHeight" : null,
+                "fillImagePixelWidth" : null,
+                "fillImageResize" : "fill",
+                "fillType" : "color",
+                "height" : 31,
+                "heightType" : 0,
+                "id" : "QR6vDbmty",
+                "intrinsicHeight" : null,
+                "intrinsicWidth" : null,
+                "left" : null,
+                "locked" : false,
+                "name" : null,
+                "opacity" : 1,
+                "originalid" : null,
+                "parentid" : "h9x7rZOO3",
+                "previewSettings" : null,
+                "radius" : 0,
+                "radiusBottomLeft" : 0,
+                "radiusBottomRight" : 0,
+                "radiusIsRelative" : false,
+                "radiusPerCorner" : false,
+                "radiusTopLeft" : 0,
+                "radiusTopRight" : 0,
+                "right" : null,
+                "rotation" : 0,
+                "top" : 85,
                 "visible" : true,
                 "width" : 1,
                 "widthType" : 3
@@ -1506,6 +1608,10 @@
                   "type" : "enum",
                   "value" : "text"
                 },
+                "$control__value" : {
+                  "type" : "string",
+                  "value" : ""
+                },
                 "$control__variant" : {
                   "type" : "enum",
                   "value" : "dialog"
@@ -1709,6 +1815,10 @@
                 },
                 "$control__onValueChanged" : {
                   "type" : "eventhandler"
+                },
+                "$control__value" : {
+                  "type" : "number",
+                  "value" : 0
                 },
                 "aspectRatio" : null,
                 "bottom" : 136,
@@ -8080,9 +8190,9 @@
                       {
                         "__class" : "FrameNode",
                         "aspectRatio" : null,
-                        "bottom" : -120,
-                        "centerAnchorX" : 0.55970149253731338,
-                        "centerAnchorY" : 1.5977011494252873,
+                        "bottom" : null,
+                        "centerAnchorX" : 0.50000000000000022,
+                        "centerAnchorY" : 0.35779816513761492,
                         "children" : [
 
                         ],
@@ -8202,28 +8312,28 @@
                               }
                             },
                             "hQiChFgqH" : {
-                              "fillColor" : "var(--token-4d927322-2b9a-47c5-aab4-a15e532e9cc7, rgb(250, 250, 250)) \/* {\"name\":\"background.default\"} *\/"
+                              "fillColor" : "var(--token-92dd06a1-e3b1-4e62-a46d-46f5ee9ababb, rgb(255, 255, 255)) \/* {\"name\":\"background.paper\",\"packageIdentifier\":\"@framer\/4hpyr6fd.orgavision-material-ui\"} *\/"
                             },
                             "IopySSPCB" : {
-                              "bottom" : -120,
-                              "centerAnchorX" : 0.55970149253731338,
-                              "centerAnchorY" : 1.5977011494252873,
+                              "bottom" : null,
+                              "centerAnchorX" : 0.50000000000000022,
+                              "centerAnchorY" : 0.35779816513761492,
                               "left" : null,
-                              "right" : -20,
-                              "top" : null,
+                              "right" : null,
+                              "top" : 23,
                               "width" : 1,
                               "widthType" : 3
                             }
                           }
                         },
-                        "right" : -20,
+                        "right" : null,
                         "rotation" : 0,
                         "stackAlignment" : "center",
                         "stackDirection" : "horizontal",
                         "stackDistribution" : "start",
                         "stackEnabled" : true,
                         "stackGap" : 20,
-                        "top" : null,
+                        "top" : 23,
                         "visible" : true,
                         "width" : 1,
                         "widthType" : 3

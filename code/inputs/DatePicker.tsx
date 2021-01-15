@@ -9,15 +9,15 @@ import { useDerivedStateCalculatedFromProp } from "../common/state"
 const dateUtil = new DateFnsUtils()
 
 interface Props {
-    defaultValue: string | null,
+    value: string | null,
     format: string,
     onChangeDate: (date: Date | null) => void
 }
 export function DatePicker(props: Props) {
-    const { defaultValue, format, onChangeDate, ...other } = props
-    const defaultDate = defaultValue ? dateUtil.parse(defaultValue, format) : null as Date
-    const state = useDerivedStateCalculatedFromProp(defaultDate, defaultValue, onChangeDate)
-    state.updateIfDefaultValueChanged(defaultDate, defaultValue)
+    const { value, format, onChangeDate, ...other } = props
+    const defaultDate = value ? dateUtil.parse(value, format) : null as Date
+    const state = useDerivedStateCalculatedFromProp(defaultDate, value, onChangeDate)
+    state.updateIfDefaultValueChanged(defaultDate, value)
     return withTheme(<MuiPickersUtilsProvider utils={DateFnsUtils}>
         <KeyboardDatePicker
             format={format}
@@ -30,7 +30,7 @@ export function DatePicker(props: Props) {
 
 addPropertyControls(DatePicker, propertyControls(
     "label",
-    ["defaultValue", {
+    ["value", {
         type: ControlType.String,
         title: "Date",
         defaultValue: ""
