@@ -2146,6 +2146,117 @@
                 "visible" : true,
                 "width" : 0.94715984147952448,
                 "widthType" : 1
+              },
+              {
+                "__class" : "CodeComponentNode",
+                "$control__avatar" : {
+                  "type" : "enum",
+                  "value" : "icon"
+                },
+                "$control__avatarIcon" : {
+                  "type" : "string",
+                  "value" : "face"
+                },
+                "$control__avatarLetters" : {
+                  "type" : "string",
+                  "value" : "A"
+                },
+                "$control__avatarSrc" : {
+                  "type" : "image",
+                  "value" : ""
+                },
+                "$control__clickable" : {
+                  "type" : "boolean",
+                  "value" : true
+                },
+                "$control__color" : {
+                  "type" : "enum",
+                  "value" : "primary"
+                },
+                "$control__deletable" : {
+                  "type" : "boolean",
+                  "value" : true
+                },
+                "$control__deleteIcon" : {
+                  "type" : "string",
+                  "value" : ""
+                },
+                "$control__disabled" : {
+                  "type" : "boolean",
+                  "value" : false
+                },
+                "$control__label" : {
+                  "type" : "string",
+                  "value" : "Ein Chip"
+                },
+                "$control__onClick" : {
+                  "type" : "eventhandler",
+                  "value" : [
+
+                  ]
+                },
+                "$control__onDelete" : {
+                  "type" : "eventhandler",
+                  "value" : [
+
+                  ]
+                },
+                "$control__size" : {
+                  "type" : "enum",
+                  "value" : "medium"
+                },
+                "$control__variant" : {
+                  "type" : "enum",
+                  "value" : "outlined"
+                },
+                "aspectRatio" : null,
+                "bottom" : 20,
+                "centerAnchorX" : 0.51519154557463698,
+                "centerAnchorY" : 0.95402298850574729,
+                "clip" : true,
+                "codeComponentIdentifier" : ".\/dataDisplay\/Chip.tsx_Chip",
+                "codeComponentPackageVersion" : null,
+                "codeOverrideEnabled" : false,
+                "constraintsLocked" : false,
+                "duplicatedFrom" : [
+                  "xO7if2T0t"
+                ],
+                "exportOptions" : [
+
+                ],
+                "fillColor" : "rgba(255,255,255,1)",
+                "fillEnabled" : false,
+                "fillImage" : null,
+                "fillImageOriginalName" : null,
+                "fillImagePixelHeight" : null,
+                "fillImagePixelWidth" : null,
+                "fillImageResize" : "fill",
+                "fillType" : "color",
+                "height" : 32,
+                "heightType" : 0,
+                "id" : "p871qqarc",
+                "intrinsicHeight" : null,
+                "intrinsicWidth" : null,
+                "left" : null,
+                "locked" : false,
+                "name" : null,
+                "opacity" : 1,
+                "originalid" : null,
+                "parentid" : "sFk8H4RoG",
+                "previewSettings" : null,
+                "radius" : 0,
+                "radiusBottomLeft" : 0,
+                "radiusBottomRight" : 0,
+                "radiusIsRelative" : false,
+                "radiusPerCorner" : false,
+                "radiusTopLeft" : 0,
+                "radiusTopRight" : 0,
+                "right" : 307,
+                "rotation" : 0,
+                "top" : null,
+                "visible" : true,
+                "width" : 120,
+                "widthType" : 0
               }
             ],
             "clip" : true,
@@ -2172,7 +2283,7 @@
             "guidesY" : [
 
             ],
-            "height" : 735,
+            "height" : 783,
             "heightType" : 0,
             "id" : "sFk8H4RoG",
             "intrinsicHeight" : null,

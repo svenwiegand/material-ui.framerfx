@@ -28,7 +28,7 @@ const fontAwesomeWeight = {
     fas: 900,
     fa: 900,
 }
-const fontAwesomeFamily = "'Font Awesome 5 Pro', 'Font Awesome 5', 'Font Awesome', 'Material Icons'"
+const fontAwesomeFamily = "'Font Awesome 6 Pro', 'Font Awesome 6', 'Font Awesome 5 Pro', 'Font Awesome 5', 'Font Awesome', 'Material Icons'"
 export function Icon(props) {
     const { icon, color, fontSize, ...iconProps } = props
     const fontAwesome: Array<string> | null = icon?.match(/^(fa[lrs]?)\-([^,]*)(,[\+\-][0-9]+)?/)
