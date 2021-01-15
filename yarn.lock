@@ -189,11 +189,6 @@ dom-helpers@^5.0.1:
     "@babel/runtime" "^7.8.7"
     csstype "^3.0.2"
 
-framer@^1.2.11:
-  version "1.2.11"
-  resolved "https://registry.yarnpkg.com/framer/-/framer-1.2.11.tgz#93fdec99bedbd0bc895a879ff9c22fb04019e677"
-  integrity sha512-WedbI3LjUcP72E6DSeoKIwJyVrTX40PKFvGj+uXddn8po1hWQdWZ/qHIqntjqjPpRpUpSDwTBzkokgykGFeeGg==
-
 hoist-non-react-statics@^3.3.2:
   version "3.3.2"
   resolved "https://registry.yarnpkg.com/hoist-non-react-statics/-/hoist-non-react-statics-3.3.2.tgz#ece0acaf71d62c2969c2ec59feff42a4b1a85b45"
