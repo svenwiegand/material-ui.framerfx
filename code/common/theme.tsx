@@ -7,21 +7,29 @@ import {
     makeStyles,
     Theme as MuiTheme,
     ThemeOptions,
-    ThemeProvider,
+    ThemeProvider as MuiThemeProvider,
 } from "@material-ui/core/styles"
 import { Color } from "framer"
 import { PaletteOptions } from "@material-ui/core/styles/createPalette"
 
-const colorPattern = /(rgb\(\d+, \d+, \d+\))/
-export function color(colorKey: string): string {
+const colorPattern = /(rgba?\(\d+, \d+, \d+(?:, [\d\.]+)?\))/
+function parseColor(colorKey: string): Color {
     const cssColorDef = colors[colorKey]
     if (cssColorDef) {
-        const [fullMatch, rgb] = colorPattern.exec(cssColorDef)
-        const c = Color(rgb)
-        return Color.toHexString(c)
+        const [fullMatch, rgba] = colorPattern.exec(cssColorDef)
+        return Color(rgba)
     } else {
-        return "#000000"
+        console.error("Unknown color " + colorKey)
+        return Color("#000000")
     }
+}
+function color(colorKey: string): string {
+    const color = parseColor(colorKey)
+    return Color.toString(color)
+}
+function alpha(colorKey: string): number {
+    const color = parseColor(colorKey)
+    return Color.toRgb(color).a
 }
 
 const primary = {
@@ -67,55 +75,55 @@ const paletteLight: PaletteOptions = {
     type: "light",
     ...basePalette,
     text: {
-        primary: "rgba(0, 0, 0, 0.87)",
-        secondary: "rgba(0, 0, 0, 0.54)",
-        disabled: "rgba(0, 0, 0, 0.38)",
+        primary: color("text.primary"),
+        secondary: color("text.secondary"),
+        disabled: color("text.disabled"),
     },
     action: {
-        active: "rgba(0, 0, 0, 0.54)",
-        activatedOpacity: 0.54,
-        hover: "rgba(0, 0, 0, 0.04)",
-        hoverOpacity: 0.04,
-        selected: "rgba(0, 0, 0, 0.08)",
-        selectedOpacity: 0.08,
-        disabled: "rgba(0, 0, 0, 0.26)",
-        disabledOpacity: 0.26,
-        disabledBackground: "rgba(0, 0, 0, 0.12)",
+        active: color("action.active"),
+        activatedOpacity: alpha("action.active"),
+        hover: color("action.hover"),
+        hoverOpacity: alpha("action.hover"),
+        selected: color("action.selected"),
+        selectedOpacity: alpha("action.selected"),
+        disabled: color("action.disabled"),
+        disabledOpacity: alpha("action.disabled"),
+        disabledBackground: color("action.disabledBackground"),
         // focus: string;
         // focusOpacity: number;
     },
     background: {
-        default: "#cfcfcf",
-        paper: "#fff",
+        default: color("background.default"),
+        paper: color("background.paper"),
     },
-    divider: "rgba(0, 0, 0, 0.12)",
+    divider: color("divider"),
 }
 const paletteDark: PaletteOptions = {
     type: "dark",
     ...basePalette,
     text: {
-        primary: "#fff",
-        secondary: "rgba(255, 255, 255, 0.7)",
-        disabled: "rgba(255, 255, 255, 0.5)",
+        primary: color("dark.text.primary"),
+        secondary: color("dark.text.secondary"),
+        disabled: color("dark.text.disabled"),
     },
     action: {
-        active: "#fff",
-        activatedOpacity: 1,
-        hover: "rgba(255, 255, 255, 0.08)",
-        hoverOpacity: 0.08,
-        selected: "rgba(255, 255, 255, 0.16)",
-        selectedOpacity: 0.16,
-        disabled: "rgba(255, 255, 255, 0.3)",
-        disabledOpacity: 0.3,
-        disabledBackground: "rgba(255, 255, 255, 0.12)",
+        active: color("dark.action.active"),
+        activatedOpacity: alpha("dark.action.active"),
+        hover: color("dark.action.hover"),
+        hoverOpacity: alpha("dark.action.hover"),
+        selected: color("dark.action.selected"),
+        selectedOpacity: alpha("dark.action.selected"),
+        disabled: color("dark.action.disabled"),
+        disabledOpacity: alpha("dark.action.disabled"),
+        disabledBackground: color("dark.action.disabledBackground"),
         // focus: string;
         // focusOpacity: number;
     },
     background: {
-        default: "#303030",
-        paper: "#424242",
+        default: color("dark.background.default"),
+        paper: color("dark.background.paper"),
     },
-    divider: "rgba(0, 0, 0, 0.12)",
+    divider: color("dark.divider"),
 }
 
 const themeSpec: ThemeOptions = {
@@ -236,17 +244,17 @@ export const useStyles = makeStyles((theme: MuiTheme) =>
 )
 
 interface ThemeProps {
-    theme: MuiTheme,
+    theme?: ThemeChoice,
     children: React.ReactNode,
 }
-export function Theme(props: ThemeProps) {
-    return <ThemeProvider theme={props.theme}>{props.children}</ThemeProvider>
+export function ThemeProvider(props: ThemeProps) {
+    return <MuiThemeProvider theme={theme(props.theme)}>{props.children}</MuiThemeProvider>
 }
 
 export function withTheme(component: JSX.Element) {
     return withSelectedTheme("light", component)
 }
 
-export function withSelectedTheme(themeChoice: ThemeChoice, component: JSX.Element) {
-    return <Theme theme={theme(themeChoice)}>{component}</Theme>
+export function withSelectedTheme(themeChoice: ThemeChoice | undefined, component: JSX.Element) {
+    return <ThemeProvider theme={themeChoice}>{component}</ThemeProvider>
 }

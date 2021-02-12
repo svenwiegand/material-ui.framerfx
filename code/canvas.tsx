@@ -63,4 +63,26 @@ export const colors = Object.freeze({
     "background.paper": "var(--token-92dd06a1-e3b1-4e62-a46d-46f5ee9ababb, rgb(255, 255, 255))",
     /** rgba(0, 0, 0, 0.12) */
     "divider": "var(--token-69c6e079-d883-406c-9b09-c4797627c8ea, rgba(0, 0, 0, 0.12))",
+    /** #FFFFFF */
+    "dark.text.primary": "var(--token-f3716bbd-3c6a-4526-9766-a47813435703, rgb(255, 255, 255))",
+    /** rgba(255, 255, 255, 0.7) */
+    "dark.text.secondary": "var(--token-e1106321-2efd-4d1a-baad-af0a7e66c6c0, rgba(255, 255, 255, 0.7))",
+    /** rgba(255, 255, 255, 0.5) */
+    "dark.text.disabled": "var(--token-da6a69eb-e6ba-41be-8ed8-84082553cf41, rgba(255, 255, 255, 0.5))",
+    /** #FFFFFF */
+    "dark.action.active": "var(--token-88bb1950-a2dd-40e8-ac37-3ad1098e53d7, rgb(255, 255, 255))",
+    /** rgba(255, 255, 255, 0.08) */
+    "dark.action.hover": "var(--token-a2faf2a8-2e28-4e4d-8755-be38d8cbe197, rgba(255, 255, 255, 0.08))",
+    /** rgba(255, 255, 255, 0.16) */
+    "dark.action.selected": "var(--token-1b6c5a1d-ba57-4fb7-be8c-d385e2c6fd29, rgba(255, 255, 255, 0.16))",
+    /** rgba(255, 255, 255, 0.3) */
+    "dark.action.disabled": "var(--token-57d24ec6-b94c-4908-8962-621063cc01ff, rgba(255, 255, 255, 0.3))",
+    /** rgba(255, 255, 255, 0.12) */
+    "dark.action.disabledBackground": "var(--token-dff0ec56-219b-4ed0-85db-98cabcf1e25b, rgba(255, 255, 255, 0.12))",
+    /** #303030 */
+    "dark.background.default": "var(--token-87f32a57-19ab-4862-b4aa-820a6c9bfc0a, rgb(48, 48, 48))",
+    /** #424242 */
+    "dark.background.paper": "var(--token-39c39977-dc3e-457a-b401-3306b12d7a5f, rgb(66, 66, 66))",
+    /** rgba(255, 255, 255, 0.12) */
+    "dark.divider": "var(--token-539f1a57-25b0-4544-a85c-096d3e26a627, rgba(255, 255, 255, 0.12))",
 })

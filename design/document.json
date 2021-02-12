@@ -1480,13 +1480,17 @@
               },
               {
                 "__class" : "CodeComponentNode",
+                "$control__buttonTheme" : {
+                  "type" : "enum",
+                  "value" : "light"
+                },
                 "$control__buttonType" : {
                   "type" : "enum",
                   "value" : "default"
                 },
                 "$control__color" : {
                   "type" : "enum",
-                  "value" : "primary"
+                  "value" : "default"
                 },
                 "$control__disabled" : {
                   "type" : "boolean",
@@ -1544,6 +1548,10 @@
                 "$control__label" : {
                   "type" : "string",
                   "value" : "Menu Button"
+                },
+                "$control__menuTheme" : {
+                  "type" : "enum",
+                  "value" : "light"
                 },
                 "$control__onItemClicked" : {
                   "type" : "eventhandler"
@@ -2503,6 +2511,84 @@
                 "visible" : true,
                 "width" : 120,
                 "widthType" : 0
+              },
+              {
+                "__class" : "CodeComponentNode",
+                "$control__items" : {
+                  "type" : "array",
+                  "value" : [
+                    {
+                      "id" : "rCzxfMVLT",
+                      "type" : "string",
+                      "value" : "Menu Item 1"
+                    },
+                    {
+                      "id" : "FO0AZJJW1",
+                      "type" : "string",
+                      "value" : "---"
+                    },
+                    {
+                      "id" : "EMSfTVBWN",
+                      "type" : "string",
+                      "value" : "Item 2"
+                    }
+                  ]
+                },
+                "$control__onItemClicked" : {
+                  "type" : "eventhandler"
+                },
+                "$control__theme" : {
+                  "type" : "enum",
+                  "value" : "dark"
+                },
+                "aspectRatio" : null,
+                "bottom" : -14,
+                "centerAnchorX" : 0.7029288702928872,
+                "centerAnchorY" : 0.9161616161616164,
+                "clip" : true,
+                "codeComponentIdentifier" : ".\/navigation\/Menu.tsx_Menu",
+                "codeComponentPackageVersion" : null,
+                "codeOverrideEnabled" : false,
+                "constraintsLocked" : false,
+                "duplicatedFrom" : [
+                  "KvkFnSz_U"
+                ],
+                "exportOptions" : [
+
+                ],
+                "fillColor" : "rgba(255,255,255,1)",
+                "fillEnabled" : false,
+                "fillImage" : null,
+                "fillImageOriginalName" : null,
+                "fillImagePixelHeight" : null,
+                "fillImagePixelWidth" : null,
+                "fillImageResize" : "fill",
+                "fillType" : "color",
+                "height" : 194,
+                "heightType" : 0,
+                "id" : "XN7GWIL6U",
+                "intrinsicHeight" : null,
+                "intrinsicWidth" : null,
+                "left" : null,
+                "locked" : false,
+                "name" : null,
+                "opacity" : 1,
+                "originalid" : null,
+                "parentid" : "sFk8H4RoG",
+                "previewSettings" : null,
+                "radius" : 0,
+                "radiusBottomLeft" : 0,
+                "radiusBottomRight" : 0,
+                "radiusIsRelative" : false,
+                "radiusPerCorner" : false,
+                "radiusTopLeft" : 0,
+                "radiusTopRight" : 0,
+                "right" : -12,
+                "rotation" : 0,
+                "top" : null,
+                "visible" : true,
+                "width" : 450,
+                "widthType" : 0
               }
             ],
             "clip" : true,
@@ -2529,7 +2615,7 @@
             "guidesY" : [
 
             ],
-            "height" : 857,
+            "height" : 1030,
             "heightType" : 0,
             "id" : "sFk8H4RoG",
             "intrinsicHeight" : null,
@@ -2580,6 +2666,15 @@
               {
                 "__class" : "FrameNode",
                 "aspectRatio" : null,
+                "borderBottom" : 1,
+                "borderColor" : "var(--token-69c6e079-d883-406c-9b09-c4797627c8ea, rgba(0, 0, 0, 0.12)) \/* {\"name\":\"divider\",\"packageIdentifier\":\"@framer\/4hpyr6fd.orgavision-material-ui\"} *\/",
+                "borderEnabled" : true,
+                "borderLeft" : 1,
+                "borderPerSide" : false,
+                "borderRight" : 1,
+                "borderStyle" : "solid",
+                "borderTop" : 1,
+                "borderWidth" : 1,
                 "bottom" : null,
                 "centerAnchorX" : 0.25624999999999998,
                 "centerAnchorY" : 0.25075987841945291,
@@ -4007,21 +4102,21 @@
                 "name" : "Column",
                 "opacity" : 1,
                 "originalid" : null,
-                "padding" : 0,
-                "paddingBottom" : 0,
-                "paddingLeft" : 0,
+                "padding" : 16,
+                "paddingBottom" : 16,
+                "paddingLeft" : 16,
                 "paddingPerSide" : false,
-                "paddingRight" : 0,
-                "paddingTop" : 0,
+                "paddingRight" : 16,
+                "paddingTop" : 16,
                 "parentid" : "P1s0K6yGc",
                 "previewSettings" : null,
-                "radius" : 0,
-                "radiusBottomLeft" : 0,
-                "radiusBottomRight" : 0,
+                "radius" : 5,
+                "radiusBottomLeft" : 5,
+                "radiusBottomRight" : 5,
                 "radiusIsRelative" : false,
                 "radiusPerCorner" : false,
-                "radiusTopLeft" : 0,
-                "radiusTopRight" : 0,
+                "radiusTopLeft" : 5,
+                "radiusTopRight" : 5,
                 "replicaInfo" : null,
                 "right" : null,
                 "rotation" : 0,
@@ -4038,6 +4133,15 @@
               {
                 "__class" : "FrameNode",
                 "aspectRatio" : null,
+                "borderBottom" : 1,
+                "borderColor" : "var(--token-69c6e079-d883-406c-9b09-c4797627c8ea, rgba(0, 0, 0, 0.12)) \/* {\"name\":\"divider\",\"packageIdentifier\":\"@framer\/4hpyr6fd.orgavision-material-ui\"} *\/",
+                "borderEnabled" : true,
+                "borderLeft" : 1,
+                "borderPerSide" : false,
+                "borderRight" : 1,
+                "borderStyle" : "solid",
+                "borderTop" : 1,
+                "borderWidth" : 1,
                 "bottom" : 58,
                 "centerAnchorX" : 0.74375000000000002,
                 "centerAnchorY" : 0.47112462006079026,
@@ -6732,21 +6836,21 @@
                 "name" : "Column",
                 "opacity" : 1,
                 "originalid" : null,
-                "padding" : 0,
-                "paddingBottom" : 0,
-                "paddingLeft" : 0,
+                "padding" : 16,
+                "paddingBottom" : 16,
+                "paddingLeft" : 16,
                 "paddingPerSide" : false,
-                "paddingRight" : 0,
-                "paddingTop" : 0,
+                "paddingRight" : 16,
+                "paddingTop" : 16,
                 "parentid" : "P1s0K6yGc",
                 "previewSettings" : null,
-                "radius" : 0,
-                "radiusBottomLeft" : 0,
-                "radiusBottomRight" : 0,
+                "radius" : 5,
+                "radiusBottomLeft" : 5,
+                "radiusBottomRight" : 5,
                 "radiusIsRelative" : false,
                 "radiusPerCorner" : false,
-                "radiusTopLeft" : 0,
-                "radiusTopRight" : 0,
+                "radiusTopLeft" : 5,
+                "radiusTopRight" : 5,
                 "replicaInfo" : null,
                 "right" : 20,
                 "rotation" : 0,
@@ -6763,6 +6867,15 @@
               {
                 "__class" : "FrameNode",
                 "aspectRatio" : null,
+                "borderBottom" : 1,
+                "borderColor" : "var(--token-69c6e079-d883-406c-9b09-c4797627c8ea, rgba(0, 0, 0, 0.12)) \/* {\"name\":\"divider\",\"packageIdentifier\":\"@framer\/4hpyr6fd.orgavision-material-ui\"} *\/",
+                "borderEnabled" : true,
+                "borderLeft" : 1,
+                "borderPerSide" : false,
+                "borderRight" : 1,
+                "borderStyle" : "solid",
+                "borderTop" : 1,
+                "borderWidth" : 1,
                 "bottom" : 58,
                 "centerAnchorX" : 0.74375000000000002,
                 "centerAnchorY" : 0.47112462006079026,
@@ -9335,21 +9448,21 @@
                 "name" : "Column",
                 "opacity" : 1,
                 "originalid" : null,
-                "padding" : 0,
-                "paddingBottom" : 0,
-                "paddingLeft" : 0,
+                "padding" : 16,
+                "paddingBottom" : 16,
+                "paddingLeft" : 16,
                 "paddingPerSide" : false,
-                "paddingRight" : 0,
-                "paddingTop" : 0,
+                "paddingRight" : 16,
+                "paddingTop" : 16,
                 "parentid" : "P1s0K6yGc",
                 "previewSettings" : null,
-                "radius" : 0,
-                "radiusBottomLeft" : 0,
-                "radiusBottomRight" : 0,
+                "radius" : 5,
+                "radiusBottomLeft" : 5,
+                "radiusBottomRight" : 5,
                 "radiusIsRelative" : false,
                 "radiusPerCorner" : false,
-                "radiusTopLeft" : 0,
-                "radiusTopRight" : 0,
+                "radiusTopLeft" : 5,
+                "radiusTopRight" : 5,
                 "replicaInfo" : null,
                 "right" : 20,
                 "rotation" : 0,
@@ -9366,9 +9479,18 @@
               {
                 "__class" : "FrameNode",
                 "aspectRatio" : null,
-                "bottom" : 58,
-                "centerAnchorX" : 0.74375000000000002,
-                "centerAnchorY" : 0.47112462006079026,
+                "borderBottom" : 1,
+                "borderColor" : "var(--token-69c6e079-d883-406c-9b09-c4797627c8ea, rgba(0, 0, 0, 0.12)) \/* {\"name\":\"divider\",\"packageIdentifier\":\"@framer\/4hpyr6fd.orgavision-material-ui\"} *\/",
+                "borderEnabled" : true,
+                "borderLeft" : 1,
+                "borderPerSide" : false,
+                "borderRight" : 1,
+                "borderStyle" : "solid",
+                "borderTop" : 1,
+                "borderWidth" : 1,
+                "bottom" : -20,
+                "centerAnchorX" : 0.91637931034482778,
+                "centerAnchorY" : 0.53448275862068984,
                 "children" : [
                   {
                     "__class" : "FrameNode",
@@ -9446,12 +9568,12 @@
                                     "data" : {
                                       "direction" : "ltr",
                                       "emptyStyle" : [
-                                        "COLOR:rgb(0, 0, 0)",
                                         "LETTERSPACING:0",
                                         "LINEHEIGHT:1.2",
                                         "FONT:GF;Fira Sans-500",
                                         "ALIGN:left",
-                                        "SIZE:16"
+                                        "SIZE:16",
+                                        "COLOR:var(--token-f3716bbd-3c6a-4526-9766-a47813435703, rgb(255, 255, 255)) \/* {\"name\":\"dark.text.primary\",\"packageIdentifier\":\"@framer\/4hpyr6fd.orgavision-material-ui\"} *\/"
                                       ]
                                     },
                                     "depth" : 0,
@@ -9459,11 +9581,6 @@
 
                                     ],
                                     "inlineStyleRanges" : [
-                                      {
-                                        "length" : 15,
-                                        "offset" : 0,
-                                        "style" : "COLOR:rgb(0, 0, 0)"
-                                      },
                                       {
                                         "length" : 15,
                                         "offset" : 0,
@@ -9488,6 +9605,11 @@
                                         "length" : 15,
                                         "offset" : 0,
                                         "style" : "SIZE:16"
+                                      },
+                                      {
+                                        "length" : 15,
+                                        "offset" : 0,
+                                        "style" : "COLOR:var(--token-f3716bbd-3c6a-4526-9766-a47813435703, rgb(255, 255, 255)) \/* {\"name\":\"dark.text.primary\",\"packageIdentifier\":\"@framer\/4hpyr6fd.orgavision-material-ui\"} *\/"
                                       }
                                     ],
                                     "key" : "4q5mt",
@@ -9588,17 +9710,21 @@
                           "master" : "IopySSPCB",
                           "overrides" : {
                             "aCSrfLUKo" : {
+                              "centerAnchorX" : 0.42181818181818181,
+                              "centerAnchorY" : 0.5,
+                              "height" : 16,
                               "styledText" : {
                                 "__class" : "StyledTextDraft",
                                 "blocks" : [
                                   {
                                     "data" : {
+                                      "direction" : "ltr",
                                       "emptyStyle" : [
-                                        "COLOR:rgb(0, 0, 0)",
                                         "LETTERSPACING:0",
                                         "LINEHEIGHT:1.2",
                                         "FONT:GF;Fira Code-regular",
-                                        "SIZE:14"
+                                        "SIZE:14",
+                                        "COLOR:var(--token-f3716bbd-3c6a-4526-9766-a47813435703, rgb(255, 255, 255)) \/* {\"name\":\"dark.text.primary\",\"packageIdentifier\":\"@framer\/4hpyr6fd.orgavision-material-ui\"} *\/"
                                       ]
                                     },
                                     "depth" : 0,
@@ -9607,43 +9733,45 @@
                                     ],
                                     "inlineStyleRanges" : [
                                       {
-                                        "length" : 12,
-                                        "offset" : 0,
-                                        "style" : "COLOR:rgb(0, 0, 0)"
-                                      },
-                                      {
-                                        "length" : 12,
+                                        "length" : 17,
                                         "offset" : 0,
                                         "style" : "LETTERSPACING:0"
                                       },
                                       {
-                                        "length" : 12,
+                                        "length" : 17,
                                         "offset" : 0,
                                         "style" : "LINEHEIGHT:1.2"
                                       },
                                       {
-                                        "length" : 12,
+                                        "length" : 17,
                                         "offset" : 0,
                                         "style" : "FONT:GF;Fira Code-regular"
                                       },
                                       {
-                                        "length" : 12,
+                                        "length" : 17,
                                         "offset" : 0,
                                         "style" : "SIZE:14"
+                                      },
+                                      {
+                                        "length" : 17,
+                                        "offset" : 0,
+                                        "style" : "COLOR:var(--token-f3716bbd-3c6a-4526-9766-a47813435703, rgb(255, 255, 255)) \/* {\"name\":\"dark.text.primary\",\"packageIdentifier\":\"@framer\/4hpyr6fd.orgavision-material-ui\"} *\/"
                                       }
                                     ],
                                     "key" : "6qbs8",
-                                    "text" : "text.primary",
+                                    "text" : "dark.text.primary",
                                     "type" : "unstyled"
                                   }
                                 ],
                                 "entityMap" : {
 
                                 }
-                              }
+                              },
+                              "width" : 144
                             },
                             "hQiChFgqH" : {
-                              "fillColor" : "var(--token-49dad9a0-482f-4193-8d4e-72e0699e757d, rgba(0, 0, 0, 0.87)) \/* {\"name\":\"text.primary\"} *\/"
+                              "borderColor" : "var(--token-539f1a57-25b0-4544-a85c-096d3e26a627, rgba(255, 255, 255, 0.12)) \/* {\"name\":\"dark.divider\",\"packageIdentifier\":\"@framer\/4hpyr6fd.orgavision-material-ui\"} *\/",
+                              "fillColor" : "var(--token-f3716bbd-3c6a-4526-9766-a47813435703, rgb(255, 255, 255)) \/* {\"name\":\"dark.text.primary\",\"packageIdentifier\":\"@framer\/4hpyr6fd.orgavision-material-ui\"} *\/"
                             },
                             "IopySSPCB" : {
                               "bottom" : -120,
@@ -9737,17 +9865,20 @@
                           "master" : "IopySSPCB",
                           "overrides" : {
                             "aCSrfLUKo" : {
+                              "centerAnchorX" : 0.4527272727272727,
+                              "centerAnchorY" : 0.5,
                               "styledText" : {
                                 "__class" : "StyledTextDraft",
                                 "blocks" : [
                                   {
                                     "data" : {
+                                      "direction" : "ltr",
                                       "emptyStyle" : [
-                                        "COLOR:rgb(0, 0, 0)",
                                         "LETTERSPACING:0",
                                         "LINEHEIGHT:1.2",
                                         "FONT:GF;Fira Code-regular",
-                                        "SIZE:14"
+                                        "SIZE:14",
+                                        "COLOR:var(--token-f3716bbd-3c6a-4526-9766-a47813435703, rgb(255, 255, 255)) \/* {\"name\":\"dark.text.primary\",\"packageIdentifier\":\"@framer\/4hpyr6fd.orgavision-material-ui\"} *\/"
                                       ]
                                     },
                                     "depth" : 0,
@@ -9756,43 +9887,45 @@
                                     ],
                                     "inlineStyleRanges" : [
                                       {
-                                        "length" : 14,
-                                        "offset" : 0,
-                                        "style" : "COLOR:rgb(0, 0, 0)"
-                                      },
-                                      {
-                                        "length" : 14,
+                                        "length" : 19,
                                         "offset" : 0,
                                         "style" : "LETTERSPACING:0"
                                       },
                                       {
-                                        "length" : 14,
+                                        "length" : 19,
                                         "offset" : 0,
                                         "style" : "LINEHEIGHT:1.2"
                                       },
                                       {
-                                        "length" : 14,
+                                        "length" : 19,
                                         "offset" : 0,
                                         "style" : "FONT:GF;Fira Code-regular"
                                       },
                                       {
-                                        "length" : 14,
+                                        "length" : 19,
                                         "offset" : 0,
                                         "style" : "SIZE:14"
+                                      },
+                                      {
+                                        "length" : 19,
+                                        "offset" : 0,
+                                        "style" : "COLOR:var(--token-f3716bbd-3c6a-4526-9766-a47813435703, rgb(255, 255, 255)) \/* {\"name\":\"dark.text.primary\",\"packageIdentifier\":\"@framer\/4hpyr6fd.orgavision-material-ui\"} *\/"
                                       }
                                     ],
                                     "key" : "6qbs8",
-                                    "text" : "text.secondary",
+                                    "text" : "dark.text.secondary",
                                     "type" : "unstyled"
                                   }
                                 ],
                                 "entityMap" : {
 
                                 }
-                              }
+                              },
+                              "width" : 161
                             },
                             "hQiChFgqH" : {
-                              "fillColor" : "var(--token-38ad3752-125d-479b-9f46-05f870551e81, rgba(0, 0, 0, 0.54)) \/* {\"name\":\"text.secondary\"} *\/"
+                              "borderColor" : "var(--token-539f1a57-25b0-4544-a85c-096d3e26a627, rgba(255, 255, 255, 0.12)) \/* {\"name\":\"dark.divider\",\"packageIdentifier\":\"@framer\/4hpyr6fd.orgavision-material-ui\"} *\/",
+                              "fillColor" : "var(--token-e1106321-2efd-4d1a-baad-af0a7e66c6c0, rgba(255, 255, 255, 0.7)) \/* {\"name\":\"dark.text.secondary\"} *\/"
                             },
                             "IopySSPCB" : {
                               "bottom" : -162,
@@ -9888,17 +10021,20 @@
                           "master" : "IopySSPCB",
                           "overrides" : {
                             "aCSrfLUKo" : {
+                              "centerAnchorX" : 0.43818181818181817,
+                              "centerAnchorY" : 0.5,
                               "styledText" : {
                                 "__class" : "StyledTextDraft",
                                 "blocks" : [
                                   {
                                     "data" : {
+                                      "direction" : "ltr",
                                       "emptyStyle" : [
-                                        "COLOR:rgb(0, 0, 0)",
                                         "LETTERSPACING:0",
                                         "LINEHEIGHT:1.2",
                                         "FONT:GF;Fira Code-regular",
-                                        "SIZE:14"
+                                        "SIZE:14",
+                                        "COLOR:var(--token-f3716bbd-3c6a-4526-9766-a47813435703, rgb(255, 255, 255)) \/* {\"name\":\"dark.text.primary\",\"packageIdentifier\":\"@framer\/4hpyr6fd.orgavision-material-ui\"} *\/"
                                       ]
                                     },
                                     "depth" : 0,
@@ -9907,43 +10043,44 @@
                                     ],
                                     "inlineStyleRanges" : [
                                       {
-                                        "length" : 13,
-                                        "offset" : 0,
-                                        "style" : "COLOR:rgb(0, 0, 0)"
-                                      },
-                                      {
-                                        "length" : 13,
+                                        "length" : 18,
                                         "offset" : 0,
                                         "style" : "LETTERSPACING:0"
                                       },
                                       {
-                                        "length" : 13,
+                                        "length" : 18,
                                         "offset" : 0,
                                         "style" : "LINEHEIGHT:1.2"
                                       },
                                       {
-                                        "length" : 13,
+                                        "length" : 18,
                                         "offset" : 0,
                                         "style" : "FONT:GF;Fira Code-regular"
                                       },
                                       {
-                                        "length" : 13,
+                                        "length" : 18,
                                         "offset" : 0,
                                         "style" : "SIZE:14"
+                                      },
+                                      {
+                                        "length" : 18,
+                                        "offset" : 0,
+                                        "style" : "COLOR:var(--token-f3716bbd-3c6a-4526-9766-a47813435703, rgb(255, 255, 255)) \/* {\"name\":\"dark.text.primary\",\"packageIdentifier\":\"@framer\/4hpyr6fd.orgavision-material-ui\"} *\/"
                                       }
                                     ],
                                     "key" : "6qbs8",
-                                    "text" : "text.disabled",
+                                    "text" : "dark.text.disabled",
                                     "type" : "unstyled"
                                   }
                                 ],
                                 "entityMap" : {
 
                                 }
-                              }
+                              },
+                              "width" : 153
                             },
                             "hQiChFgqH" : {
-                              "fillColor" : "var(--token-6ba764f4-0c2b-4db8-a130-c56aad675896, rgba(0, 0, 0, 0.38)) \/* {\"name\":\"text.disabled\",\"packageIdentifier\":\"@framer\/4hpyr6fd.orgavision-material-ui\"} *\/"
+                              "fillColor" : "var(--token-539f1a57-25b0-4544-a85c-096d3e26a627, rgba(255, 255, 255, 0.12)) \/* {\"name\":\"dark.divider\",\"packageIdentifier\":\"@framer\/4hpyr6fd.orgavision-material-ui\"} *\/"
                             },
                             "IopySSPCB" : {
                               "bottom" : -204,
@@ -10114,12 +10251,12 @@
                                     "data" : {
                                       "direction" : "ltr",
                                       "emptyStyle" : [
-                                        "COLOR:rgb(0, 0, 0)",
                                         "LETTERSPACING:0",
                                         "LINEHEIGHT:1.2",
                                         "FONT:GF;Fira Sans-500",
                                         "ALIGN:left",
-                                        "SIZE:16"
+                                        "SIZE:16",
+                                        "COLOR:var(--token-f3716bbd-3c6a-4526-9766-a47813435703, rgb(255, 255, 255)) \/* {\"name\":\"dark.text.primary\",\"packageIdentifier\":\"@framer\/4hpyr6fd.orgavision-material-ui\"} *\/"
                                       ]
                                     },
                                     "depth" : 0,
@@ -10127,11 +10264,6 @@
 
                                     ],
                                     "inlineStyleRanges" : [
-                                      {
-                                        "length" : 12,
-                                        "offset" : 0,
-                                        "style" : "COLOR:rgb(0, 0, 0)"
-                                      },
                                       {
                                         "length" : 12,
                                         "offset" : 0,
@@ -10156,6 +10288,11 @@
                                         "length" : 12,
                                         "offset" : 0,
                                         "style" : "SIZE:16"
+                                      },
+                                      {
+                                        "length" : 12,
+                                        "offset" : 0,
+                                        "style" : "COLOR:var(--token-f3716bbd-3c6a-4526-9766-a47813435703, rgb(255, 255, 255)) \/* {\"name\":\"dark.text.primary\",\"packageIdentifier\":\"@framer\/4hpyr6fd.orgavision-material-ui\"} *\/"
                                       }
                                     ],
                                     "key" : "4q5mt",
@@ -10257,17 +10394,20 @@
                           "master" : "IopySSPCB",
                           "overrides" : {
                             "aCSrfLUKo" : {
+                              "centerAnchorX" : 0.43818181818181817,
+                              "centerAnchorY" : 0.5,
                               "styledText" : {
                                 "__class" : "StyledTextDraft",
                                 "blocks" : [
                                   {
                                     "data" : {
+                                      "direction" : "ltr",
                                       "emptyStyle" : [
-                                        "COLOR:rgb(0, 0, 0)",
                                         "LETTERSPACING:0",
                                         "LINEHEIGHT:1.2",
                                         "FONT:GF;Fira Code-regular",
-                                        "SIZE:14"
+                                        "SIZE:14",
+                                        "COLOR:var(--token-f3716bbd-3c6a-4526-9766-a47813435703, rgb(255, 255, 255)) \/* {\"name\":\"dark.text.primary\",\"packageIdentifier\":\"@framer\/4hpyr6fd.orgavision-material-ui\"} *\/"
                                       ]
                                     },
                                     "depth" : 0,
@@ -10276,43 +10416,45 @@
                                     ],
                                     "inlineStyleRanges" : [
                                       {
-                                        "length" : 13,
-                                        "offset" : 0,
-                                        "style" : "COLOR:rgb(0, 0, 0)"
-                                      },
-                                      {
-                                        "length" : 13,
+                                        "length" : 18,
                                         "offset" : 0,
                                         "style" : "LETTERSPACING:0"
                                       },
                                       {
-                                        "length" : 13,
+                                        "length" : 18,
                                         "offset" : 0,
                                         "style" : "LINEHEIGHT:1.2"
                                       },
                                       {
-                                        "length" : 13,
+                                        "length" : 18,
                                         "offset" : 0,
                                         "style" : "FONT:GF;Fira Code-regular"
                                       },
                                       {
-                                        "length" : 13,
+                                        "length" : 18,
                                         "offset" : 0,
                                         "style" : "SIZE:14"
+                                      },
+                                      {
+                                        "length" : 18,
+                                        "offset" : 0,
+                                        "style" : "COLOR:var(--token-f3716bbd-3c6a-4526-9766-a47813435703, rgb(255, 255, 255)) \/* {\"name\":\"dark.text.primary\",\"packageIdentifier\":\"@framer\/4hpyr6fd.orgavision-material-ui\"} *\/"
                                       }
                                     ],
                                     "key" : "6qbs8",
-                                    "text" : "action.active",
+                                    "text" : "dark.action.active",
                                     "type" : "unstyled"
                                   }
                                 ],
                                 "entityMap" : {
 
                                 }
-                              }
+                              },
+                              "width" : 153
                             },
                             "hQiChFgqH" : {
-                              "fillColor" : "var(--token-591a5859-9eaa-44e2-ac4c-83717a2a2ee6, rgba(0, 0, 0, 0.54)) \/* {\"name\":\"action.active\"} *\/"
+                              "borderColor" : "var(--token-539f1a57-25b0-4544-a85c-096d3e26a627, rgba(255, 255, 255, 0.12)) \/* {\"name\":\"dark.divider\",\"packageIdentifier\":\"@framer\/4hpyr6fd.orgavision-material-ui\"} *\/",
+                              "fillColor" : "var(--token-88bb1950-a2dd-40e8-ac37-3ad1098e53d7, rgb(255, 255, 255)) \/* {\"name\":\"dark.action.active\"} *\/"
                             },
                             "IopySSPCB" : {
                               "bottom" : -120,
@@ -10407,17 +10549,20 @@
                           "master" : "IopySSPCB",
                           "overrides" : {
                             "aCSrfLUKo" : {
+                              "centerAnchorX" : 0.42181818181818181,
+                              "centerAnchorY" : 0.5,
                               "styledText" : {
                                 "__class" : "StyledTextDraft",
                                 "blocks" : [
                                   {
                                     "data" : {
+                                      "direction" : "ltr",
                                       "emptyStyle" : [
-                                        "COLOR:rgb(0, 0, 0)",
                                         "LETTERSPACING:0",
                                         "LINEHEIGHT:1.2",
                                         "FONT:GF;Fira Code-regular",
-                                        "SIZE:14"
+                                        "SIZE:14",
+                                        "COLOR:var(--token-f3716bbd-3c6a-4526-9766-a47813435703, rgb(255, 255, 255)) \/* {\"name\":\"dark.text.primary\",\"packageIdentifier\":\"@framer\/4hpyr6fd.orgavision-material-ui\"} *\/"
                                       ]
                                     },
                                     "depth" : 0,
@@ -10426,43 +10571,44 @@
                                     ],
                                     "inlineStyleRanges" : [
                                       {
-                                        "length" : 12,
-                                        "offset" : 0,
-                                        "style" : "COLOR:rgb(0, 0, 0)"
-                                      },
-                                      {
-                                        "length" : 12,
+                                        "length" : 17,
                                         "offset" : 0,
                                         "style" : "LETTERSPACING:0"
                                       },
                                       {
-                                        "length" : 12,
+                                        "length" : 17,
                                         "offset" : 0,
                                         "style" : "LINEHEIGHT:1.2"
                                       },
                                       {
-                                        "length" : 12,
+                                        "length" : 17,
                                         "offset" : 0,
                                         "style" : "FONT:GF;Fira Code-regular"
                                       },
                                       {
-                                        "length" : 12,
+                                        "length" : 17,
                                         "offset" : 0,
                                         "style" : "SIZE:14"
+                                      },
+                                      {
+                                        "length" : 17,
+                                        "offset" : 0,
+                                        "style" : "COLOR:var(--token-f3716bbd-3c6a-4526-9766-a47813435703, rgb(255, 255, 255)) \/* {\"name\":\"dark.text.primary\",\"packageIdentifier\":\"@framer\/4hpyr6fd.orgavision-material-ui\"} *\/"
                                       }
                                     ],
                                     "key" : "6qbs8",
-                                    "text" : "action.hover",
+                                    "text" : "dark.action.hover",
                                     "type" : "unstyled"
                                   }
                                 ],
                                 "entityMap" : {
 
                                 }
-                              }
+                              },
+                              "width" : 144
                             },
                             "hQiChFgqH" : {
-                              "fillColor" : "var(--token-ef327786-13ab-41e2-84ff-b9a30fd63616, rgba(0, 0, 0, 0.04)) \/* {\"name\":\"action.hover\"} *\/"
+                              "fillColor" : "var(--token-539f1a57-25b0-4544-a85c-096d3e26a627, rgba(255, 255, 255, 0.12)) \/* {\"name\":\"dark.divider\",\"packageIdentifier\":\"@framer\/4hpyr6fd.orgavision-material-ui\"} *\/"
                             },
                             "IopySSPCB" : {
                               "bottom" : -162,
@@ -10559,17 +10705,20 @@
                           "master" : "IopySSPCB",
                           "overrides" : {
                             "aCSrfLUKo" : {
+                              "centerAnchorX" : 0.46727272727272728,
+                              "centerAnchorY" : 0.5,
                               "styledText" : {
                                 "__class" : "StyledTextDraft",
                                 "blocks" : [
                                   {
                                     "data" : {
+                                      "direction" : "ltr",
                                       "emptyStyle" : [
-                                        "COLOR:rgb(0, 0, 0)",
                                         "LETTERSPACING:0",
                                         "LINEHEIGHT:1.2",
                                         "FONT:GF;Fira Code-regular",
-                                        "SIZE:14"
+                                        "SIZE:14",
+                                        "COLOR:var(--token-f3716bbd-3c6a-4526-9766-a47813435703, rgb(255, 255, 255)) \/* {\"name\":\"dark.text.primary\",\"packageIdentifier\":\"@framer\/4hpyr6fd.orgavision-material-ui\"} *\/"
                                       ]
                                     },
                                     "depth" : 0,
@@ -10578,43 +10727,44 @@
                                     ],
                                     "inlineStyleRanges" : [
                                       {
-                                        "length" : 15,
-                                        "offset" : 0,
-                                        "style" : "COLOR:rgb(0, 0, 0)"
-                                      },
-                                      {
-                                        "length" : 15,
+                                        "length" : 20,
                                         "offset" : 0,
                                         "style" : "LETTERSPACING:0"
                                       },
                                       {
-                                        "length" : 15,
+                                        "length" : 20,
                                         "offset" : 0,
                                         "style" : "LINEHEIGHT:1.2"
                                       },
                                       {
-                                        "length" : 15,
+                                        "length" : 20,
                                         "offset" : 0,
                                         "style" : "FONT:GF;Fira Code-regular"
                                       },
                                       {
-                                        "length" : 15,
+                                        "length" : 20,
                                         "offset" : 0,
                                         "style" : "SIZE:14"
+                                      },
+                                      {
+                                        "length" : 20,
+                                        "offset" : 0,
+                                        "style" : "COLOR:var(--token-f3716bbd-3c6a-4526-9766-a47813435703, rgb(255, 255, 255)) \/* {\"name\":\"dark.text.primary\",\"packageIdentifier\":\"@framer\/4hpyr6fd.orgavision-material-ui\"} *\/"
                                       }
                                     ],
                                     "key" : "6qbs8",
-                                    "text" : "action.selected",
+                                    "text" : "dark.action.selected",
                                     "type" : "unstyled"
                                   }
                                 ],
                                 "entityMap" : {
 
                                 }
-                              }
+                              },
+                              "width" : 169
                             },
                             "hQiChFgqH" : {
-                              "fillColor" : "var(--token-dbc1a591-80d3-4d23-bf28-b882d2f31f63, rgba(0, 0, 0, 0.08)) \/* {\"name\":\"action.selected\"} *\/"
+                              "fillColor" : "var(--token-539f1a57-25b0-4544-a85c-096d3e26a627, rgba(255, 255, 255, 0.12)) \/* {\"name\":\"dark.divider\",\"packageIdentifier\":\"@framer\/4hpyr6fd.orgavision-material-ui\"} *\/"
                             },
                             "IopySSPCB" : {
                               "bottom" : -204,
@@ -10712,17 +10862,20 @@
                           "master" : "IopySSPCB",
                           "overrides" : {
                             "aCSrfLUKo" : {
+                              "centerAnchorX" : 0.46727272727272728,
+                              "centerAnchorY" : 0.5,
                               "styledText" : {
                                 "__class" : "StyledTextDraft",
                                 "blocks" : [
                                   {
                                     "data" : {
+                                      "direction" : "ltr",
                                       "emptyStyle" : [
-                                        "COLOR:rgb(0, 0, 0)",
                                         "LETTERSPACING:0",
                                         "LINEHEIGHT:1.2",
                                         "FONT:GF;Fira Code-regular",
-                                        "SIZE:14"
+                                        "SIZE:14",
+                                        "COLOR:var(--token-f3716bbd-3c6a-4526-9766-a47813435703, rgb(255, 255, 255)) \/* {\"name\":\"dark.text.primary\",\"packageIdentifier\":\"@framer\/4hpyr6fd.orgavision-material-ui\"} *\/"
                                       ]
                                     },
                                     "depth" : 0,
@@ -10731,43 +10884,44 @@
                                     ],
                                     "inlineStyleRanges" : [
                                       {
-                                        "length" : 15,
-                                        "offset" : 0,
-                                        "style" : "COLOR:rgb(0, 0, 0)"
-                                      },
-                                      {
-                                        "length" : 15,
+                                        "length" : 20,
                                         "offset" : 0,
                                         "style" : "LETTERSPACING:0"
                                       },
                                       {
-                                        "length" : 15,
+                                        "length" : 20,
                                         "offset" : 0,
                                         "style" : "LINEHEIGHT:1.2"
                                       },
                                       {
-                                        "length" : 15,
+                                        "length" : 20,
                                         "offset" : 0,
                                         "style" : "FONT:GF;Fira Code-regular"
                                       },
                                       {
-                                        "length" : 15,
+                                        "length" : 20,
                                         "offset" : 0,
                                         "style" : "SIZE:14"
+                                      },
+                                      {
+                                        "length" : 20,
+                                        "offset" : 0,
+                                        "style" : "COLOR:var(--token-f3716bbd-3c6a-4526-9766-a47813435703, rgb(255, 255, 255)) \/* {\"name\":\"dark.text.primary\",\"packageIdentifier\":\"@framer\/4hpyr6fd.orgavision-material-ui\"} *\/"
                                       }
                                     ],
                                     "key" : "6qbs8",
-                                    "text" : "action.disabled",
+                                    "text" : "dark.action.disabled",
                                     "type" : "unstyled"
                                   }
                                 ],
                                 "entityMap" : {
 
                                 }
-                              }
+                              },
+                              "width" : 169
                             },
                             "hQiChFgqH" : {
-                              "fillColor" : "var(--token-e5b11104-faf1-43ad-ba30-83c8ea214a9f, rgba(0, 0, 0, 0.26)) \/* {\"name\":\"action.disabled\"} *\/"
+                              "fillColor" : "var(--token-539f1a57-25b0-4544-a85c-096d3e26a627, rgba(255, 255, 255, 0.12)) \/* {\"name\":\"dark.divider\",\"packageIdentifier\":\"@framer\/4hpyr6fd.orgavision-material-ui\"} *\/"
                             },
                             "IopySSPCB" : {
                               "bottom" : -204,
@@ -10866,17 +11020,20 @@
                           "master" : "IopySSPCB",
                           "overrides" : {
                             "aCSrfLUKo" : {
+                              "centerAnchorX" : 0.62,
+                              "centerAnchorY" : 0.5,
                               "styledText" : {
                                 "__class" : "StyledTextDraft",
                                 "blocks" : [
                                   {
                                     "data" : {
+                                      "direction" : "ltr",
                                       "emptyStyle" : [
-                                        "COLOR:rgb(0, 0, 0)",
                                         "LETTERSPACING:0",
                                         "LINEHEIGHT:1.2",
                                         "FONT:GF;Fira Code-regular",
-                                        "SIZE:14"
+                                        "SIZE:14",
+                                        "COLOR:var(--token-f3716bbd-3c6a-4526-9766-a47813435703, rgb(255, 255, 255)) \/* {\"name\":\"dark.text.primary\",\"packageIdentifier\":\"@framer\/4hpyr6fd.orgavision-material-ui\"} *\/"
                                       ]
                                     },
                                     "depth" : 0,
@@ -10885,43 +11042,44 @@
                                     ],
                                     "inlineStyleRanges" : [
                                       {
-                                        "length" : 25,
-                                        "offset" : 0,
-                                        "style" : "COLOR:rgb(0, 0, 0)"
-                                      },
-                                      {
-                                        "length" : 25,
+                                        "length" : 30,
                                         "offset" : 0,
                                         "style" : "LETTERSPACING:0"
                                       },
                                       {
-                                        "length" : 25,
+                                        "length" : 30,
                                         "offset" : 0,
                                         "style" : "LINEHEIGHT:1.2"
                                       },
                                       {
-                                        "length" : 25,
+                                        "length" : 30,
                                         "offset" : 0,
                                         "style" : "FONT:GF;Fira Code-regular"
                                       },
                                       {
-                                        "length" : 25,
+                                        "length" : 30,
                                         "offset" : 0,
                                         "style" : "SIZE:14"
+                                      },
+                                      {
+                                        "length" : 30,
+                                        "offset" : 0,
+                                        "style" : "COLOR:var(--token-f3716bbd-3c6a-4526-9766-a47813435703, rgb(255, 255, 255)) \/* {\"name\":\"dark.text.primary\",\"packageIdentifier\":\"@framer\/4hpyr6fd.orgavision-material-ui\"} *\/"
                                       }
                                     ],
                                     "key" : "6qbs8",
-                                    "text" : "action.disabledBackground",
+                                    "text" : "dark.action.disabledBackground",
                                     "type" : "unstyled"
                                   }
                                 ],
                                 "entityMap" : {
 
                                 }
-                              }
+                              },
+                              "width" : 253
                             },
                             "hQiChFgqH" : {
-                              "fillColor" : "var(--token-975efc3e-c233-4905-bdd7-fe37491fe1e9, rgba(0, 0, 0, 0.12)) \/* {\"name\":\"action.disabledBackground\"} *\/"
+                              "fillColor" : "var(--token-539f1a57-25b0-4544-a85c-096d3e26a627, rgba(255, 255, 255, 0.12)) \/* {\"name\":\"dark.divider\",\"packageIdentifier\":\"@framer\/4hpyr6fd.orgavision-material-ui\"} *\/"
                             },
                             "IopySSPCB" : {
                               "bottom" : -204,
@@ -11094,12 +11252,12 @@
                                     "data" : {
                                       "direction" : "ltr",
                                       "emptyStyle" : [
-                                        "COLOR:rgb(0, 0, 0)",
                                         "LETTERSPACING:0",
                                         "LINEHEIGHT:1.2",
                                         "FONT:GF;Fira Sans-500",
                                         "ALIGN:left",
-                                        "SIZE:16"
+                                        "SIZE:16",
+                                        "COLOR:var(--token-f3716bbd-3c6a-4526-9766-a47813435703, rgb(255, 255, 255)) \/* {\"name\":\"dark.text.primary\",\"packageIdentifier\":\"@framer\/4hpyr6fd.orgavision-material-ui\"} *\/"
                                       ]
                                     },
                                     "depth" : 0,
@@ -11107,11 +11265,6 @@
 
                                     ],
                                     "inlineStyleRanges" : [
-                                      {
-                                        "length" : 15,
-                                        "offset" : 0,
-                                        "style" : "COLOR:rgb(0, 0, 0)"
-                                      },
                                       {
                                         "length" : 15,
                                         "offset" : 0,
@@ -11136,6 +11289,11 @@
                                         "length" : 15,
                                         "offset" : 0,
                                         "style" : "SIZE:16"
+                                      },
+                                      {
+                                        "length" : 15,
+                                        "offset" : 0,
+                                        "style" : "COLOR:var(--token-f3716bbd-3c6a-4526-9766-a47813435703, rgb(255, 255, 255)) \/* {\"name\":\"dark.text.primary\",\"packageIdentifier\":\"@framer\/4hpyr6fd.orgavision-material-ui\"} *\/"
                                       }
                                     ],
                                     "key" : "4q5mt",
@@ -11238,17 +11396,20 @@
                           "master" : "IopySSPCB",
                           "overrides" : {
                             "aCSrfLUKo" : {
+                              "centerAnchorX" : 0.51454545454545453,
+                              "centerAnchorY" : 0.5,
                               "styledText" : {
                                 "__class" : "StyledTextDraft",
                                 "blocks" : [
                                   {
                                     "data" : {
+                                      "direction" : "ltr",
                                       "emptyStyle" : [
-                                        "COLOR:rgb(0, 0, 0)",
                                         "LETTERSPACING:0",
                                         "LINEHEIGHT:1.2",
                                         "FONT:GF;Fira Code-regular",
-                                        "SIZE:14"
+                                        "SIZE:14",
+                                        "COLOR:var(--token-f3716bbd-3c6a-4526-9766-a47813435703, rgb(255, 255, 255)) \/* {\"name\":\"dark.text.primary\",\"packageIdentifier\":\"@framer\/4hpyr6fd.orgavision-material-ui\"} *\/"
                                       ]
                                     },
                                     "depth" : 0,
@@ -11257,43 +11418,44 @@
                                     ],
                                     "inlineStyleRanges" : [
                                       {
-                                        "length" : 18,
-                                        "offset" : 0,
-                                        "style" : "COLOR:rgb(0, 0, 0)"
-                                      },
-                                      {
-                                        "length" : 18,
+                                        "length" : 23,
                                         "offset" : 0,
                                         "style" : "LETTERSPACING:0"
                                       },
                                       {
-                                        "length" : 18,
+                                        "length" : 23,
                                         "offset" : 0,
                                         "style" : "LINEHEIGHT:1.2"
                                       },
                                       {
-                                        "length" : 18,
+                                        "length" : 23,
                                         "offset" : 0,
                                         "style" : "FONT:GF;Fira Code-regular"
                                       },
                                       {
-                                        "length" : 18,
+                                        "length" : 23,
                                         "offset" : 0,
                                         "style" : "SIZE:14"
+                                      },
+                                      {
+                                        "length" : 23,
+                                        "offset" : 0,
+                                        "style" : "COLOR:var(--token-f3716bbd-3c6a-4526-9766-a47813435703, rgb(255, 255, 255)) \/* {\"name\":\"dark.text.primary\",\"packageIdentifier\":\"@framer\/4hpyr6fd.orgavision-material-ui\"} *\/"
                                       }
                                     ],
                                     "key" : "6qbs8",
-                                    "text" : "background.default",
+                                    "text" : "dark.background.default",
                                     "type" : "unstyled"
                                   }
                                 ],
                                 "entityMap" : {
 
                                 }
-                              }
+                              },
+                              "width" : 195
                             },
                             "hQiChFgqH" : {
-                              "fillColor" : "var(--token-92dd06a1-e3b1-4e62-a46d-46f5ee9ababb, rgb(255, 255, 255)) \/* {\"name\":\"background.paper\",\"packageIdentifier\":\"@framer\/4hpyr6fd.orgavision-material-ui\"} *\/"
+                              "fillColor" : "var(--token-539f1a57-25b0-4544-a85c-096d3e26a627, rgba(255, 255, 255, 0.12)) \/* {\"name\":\"dark.divider\",\"packageIdentifier\":\"@framer\/4hpyr6fd.orgavision-material-ui\"} *\/"
                             },
                             "IopySSPCB" : {
                               "bottom" : null,
@@ -11389,17 +11551,21 @@
                           "master" : "IopySSPCB",
                           "overrides" : {
                             "aCSrfLUKo" : {
+                              "centerAnchorX" : 0.48363636363636364,
+                              "centerAnchorY" : 0.5,
+                              "height" : 16,
                               "styledText" : {
                                 "__class" : "StyledTextDraft",
                                 "blocks" : [
                                   {
                                     "data" : {
+                                      "direction" : "ltr",
                                       "emptyStyle" : [
-                                        "COLOR:rgb(0, 0, 0)",
                                         "LETTERSPACING:0",
                                         "LINEHEIGHT:1.2",
                                         "FONT:GF;Fira Code-regular",
-                                        "SIZE:14"
+                                        "SIZE:14",
+                                        "COLOR:var(--token-f3716bbd-3c6a-4526-9766-a47813435703, rgb(255, 255, 255)) \/* {\"name\":\"dark.text.primary\",\"packageIdentifier\":\"@framer\/4hpyr6fd.orgavision-material-ui\"} *\/"
                                       ]
                                     },
                                     "depth" : 0,
@@ -11408,43 +11574,45 @@
                                     ],
                                     "inlineStyleRanges" : [
                                       {
-                                        "length" : 16,
-                                        "offset" : 0,
-                                        "style" : "COLOR:rgb(0, 0, 0)"
-                                      },
-                                      {
-                                        "length" : 16,
+                                        "length" : 21,
                                         "offset" : 0,
                                         "style" : "LETTERSPACING:0"
                                       },
                                       {
-                                        "length" : 16,
+                                        "length" : 21,
                                         "offset" : 0,
                                         "style" : "LINEHEIGHT:1.2"
                                       },
                                       {
-                                        "length" : 16,
+                                        "length" : 21,
                                         "offset" : 0,
                                         "style" : "FONT:GF;Fira Code-regular"
                                       },
                                       {
-                                        "length" : 16,
+                                        "length" : 21,
                                         "offset" : 0,
                                         "style" : "SIZE:14"
+                                      },
+                                      {
+                                        "length" : 21,
+                                        "offset" : 0,
+                                        "style" : "COLOR:var(--token-f3716bbd-3c6a-4526-9766-a47813435703, rgb(255, 255, 255)) \/* {\"name\":\"dark.text.primary\",\"packageIdentifier\":\"@framer\/4hpyr6fd.orgavision-material-ui\"} *\/"
                                       }
                                     ],
                                     "key" : "6qbs8",
-                                    "text" : "background.paper",
+                                    "text" : "dark.background.paper",
                                     "type" : "unstyled"
                                   }
                                 ],
                                 "entityMap" : {
 
                                 }
-                              }
+                              },
+                              "width" : 178
                             },
                             "hQiChFgqH" : {
-                              "fillColor" : "var(--token-92dd06a1-e3b1-4e62-a46d-46f5ee9ababb, rgb(255, 255, 255)) \/* {\"name\":\"background.paper\"} *\/"
+                              "borderColor" : "var(--token-539f1a57-25b0-4544-a85c-096d3e26a627, rgba(255, 255, 255, 0.12)) \/* {\"name\":\"dark.divider\",\"packageIdentifier\":\"@framer\/4hpyr6fd.orgavision-material-ui\"} *\/",
+                              "fillColor" : "var(--token-39c39977-dc3e-457a-b401-3306b12d7a5f, rgb(66, 66, 66)) \/* {\"name\":\"dark.background.paper\",\"packageIdentifier\":\"@framer\/4hpyr6fd.orgavision-material-ui\"} *\/"
                             },
                             "IopySSPCB" : {
                               "bottom" : -162,
@@ -11619,12 +11787,12 @@
                                     "data" : {
                                       "direction" : "ltr",
                                       "emptyStyle" : [
-                                        "COLOR:rgb(0, 0, 0)",
                                         "LETTERSPACING:0",
                                         "LINEHEIGHT:1.2",
                                         "FONT:GF;Fira Sans-500",
                                         "ALIGN:left",
-                                        "SIZE:16"
+                                        "SIZE:16",
+                                        "COLOR:var(--token-f3716bbd-3c6a-4526-9766-a47813435703, rgb(255, 255, 255)) \/* {\"name\":\"dark.text.primary\",\"packageIdentifier\":\"@framer\/4hpyr6fd.orgavision-material-ui\"} *\/"
                                       ]
                                     },
                                     "depth" : 0,
@@ -11632,11 +11800,6 @@
 
                                     ],
                                     "inlineStyleRanges" : [
-                                      {
-                                        "length" : 12,
-                                        "offset" : 0,
-                                        "style" : "COLOR:rgb(0, 0, 0)"
-                                      },
                                       {
                                         "length" : 12,
                                         "offset" : 0,
@@ -11661,6 +11824,11 @@
                                         "length" : 12,
                                         "offset" : 0,
                                         "style" : "SIZE:16"
+                                      },
+                                      {
+                                        "length" : 12,
+                                        "offset" : 0,
+                                        "style" : "COLOR:var(--token-f3716bbd-3c6a-4526-9766-a47813435703, rgb(255, 255, 255)) \/* {\"name\":\"dark.text.primary\",\"packageIdentifier\":\"@framer\/4hpyr6fd.orgavision-material-ui\"} *\/"
                                       }
                                     ],
                                     "key" : "4q5mt",
@@ -11764,19 +11932,21 @@
                           "master" : "IopySSPCB",
                           "overrides" : {
                             "aCSrfLUKo" : {
-                              "centerAnchorX" : 0.30833333333333335,
+                              "centerAnchorX" : 0.34545454545454546,
                               "centerAnchorY" : 0.5,
+                              "height" : 16,
                               "styledText" : {
                                 "__class" : "StyledTextDraft",
                                 "blocks" : [
                                   {
                                     "data" : {
+                                      "direction" : "ltr",
                                       "emptyStyle" : [
-                                        "COLOR:rgb(0, 0, 0)",
                                         "LETTERSPACING:0",
                                         "LINEHEIGHT:1.2",
                                         "FONT:GF;Fira Code-regular",
-                                        "SIZE:14"
+                                        "SIZE:14",
+                                        "COLOR:var(--token-f3716bbd-3c6a-4526-9766-a47813435703, rgb(255, 255, 255)) \/* {\"name\":\"dark.text.primary\",\"packageIdentifier\":\"@framer\/4hpyr6fd.orgavision-material-ui\"} *\/"
                                       ]
                                     },
                                     "depth" : 0,
@@ -11785,33 +11955,33 @@
                                     ],
                                     "inlineStyleRanges" : [
                                       {
-                                        "length" : 7,
-                                        "offset" : 0,
-                                        "style" : "COLOR:rgb(0, 0, 0)"
-                                      },
-                                      {
-                                        "length" : 7,
+                                        "length" : 12,
                                         "offset" : 0,
                                         "style" : "LETTERSPACING:0"
                                       },
                                       {
-                                        "length" : 7,
+                                        "length" : 12,
                                         "offset" : 0,
                                         "style" : "LINEHEIGHT:1.2"
                                       },
                                       {
-                                        "length" : 7,
+                                        "length" : 12,
                                         "offset" : 0,
                                         "style" : "FONT:GF;Fira Code-regular"
                                       },
                                       {
-                                        "length" : 7,
+                                        "length" : 12,
                                         "offset" : 0,
                                         "style" : "SIZE:14"
+                                      },
+                                      {
+                                        "length" : 12,
+                                        "offset" : 0,
+                                        "style" : "COLOR:var(--token-f3716bbd-3c6a-4526-9766-a47813435703, rgb(255, 255, 255)) \/* {\"name\":\"dark.text.primary\",\"packageIdentifier\":\"@framer\/4hpyr6fd.orgavision-material-ui\"} *\/"
                                       }
                                     ],
                                     "key" : "6qbs8",
-                                    "text" : "divider",
+                                    "text" : "dark.divider",
                                     "type" : "unstyled"
                                   }
                                 ],
@@ -11819,10 +11989,11 @@
 
                                 }
                               },
-                              "width" : 60
+                              "width" : 102
                             },
                             "hQiChFgqH" : {
-                              "fillColor" : "var(--token-69c6e079-d883-406c-9b09-c4797627c8ea, rgba(0, 0, 0, 0.12)) \/* {\"name\":\"divider\"} *\/"
+                              "borderColor" : "var(--token-539f1a57-25b0-4544-a85c-096d3e26a627, rgba(255, 255, 255, 0.12)) \/* {\"name\":\"dark.divider\",\"packageIdentifier\":\"@framer\/4hpyr6fd.orgavision-material-ui\"} *\/",
+                              "fillColor" : "var(--token-539f1a57-25b0-4544-a85c-096d3e26a627, rgba(255, 255, 255, 0.12)) \/* {\"name\":\"dark.divider\"} *\/"
                             },
                             "IopySSPCB" : {
                               "bottom" : -120,
@@ -11930,8 +12101,8 @@
                 "exportOptions" : [
 
                 ],
-                "fillColor" : "rgba(0, 153, 255, 0.5)",
-                "fillEnabled" : false,
+                "fillColor" : "var(--token-39c39977-dc3e-457a-b401-3306b12d7a5f, rgb(66, 66, 66)) \/* {\"name\":\"dark.background.paper\",\"packageIdentifier\":\"@framer\/4hpyr6fd.orgavision-material-ui\"} *\/",
+                "fillEnabled" : true,
                 "fillImage" : null,
                 "fillImageOriginalName" : null,
                 "fillImagePixelHeight" : null,
@@ -11958,23 +12129,23 @@
                 "name" : "Column",
                 "opacity" : 1,
                 "originalid" : null,
-                "padding" : 0,
-                "paddingBottom" : 0,
-                "paddingLeft" : 0,
+                "padding" : 16,
+                "paddingBottom" : 16,
+                "paddingLeft" : 16,
                 "paddingPerSide" : false,
-                "paddingRight" : 0,
-                "paddingTop" : 0,
+                "paddingRight" : 16,
+                "paddingTop" : 16,
                 "parentid" : "P1s0K6yGc",
                 "previewSettings" : null,
-                "radius" : 0,
-                "radiusBottomLeft" : 0,
-                "radiusBottomRight" : 0,
+                "radius" : 5,
+                "radiusBottomLeft" : 5,
+                "radiusBottomRight" : 5,
                 "radiusIsRelative" : false,
                 "radiusPerCorner" : false,
-                "radiusTopLeft" : 0,
-                "radiusTopRight" : 0,
+                "radiusTopLeft" : 5,
+                "radiusTopRight" : 5,
                 "replicaInfo" : null,
-                "right" : 20,
+                "right" : -61,
                 "rotation" : 0,
                 "stackAlignment" : "start",
                 "stackDirection" : "vertical",
@@ -12047,7 +12218,7 @@
             "stackGap" : 20,
             "top" : 664,
             "visible" : true,
-            "width" : 1200,
+            "width" : 1413,
             "widthType" : 0
           },
           {
@@ -12141,6 +12312,12 @@
         "name" : "error.main",
         "value" : "rgb(255, 71, 71)"
       },
+      "1b6c5a1d-ba57-4fb7-be8c-d385e2c6fd29" : {
+        "__class" : "ColorTokenNode",
+        "id" : "1b6c5a1d-ba57-4fb7-be8c-d385e2c6fd29",
+        "name" : "dark.action.selected",
+        "value" : "rgba(255, 255, 255, 0.16)"
+      },
       "1d0ad255-1f60-4c80-8b6a-310432eee92f" : {
         "__class" : "ColorTokenNode",
         "id" : "1d0ad255-1f60-4c80-8b6a-310432eee92f",
@@ -12195,11 +12372,23 @@
         "name" : "text.secondary",
         "value" : "rgba(0, 0, 0, 0.54)"
       },
+      "39c39977-dc3e-457a-b401-3306b12d7a5f" : {
+        "__class" : "ColorTokenNode",
+        "id" : "39c39977-dc3e-457a-b401-3306b12d7a5f",
+        "name" : "dark.background.paper",
+        "value" : "rgb(66, 66, 66)"
+      },
       "49dad9a0-482f-4193-8d4e-72e0699e757d" : {
         "__class" : "ColorTokenNode",
         "id" : "49dad9a0-482f-4193-8d4e-72e0699e757d",
         "name" : "text.primary",
         "value" : "rgba(0, 0, 0, 0.87)"
+      },
+      "57d24ec6-b94c-4908-8962-621063cc01ff" : {
+        "__class" : "ColorTokenNode",
+        "id" : "57d24ec6-b94c-4908-8962-621063cc01ff",
+        "name" : "dark.action.disabled",
+        "value" : "rgba(255, 255, 255, 0.3)"
       },
       "69c6e079-d883-406c-9b09-c4797627c8ea" : {
         "__class" : "ColorTokenNode",
@@ -12207,11 +12396,29 @@
         "name" : "divider",
         "value" : "rgba(0, 0, 0, 0.12)"
       },
+      "87f32a57-19ab-4862-b4aa-820a6c9bfc0a" : {
+        "__class" : "ColorTokenNode",
+        "id" : "87f32a57-19ab-4862-b4aa-820a6c9bfc0a",
+        "name" : "dark.background.default",
+        "value" : "rgb(48, 48, 48)"
+      },
+      "88bb1950-a2dd-40e8-ac37-3ad1098e53d7" : {
+        "__class" : "ColorTokenNode",
+        "id" : "88bb1950-a2dd-40e8-ac37-3ad1098e53d7",
+        "name" : "dark.action.active",
+        "value" : "rgb(255, 255, 255)"
+      },
       "92dd06a1-e3b1-4e62-a46d-46f5ee9ababb" : {
         "__class" : "ColorTokenNode",
         "id" : "92dd06a1-e3b1-4e62-a46d-46f5ee9ababb",
         "name" : "background.paper",
         "value" : "rgb(255, 255, 255)"
+      },
+      "539f1a57-25b0-4544-a85c-096d3e26a627" : {
+        "__class" : "ColorTokenNode",
+        "id" : "539f1a57-25b0-4544-a85c-096d3e26a627",
+        "name" : "dark.divider",
+        "value" : "rgba(255, 255, 255, 0.12)"
       },
       "591a5859-9eaa-44e2-ac4c-83717a2a2ee6" : {
         "__class" : "ColorTokenNode",
@@ -12237,6 +12444,12 @@
         "name" : "error.dark",
         "value" : "rgb(255, 51, 51)"
       },
+      "a2faf2a8-2e28-4e4d-8755-be38d8cbe197" : {
+        "__class" : "ColorTokenNode",
+        "id" : "a2faf2a8-2e28-4e4d-8755-be38d8cbe197",
+        "name" : "dark.action.hover",
+        "value" : "rgba(255, 255, 255, 0.08)"
+      },
       "aa36c665-7c22-4599-8a11-fd5f8e4ca6a6" : {
         "__class" : "ColorTokenNode",
         "id" : "aa36c665-7c22-4599-8a11-fd5f8e4ca6a6",
@@ -12261,11 +12474,23 @@
         "name" : "warning.light",
         "value" : "rgb(244, 195, 76)"
       },
+      "da6a69eb-e6ba-41be-8ed8-84082553cf41" : {
+        "__class" : "ColorTokenNode",
+        "id" : "da6a69eb-e6ba-41be-8ed8-84082553cf41",
+        "name" : "dark.text.disabled",
+        "value" : "rgba(255, 255, 255, 0.5)"
+      },
       "dbc1a591-80d3-4d23-bf28-b882d2f31f63" : {
         "__class" : "ColorTokenNode",
         "id" : "dbc1a591-80d3-4d23-bf28-b882d2f31f63",
         "name" : "action.selected",
         "value" : "rgba(0, 0, 0, 0.08)"
+      },
+      "dff0ec56-219b-4ed0-85db-98cabcf1e25b" : {
+        "__class" : "ColorTokenNode",
+        "id" : "dff0ec56-219b-4ed0-85db-98cabcf1e25b",
+        "name" : "dark.action.disabledBackground",
+        "value" : "rgba(255, 255, 255, 0.12)"
       },
       "e5b11104-faf1-43ad-ba30-83c8ea214a9f" : {
         "__class" : "ColorTokenNode",
@@ -12278,6 +12503,12 @@
         "id" : "e72291ff-2a0b-40e8-8f88-5a18ee423775",
         "name" : "primary.light",
         "value" : "rgb(0, 150, 255)"
+      },
+      "e1106321-2efd-4d1a-baad-af0a7e66c6c0" : {
+        "__class" : "ColorTokenNode",
+        "id" : "e1106321-2efd-4d1a-baad-af0a7e66c6c0",
+        "name" : "dark.text.secondary",
+        "value" : "rgba(255, 255, 255, 0.7)"
       },
       "ef327786-13ab-41e2-84ff-b9a30fd63616" : {
         "__class" : "ColorTokenNode",
@@ -12296,6 +12527,12 @@
         "id" : "f78e39bc-d094-498d-8bdf-6f6c5da603a1",
         "name" : "secondary.light",
         "value" : "rgb(244, 195, 76)"
+      },
+      "f3716bbd-3c6a-4526-9766-a47813435703" : {
+        "__class" : "ColorTokenNode",
+        "id" : "f3716bbd-3c6a-4526-9766-a47813435703",
+        "name" : "dark.text.primary",
+        "value" : "rgb(255, 255, 255)"
       },
       "f4682f0c-a663-4a02-a2e9-1fc05c08a12c" : {
         "__class" : "ColorTokenNode",
@@ -12339,7 +12576,18 @@
       "975efc3e-c233-4905-bdd7-fe37491fe1e9",
       "4d927322-2b9a-47c5-aab4-a15e532e9cc7",
       "92dd06a1-e3b1-4e62-a46d-46f5ee9ababb",
-      "69c6e079-d883-406c-9b09-c4797627c8ea"
+      "69c6e079-d883-406c-9b09-c4797627c8ea",
+      "f3716bbd-3c6a-4526-9766-a47813435703",
+      "e1106321-2efd-4d1a-baad-af0a7e66c6c0",
+      "da6a69eb-e6ba-41be-8ed8-84082553cf41",
+      "88bb1950-a2dd-40e8-ac37-3ad1098e53d7",
+      "a2faf2a8-2e28-4e4d-8755-be38d8cbe197",
+      "1b6c5a1d-ba57-4fb7-be8c-d385e2c6fd29",
+      "57d24ec6-b94c-4908-8962-621063cc01ff",
+      "dff0ec56-219b-4ed0-85db-98cabcf1e25b",
+      "87f32a57-19ab-4862-b4aa-820a6c9bfc0a",
+      "39c39977-dc3e-457a-b401-3306b12d7a5f",
+      "539f1a57-25b0-4544-a85c-096d3e26a627"
     ],
     "visible" : false
   },
