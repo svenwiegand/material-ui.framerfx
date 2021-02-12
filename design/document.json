@@ -1551,7 +1551,7 @@
                 },
                 "$control__menuTheme" : {
                   "type" : "enum",
-                  "value" : "light"
+                  "value" : "dark"
                 },
                 "$control__onItemClicked" : {
                   "type" : "eventhandler"
@@ -2520,7 +2520,7 @@
                     {
                       "id" : "rCzxfMVLT",
                       "type" : "string",
-                      "value" : "Menu Item 1"
+                      "value" : "Menu Item 1 ![star]"
                     },
                     {
                       "id" : "FO0AZJJW1",
@@ -2530,21 +2530,37 @@
                     {
                       "id" : "EMSfTVBWN",
                       "type" : "string",
-                      "value" : "Item 2"
+                      "value" : "![face] Item 2"
                     }
                   ]
                 },
                 "$control__onItemClicked" : {
-                  "type" : "eventhandler"
+                  "type" : "eventhandler",
+                  "value" : [
+                    {
+                      "actionIdentifier" : "framer\/useLog",
+                      "controls" : {
+                        "message" : {
+                          "type" : "string",
+                          "value" : ""
+                        },
+                        "type" : {
+                          "type" : "enum",
+                          "value" : "event"
+                        }
+                      },
+                      "identifier" : "294b01cc-2eb4-4220-98a9-e498a9845f67"
+                    }
+                  ]
                 },
                 "$control__theme" : {
                   "type" : "enum",
                   "value" : "dark"
                 },
                 "aspectRatio" : null,
-                "bottom" : -14,
-                "centerAnchorX" : 0.7029288702928872,
-                "centerAnchorY" : 0.9161616161616164,
+                "bottom" : 129,
+                "centerAnchorX" : 0.50066050198150613,
+                "centerAnchorY" : 0.83009708737864096,
                 "clip" : true,
                 "codeComponentIdentifier" : ".\/navigation\/Menu.tsx_Menu",
                 "codeComponentPackageVersion" : null,
@@ -2564,7 +2580,7 @@
                 "fillImagePixelWidth" : null,
                 "fillImageResize" : "fill",
                 "fillType" : "color",
-                "height" : 194,
+                "height" : 91,
                 "heightType" : 0,
                 "id" : "XN7GWIL6U",
                 "intrinsicHeight" : null,
@@ -2583,11 +2599,11 @@
                 "radiusPerCorner" : false,
                 "radiusTopLeft" : 0,
                 "radiusTopRight" : 0,
-                "right" : -12,
+                "right" : null,
                 "rotation" : 0,
                 "top" : null,
                 "visible" : true,
-                "width" : 450,
+                "width" : 208,
                 "widthType" : 0
               }
             ],

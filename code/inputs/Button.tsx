@@ -33,7 +33,7 @@ export function Button(props: ButtonProps) {
     )
 }
 
-const buttonPropertyControls = addPropertyControls(Button, {
+addPropertyControls(Button, {
     label: Control.String("Label", "", "Use 'icon:note' for icon"),
     href: Control.String("Link URL", ""),
     startIcon: Control.String("Start icon", "", "Icon name"),
