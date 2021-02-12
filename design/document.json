@@ -1237,6 +1237,10 @@
                   "type" : "string",
                   "value" : "star"
                 },
+                "$control__theme" : {
+                  "type" : "enum",
+                  "value" : "light"
+                },
                 "aspectRatio" : null,
                 "bottom" : null,
                 "centerAnchorX" : 0.26666666666666666,
@@ -1526,12 +1530,12 @@
                     {
                       "id" : "nm4Ew4fJu",
                       "type" : "string",
-                      "value" : "Item 1"
+                      "value" : "![star] Item 1"
                     },
                     {
                       "id" : "pwpaYAP8p",
                       "type" : "string",
-                      "value" : "Item 2"
+                      "value" : "![face] Item 2"
                     },
                     {
                       "id" : "PjxfMEcgg",

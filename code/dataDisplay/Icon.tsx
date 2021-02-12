@@ -1,8 +1,8 @@
-import * as React from "react"
-import { addPropertyControls, ControlType, ControlDescription, Color } from "framer"
-import { withTheme } from "../common/theme"
-import { propertyControls } from "../common/propertyControl"
 import { Icon as MuiIcon } from '@material-ui/core'
+import { addPropertyControls } from "framer"
+import * as React from "react"
+import { Control } from "../common/propertyControl"
+import { withTheme } from "../common/theme"
 
 const styleId = "material-ui-fonts"
 async function importMuiFont() {
@@ -49,19 +49,8 @@ export function Icon(props) {
     )
 }
 
-addPropertyControls(Icon, propertyControls(
-    ["icon", {
-        type: ControlType.String,
-        title: "Icon",
-        defaultValue: "add_circle"
-    }],
-    ["color", {
-        type: ControlType.Color,
-        title: "Color"
-    } as ControlDescription],
-    ["fontSize", {
-        type: ControlType.Number,
-        title: "Font size",
-        defaultValue: 24
-    }]
-))
+addPropertyControls(Icon, {
+    icon: Control.String("Icon", "add_circle"),
+    color: Control.Color("Color"),
+    fontSize: Control.Number("Font size", 24)
+})
