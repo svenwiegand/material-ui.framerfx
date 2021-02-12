@@ -275,15 +275,17 @@ export const DefaultControl = {
     error: Control.Boolean("Error", false),
     fullWidth: Control.Boolean("Full width", true),
     helperText: Control.String("Helper text", ""),
+    inputVariant: Control.Enum("Variant", ["filled", "outlined", "standard"], "filled"),
     label: Control.String("label", ""),
     labelPlacement: Control.Enum("Label placement", ["bottom", "end", "start", "top"], "end"),
     multiline: Control.Boolean("Multiline", false),
+    onClick: Control.EventHandler(),
     padding: Control.FusedNumber("Padding", 0, "mixedPadding", ["Padding", "Padding per edge"], ["paddingTop", "paddingRight", "paddingBottom", "paddingLeft"], ["T", "R", "B", "L"], 0),
     placeholder: Control.String("Placeholder", ""),
     required: Control.Boolean("Required", false),
     selected: Control.Boolean("Selected", false),
     size: Control.Enum("Size", ["medium", "small"], "medium"),
-    inputVariant: Control.Enum("Variant", ["filled", "outlined", "standard"], "filled")
+    theme: Control.Enum("Theme", ["light", "dark"], "light"),
 }
 
 export const FormControlLabelControls: PropertyControls<FormControl> = {

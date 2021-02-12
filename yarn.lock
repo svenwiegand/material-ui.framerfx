@@ -26,6 +26,11 @@
   resolved "https://registry.yarnpkg.com/@emotion/hash/-/hash-0.8.0.tgz#bbbff68978fefdbe68ccb533bc8cbe1d1afb5413"
   integrity sha512-kBJtf7PH6aWwZ6fka3zQ0p6SBYzx4fl1LoZXE2RrnYST9Xljm7WfKJrU4g/Xr3Beg72MLrp1AWNUmuYJTL7Cow==
 
+"@framer/framer.default@^1.102.0":
+  version "1.102.0"
+  resolved "https://registry.framer.com/@framer/framer.default/-/@framer/framer.default-1.102.0.tgz#e390e19a5c2d45b73345c2f8e3dea04b0cb911d6"
+  integrity sha512-CGjzSvy3iHkNOMmybvMxajHDdlhssasJvaSdGEP+mhzGPe8U8cfadz/jh5Yz81UiJMSEobBeTqvci2ny9Xn/pQ==
+
 "@material-ui/core@^4.11.2":
   version "4.11.2"
   resolved "https://registry.yarnpkg.com/@material-ui/core/-/core-4.11.2.tgz#f8276dfa40d88304e6ceb98962af73803d27d42d"

@@ -57,8 +57,8 @@ export const colors = Object.freeze({
     "action.disabled": "var(--token-e5b11104-faf1-43ad-ba30-83c8ea214a9f, rgba(0, 0, 0, 0.26))",
     /** rgba(0, 0, 0, 0.12) */
     "action.disabledBackground": "var(--token-975efc3e-c233-4905-bdd7-fe37491fe1e9, rgba(0, 0, 0, 0.12))",
-    /** #FAFAFA */
-    "background.default": "var(--token-4d927322-2b9a-47c5-aab4-a15e532e9cc7, rgb(250, 250, 250))",
+    /** #EFEFEF */
+    "background.default": "var(--token-4d927322-2b9a-47c5-aab4-a15e532e9cc7, rgb(239, 239, 239))",
     /** #FFFFFF */
     "background.paper": "var(--token-92dd06a1-e3b1-4e62-a46d-46f5ee9ababb, rgb(255, 255, 255))",
     /** rgba(0, 0, 0, 0.12) */

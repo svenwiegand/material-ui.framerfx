@@ -1,6 +1,6 @@
 import * as React from "react"
 import { addPropertyControls, ControlType } from "framer"
-import { theme, withTheme } from "../common/theme"
+import { theme, themeLight, withTheme } from "../common/theme"
 import { ListItem as MuiListItem, ListItemAvatar, ListItemIcon, ListItemSecondaryAction, ListItemText } from "@material-ui/core"
 import { Control, DefaultControl } from "../common/propertyControl"
 import { Icon } from "./Icon"
@@ -40,6 +40,7 @@ function buildAvatar(props: Props) {
                     src={props.avatarSrc}
                     letters={props.avatarLetters}
                     icon={props.avatarIcon}
+                    iconColor={props.avatarIconColor}
                     variant={props.avatarVariant}
                     color={props.avatarColor}
                 />
@@ -105,7 +106,7 @@ addPropertyControls(ListItem, {
         Control.Image("• Image", "https://images.unsplash.com/photo-1537815749002-de6a533c64db?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60")
     ),
     avatarIcon: Control.Conditional(whenAvatarOrIcon, Control.String("• Icon", "person")),
-    avatarIconColor: Control.Conditional(whenAvatarIcon, Control.Color("• Icon color", theme.palette.action.active)),
+    avatarIconColor: Control.Conditional(whenAvatarOrIcon, Control.Color("• Icon color", themeLight.palette.action.active)),
     avatarLetters: Control.Conditional(whenAvatar, Control.String("• Letters")),
     avatarVariant: Control.Conditional(whenAvatar, Control.Enum("• Variant", ["circle", "rounded", "square"], "circle")),
     avatarColor: Control.Conditional(whenAvatar, Control.Color("• Fallback color", "#b5b5b5")),

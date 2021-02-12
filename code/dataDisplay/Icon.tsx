@@ -57,7 +57,7 @@ addPropertyControls(Icon, propertyControls(
     }],
     ["color", {
         type: ControlType.Color,
-        title: "Free color"
+        title: "Color"
     } as ControlDescription],
     ["fontSize", {
         type: ControlType.Number,

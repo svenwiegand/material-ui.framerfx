@@ -26,7 +26,7 @@ export function InputBase(props: Props) {
     state.updateIfDefaultValueChanged(value)
     const handleChange = (event: React.ChangeEvent<HTMLInputElement>) => state.setValue(event.target.value)
     const inputStyle: React.CSSProperties = { 
-        ...(typography ? theme.typography[typography] as React.CSSProperties : {}),
+        ...(typography ? theme().typography[typography] as React.CSSProperties : {}),
         color: props.disabled ? undefined : color
     }
     return withTheme(<MuiInputBase value={state.value} inputProps={{style: inputStyle}} onChange={handleChange} {...other} />)
@@ -40,7 +40,7 @@ addPropertyControls(InputBase, {
     autoFocus: DefaultControl.autoFocus,
     disabled: DefaultControl.disabled,
     typography: Control.Enum("Typography", [...typographyOptions], "button"),
-    color: Control.Color("Color", theme.palette.text.primary),
+    color: Control.Color("Color", theme().palette.text.primary),
     onChangeText: Control.EventHandler(),
     fullWidth: DefaultControl.fullWidth,
 })

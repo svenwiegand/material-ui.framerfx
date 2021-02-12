@@ -14,6 +14,93 @@
             "children" : [
               {
                 "__class" : "CodeComponentNode",
+                "$control__align" : {
+                  "type" : "enum",
+                  "value" : "inherit"
+                },
+                "$control__color" : {
+                  "type" : "enum",
+                  "value" : "textPrimary"
+                },
+                "$control__gutterBottom" : {
+                  "type" : "boolean",
+                  "value" : false
+                },
+                "$control__noWrap" : {
+                  "type" : "boolean",
+                  "value" : false
+                },
+                "$control__paragraph" : {
+                  "type" : "boolean",
+                  "value" : false
+                },
+                "$control__text" : {
+                  "type" : "string",
+                  "value" : "Headline"
+                },
+                "$control__theme" : {
+                  "type" : "enum",
+                  "value" : "light"
+                },
+                "$control__variant" : {
+                  "type" : "enum",
+                  "value" : "h1"
+                },
+                "$control__weight" : {
+                  "type" : "enum",
+                  "value" : "inherit"
+                },
+                "aspectRatio" : null,
+                "bottom" : null,
+                "centerAnchorX" : 0.56119402985074651,
+                "centerAnchorY" : 0.066985645933014579,
+                "clip" : true,
+                "codeComponentIdentifier" : ".\/dataDisplay\/Typography.tsx_Typography",
+                "codeComponentPackageVersion" : null,
+                "codeOverrideEnabled" : false,
+                "constraintsLocked" : false,
+                "duplicatedFrom" : [
+                  "iYRGQPyHY"
+                ],
+                "exportOptions" : [
+
+                ],
+                "fillColor" : "rgba(255,255,255,1)",
+                "fillEnabled" : false,
+                "fillImage" : null,
+                "fillImageOriginalName" : null,
+                "fillImagePixelHeight" : null,
+                "fillImagePixelWidth" : null,
+                "fillImageResize" : "fill",
+                "fillType" : "color",
+                "height" : 44,
+                "heightType" : 0,
+                "id" : "Q7TZ06qCP",
+                "intrinsicHeight" : null,
+                "intrinsicWidth" : null,
+                "left" : null,
+                "locked" : false,
+                "name" : null,
+                "opacity" : 1,
+                "originalid" : null,
+                "parentid" : "h9x7rZOO3",
+                "previewSettings" : null,
+                "radius" : 0,
+                "radiusBottomLeft" : 0,
+                "radiusBottomRight" : 0,
+                "radiusIsRelative" : false,
+                "radiusPerCorner" : false,
+                "radiusTopLeft" : 0,
+                "radiusTopRight" : 0,
+                "right" : 47,
+                "rotation" : 0,
+                "top" : 20,
+                "visible" : true,
+                "width" : 200,
+                "widthType" : 0
+              },
+              {
+                "__class" : "CodeComponentNode",
                 "$control__autoFocus" : {
                   "type" : "boolean",
                   "value" : false
@@ -1256,6 +1343,10 @@
                   "type" : "string",
                   "value" : ""
                 },
+                "$control__theme" : {
+                  "type" : "enum",
+                  "value" : "light"
+                },
                 "$control__variant" : {
                   "type" : "enum",
                   "value" : "outlined"
@@ -1313,7 +1404,7 @@
                 "__class" : "CodeComponentNode",
                 "$control__color" : {
                   "type" : "enum",
-                  "value" : "primary"
+                  "value" : "default"
                 },
                 "$control__disabled" : {
                   "type" : "boolean",
@@ -1334,10 +1425,14 @@
                   "type" : "enum",
                   "value" : "medium"
                 },
+                "$control__theme" : {
+                  "type" : "enum",
+                  "value" : "light"
+                },
                 "aspectRatio" : null,
                 "bottom" : null,
-                "centerAnchorX" : 0.51519154557463676,
-                "centerAnchorY" : 0.40136054421768708,
+                "centerAnchorX" : 0.51519154557463698,
+                "centerAnchorY" : 0.37164750957854431,
                 "clip" : true,
                 "codeComponentIdentifier" : ".\/inputs\/IconButton.tsx_IconButton",
                 "codeComponentPackageVersion" : "1.79.0",
@@ -1378,9 +1473,152 @@
                 "radiusTopRight" : 0,
                 "right" : 343,
                 "rotation" : 0,
-                "top" : 271,
+                "top" : 267,
                 "visible" : true,
                 "width" : 48,
+                "widthType" : 0
+              },
+              {
+                "__class" : "CodeComponentNode",
+                "$control__buttonType" : {
+                  "type" : "enum",
+                  "value" : "default"
+                },
+                "$control__color" : {
+                  "type" : "enum",
+                  "value" : "primary"
+                },
+                "$control__disabled" : {
+                  "type" : "boolean",
+                  "value" : false
+                },
+                "$control__disableElevation" : {
+                  "type" : "boolean",
+                  "value" : false
+                },
+                "$control__endIcon" : {
+                  "type" : "string",
+                  "value" : ""
+                },
+                "$control__fullWidth" : {
+                  "type" : "boolean",
+                  "value" : false
+                },
+                "$control__horizontalAnchorOrigin" : {
+                  "type" : "enum",
+                  "value" : "left"
+                },
+                "$control__horizontalTransformOrigin" : {
+                  "type" : "enum",
+                  "value" : "left"
+                },
+                "$control__icon" : {
+                  "type" : "string",
+                  "value" : "star"
+                },
+                "$control__items" : {
+                  "type" : "array",
+                  "value" : [
+                    {
+                      "id" : "nm4Ew4fJu",
+                      "type" : "string",
+                      "value" : "Item 1"
+                    },
+                    {
+                      "id" : "pwpaYAP8p",
+                      "type" : "string",
+                      "value" : "Item 2"
+                    },
+                    {
+                      "id" : "PjxfMEcgg",
+                      "type" : "string",
+                      "value" : "---"
+                    },
+                    {
+                      "id" : "MGRI0Jn0u",
+                      "type" : "string",
+                      "value" : "First item after separator"
+                    }
+                  ]
+                },
+                "$control__label" : {
+                  "type" : "string",
+                  "value" : "Menu Button"
+                },
+                "$control__onItemClicked" : {
+                  "type" : "eventhandler"
+                },
+                "$control__size" : {
+                  "type" : "enum",
+                  "value" : "medium"
+                },
+                "$control__startIcon" : {
+                  "type" : "string",
+                  "value" : ""
+                },
+                "$control__theme" : {
+                  "type" : "enum",
+                  "value" : "dark"
+                },
+                "$control__variant" : {
+                  "type" : "enum",
+                  "value" : "contained"
+                },
+                "$control__verticalAnchorOrigin" : {
+                  "type" : "enum",
+                  "value" : "bottom"
+                },
+                "$control__verticalTransformOrigin" : {
+                  "type" : "enum",
+                  "value" : "top"
+                },
+                "aspectRatio" : null,
+                "bottom" : null,
+                "centerAnchorX" : 0.50066050198150613,
+                "centerAnchorY" : 0.43167305236270775,
+                "clip" : true,
+                "codeComponentIdentifier" : ".\/navigation\/MenuButton.tsx_MenuButton",
+                "codeComponentPackageVersion" : null,
+                "codeOverrideEnabled" : false,
+                "constraintsLocked" : false,
+                "duplicatedFrom" : [
+                  "iFO0H4Q3v"
+                ],
+                "exportOptions" : [
+
+                ],
+                "fillColor" : "rgba(255,255,255,1)",
+                "fillEnabled" : false,
+                "fillImage" : null,
+                "fillImageOriginalName" : null,
+                "fillImagePixelHeight" : null,
+                "fillImagePixelWidth" : null,
+                "fillImageResize" : "fill",
+                "fillType" : "color",
+                "height" : 27,
+                "heightType" : 0,
+                "id" : "NeuyQStsd",
+                "intrinsicHeight" : null,
+                "intrinsicWidth" : null,
+                "left" : null,
+                "locked" : false,
+                "name" : null,
+                "opacity" : 1,
+                "originalid" : null,
+                "parentid" : "sFk8H4RoG",
+                "previewSettings" : null,
+                "radius" : 0,
+                "radiusBottomLeft" : 0,
+                "radiusBottomRight" : 0,
+                "radiusIsRelative" : false,
+                "radiusPerCorner" : false,
+                "radiusTopLeft" : 0,
+                "radiusTopRight" : 0,
+                "right" : null,
+                "rotation" : 0,
+                "top" : 325,
+                "visible" : true,
+                "width" : 120,
                 "widthType" : 0
               },
               {
@@ -1408,6 +1646,10 @@
                 "$control__text" : {
                   "type" : "string",
                   "value" : ""
+                },
+                "$control__theme" : {
+                  "type" : "enum",
+                  "value" : "light"
                 },
                 "$control__variant" : {
                   "type" : "enum",
@@ -1475,6 +1717,10 @@
                 "$control__icon" : {
                   "type" : "string",
                   "value" : "person"
+                },
+                "$control__iconColor" : {
+                  "type" : "color",
+                  "value" : "#09F"
                 },
                 "$control__letters" : {
                   "type" : "string",
@@ -1889,7 +2135,7 @@
                 },
                 "$control__avatarColor" : {
                   "type" : "color",
-                  "value" : "#b5b5b5"
+                  "value" : "var(--token-4d927322-2b9a-47c5-aab4-a15e532e9cc7, rgb(239, 239, 239)) \/* {\"name\":\"background.default\",\"packageIdentifier\":\"@framer\/4hpyr6fd.orgavision-material-ui\"} *\/"
                 },
                 "$control__avatarIcon" : {
                   "type" : "string",
@@ -1897,7 +2143,7 @@
                 },
                 "$control__avatarIconColor" : {
                   "type" : "color",
-                  "value" : "var(--token-b3018294-2656-434f-97bc-223c9bdc026e, rgb(0, 110, 230)) \/* {\"name\":\"primary.main\",\"packageIdentifier\":\"@framer\/4hpyr6fd.orgavision-material-ui\"} *\/"
+                  "value" : "var(--token-591a5859-9eaa-44e2-ac4c-83717a2a2ee6, rgba(0, 0, 0, 0.54)) \/* {\"name\":\"action.active\",\"packageIdentifier\":\"@framer\/4hpyr6fd.orgavision-material-ui\"} *\/"
                 },
                 "$control__avatarLetters" : {
                   "type" : "string",
@@ -2283,7 +2529,7 @@
             "guidesY" : [
 
             ],
-            "height" : 783,
+            "height" : 857,
             "heightType" : 0,
             "id" : "sFk8H4RoG",
             "intrinsicHeight" : null,
@@ -6594,6 +6840,7 @@
                                 "blocks" : [
                                   {
                                     "data" : {
+                                      "direction" : "ltr",
                                       "emptyStyle" : [
                                         "COLOR:rgb(0, 0, 0)",
                                         "LETTERSPACING:0",
@@ -6609,38 +6856,38 @@
                                     ],
                                     "inlineStyleRanges" : [
                                       {
-                                        "length" : 10,
+                                        "length" : 16,
                                         "offset" : 0,
                                         "style" : "COLOR:rgb(0, 0, 0)"
                                       },
                                       {
-                                        "length" : 10,
+                                        "length" : 16,
                                         "offset" : 0,
                                         "style" : "LETTERSPACING:0"
                                       },
                                       {
-                                        "length" : 10,
+                                        "length" : 16,
                                         "offset" : 0,
                                         "style" : "LINEHEIGHT:1.2"
                                       },
                                       {
-                                        "length" : 10,
+                                        "length" : 16,
                                         "offset" : 0,
                                         "style" : "FONT:GF;Fira Sans-500"
                                       },
                                       {
-                                        "length" : 10,
+                                        "length" : 16,
                                         "offset" : 0,
                                         "style" : "ALIGN:left"
                                       },
                                       {
-                                        "length" : 10,
+                                        "length" : 16,
                                         "offset" : 0,
                                         "style" : "SIZE:16"
                                       }
                                     ],
                                     "key" : "4q5mt",
-                                    "text" : "typograhpy",
+                                    "text" : "typograhpy light",
                                     "type" : "unstyled"
                                   }
                                 ],
@@ -6791,7 +7038,7 @@
                               }
                             },
                             "hQiChFgqH" : {
-                              "fillColor" : "var(--token-49dad9a0-482f-4193-8d4e-72e0699e757d, rgba(0, 0, 0, 0.87)) \/* {\"name\":\"text.primary\"} *\/"
+                              "fillColor" : "var(--token-69c6e079-d883-406c-9b09-c4797627c8ea, rgba(0, 0, 0, 0.12)) \/* {\"name\":\"divider.light\",\"packageIdentifier\":\"@framer\/4hpyr6fd.orgavision-material-ui\"} *\/"
                             },
                             "IopySSPCB" : {
                               "bottom" : -120,
@@ -7256,6 +7503,7 @@
                                 "blocks" : [
                                   {
                                     "data" : {
+                                      "direction" : "ltr",
                                       "emptyStyle" : [
                                         "COLOR:rgb(0, 0, 0)",
                                         "LETTERSPACING:0",
@@ -7271,38 +7519,38 @@
                                     ],
                                     "inlineStyleRanges" : [
                                       {
-                                        "length" : 7,
+                                        "length" : 13,
                                         "offset" : 0,
                                         "style" : "COLOR:rgb(0, 0, 0)"
                                       },
                                       {
-                                        "length" : 7,
+                                        "length" : 13,
                                         "offset" : 0,
                                         "style" : "LETTERSPACING:0"
                                       },
                                       {
-                                        "length" : 7,
+                                        "length" : 13,
                                         "offset" : 0,
                                         "style" : "LINEHEIGHT:1.2"
                                       },
                                       {
-                                        "length" : 7,
+                                        "length" : 13,
                                         "offset" : 0,
                                         "style" : "FONT:GF;Fira Sans-500"
                                       },
                                       {
-                                        "length" : 7,
+                                        "length" : 13,
                                         "offset" : 0,
                                         "style" : "ALIGN:left"
                                       },
                                       {
-                                        "length" : 7,
+                                        "length" : 13,
                                         "offset" : 0,
                                         "style" : "SIZE:16"
                                       }
                                     ],
                                     "key" : "4q5mt",
-                                    "text" : "buttons",
+                                    "text" : "buttons light",
                                     "type" : "unstyled"
                                   }
                                 ],
@@ -8228,6 +8476,7 @@
                                 "blocks" : [
                                   {
                                     "data" : {
+                                      "direction" : "ltr",
                                       "emptyStyle" : [
                                         "COLOR:rgb(0, 0, 0)",
                                         "LETTERSPACING:0",
@@ -8243,38 +8492,38 @@
                                     ],
                                     "inlineStyleRanges" : [
                                       {
-                                        "length" : 10,
+                                        "length" : 16,
                                         "offset" : 0,
                                         "style" : "COLOR:rgb(0, 0, 0)"
                                       },
                                       {
-                                        "length" : 10,
+                                        "length" : 16,
                                         "offset" : 0,
                                         "style" : "LETTERSPACING:0"
                                       },
                                       {
-                                        "length" : 10,
+                                        "length" : 16,
                                         "offset" : 0,
                                         "style" : "LINEHEIGHT:1.2"
                                       },
                                       {
-                                        "length" : 10,
+                                        "length" : 16,
                                         "offset" : 0,
                                         "style" : "FONT:GF;Fira Sans-500"
                                       },
                                       {
-                                        "length" : 10,
+                                        "length" : 16,
                                         "offset" : 0,
                                         "style" : "ALIGN:left"
                                       },
                                       {
-                                        "length" : 10,
+                                        "length" : 16,
                                         "offset" : 0,
                                         "style" : "SIZE:16"
                                       }
                                     ],
                                     "key" : "4q5mt",
-                                    "text" : "background",
+                                    "text" : "background light",
                                     "type" : "unstyled"
                                   }
                                 ],
@@ -8748,6 +8997,7 @@
                                 "blocks" : [
                                   {
                                     "data" : {
+                                      "direction" : "ltr",
                                       "emptyStyle" : [
                                         "COLOR:rgb(0, 0, 0)",
                                         "LETTERSPACING:0",
@@ -8763,38 +9013,38 @@
                                     ],
                                     "inlineStyleRanges" : [
                                       {
-                                        "length" : 7,
+                                        "length" : 13,
                                         "offset" : 0,
                                         "style" : "COLOR:rgb(0, 0, 0)"
                                       },
                                       {
-                                        "length" : 7,
+                                        "length" : 13,
                                         "offset" : 0,
                                         "style" : "LETTERSPACING:0"
                                       },
                                       {
-                                        "length" : 7,
+                                        "length" : 13,
                                         "offset" : 0,
                                         "style" : "LINEHEIGHT:1.2"
                                       },
                                       {
-                                        "length" : 7,
+                                        "length" : 13,
                                         "offset" : 0,
                                         "style" : "FONT:GF;Fira Sans-500"
                                       },
                                       {
-                                        "length" : 7,
+                                        "length" : 13,
                                         "offset" : 0,
                                         "style" : "ALIGN:left"
                                       },
                                       {
-                                        "length" : 7,
+                                        "length" : 13,
                                         "offset" : 0,
                                         "style" : "SIZE:16"
                                       }
                                     ],
                                     "key" : "4q5mt",
-                                    "text" : "divider",
+                                    "text" : "divider light",
                                     "type" : "unstyled"
                                   }
                                 ],
@@ -9112,6 +9362,2629 @@
                 "visible" : true,
                 "width" : 1,
                 "widthType" : 3
+              },
+              {
+                "__class" : "FrameNode",
+                "aspectRatio" : null,
+                "bottom" : 58,
+                "centerAnchorX" : 0.74375000000000002,
+                "centerAnchorY" : 0.47112462006079026,
+                "children" : [
+                  {
+                    "__class" : "FrameNode",
+                    "aspectRatio" : null,
+                    "bottom" : null,
+                    "centerAnchorX" : 0.5,
+                    "centerAnchorY" : 0.125,
+                    "children" : [
+                      {
+                        "__class" : "FrameNode",
+                        "aspectRatio" : null,
+                        "bottom" : -78,
+                        "centerAnchorX" : 0.55970149253731338,
+                        "centerAnchorY" : 1.3103448275862069,
+                        "children" : [
+
+                        ],
+                        "clip" : false,
+                        "codeOverrideEnabled" : false,
+                        "constraintsLocked" : false,
+                        "duplicatedFrom" : [
+                          "xinHOXI3K",
+                          "nZTrspA60",
+                          "OPv8mvoDC",
+                          "PprsbTVGf"
+                        ],
+                        "exportOptions" : [
+
+                        ],
+                        "fillColor" : "rgba(255,255,255,1)",
+                        "fillEnabled" : false,
+                        "fillImage" : null,
+                        "fillImageOriginalName" : null,
+                        "fillImagePixelHeight" : null,
+                        "fillImagePixelWidth" : null,
+                        "fillImageResize" : "fill",
+                        "fillType" : "color",
+                        "framePreset" : null,
+                        "guidesX" : [
+
+                        ],
+                        "guidesY" : [
+
+                        ],
+                        "height" : 19,
+                        "heightType" : 0,
+                        "id" : "OEUVdIszG",
+                        "intrinsicHeight" : null,
+                        "intrinsicWidth" : null,
+                        "isExternalMaster" : null,
+                        "isMaster" : false,
+                        "isTarget" : false,
+                        "left" : null,
+                        "locked" : false,
+                        "name" : "color section",
+                        "opacity" : 1,
+                        "originalid" : "xinHOXI3K",
+                        "parentid" : "jzrb2kBjF",
+                        "previewSettings" : null,
+                        "radius" : 0,
+                        "radiusBottomLeft" : 0,
+                        "radiusBottomRight" : 0,
+                        "radiusIsRelative" : false,
+                        "radiusPerCorner" : false,
+                        "radiusTopLeft" : 0,
+                        "radiusTopRight" : 0,
+                        "replicaInfo" : {
+                          "master" : "xinHOXI3K",
+                          "overrides" : {
+                            "wMaQeFCaK" : {
+                              "styledText" : {
+                                "__class" : "StyledTextDraft",
+                                "blocks" : [
+                                  {
+                                    "data" : {
+                                      "direction" : "ltr",
+                                      "emptyStyle" : [
+                                        "COLOR:rgb(0, 0, 0)",
+                                        "LETTERSPACING:0",
+                                        "LINEHEIGHT:1.2",
+                                        "FONT:GF;Fira Sans-500",
+                                        "ALIGN:left",
+                                        "SIZE:16"
+                                      ]
+                                    },
+                                    "depth" : 0,
+                                    "entityRanges" : [
+
+                                    ],
+                                    "inlineStyleRanges" : [
+                                      {
+                                        "length" : 15,
+                                        "offset" : 0,
+                                        "style" : "COLOR:rgb(0, 0, 0)"
+                                      },
+                                      {
+                                        "length" : 15,
+                                        "offset" : 0,
+                                        "style" : "LETTERSPACING:0"
+                                      },
+                                      {
+                                        "length" : 15,
+                                        "offset" : 0,
+                                        "style" : "LINEHEIGHT:1.2"
+                                      },
+                                      {
+                                        "length" : 15,
+                                        "offset" : 0,
+                                        "style" : "FONT:GF;Fira Sans-500"
+                                      },
+                                      {
+                                        "length" : 15,
+                                        "offset" : 0,
+                                        "style" : "ALIGN:left"
+                                      },
+                                      {
+                                        "length" : 15,
+                                        "offset" : 0,
+                                        "style" : "SIZE:16"
+                                      }
+                                    ],
+                                    "key" : "4q5mt",
+                                    "text" : "typograhpy dark",
+                                    "type" : "unstyled"
+                                  }
+                                ],
+                                "entityMap" : {
+
+                                }
+                              }
+                            },
+                            "xinHOXI3K" : {
+                              "bottom" : -78,
+                              "centerAnchorX" : 0.55970149253731338,
+                              "centerAnchorY" : 1.3103448275862069,
+                              "left" : null,
+                              "right" : -20,
+                              "top" : null,
+                              "width" : 1,
+                              "widthType" : 3
+                            }
+                          }
+                        },
+                        "right" : -20,
+                        "rotation" : 0,
+                        "top" : null,
+                        "visible" : true,
+                        "width" : 1,
+                        "widthType" : 3
+                      },
+                      {
+                        "__class" : "FrameNode",
+                        "aspectRatio" : null,
+                        "bottom" : -120,
+                        "centerAnchorX" : 0.55970149253731338,
+                        "centerAnchorY" : 1.5977011494252873,
+                        "children" : [
+
+                        ],
+                        "clip" : false,
+                        "codeOverrideEnabled" : false,
+                        "constraintsLocked" : false,
+                        "duplicatedFrom" : [
+                          "IopySSPCB",
+                          "o_giXd_H6",
+                          "xogQxWvci",
+                          "ZrgKylByp",
+                          "UnDPoljPd"
+                        ],
+                        "exportOptions" : [
+
+                        ],
+                        "fillColor" : "rgba(0, 153, 255, 0)",
+                        "fillEnabled" : false,
+                        "fillImage" : null,
+                        "fillImageOriginalName" : null,
+                        "fillImagePixelHeight" : null,
+                        "fillImagePixelWidth" : null,
+                        "fillImageResize" : "fill",
+                        "fillType" : "color",
+                        "framePreset" : null,
+                        "guidesX" : [
+
+                        ],
+                        "guidesY" : [
+
+                        ],
+                        "height" : 32,
+                        "heightType" : 0,
+                        "id" : "KxNN9XtZx",
+                        "intrinsicHeight" : null,
+                        "intrinsicWidth" : null,
+                        "isExternalMaster" : null,
+                        "isMaster" : false,
+                        "isTarget" : false,
+                        "left" : null,
+                        "locked" : false,
+                        "name" : "color",
+                        "opacity" : 1,
+                        "originalid" : "IopySSPCB",
+                        "padding" : 0,
+                        "paddingBottom" : 0,
+                        "paddingLeft" : 0,
+                        "paddingPerSide" : false,
+                        "paddingRight" : 0,
+                        "paddingTop" : 0,
+                        "parentid" : "jzrb2kBjF",
+                        "previewSettings" : null,
+                        "radius" : 0,
+                        "radiusBottomLeft" : 0,
+                        "radiusBottomRight" : 0,
+                        "radiusIsRelative" : false,
+                        "radiusPerCorner" : false,
+                        "radiusTopLeft" : 0,
+                        "radiusTopRight" : 0,
+                        "replicaInfo" : {
+                          "master" : "IopySSPCB",
+                          "overrides" : {
+                            "aCSrfLUKo" : {
+                              "styledText" : {
+                                "__class" : "StyledTextDraft",
+                                "blocks" : [
+                                  {
+                                    "data" : {
+                                      "emptyStyle" : [
+                                        "COLOR:rgb(0, 0, 0)",
+                                        "LETTERSPACING:0",
+                                        "LINEHEIGHT:1.2",
+                                        "FONT:GF;Fira Code-regular",
+                                        "SIZE:14"
+                                      ]
+                                    },
+                                    "depth" : 0,
+                                    "entityRanges" : [
+
+                                    ],
+                                    "inlineStyleRanges" : [
+                                      {
+                                        "length" : 12,
+                                        "offset" : 0,
+                                        "style" : "COLOR:rgb(0, 0, 0)"
+                                      },
+                                      {
+                                        "length" : 12,
+                                        "offset" : 0,
+                                        "style" : "LETTERSPACING:0"
+                                      },
+                                      {
+                                        "length" : 12,
+                                        "offset" : 0,
+                                        "style" : "LINEHEIGHT:1.2"
+                                      },
+                                      {
+                                        "length" : 12,
+                                        "offset" : 0,
+                                        "style" : "FONT:GF;Fira Code-regular"
+                                      },
+                                      {
+                                        "length" : 12,
+                                        "offset" : 0,
+                                        "style" : "SIZE:14"
+                                      }
+                                    ],
+                                    "key" : "6qbs8",
+                                    "text" : "text.primary",
+                                    "type" : "unstyled"
+                                  }
+                                ],
+                                "entityMap" : {
+
+                                }
+                              }
+                            },
+                            "hQiChFgqH" : {
+                              "fillColor" : "var(--token-49dad9a0-482f-4193-8d4e-72e0699e757d, rgba(0, 0, 0, 0.87)) \/* {\"name\":\"text.primary\"} *\/"
+                            },
+                            "IopySSPCB" : {
+                              "bottom" : -120,
+                              "centerAnchorX" : 0.55970149253731338,
+                              "centerAnchorY" : 1.5977011494252873,
+                              "left" : null,
+                              "right" : -20,
+                              "top" : null,
+                              "width" : 1,
+                              "widthType" : 3
+                            }
+                          }
+                        },
+                        "right" : -20,
+                        "rotation" : 0,
+                        "stackAlignment" : "center",
+                        "stackDirection" : "horizontal",
+                        "stackDistribution" : "start",
+                        "stackEnabled" : true,
+                        "stackGap" : 20,
+                        "top" : null,
+                        "visible" : true,
+                        "width" : 1,
+                        "widthType" : 3
+                      },
+                      {
+                        "__class" : "FrameNode",
+                        "aspectRatio" : null,
+                        "bottom" : -162,
+                        "centerAnchorX" : 0.55970149253731338,
+                        "centerAnchorY" : 1.8390804597701149,
+                        "children" : [
+
+                        ],
+                        "clip" : false,
+                        "codeOverrideEnabled" : false,
+                        "constraintsLocked" : false,
+                        "duplicatedFrom" : [
+                          "IopySSPCB",
+                          "HdlJD3Spp",
+                          "lYy5pdgwO",
+                          "d4ibzw9Ri"
+                        ],
+                        "exportOptions" : [
+
+                        ],
+                        "fillColor" : "rgba(0, 153, 255, 0)",
+                        "fillEnabled" : false,
+                        "fillImage" : null,
+                        "fillImageOriginalName" : null,
+                        "fillImagePixelHeight" : null,
+                        "fillImagePixelWidth" : null,
+                        "fillImageResize" : "fill",
+                        "fillType" : "color",
+                        "framePreset" : null,
+                        "guidesX" : [
+
+                        ],
+                        "guidesY" : [
+
+                        ],
+                        "height" : 32,
+                        "heightType" : 0,
+                        "id" : "z6oCblFZ7",
+                        "intrinsicHeight" : null,
+                        "intrinsicWidth" : null,
+                        "isExternalMaster" : null,
+                        "isMaster" : false,
+                        "isTarget" : false,
+                        "left" : null,
+                        "locked" : false,
+                        "name" : "color",
+                        "opacity" : 1,
+                        "originalid" : "IopySSPCB",
+                        "padding" : 0,
+                        "paddingBottom" : 0,
+                        "paddingLeft" : 0,
+                        "paddingPerSide" : false,
+                        "paddingRight" : 0,
+                        "paddingTop" : 0,
+                        "parentid" : "jzrb2kBjF",
+                        "previewSettings" : null,
+                        "radius" : 0,
+                        "radiusBottomLeft" : 0,
+                        "radiusBottomRight" : 0,
+                        "radiusIsRelative" : false,
+                        "radiusPerCorner" : false,
+                        "radiusTopLeft" : 0,
+                        "radiusTopRight" : 0,
+                        "replicaInfo" : {
+                          "master" : "IopySSPCB",
+                          "overrides" : {
+                            "aCSrfLUKo" : {
+                              "styledText" : {
+                                "__class" : "StyledTextDraft",
+                                "blocks" : [
+                                  {
+                                    "data" : {
+                                      "emptyStyle" : [
+                                        "COLOR:rgb(0, 0, 0)",
+                                        "LETTERSPACING:0",
+                                        "LINEHEIGHT:1.2",
+                                        "FONT:GF;Fira Code-regular",
+                                        "SIZE:14"
+                                      ]
+                                    },
+                                    "depth" : 0,
+                                    "entityRanges" : [
+
+                                    ],
+                                    "inlineStyleRanges" : [
+                                      {
+                                        "length" : 14,
+                                        "offset" : 0,
+                                        "style" : "COLOR:rgb(0, 0, 0)"
+                                      },
+                                      {
+                                        "length" : 14,
+                                        "offset" : 0,
+                                        "style" : "LETTERSPACING:0"
+                                      },
+                                      {
+                                        "length" : 14,
+                                        "offset" : 0,
+                                        "style" : "LINEHEIGHT:1.2"
+                                      },
+                                      {
+                                        "length" : 14,
+                                        "offset" : 0,
+                                        "style" : "FONT:GF;Fira Code-regular"
+                                      },
+                                      {
+                                        "length" : 14,
+                                        "offset" : 0,
+                                        "style" : "SIZE:14"
+                                      }
+                                    ],
+                                    "key" : "6qbs8",
+                                    "text" : "text.secondary",
+                                    "type" : "unstyled"
+                                  }
+                                ],
+                                "entityMap" : {
+
+                                }
+                              }
+                            },
+                            "hQiChFgqH" : {
+                              "fillColor" : "var(--token-38ad3752-125d-479b-9f46-05f870551e81, rgba(0, 0, 0, 0.54)) \/* {\"name\":\"text.secondary\"} *\/"
+                            },
+                            "IopySSPCB" : {
+                              "bottom" : -162,
+                              "centerAnchorX" : 0.55970149253731338,
+                              "centerAnchorY" : 1.8390804597701149,
+                              "left" : null,
+                              "right" : -20,
+                              "top" : null,
+                              "width" : 1,
+                              "widthType" : 3
+                            }
+                          }
+                        },
+                        "right" : -20,
+                        "rotation" : 0,
+                        "stackAlignment" : "center",
+                        "stackDirection" : "horizontal",
+                        "stackDistribution" : "start",
+                        "stackEnabled" : true,
+                        "stackGap" : 20,
+                        "top" : null,
+                        "visible" : true,
+                        "width" : 1,
+                        "widthType" : 3
+                      },
+                      {
+                        "__class" : "FrameNode",
+                        "aspectRatio" : null,
+                        "bottom" : -204,
+                        "centerAnchorX" : 0.55970149253731338,
+                        "centerAnchorY" : 2.0804597701149423,
+                        "children" : [
+
+                        ],
+                        "clip" : false,
+                        "codeOverrideEnabled" : false,
+                        "constraintsLocked" : false,
+                        "duplicatedFrom" : [
+                          "IopySSPCB",
+                          "o_giXd_H6",
+                          "cNCqNwrWh",
+                          "Yj5nmpcp_",
+                          "VKU4uLcaX",
+                          "GekwgilCk"
+                        ],
+                        "exportOptions" : [
+
+                        ],
+                        "fillColor" : "rgba(0, 153, 255, 0)",
+                        "fillEnabled" : false,
+                        "fillImage" : null,
+                        "fillImageOriginalName" : null,
+                        "fillImagePixelHeight" : null,
+                        "fillImagePixelWidth" : null,
+                        "fillImageResize" : "fill",
+                        "fillType" : "color",
+                        "framePreset" : null,
+                        "guidesX" : [
+
+                        ],
+                        "guidesY" : [
+
+                        ],
+                        "height" : 32,
+                        "heightType" : 0,
+                        "id" : "NVZSOBmnr",
+                        "intrinsicHeight" : null,
+                        "intrinsicWidth" : null,
+                        "isExternalMaster" : null,
+                        "isMaster" : false,
+                        "isTarget" : false,
+                        "left" : null,
+                        "locked" : false,
+                        "name" : "color",
+                        "opacity" : 1,
+                        "originalid" : "IopySSPCB",
+                        "padding" : 0,
+                        "paddingBottom" : 0,
+                        "paddingLeft" : 0,
+                        "paddingPerSide" : false,
+                        "paddingRight" : 0,
+                        "paddingTop" : 0,
+                        "parentid" : "jzrb2kBjF",
+                        "previewSettings" : null,
+                        "radius" : 0,
+                        "radiusBottomLeft" : 0,
+                        "radiusBottomRight" : 0,
+                        "radiusIsRelative" : false,
+                        "radiusPerCorner" : false,
+                        "radiusTopLeft" : 0,
+                        "radiusTopRight" : 0,
+                        "replicaInfo" : {
+                          "master" : "IopySSPCB",
+                          "overrides" : {
+                            "aCSrfLUKo" : {
+                              "styledText" : {
+                                "__class" : "StyledTextDraft",
+                                "blocks" : [
+                                  {
+                                    "data" : {
+                                      "emptyStyle" : [
+                                        "COLOR:rgb(0, 0, 0)",
+                                        "LETTERSPACING:0",
+                                        "LINEHEIGHT:1.2",
+                                        "FONT:GF;Fira Code-regular",
+                                        "SIZE:14"
+                                      ]
+                                    },
+                                    "depth" : 0,
+                                    "entityRanges" : [
+
+                                    ],
+                                    "inlineStyleRanges" : [
+                                      {
+                                        "length" : 13,
+                                        "offset" : 0,
+                                        "style" : "COLOR:rgb(0, 0, 0)"
+                                      },
+                                      {
+                                        "length" : 13,
+                                        "offset" : 0,
+                                        "style" : "LETTERSPACING:0"
+                                      },
+                                      {
+                                        "length" : 13,
+                                        "offset" : 0,
+                                        "style" : "LINEHEIGHT:1.2"
+                                      },
+                                      {
+                                        "length" : 13,
+                                        "offset" : 0,
+                                        "style" : "FONT:GF;Fira Code-regular"
+                                      },
+                                      {
+                                        "length" : 13,
+                                        "offset" : 0,
+                                        "style" : "SIZE:14"
+                                      }
+                                    ],
+                                    "key" : "6qbs8",
+                                    "text" : "text.disabled",
+                                    "type" : "unstyled"
+                                  }
+                                ],
+                                "entityMap" : {
+
+                                }
+                              }
+                            },
+                            "hQiChFgqH" : {
+                              "fillColor" : "var(--token-6ba764f4-0c2b-4db8-a130-c56aad675896, rgba(0, 0, 0, 0.38)) \/* {\"name\":\"text.disabled\",\"packageIdentifier\":\"@framer\/4hpyr6fd.orgavision-material-ui\"} *\/"
+                            },
+                            "IopySSPCB" : {
+                              "bottom" : -204,
+                              "centerAnchorX" : 0.55970149253731338,
+                              "centerAnchorY" : 2.0804597701149423,
+                              "left" : null,
+                              "right" : -20,
+                              "top" : null,
+                              "width" : 1,
+                              "widthType" : 3
+                            }
+                          }
+                        },
+                        "right" : -20,
+                        "rotation" : 0,
+                        "stackAlignment" : "center",
+                        "stackDirection" : "horizontal",
+                        "stackDistribution" : "start",
+                        "stackEnabled" : true,
+                        "stackGap" : 20,
+                        "top" : null,
+                        "visible" : true,
+                        "width" : 1,
+                        "widthType" : 3
+                      }
+                    ],
+                    "clip" : false,
+                    "codeOverrideEnabled" : false,
+                    "constraintsLocked" : false,
+                    "duplicatedFrom" : [
+                      "Pa64r7oOS",
+                      "lnZvEcIwe",
+                      "RrvLL7L8q"
+                    ],
+                    "exportOptions" : [
+
+                    ],
+                    "fillColor" : "rgba(255,255,255,1)",
+                    "fillEnabled" : false,
+                    "fillImage" : null,
+                    "fillImageOriginalName" : null,
+                    "fillImagePixelHeight" : null,
+                    "fillImagePixelWidth" : null,
+                    "fillImageResize" : "fill",
+                    "fillType" : "color",
+                    "framePreset" : null,
+                    "guidesX" : [
+
+                    ],
+                    "guidesY" : [
+
+                    ],
+                    "height" : 145,
+                    "heightType" : 0,
+                    "id" : "jzrb2kBjF",
+                    "intrinsicHeight" : null,
+                    "intrinsicWidth" : null,
+                    "isExternalMaster" : null,
+                    "isMaster" : false,
+                    "isTarget" : false,
+                    "left" : null,
+                    "locked" : false,
+                    "name" : "typography",
+                    "opacity" : 1,
+                    "originalid" : null,
+                    "padding" : 0,
+                    "paddingBottom" : 18,
+                    "paddingLeft" : 0,
+                    "paddingPerSide" : true,
+                    "paddingRight" : 0,
+                    "paddingTop" : 0,
+                    "parentid" : "Nq5Sfw2DN",
+                    "previewSettings" : null,
+                    "radius" : 0,
+                    "radiusBottomLeft" : 0,
+                    "radiusBottomRight" : 0,
+                    "radiusIsRelative" : false,
+                    "radiusPerCorner" : false,
+                    "radiusTopLeft" : 0,
+                    "radiusTopRight" : 0,
+                    "replicaInfo" : null,
+                    "right" : null,
+                    "rotation" : 0,
+                    "stackAlignment" : "center",
+                    "stackDirection" : "vertical",
+                    "stackDistribution" : "start",
+                    "stackEnabled" : true,
+                    "stackGap" : 4,
+                    "top" : 0,
+                    "visible" : true,
+                    "width" : 1,
+                    "widthType" : 3
+                  },
+                  {
+                    "__class" : "FrameNode",
+                    "aspectRatio" : null,
+                    "bottom" : null,
+                    "centerAnchorX" : 0.5,
+                    "centerAnchorY" : 0.43706896551724139,
+                    "children" : [
+                      {
+                        "__class" : "FrameNode",
+                        "aspectRatio" : null,
+                        "bottom" : -78,
+                        "centerAnchorX" : 0.55970149253731338,
+                        "centerAnchorY" : 1.3103448275862069,
+                        "children" : [
+
+                        ],
+                        "clip" : false,
+                        "codeOverrideEnabled" : false,
+                        "constraintsLocked" : false,
+                        "duplicatedFrom" : [
+                          "xinHOXI3K",
+                          "nZTrspA60",
+                          "OPv8mvoDC",
+                          "LIlFFw9pv",
+                          "MnudQ2wSy"
+                        ],
+                        "exportOptions" : [
+
+                        ],
+                        "fillColor" : "rgba(255,255,255,1)",
+                        "fillEnabled" : false,
+                        "fillImage" : null,
+                        "fillImageOriginalName" : null,
+                        "fillImagePixelHeight" : null,
+                        "fillImagePixelWidth" : null,
+                        "fillImageResize" : "fill",
+                        "fillType" : "color",
+                        "framePreset" : null,
+                        "guidesX" : [
+
+                        ],
+                        "guidesY" : [
+
+                        ],
+                        "height" : 19,
+                        "heightType" : 0,
+                        "id" : "lud9QqHW4",
+                        "intrinsicHeight" : null,
+                        "intrinsicWidth" : null,
+                        "isExternalMaster" : null,
+                        "isMaster" : false,
+                        "isTarget" : false,
+                        "left" : null,
+                        "locked" : false,
+                        "name" : "color section",
+                        "opacity" : 1,
+                        "originalid" : "xinHOXI3K",
+                        "parentid" : "hJ310Y2j4",
+                        "previewSettings" : null,
+                        "radius" : 0,
+                        "radiusBottomLeft" : 0,
+                        "radiusBottomRight" : 0,
+                        "radiusIsRelative" : false,
+                        "radiusPerCorner" : false,
+                        "radiusTopLeft" : 0,
+                        "radiusTopRight" : 0,
+                        "replicaInfo" : {
+                          "master" : "xinHOXI3K",
+                          "overrides" : {
+                            "wMaQeFCaK" : {
+                              "styledText" : {
+                                "__class" : "StyledTextDraft",
+                                "blocks" : [
+                                  {
+                                    "data" : {
+                                      "direction" : "ltr",
+                                      "emptyStyle" : [
+                                        "COLOR:rgb(0, 0, 0)",
+                                        "LETTERSPACING:0",
+                                        "LINEHEIGHT:1.2",
+                                        "FONT:GF;Fira Sans-500",
+                                        "ALIGN:left",
+                                        "SIZE:16"
+                                      ]
+                                    },
+                                    "depth" : 0,
+                                    "entityRanges" : [
+
+                                    ],
+                                    "inlineStyleRanges" : [
+                                      {
+                                        "length" : 12,
+                                        "offset" : 0,
+                                        "style" : "COLOR:rgb(0, 0, 0)"
+                                      },
+                                      {
+                                        "length" : 12,
+                                        "offset" : 0,
+                                        "style" : "LETTERSPACING:0"
+                                      },
+                                      {
+                                        "length" : 12,
+                                        "offset" : 0,
+                                        "style" : "LINEHEIGHT:1.2"
+                                      },
+                                      {
+                                        "length" : 12,
+                                        "offset" : 0,
+                                        "style" : "FONT:GF;Fira Sans-500"
+                                      },
+                                      {
+                                        "length" : 12,
+                                        "offset" : 0,
+                                        "style" : "ALIGN:left"
+                                      },
+                                      {
+                                        "length" : 12,
+                                        "offset" : 0,
+                                        "style" : "SIZE:16"
+                                      }
+                                    ],
+                                    "key" : "4q5mt",
+                                    "text" : "buttons dark",
+                                    "type" : "unstyled"
+                                  }
+                                ],
+                                "entityMap" : {
+
+                                }
+                              }
+                            },
+                            "xinHOXI3K" : {
+                              "bottom" : -78,
+                              "centerAnchorX" : 0.55970149253731338,
+                              "centerAnchorY" : 1.3103448275862069,
+                              "left" : null,
+                              "right" : -20,
+                              "top" : null,
+                              "width" : 1,
+                              "widthType" : 3
+                            }
+                          }
+                        },
+                        "right" : -20,
+                        "rotation" : 0,
+                        "top" : null,
+                        "visible" : true,
+                        "width" : 1,
+                        "widthType" : 3
+                      },
+                      {
+                        "__class" : "FrameNode",
+                        "aspectRatio" : null,
+                        "bottom" : -120,
+                        "centerAnchorX" : 0.55970149253731338,
+                        "centerAnchorY" : 1.5977011494252873,
+                        "children" : [
+
+                        ],
+                        "clip" : false,
+                        "codeOverrideEnabled" : false,
+                        "constraintsLocked" : false,
+                        "duplicatedFrom" : [
+                          "IopySSPCB",
+                          "o_giXd_H6",
+                          "xogQxWvci",
+                          "ZrgKylByp",
+                          "FRgyvuo4J",
+                          "sgvI3FfJr"
+                        ],
+                        "exportOptions" : [
+
+                        ],
+                        "fillColor" : "rgba(0, 153, 255, 0)",
+                        "fillEnabled" : false,
+                        "fillImage" : null,
+                        "fillImageOriginalName" : null,
+                        "fillImagePixelHeight" : null,
+                        "fillImagePixelWidth" : null,
+                        "fillImageResize" : "fill",
+                        "fillType" : "color",
+                        "framePreset" : null,
+                        "guidesX" : [
+
+                        ],
+                        "guidesY" : [
+
+                        ],
+                        "height" : 32,
+                        "heightType" : 0,
+                        "id" : "pmus1CVFv",
+                        "intrinsicHeight" : null,
+                        "intrinsicWidth" : null,
+                        "isExternalMaster" : null,
+                        "isMaster" : false,
+                        "isTarget" : false,
+                        "left" : null,
+                        "locked" : false,
+                        "name" : "color",
+                        "opacity" : 1,
+                        "originalid" : "IopySSPCB",
+                        "padding" : 0,
+                        "paddingBottom" : 0,
+                        "paddingLeft" : 0,
+                        "paddingPerSide" : false,
+                        "paddingRight" : 0,
+                        "paddingTop" : 0,
+                        "parentid" : "hJ310Y2j4",
+                        "previewSettings" : null,
+                        "radius" : 0,
+                        "radiusBottomLeft" : 0,
+                        "radiusBottomRight" : 0,
+                        "radiusIsRelative" : false,
+                        "radiusPerCorner" : false,
+                        "radiusTopLeft" : 0,
+                        "radiusTopRight" : 0,
+                        "replicaInfo" : {
+                          "master" : "IopySSPCB",
+                          "overrides" : {
+                            "aCSrfLUKo" : {
+                              "styledText" : {
+                                "__class" : "StyledTextDraft",
+                                "blocks" : [
+                                  {
+                                    "data" : {
+                                      "emptyStyle" : [
+                                        "COLOR:rgb(0, 0, 0)",
+                                        "LETTERSPACING:0",
+                                        "LINEHEIGHT:1.2",
+                                        "FONT:GF;Fira Code-regular",
+                                        "SIZE:14"
+                                      ]
+                                    },
+                                    "depth" : 0,
+                                    "entityRanges" : [
+
+                                    ],
+                                    "inlineStyleRanges" : [
+                                      {
+                                        "length" : 13,
+                                        "offset" : 0,
+                                        "style" : "COLOR:rgb(0, 0, 0)"
+                                      },
+                                      {
+                                        "length" : 13,
+                                        "offset" : 0,
+                                        "style" : "LETTERSPACING:0"
+                                      },
+                                      {
+                                        "length" : 13,
+                                        "offset" : 0,
+                                        "style" : "LINEHEIGHT:1.2"
+                                      },
+                                      {
+                                        "length" : 13,
+                                        "offset" : 0,
+                                        "style" : "FONT:GF;Fira Code-regular"
+                                      },
+                                      {
+                                        "length" : 13,
+                                        "offset" : 0,
+                                        "style" : "SIZE:14"
+                                      }
+                                    ],
+                                    "key" : "6qbs8",
+                                    "text" : "action.active",
+                                    "type" : "unstyled"
+                                  }
+                                ],
+                                "entityMap" : {
+
+                                }
+                              }
+                            },
+                            "hQiChFgqH" : {
+                              "fillColor" : "var(--token-591a5859-9eaa-44e2-ac4c-83717a2a2ee6, rgba(0, 0, 0, 0.54)) \/* {\"name\":\"action.active\"} *\/"
+                            },
+                            "IopySSPCB" : {
+                              "bottom" : -120,
+                              "centerAnchorX" : 0.55970149253731338,
+                              "centerAnchorY" : 1.5977011494252873,
+                              "left" : null,
+                              "right" : -20,
+                              "top" : null,
+                              "width" : 1,
+                              "widthType" : 3
+                            }
+                          }
+                        },
+                        "right" : -20,
+                        "rotation" : 0,
+                        "stackAlignment" : "center",
+                        "stackDirection" : "horizontal",
+                        "stackDistribution" : "start",
+                        "stackEnabled" : true,
+                        "stackGap" : 20,
+                        "top" : null,
+                        "visible" : true,
+                        "width" : 1,
+                        "widthType" : 3
+                      },
+                      {
+                        "__class" : "FrameNode",
+                        "aspectRatio" : null,
+                        "bottom" : -162,
+                        "centerAnchorX" : 0.55970149253731338,
+                        "centerAnchorY" : 1.8390804597701149,
+                        "children" : [
+
+                        ],
+                        "clip" : false,
+                        "codeOverrideEnabled" : false,
+                        "constraintsLocked" : false,
+                        "duplicatedFrom" : [
+                          "IopySSPCB",
+                          "HdlJD3Spp",
+                          "lYy5pdgwO",
+                          "tjAN_06bf",
+                          "P5GRkmTxR"
+                        ],
+                        "exportOptions" : [
+
+                        ],
+                        "fillColor" : "rgba(0, 153, 255, 0)",
+                        "fillEnabled" : false,
+                        "fillImage" : null,
+                        "fillImageOriginalName" : null,
+                        "fillImagePixelHeight" : null,
+                        "fillImagePixelWidth" : null,
+                        "fillImageResize" : "fill",
+                        "fillType" : "color",
+                        "framePreset" : null,
+                        "guidesX" : [
+
+                        ],
+                        "guidesY" : [
+
+                        ],
+                        "height" : 32,
+                        "heightType" : 0,
+                        "id" : "I06zikoXe",
+                        "intrinsicHeight" : null,
+                        "intrinsicWidth" : null,
+                        "isExternalMaster" : null,
+                        "isMaster" : false,
+                        "isTarget" : false,
+                        "left" : null,
+                        "locked" : false,
+                        "name" : "color",
+                        "opacity" : 1,
+                        "originalid" : "IopySSPCB",
+                        "padding" : 0,
+                        "paddingBottom" : 0,
+                        "paddingLeft" : 0,
+                        "paddingPerSide" : false,
+                        "paddingRight" : 0,
+                        "paddingTop" : 0,
+                        "parentid" : "hJ310Y2j4",
+                        "previewSettings" : null,
+                        "radius" : 0,
+                        "radiusBottomLeft" : 0,
+                        "radiusBottomRight" : 0,
+                        "radiusIsRelative" : false,
+                        "radiusPerCorner" : false,
+                        "radiusTopLeft" : 0,
+                        "radiusTopRight" : 0,
+                        "replicaInfo" : {
+                          "master" : "IopySSPCB",
+                          "overrides" : {
+                            "aCSrfLUKo" : {
+                              "styledText" : {
+                                "__class" : "StyledTextDraft",
+                                "blocks" : [
+                                  {
+                                    "data" : {
+                                      "emptyStyle" : [
+                                        "COLOR:rgb(0, 0, 0)",
+                                        "LETTERSPACING:0",
+                                        "LINEHEIGHT:1.2",
+                                        "FONT:GF;Fira Code-regular",
+                                        "SIZE:14"
+                                      ]
+                                    },
+                                    "depth" : 0,
+                                    "entityRanges" : [
+
+                                    ],
+                                    "inlineStyleRanges" : [
+                                      {
+                                        "length" : 12,
+                                        "offset" : 0,
+                                        "style" : "COLOR:rgb(0, 0, 0)"
+                                      },
+                                      {
+                                        "length" : 12,
+                                        "offset" : 0,
+                                        "style" : "LETTERSPACING:0"
+                                      },
+                                      {
+                                        "length" : 12,
+                                        "offset" : 0,
+                                        "style" : "LINEHEIGHT:1.2"
+                                      },
+                                      {
+                                        "length" : 12,
+                                        "offset" : 0,
+                                        "style" : "FONT:GF;Fira Code-regular"
+                                      },
+                                      {
+                                        "length" : 12,
+                                        "offset" : 0,
+                                        "style" : "SIZE:14"
+                                      }
+                                    ],
+                                    "key" : "6qbs8",
+                                    "text" : "action.hover",
+                                    "type" : "unstyled"
+                                  }
+                                ],
+                                "entityMap" : {
+
+                                }
+                              }
+                            },
+                            "hQiChFgqH" : {
+                              "fillColor" : "var(--token-ef327786-13ab-41e2-84ff-b9a30fd63616, rgba(0, 0, 0, 0.04)) \/* {\"name\":\"action.hover\"} *\/"
+                            },
+                            "IopySSPCB" : {
+                              "bottom" : -162,
+                              "centerAnchorX" : 0.55970149253731338,
+                              "centerAnchorY" : 1.8390804597701149,
+                              "left" : null,
+                              "right" : -20,
+                              "top" : null,
+                              "width" : 1,
+                              "widthType" : 3
+                            }
+                          }
+                        },
+                        "right" : -20,
+                        "rotation" : 0,
+                        "stackAlignment" : "center",
+                        "stackDirection" : "horizontal",
+                        "stackDistribution" : "start",
+                        "stackEnabled" : true,
+                        "stackGap" : 20,
+                        "top" : null,
+                        "visible" : true,
+                        "width" : 1,
+                        "widthType" : 3
+                      },
+                      {
+                        "__class" : "FrameNode",
+                        "aspectRatio" : null,
+                        "bottom" : -204,
+                        "centerAnchorX" : 0.55970149253731338,
+                        "centerAnchorY" : 2.0804597701149423,
+                        "children" : [
+
+                        ],
+                        "clip" : false,
+                        "codeOverrideEnabled" : false,
+                        "constraintsLocked" : false,
+                        "duplicatedFrom" : [
+                          "IopySSPCB",
+                          "o_giXd_H6",
+                          "cNCqNwrWh",
+                          "Yj5nmpcp_",
+                          "VKU4uLcaX",
+                          "DY6UICet3",
+                          "ux9x5calv"
+                        ],
+                        "exportOptions" : [
+
+                        ],
+                        "fillColor" : "rgba(0, 153, 255, 0)",
+                        "fillEnabled" : false,
+                        "fillImage" : null,
+                        "fillImageOriginalName" : null,
+                        "fillImagePixelHeight" : null,
+                        "fillImagePixelWidth" : null,
+                        "fillImageResize" : "fill",
+                        "fillType" : "color",
+                        "framePreset" : null,
+                        "guidesX" : [
+
+                        ],
+                        "guidesY" : [
+
+                        ],
+                        "height" : 32,
+                        "heightType" : 0,
+                        "id" : "KqtutNtFe",
+                        "intrinsicHeight" : null,
+                        "intrinsicWidth" : null,
+                        "isExternalMaster" : null,
+                        "isMaster" : false,
+                        "isTarget" : false,
+                        "left" : null,
+                        "locked" : false,
+                        "name" : "color",
+                        "opacity" : 1,
+                        "originalid" : "IopySSPCB",
+                        "padding" : 0,
+                        "paddingBottom" : 0,
+                        "paddingLeft" : 0,
+                        "paddingPerSide" : false,
+                        "paddingRight" : 0,
+                        "paddingTop" : 0,
+                        "parentid" : "hJ310Y2j4",
+                        "previewSettings" : null,
+                        "radius" : 0,
+                        "radiusBottomLeft" : 0,
+                        "radiusBottomRight" : 0,
+                        "radiusIsRelative" : false,
+                        "radiusPerCorner" : false,
+                        "radiusTopLeft" : 0,
+                        "radiusTopRight" : 0,
+                        "replicaInfo" : {
+                          "master" : "IopySSPCB",
+                          "overrides" : {
+                            "aCSrfLUKo" : {
+                              "styledText" : {
+                                "__class" : "StyledTextDraft",
+                                "blocks" : [
+                                  {
+                                    "data" : {
+                                      "emptyStyle" : [
+                                        "COLOR:rgb(0, 0, 0)",
+                                        "LETTERSPACING:0",
+                                        "LINEHEIGHT:1.2",
+                                        "FONT:GF;Fira Code-regular",
+                                        "SIZE:14"
+                                      ]
+                                    },
+                                    "depth" : 0,
+                                    "entityRanges" : [
+
+                                    ],
+                                    "inlineStyleRanges" : [
+                                      {
+                                        "length" : 15,
+                                        "offset" : 0,
+                                        "style" : "COLOR:rgb(0, 0, 0)"
+                                      },
+                                      {
+                                        "length" : 15,
+                                        "offset" : 0,
+                                        "style" : "LETTERSPACING:0"
+                                      },
+                                      {
+                                        "length" : 15,
+                                        "offset" : 0,
+                                        "style" : "LINEHEIGHT:1.2"
+                                      },
+                                      {
+                                        "length" : 15,
+                                        "offset" : 0,
+                                        "style" : "FONT:GF;Fira Code-regular"
+                                      },
+                                      {
+                                        "length" : 15,
+                                        "offset" : 0,
+                                        "style" : "SIZE:14"
+                                      }
+                                    ],
+                                    "key" : "6qbs8",
+                                    "text" : "action.selected",
+                                    "type" : "unstyled"
+                                  }
+                                ],
+                                "entityMap" : {
+
+                                }
+                              }
+                            },
+                            "hQiChFgqH" : {
+                              "fillColor" : "var(--token-dbc1a591-80d3-4d23-bf28-b882d2f31f63, rgba(0, 0, 0, 0.08)) \/* {\"name\":\"action.selected\"} *\/"
+                            },
+                            "IopySSPCB" : {
+                              "bottom" : -204,
+                              "centerAnchorX" : 0.55970149253731338,
+                              "centerAnchorY" : 2.0804597701149423,
+                              "left" : null,
+                              "right" : -20,
+                              "top" : null,
+                              "width" : 1,
+                              "widthType" : 3
+                            }
+                          }
+                        },
+                        "right" : -20,
+                        "rotation" : 0,
+                        "stackAlignment" : "center",
+                        "stackDirection" : "horizontal",
+                        "stackDistribution" : "start",
+                        "stackEnabled" : true,
+                        "stackGap" : 20,
+                        "top" : null,
+                        "visible" : true,
+                        "width" : 1,
+                        "widthType" : 3
+                      },
+                      {
+                        "__class" : "FrameNode",
+                        "aspectRatio" : null,
+                        "bottom" : -204,
+                        "centerAnchorX" : 0.55970149253731338,
+                        "centerAnchorY" : 2.0804597701149423,
+                        "children" : [
+
+                        ],
+                        "clip" : false,
+                        "codeOverrideEnabled" : false,
+                        "constraintsLocked" : false,
+                        "duplicatedFrom" : [
+                          "IopySSPCB",
+                          "o_giXd_H6",
+                          "cNCqNwrWh",
+                          "Yj5nmpcp_",
+                          "VKU4uLcaX",
+                          "DY6UICet3",
+                          "ux9x5calv",
+                          "TqjedpEDW"
+                        ],
+                        "exportOptions" : [
+
+                        ],
+                        "fillColor" : "rgba(0, 153, 255, 0)",
+                        "fillEnabled" : false,
+                        "fillImage" : null,
+                        "fillImageOriginalName" : null,
+                        "fillImagePixelHeight" : null,
+                        "fillImagePixelWidth" : null,
+                        "fillImageResize" : "fill",
+                        "fillType" : "color",
+                        "framePreset" : null,
+                        "guidesX" : [
+
+                        ],
+                        "guidesY" : [
+
+                        ],
+                        "height" : 32,
+                        "heightType" : 0,
+                        "id" : "KAo2Aphop",
+                        "intrinsicHeight" : null,
+                        "intrinsicWidth" : null,
+                        "isExternalMaster" : null,
+                        "isMaster" : false,
+                        "isTarget" : false,
+                        "left" : null,
+                        "locked" : false,
+                        "name" : "color",
+                        "opacity" : 1,
+                        "originalid" : "IopySSPCB",
+                        "padding" : 0,
+                        "paddingBottom" : 0,
+                        "paddingLeft" : 0,
+                        "paddingPerSide" : false,
+                        "paddingRight" : 0,
+                        "paddingTop" : 0,
+                        "parentid" : "hJ310Y2j4",
+                        "previewSettings" : null,
+                        "radius" : 0,
+                        "radiusBottomLeft" : 0,
+                        "radiusBottomRight" : 0,
+                        "radiusIsRelative" : false,
+                        "radiusPerCorner" : false,
+                        "radiusTopLeft" : 0,
+                        "radiusTopRight" : 0,
+                        "replicaInfo" : {
+                          "master" : "IopySSPCB",
+                          "overrides" : {
+                            "aCSrfLUKo" : {
+                              "styledText" : {
+                                "__class" : "StyledTextDraft",
+                                "blocks" : [
+                                  {
+                                    "data" : {
+                                      "emptyStyle" : [
+                                        "COLOR:rgb(0, 0, 0)",
+                                        "LETTERSPACING:0",
+                                        "LINEHEIGHT:1.2",
+                                        "FONT:GF;Fira Code-regular",
+                                        "SIZE:14"
+                                      ]
+                                    },
+                                    "depth" : 0,
+                                    "entityRanges" : [
+
+                                    ],
+                                    "inlineStyleRanges" : [
+                                      {
+                                        "length" : 15,
+                                        "offset" : 0,
+                                        "style" : "COLOR:rgb(0, 0, 0)"
+                                      },
+                                      {
+                                        "length" : 15,
+                                        "offset" : 0,
+                                        "style" : "LETTERSPACING:0"
+                                      },
+                                      {
+                                        "length" : 15,
+                                        "offset" : 0,
+                                        "style" : "LINEHEIGHT:1.2"
+                                      },
+                                      {
+                                        "length" : 15,
+                                        "offset" : 0,
+                                        "style" : "FONT:GF;Fira Code-regular"
+                                      },
+                                      {
+                                        "length" : 15,
+                                        "offset" : 0,
+                                        "style" : "SIZE:14"
+                                      }
+                                    ],
+                                    "key" : "6qbs8",
+                                    "text" : "action.disabled",
+                                    "type" : "unstyled"
+                                  }
+                                ],
+                                "entityMap" : {
+
+                                }
+                              }
+                            },
+                            "hQiChFgqH" : {
+                              "fillColor" : "var(--token-e5b11104-faf1-43ad-ba30-83c8ea214a9f, rgba(0, 0, 0, 0.26)) \/* {\"name\":\"action.disabled\"} *\/"
+                            },
+                            "IopySSPCB" : {
+                              "bottom" : -204,
+                              "centerAnchorX" : 0.55970149253731338,
+                              "centerAnchorY" : 2.0804597701149423,
+                              "left" : null,
+                              "right" : -20,
+                              "top" : null,
+                              "width" : 1,
+                              "widthType" : 3
+                            }
+                          }
+                        },
+                        "right" : -20,
+                        "rotation" : 0,
+                        "stackAlignment" : "center",
+                        "stackDirection" : "horizontal",
+                        "stackDistribution" : "start",
+                        "stackEnabled" : true,
+                        "stackGap" : 20,
+                        "top" : null,
+                        "visible" : true,
+                        "width" : 1,
+                        "widthType" : 3
+                      },
+                      {
+                        "__class" : "FrameNode",
+                        "aspectRatio" : null,
+                        "bottom" : -204,
+                        "centerAnchorX" : 0.55970149253731338,
+                        "centerAnchorY" : 2.0804597701149423,
+                        "children" : [
+
+                        ],
+                        "clip" : false,
+                        "codeOverrideEnabled" : false,
+                        "constraintsLocked" : false,
+                        "duplicatedFrom" : [
+                          "IopySSPCB",
+                          "o_giXd_H6",
+                          "cNCqNwrWh",
+                          "Yj5nmpcp_",
+                          "VKU4uLcaX",
+                          "DY6UICet3",
+                          "ux9x5calv",
+                          "TqjedpEDW",
+                          "MaHKUsEwu"
+                        ],
+                        "exportOptions" : [
+
+                        ],
+                        "fillColor" : "rgba(0, 153, 255, 0)",
+                        "fillEnabled" : false,
+                        "fillImage" : null,
+                        "fillImageOriginalName" : null,
+                        "fillImagePixelHeight" : null,
+                        "fillImagePixelWidth" : null,
+                        "fillImageResize" : "fill",
+                        "fillType" : "color",
+                        "framePreset" : null,
+                        "guidesX" : [
+
+                        ],
+                        "guidesY" : [
+
+                        ],
+                        "height" : 32,
+                        "heightType" : 0,
+                        "id" : "c67vfwGwU",
+                        "intrinsicHeight" : null,
+                        "intrinsicWidth" : null,
+                        "isExternalMaster" : null,
+                        "isMaster" : false,
+                        "isTarget" : false,
+                        "left" : null,
+                        "locked" : false,
+                        "name" : "color",
+                        "opacity" : 1,
+                        "originalid" : "IopySSPCB",
+                        "padding" : 0,
+                        "paddingBottom" : 0,
+                        "paddingLeft" : 0,
+                        "paddingPerSide" : false,
+                        "paddingRight" : 0,
+                        "paddingTop" : 0,
+                        "parentid" : "hJ310Y2j4",
+                        "previewSettings" : null,
+                        "radius" : 0,
+                        "radiusBottomLeft" : 0,
+                        "radiusBottomRight" : 0,
+                        "radiusIsRelative" : false,
+                        "radiusPerCorner" : false,
+                        "radiusTopLeft" : 0,
+                        "radiusTopRight" : 0,
+                        "replicaInfo" : {
+                          "master" : "IopySSPCB",
+                          "overrides" : {
+                            "aCSrfLUKo" : {
+                              "styledText" : {
+                                "__class" : "StyledTextDraft",
+                                "blocks" : [
+                                  {
+                                    "data" : {
+                                      "emptyStyle" : [
+                                        "COLOR:rgb(0, 0, 0)",
+                                        "LETTERSPACING:0",
+                                        "LINEHEIGHT:1.2",
+                                        "FONT:GF;Fira Code-regular",
+                                        "SIZE:14"
+                                      ]
+                                    },
+                                    "depth" : 0,
+                                    "entityRanges" : [
+
+                                    ],
+                                    "inlineStyleRanges" : [
+                                      {
+                                        "length" : 25,
+                                        "offset" : 0,
+                                        "style" : "COLOR:rgb(0, 0, 0)"
+                                      },
+                                      {
+                                        "length" : 25,
+                                        "offset" : 0,
+                                        "style" : "LETTERSPACING:0"
+                                      },
+                                      {
+                                        "length" : 25,
+                                        "offset" : 0,
+                                        "style" : "LINEHEIGHT:1.2"
+                                      },
+                                      {
+                                        "length" : 25,
+                                        "offset" : 0,
+                                        "style" : "FONT:GF;Fira Code-regular"
+                                      },
+                                      {
+                                        "length" : 25,
+                                        "offset" : 0,
+                                        "style" : "SIZE:14"
+                                      }
+                                    ],
+                                    "key" : "6qbs8",
+                                    "text" : "action.disabledBackground",
+                                    "type" : "unstyled"
+                                  }
+                                ],
+                                "entityMap" : {
+
+                                }
+                              }
+                            },
+                            "hQiChFgqH" : {
+                              "fillColor" : "var(--token-975efc3e-c233-4905-bdd7-fe37491fe1e9, rgba(0, 0, 0, 0.12)) \/* {\"name\":\"action.disabledBackground\"} *\/"
+                            },
+                            "IopySSPCB" : {
+                              "bottom" : -204,
+                              "centerAnchorX" : 0.55970149253731338,
+                              "centerAnchorY" : 2.0804597701149423,
+                              "left" : null,
+                              "right" : -20,
+                              "top" : null,
+                              "width" : 1,
+                              "widthType" : 3
+                            }
+                          }
+                        },
+                        "right" : -20,
+                        "rotation" : 0,
+                        "stackAlignment" : "center",
+                        "stackDirection" : "horizontal",
+                        "stackDistribution" : "start",
+                        "stackEnabled" : true,
+                        "stackGap" : 20,
+                        "top" : null,
+                        "visible" : true,
+                        "width" : 1,
+                        "widthType" : 3
+                      }
+                    ],
+                    "clip" : false,
+                    "codeOverrideEnabled" : false,
+                    "constraintsLocked" : false,
+                    "duplicatedFrom" : [
+                      "Pa64r7oOS",
+                      "lnZvEcIwe",
+                      "RTu_wMM1w",
+                      "zCL3YYZ6R"
+                    ],
+                    "exportOptions" : [
+
+                    ],
+                    "fillColor" : "rgba(255,255,255,1)",
+                    "fillEnabled" : false,
+                    "fillImage" : null,
+                    "fillImageOriginalName" : null,
+                    "fillImagePixelHeight" : null,
+                    "fillImagePixelWidth" : null,
+                    "fillImageResize" : "fill",
+                    "fillType" : "color",
+                    "framePreset" : null,
+                    "guidesX" : [
+
+                    ],
+                    "guidesY" : [
+
+                    ],
+                    "height" : 217,
+                    "heightType" : 0,
+                    "id" : "hJ310Y2j4",
+                    "intrinsicHeight" : null,
+                    "intrinsicWidth" : null,
+                    "isExternalMaster" : null,
+                    "isMaster" : false,
+                    "isTarget" : false,
+                    "left" : null,
+                    "locked" : false,
+                    "name" : "buttons",
+                    "opacity" : 1,
+                    "originalid" : null,
+                    "padding" : 0,
+                    "paddingBottom" : 18,
+                    "paddingLeft" : 0,
+                    "paddingPerSide" : true,
+                    "paddingRight" : 0,
+                    "paddingTop" : 0,
+                    "parentid" : "Nq5Sfw2DN",
+                    "previewSettings" : null,
+                    "radius" : 0,
+                    "radiusBottomLeft" : 0,
+                    "radiusBottomRight" : 0,
+                    "radiusIsRelative" : false,
+                    "radiusPerCorner" : false,
+                    "radiusTopLeft" : 0,
+                    "radiusTopRight" : 0,
+                    "replicaInfo" : null,
+                    "right" : null,
+                    "rotation" : 0,
+                    "stackAlignment" : "center",
+                    "stackDirection" : "vertical",
+                    "stackDistribution" : "start",
+                    "stackEnabled" : true,
+                    "stackGap" : 4,
+                    "top" : 145,
+                    "visible" : true,
+                    "width" : 1,
+                    "widthType" : 3
+                  },
+                  {
+                    "__class" : "FrameNode",
+                    "aspectRatio" : null,
+                    "bottom" : 109,
+                    "centerAnchorX" : 0.5,
+                    "centerAnchorY" : 0.71810344827586203,
+                    "children" : [
+                      {
+                        "__class" : "FrameNode",
+                        "aspectRatio" : null,
+                        "bottom" : null,
+                        "centerAnchorX" : 0.5,
+                        "centerAnchorY" : 0.065517241379310351,
+                        "children" : [
+
+                        ],
+                        "clip" : false,
+                        "codeOverrideEnabled" : false,
+                        "constraintsLocked" : false,
+                        "duplicatedFrom" : [
+                          "xinHOXI3K",
+                          "nZTrspA60",
+                          "OPv8mvoDC",
+                          "LIlFFw9pv",
+                          "Uc1C4BGXv",
+                          "oCkrYgDDw"
+                        ],
+                        "exportOptions" : [
+
+                        ],
+                        "fillColor" : "rgba(255,255,255,1)",
+                        "fillEnabled" : false,
+                        "fillImage" : null,
+                        "fillImageOriginalName" : null,
+                        "fillImagePixelHeight" : null,
+                        "fillImagePixelWidth" : null,
+                        "fillImageResize" : "fill",
+                        "fillType" : "color",
+                        "framePreset" : null,
+                        "guidesX" : [
+
+                        ],
+                        "guidesY" : [
+
+                        ],
+                        "height" : 19,
+                        "heightType" : 0,
+                        "id" : "gFqaOyRIl",
+                        "intrinsicHeight" : null,
+                        "intrinsicWidth" : null,
+                        "isExternalMaster" : null,
+                        "isMaster" : false,
+                        "isTarget" : false,
+                        "left" : null,
+                        "locked" : false,
+                        "name" : "color section",
+                        "opacity" : 1,
+                        "originalid" : "xinHOXI3K",
+                        "parentid" : "s7wzrY1F_",
+                        "previewSettings" : null,
+                        "radius" : 0,
+                        "radiusBottomLeft" : 0,
+                        "radiusBottomRight" : 0,
+                        "radiusIsRelative" : false,
+                        "radiusPerCorner" : false,
+                        "radiusTopLeft" : 0,
+                        "radiusTopRight" : 0,
+                        "replicaInfo" : {
+                          "master" : "xinHOXI3K",
+                          "overrides" : {
+                            "wMaQeFCaK" : {
+                              "styledText" : {
+                                "__class" : "StyledTextDraft",
+                                "blocks" : [
+                                  {
+                                    "data" : {
+                                      "direction" : "ltr",
+                                      "emptyStyle" : [
+                                        "COLOR:rgb(0, 0, 0)",
+                                        "LETTERSPACING:0",
+                                        "LINEHEIGHT:1.2",
+                                        "FONT:GF;Fira Sans-500",
+                                        "ALIGN:left",
+                                        "SIZE:16"
+                                      ]
+                                    },
+                                    "depth" : 0,
+                                    "entityRanges" : [
+
+                                    ],
+                                    "inlineStyleRanges" : [
+                                      {
+                                        "length" : 15,
+                                        "offset" : 0,
+                                        "style" : "COLOR:rgb(0, 0, 0)"
+                                      },
+                                      {
+                                        "length" : 15,
+                                        "offset" : 0,
+                                        "style" : "LETTERSPACING:0"
+                                      },
+                                      {
+                                        "length" : 15,
+                                        "offset" : 0,
+                                        "style" : "LINEHEIGHT:1.2"
+                                      },
+                                      {
+                                        "length" : 15,
+                                        "offset" : 0,
+                                        "style" : "FONT:GF;Fira Sans-500"
+                                      },
+                                      {
+                                        "length" : 15,
+                                        "offset" : 0,
+                                        "style" : "ALIGN:left"
+                                      },
+                                      {
+                                        "length" : 15,
+                                        "offset" : 0,
+                                        "style" : "SIZE:16"
+                                      }
+                                    ],
+                                    "key" : "4q5mt",
+                                    "text" : "background dark",
+                                    "type" : "unstyled"
+                                  }
+                                ],
+                                "entityMap" : {
+
+                                }
+                              }
+                            },
+                            "xinHOXI3K" : {
+                              "bottom" : null,
+                              "centerAnchorX" : 0.5,
+                              "centerAnchorY" : 0.065517241379310351,
+                              "left" : null,
+                              "right" : null,
+                              "top" : null,
+                              "width" : 1,
+                              "widthType" : 3
+                            }
+                          }
+                        },
+                        "right" : null,
+                        "rotation" : 0,
+                        "top" : null,
+                        "visible" : true,
+                        "width" : 1,
+                        "widthType" : 3
+                      },
+                      {
+                        "__class" : "FrameNode",
+                        "aspectRatio" : null,
+                        "bottom" : null,
+                        "centerAnchorX" : 0.50000000000000022,
+                        "centerAnchorY" : 0.35779816513761492,
+                        "children" : [
+
+                        ],
+                        "clip" : false,
+                        "codeOverrideEnabled" : false,
+                        "constraintsLocked" : false,
+                        "duplicatedFrom" : [
+                          "IopySSPCB",
+                          "o_giXd_H6",
+                          "xogQxWvci",
+                          "ZrgKylByp",
+                          "FRgyvuo4J",
+                          "k5d2OaD5u",
+                          "QUGoHpVE3"
+                        ],
+                        "exportOptions" : [
+
+                        ],
+                        "fillColor" : "rgba(0, 153, 255, 0)",
+                        "fillEnabled" : false,
+                        "fillImage" : null,
+                        "fillImageOriginalName" : null,
+                        "fillImagePixelHeight" : null,
+                        "fillImagePixelWidth" : null,
+                        "fillImageResize" : "fill",
+                        "fillType" : "color",
+                        "framePreset" : null,
+                        "guidesX" : [
+
+                        ],
+                        "guidesY" : [
+
+                        ],
+                        "height" : 32,
+                        "heightType" : 0,
+                        "id" : "faYDaVm0E",
+                        "intrinsicHeight" : null,
+                        "intrinsicWidth" : null,
+                        "isExternalMaster" : null,
+                        "isMaster" : false,
+                        "isTarget" : false,
+                        "left" : null,
+                        "locked" : false,
+                        "name" : "color",
+                        "opacity" : 1,
+                        "originalid" : "IopySSPCB",
+                        "padding" : 0,
+                        "paddingBottom" : 0,
+                        "paddingLeft" : 0,
+                        "paddingPerSide" : false,
+                        "paddingRight" : 0,
+                        "paddingTop" : 0,
+                        "parentid" : "s7wzrY1F_",
+                        "previewSettings" : null,
+                        "radius" : 0,
+                        "radiusBottomLeft" : 0,
+                        "radiusBottomRight" : 0,
+                        "radiusIsRelative" : false,
+                        "radiusPerCorner" : false,
+                        "radiusTopLeft" : 0,
+                        "radiusTopRight" : 0,
+                        "replicaInfo" : {
+                          "master" : "IopySSPCB",
+                          "overrides" : {
+                            "aCSrfLUKo" : {
+                              "styledText" : {
+                                "__class" : "StyledTextDraft",
+                                "blocks" : [
+                                  {
+                                    "data" : {
+                                      "emptyStyle" : [
+                                        "COLOR:rgb(0, 0, 0)",
+                                        "LETTERSPACING:0",
+                                        "LINEHEIGHT:1.2",
+                                        "FONT:GF;Fira Code-regular",
+                                        "SIZE:14"
+                                      ]
+                                    },
+                                    "depth" : 0,
+                                    "entityRanges" : [
+
+                                    ],
+                                    "inlineStyleRanges" : [
+                                      {
+                                        "length" : 18,
+                                        "offset" : 0,
+                                        "style" : "COLOR:rgb(0, 0, 0)"
+                                      },
+                                      {
+                                        "length" : 18,
+                                        "offset" : 0,
+                                        "style" : "LETTERSPACING:0"
+                                      },
+                                      {
+                                        "length" : 18,
+                                        "offset" : 0,
+                                        "style" : "LINEHEIGHT:1.2"
+                                      },
+                                      {
+                                        "length" : 18,
+                                        "offset" : 0,
+                                        "style" : "FONT:GF;Fira Code-regular"
+                                      },
+                                      {
+                                        "length" : 18,
+                                        "offset" : 0,
+                                        "style" : "SIZE:14"
+                                      }
+                                    ],
+                                    "key" : "6qbs8",
+                                    "text" : "background.default",
+                                    "type" : "unstyled"
+                                  }
+                                ],
+                                "entityMap" : {
+
+                                }
+                              }
+                            },
+                            "hQiChFgqH" : {
+                              "fillColor" : "var(--token-92dd06a1-e3b1-4e62-a46d-46f5ee9ababb, rgb(255, 255, 255)) \/* {\"name\":\"background.paper\",\"packageIdentifier\":\"@framer\/4hpyr6fd.orgavision-material-ui\"} *\/"
+                            },
+                            "IopySSPCB" : {
+                              "bottom" : null,
+                              "centerAnchorX" : 0.50000000000000022,
+                              "centerAnchorY" : 0.35779816513761492,
+                              "left" : null,
+                              "right" : null,
+                              "top" : 23,
+                              "width" : 1,
+                              "widthType" : 3
+                            }
+                          }
+                        },
+                        "right" : null,
+                        "rotation" : 0,
+                        "stackAlignment" : "center",
+                        "stackDirection" : "horizontal",
+                        "stackDistribution" : "start",
+                        "stackEnabled" : true,
+                        "stackGap" : 20,
+                        "top" : 23,
+                        "visible" : true,
+                        "width" : 1,
+                        "widthType" : 3
+                      },
+                      {
+                        "__class" : "FrameNode",
+                        "aspectRatio" : null,
+                        "bottom" : -162,
+                        "centerAnchorX" : 0.55970149253731338,
+                        "centerAnchorY" : 1.8390804597701149,
+                        "children" : [
+
+                        ],
+                        "clip" : false,
+                        "codeOverrideEnabled" : false,
+                        "constraintsLocked" : false,
+                        "duplicatedFrom" : [
+                          "IopySSPCB",
+                          "HdlJD3Spp",
+                          "lYy5pdgwO",
+                          "tjAN_06bf",
+                          "mRgB0l7N1",
+                          "I9YOLPwEu"
+                        ],
+                        "exportOptions" : [
+
+                        ],
+                        "fillColor" : "rgba(0, 153, 255, 0)",
+                        "fillEnabled" : false,
+                        "fillImage" : null,
+                        "fillImageOriginalName" : null,
+                        "fillImagePixelHeight" : null,
+                        "fillImagePixelWidth" : null,
+                        "fillImageResize" : "fill",
+                        "fillType" : "color",
+                        "framePreset" : null,
+                        "guidesX" : [
+
+                        ],
+                        "guidesY" : [
+
+                        ],
+                        "height" : 32,
+                        "heightType" : 0,
+                        "id" : "kfaiAYhjX",
+                        "intrinsicHeight" : null,
+                        "intrinsicWidth" : null,
+                        "isExternalMaster" : null,
+                        "isMaster" : false,
+                        "isTarget" : false,
+                        "left" : null,
+                        "locked" : false,
+                        "name" : "color",
+                        "opacity" : 1,
+                        "originalid" : "IopySSPCB",
+                        "padding" : 0,
+                        "paddingBottom" : 0,
+                        "paddingLeft" : 0,
+                        "paddingPerSide" : false,
+                        "paddingRight" : 0,
+                        "paddingTop" : 0,
+                        "parentid" : "s7wzrY1F_",
+                        "previewSettings" : null,
+                        "radius" : 0,
+                        "radiusBottomLeft" : 0,
+                        "radiusBottomRight" : 0,
+                        "radiusIsRelative" : false,
+                        "radiusPerCorner" : false,
+                        "radiusTopLeft" : 0,
+                        "radiusTopRight" : 0,
+                        "replicaInfo" : {
+                          "master" : "IopySSPCB",
+                          "overrides" : {
+                            "aCSrfLUKo" : {
+                              "styledText" : {
+                                "__class" : "StyledTextDraft",
+                                "blocks" : [
+                                  {
+                                    "data" : {
+                                      "emptyStyle" : [
+                                        "COLOR:rgb(0, 0, 0)",
+                                        "LETTERSPACING:0",
+                                        "LINEHEIGHT:1.2",
+                                        "FONT:GF;Fira Code-regular",
+                                        "SIZE:14"
+                                      ]
+                                    },
+                                    "depth" : 0,
+                                    "entityRanges" : [
+
+                                    ],
+                                    "inlineStyleRanges" : [
+                                      {
+                                        "length" : 16,
+                                        "offset" : 0,
+                                        "style" : "COLOR:rgb(0, 0, 0)"
+                                      },
+                                      {
+                                        "length" : 16,
+                                        "offset" : 0,
+                                        "style" : "LETTERSPACING:0"
+                                      },
+                                      {
+                                        "length" : 16,
+                                        "offset" : 0,
+                                        "style" : "LINEHEIGHT:1.2"
+                                      },
+                                      {
+                                        "length" : 16,
+                                        "offset" : 0,
+                                        "style" : "FONT:GF;Fira Code-regular"
+                                      },
+                                      {
+                                        "length" : 16,
+                                        "offset" : 0,
+                                        "style" : "SIZE:14"
+                                      }
+                                    ],
+                                    "key" : "6qbs8",
+                                    "text" : "background.paper",
+                                    "type" : "unstyled"
+                                  }
+                                ],
+                                "entityMap" : {
+
+                                }
+                              }
+                            },
+                            "hQiChFgqH" : {
+                              "fillColor" : "var(--token-92dd06a1-e3b1-4e62-a46d-46f5ee9ababb, rgb(255, 255, 255)) \/* {\"name\":\"background.paper\"} *\/"
+                            },
+                            "IopySSPCB" : {
+                              "bottom" : -162,
+                              "centerAnchorX" : 0.55970149253731338,
+                              "centerAnchorY" : 1.8390804597701149,
+                              "left" : null,
+                              "right" : -20,
+                              "top" : null,
+                              "width" : 1,
+                              "widthType" : 3
+                            }
+                          }
+                        },
+                        "right" : -20,
+                        "rotation" : 0,
+                        "stackAlignment" : "center",
+                        "stackDirection" : "horizontal",
+                        "stackDistribution" : "start",
+                        "stackEnabled" : true,
+                        "stackGap" : 20,
+                        "top" : null,
+                        "visible" : true,
+                        "width" : 1,
+                        "widthType" : 3
+                      }
+                    ],
+                    "clip" : false,
+                    "codeOverrideEnabled" : false,
+                    "constraintsLocked" : false,
+                    "duplicatedFrom" : [
+                      "Pa64r7oOS",
+                      "lnZvEcIwe",
+                      "RTu_wMM1w",
+                      "Evpn8I2IG",
+                      "ihbPWpcHI"
+                    ],
+                    "exportOptions" : [
+
+                    ],
+                    "fillColor" : "rgba(255,255,255,1)",
+                    "fillEnabled" : false,
+                    "fillImage" : null,
+                    "fillImageOriginalName" : null,
+                    "fillImagePixelHeight" : null,
+                    "fillImagePixelWidth" : null,
+                    "fillImageResize" : "fill",
+                    "fillType" : "color",
+                    "framePreset" : null,
+                    "guidesX" : [
+
+                    ],
+                    "guidesY" : [
+
+                    ],
+                    "height" : 109,
+                    "heightType" : 0,
+                    "id" : "s7wzrY1F_",
+                    "intrinsicHeight" : null,
+                    "intrinsicWidth" : null,
+                    "isExternalMaster" : null,
+                    "isMaster" : false,
+                    "isTarget" : false,
+                    "left" : null,
+                    "locked" : false,
+                    "name" : "background",
+                    "opacity" : 1,
+                    "originalid" : null,
+                    "padding" : 0,
+                    "paddingBottom" : 18,
+                    "paddingLeft" : 0,
+                    "paddingPerSide" : true,
+                    "paddingRight" : 0,
+                    "paddingTop" : 0,
+                    "parentid" : "Nq5Sfw2DN",
+                    "previewSettings" : null,
+                    "radius" : 0,
+                    "radiusBottomLeft" : 0,
+                    "radiusBottomRight" : 0,
+                    "radiusIsRelative" : false,
+                    "radiusPerCorner" : false,
+                    "radiusTopLeft" : 0,
+                    "radiusTopRight" : 0,
+                    "replicaInfo" : null,
+                    "right" : null,
+                    "rotation" : 0,
+                    "stackAlignment" : "center",
+                    "stackDirection" : "vertical",
+                    "stackDistribution" : "start",
+                    "stackEnabled" : true,
+                    "stackGap" : 4,
+                    "top" : null,
+                    "visible" : true,
+                    "width" : 1,
+                    "widthType" : 3
+                  },
+                  {
+                    "__class" : "FrameNode",
+                    "aspectRatio" : null,
+                    "bottom" : 36,
+                    "centerAnchorX" : 0.5,
+                    "centerAnchorY" : 0.875,
+                    "children" : [
+                      {
+                        "__class" : "FrameNode",
+                        "aspectRatio" : null,
+                        "bottom" : null,
+                        "centerAnchorX" : 0.5,
+                        "centerAnchorY" : 0.065517241379310351,
+                        "children" : [
+
+                        ],
+                        "clip" : false,
+                        "codeOverrideEnabled" : false,
+                        "constraintsLocked" : false,
+                        "duplicatedFrom" : [
+                          "xinHOXI3K",
+                          "nZTrspA60",
+                          "OPv8mvoDC",
+                          "LIlFFw9pv",
+                          "Uc1C4BGXv",
+                          "HwGX6SE3q",
+                          "ocLBctHFo"
+                        ],
+                        "exportOptions" : [
+
+                        ],
+                        "fillColor" : "rgba(255,255,255,1)",
+                        "fillEnabled" : false,
+                        "fillImage" : null,
+                        "fillImageOriginalName" : null,
+                        "fillImagePixelHeight" : null,
+                        "fillImagePixelWidth" : null,
+                        "fillImageResize" : "fill",
+                        "fillType" : "color",
+                        "framePreset" : null,
+                        "guidesX" : [
+
+                        ],
+                        "guidesY" : [
+
+                        ],
+                        "height" : 19,
+                        "heightType" : 0,
+                        "id" : "RdabAIWxM",
+                        "intrinsicHeight" : null,
+                        "intrinsicWidth" : null,
+                        "isExternalMaster" : null,
+                        "isMaster" : false,
+                        "isTarget" : false,
+                        "left" : null,
+                        "locked" : false,
+                        "name" : "color section",
+                        "opacity" : 1,
+                        "originalid" : "xinHOXI3K",
+                        "parentid" : "AVlgl3vmZ",
+                        "previewSettings" : null,
+                        "radius" : 0,
+                        "radiusBottomLeft" : 0,
+                        "radiusBottomRight" : 0,
+                        "radiusIsRelative" : false,
+                        "radiusPerCorner" : false,
+                        "radiusTopLeft" : 0,
+                        "radiusTopRight" : 0,
+                        "replicaInfo" : {
+                          "master" : "xinHOXI3K",
+                          "overrides" : {
+                            "wMaQeFCaK" : {
+                              "styledText" : {
+                                "__class" : "StyledTextDraft",
+                                "blocks" : [
+                                  {
+                                    "data" : {
+                                      "direction" : "ltr",
+                                      "emptyStyle" : [
+                                        "COLOR:rgb(0, 0, 0)",
+                                        "LETTERSPACING:0",
+                                        "LINEHEIGHT:1.2",
+                                        "FONT:GF;Fira Sans-500",
+                                        "ALIGN:left",
+                                        "SIZE:16"
+                                      ]
+                                    },
+                                    "depth" : 0,
+                                    "entityRanges" : [
+
+                                    ],
+                                    "inlineStyleRanges" : [
+                                      {
+                                        "length" : 12,
+                                        "offset" : 0,
+                                        "style" : "COLOR:rgb(0, 0, 0)"
+                                      },
+                                      {
+                                        "length" : 12,
+                                        "offset" : 0,
+                                        "style" : "LETTERSPACING:0"
+                                      },
+                                      {
+                                        "length" : 12,
+                                        "offset" : 0,
+                                        "style" : "LINEHEIGHT:1.2"
+                                      },
+                                      {
+                                        "length" : 12,
+                                        "offset" : 0,
+                                        "style" : "FONT:GF;Fira Sans-500"
+                                      },
+                                      {
+                                        "length" : 12,
+                                        "offset" : 0,
+                                        "style" : "ALIGN:left"
+                                      },
+                                      {
+                                        "length" : 12,
+                                        "offset" : 0,
+                                        "style" : "SIZE:16"
+                                      }
+                                    ],
+                                    "key" : "4q5mt",
+                                    "text" : "divider dark",
+                                    "type" : "unstyled"
+                                  }
+                                ],
+                                "entityMap" : {
+
+                                }
+                              }
+                            },
+                            "xinHOXI3K" : {
+                              "bottom" : null,
+                              "centerAnchorX" : 0.5,
+                              "centerAnchorY" : 0.065517241379310351,
+                              "left" : null,
+                              "right" : null,
+                              "top" : null,
+                              "width" : 1,
+                              "widthType" : 3
+                            }
+                          }
+                        },
+                        "right" : null,
+                        "rotation" : 0,
+                        "top" : null,
+                        "visible" : true,
+                        "width" : 1,
+                        "widthType" : 3
+                      },
+                      {
+                        "__class" : "FrameNode",
+                        "aspectRatio" : null,
+                        "bottom" : -120,
+                        "centerAnchorX" : 0.55970149253731338,
+                        "centerAnchorY" : 1.5977011494252873,
+                        "children" : [
+
+                        ],
+                        "clip" : false,
+                        "codeOverrideEnabled" : false,
+                        "constraintsLocked" : false,
+                        "duplicatedFrom" : [
+                          "IopySSPCB",
+                          "o_giXd_H6",
+                          "xogQxWvci",
+                          "ZrgKylByp",
+                          "FRgyvuo4J",
+                          "k5d2OaD5u",
+                          "bTlhNvHZt",
+                          "szWoaXK2s"
+                        ],
+                        "exportOptions" : [
+
+                        ],
+                        "fillColor" : "rgba(0, 153, 255, 0)",
+                        "fillEnabled" : false,
+                        "fillImage" : null,
+                        "fillImageOriginalName" : null,
+                        "fillImagePixelHeight" : null,
+                        "fillImagePixelWidth" : null,
+                        "fillImageResize" : "fill",
+                        "fillType" : "color",
+                        "framePreset" : null,
+                        "guidesX" : [
+
+                        ],
+                        "guidesY" : [
+
+                        ],
+                        "height" : 32,
+                        "heightType" : 0,
+                        "id" : "HCXELQfSx",
+                        "intrinsicHeight" : null,
+                        "intrinsicWidth" : null,
+                        "isExternalMaster" : null,
+                        "isMaster" : false,
+                        "isTarget" : false,
+                        "left" : null,
+                        "locked" : false,
+                        "name" : "color",
+                        "opacity" : 1,
+                        "originalid" : "IopySSPCB",
+                        "padding" : 0,
+                        "paddingBottom" : 0,
+                        "paddingLeft" : 0,
+                        "paddingPerSide" : false,
+                        "paddingRight" : 0,
+                        "paddingTop" : 0,
+                        "parentid" : "AVlgl3vmZ",
+                        "previewSettings" : null,
+                        "radius" : 0,
+                        "radiusBottomLeft" : 0,
+                        "radiusBottomRight" : 0,
+                        "radiusIsRelative" : false,
+                        "radiusPerCorner" : false,
+                        "radiusTopLeft" : 0,
+                        "radiusTopRight" : 0,
+                        "replicaInfo" : {
+                          "master" : "IopySSPCB",
+                          "overrides" : {
+                            "aCSrfLUKo" : {
+                              "centerAnchorX" : 0.30833333333333335,
+                              "centerAnchorY" : 0.5,
+                              "styledText" : {
+                                "__class" : "StyledTextDraft",
+                                "blocks" : [
+                                  {
+                                    "data" : {
+                                      "emptyStyle" : [
+                                        "COLOR:rgb(0, 0, 0)",
+                                        "LETTERSPACING:0",
+                                        "LINEHEIGHT:1.2",
+                                        "FONT:GF;Fira Code-regular",
+                                        "SIZE:14"
+                                      ]
+                                    },
+                                    "depth" : 0,
+                                    "entityRanges" : [
+
+                                    ],
+                                    "inlineStyleRanges" : [
+                                      {
+                                        "length" : 7,
+                                        "offset" : 0,
+                                        "style" : "COLOR:rgb(0, 0, 0)"
+                                      },
+                                      {
+                                        "length" : 7,
+                                        "offset" : 0,
+                                        "style" : "LETTERSPACING:0"
+                                      },
+                                      {
+                                        "length" : 7,
+                                        "offset" : 0,
+                                        "style" : "LINEHEIGHT:1.2"
+                                      },
+                                      {
+                                        "length" : 7,
+                                        "offset" : 0,
+                                        "style" : "FONT:GF;Fira Code-regular"
+                                      },
+                                      {
+                                        "length" : 7,
+                                        "offset" : 0,
+                                        "style" : "SIZE:14"
+                                      }
+                                    ],
+                                    "key" : "6qbs8",
+                                    "text" : "divider",
+                                    "type" : "unstyled"
+                                  }
+                                ],
+                                "entityMap" : {
+
+                                }
+                              },
+                              "width" : 60
+                            },
+                            "hQiChFgqH" : {
+                              "fillColor" : "var(--token-69c6e079-d883-406c-9b09-c4797627c8ea, rgba(0, 0, 0, 0.12)) \/* {\"name\":\"divider\"} *\/"
+                            },
+                            "IopySSPCB" : {
+                              "bottom" : -120,
+                              "centerAnchorX" : 0.55970149253731338,
+                              "centerAnchorY" : 1.5977011494252873,
+                              "left" : null,
+                              "right" : -20,
+                              "top" : null,
+                              "width" : 1,
+                              "widthType" : 3
+                            }
+                          }
+                        },
+                        "right" : -20,
+                        "rotation" : 0,
+                        "stackAlignment" : "center",
+                        "stackDirection" : "horizontal",
+                        "stackDistribution" : "start",
+                        "stackEnabled" : true,
+                        "stackGap" : 20,
+                        "top" : null,
+                        "visible" : true,
+                        "width" : 1,
+                        "widthType" : 3
+                      }
+                    ],
+                    "clip" : false,
+                    "codeOverrideEnabled" : false,
+                    "constraintsLocked" : false,
+                    "duplicatedFrom" : [
+                      "Pa64r7oOS",
+                      "lnZvEcIwe",
+                      "RTu_wMM1w",
+                      "Evpn8I2IG",
+                      "EE2okrMX9",
+                      "lI0Eyu_Zy"
+                    ],
+                    "exportOptions" : [
+
+                    ],
+                    "fillColor" : "rgba(255,255,255,1)",
+                    "fillEnabled" : false,
+                    "fillImage" : null,
+                    "fillImageOriginalName" : null,
+                    "fillImagePixelHeight" : null,
+                    "fillImagePixelWidth" : null,
+                    "fillImageResize" : "fill",
+                    "fillType" : "color",
+                    "framePreset" : null,
+                    "guidesX" : [
+
+                    ],
+                    "guidesY" : [
+
+                    ],
+                    "height" : 73,
+                    "heightType" : 0,
+                    "id" : "AVlgl3vmZ",
+                    "intrinsicHeight" : null,
+                    "intrinsicWidth" : null,
+                    "isExternalMaster" : null,
+                    "isMaster" : false,
+                    "isTarget" : false,
+                    "left" : null,
+                    "locked" : false,
+                    "name" : "error",
+                    "opacity" : 1,
+                    "originalid" : null,
+                    "padding" : 0,
+                    "paddingBottom" : 18,
+                    "paddingLeft" : 0,
+                    "paddingPerSide" : true,
+                    "paddingRight" : 0,
+                    "paddingTop" : 0,
+                    "parentid" : "Nq5Sfw2DN",
+                    "previewSettings" : null,
+                    "radius" : 0,
+                    "radiusBottomLeft" : 0,
+                    "radiusBottomRight" : 0,
+                    "radiusIsRelative" : false,
+                    "radiusPerCorner" : false,
+                    "radiusTopLeft" : 0,
+                    "radiusTopRight" : 0,
+                    "replicaInfo" : null,
+                    "right" : null,
+                    "rotation" : 0,
+                    "stackAlignment" : "center",
+                    "stackDirection" : "vertical",
+                    "stackDistribution" : "start",
+                    "stackEnabled" : true,
+                    "stackGap" : 4,
+                    "top" : null,
+                    "visible" : true,
+                    "width" : 1,
+                    "widthType" : 3
+                  }
+                ],
+                "clip" : false,
+                "codeOverrideEnabled" : false,
+                "constraintsLocked" : false,
+                "duplicatedFrom" : [
+                  "Hw7X1EM5_",
+                  "zqfy8TD2G"
+                ],
+                "exportOptions" : [
+
+                ],
+                "fillColor" : "rgba(0, 153, 255, 0.5)",
+                "fillEnabled" : false,
+                "fillImage" : null,
+                "fillImageOriginalName" : null,
+                "fillImagePixelHeight" : null,
+                "fillImagePixelWidth" : null,
+                "fillImageResize" : "fill",
+                "fillType" : "color",
+                "framePreset" : null,
+                "guidesX" : [
+
+                ],
+                "guidesY" : [
+
+                ],
+                "height" : 580,
+                "heightType" : 0,
+                "id" : "Nq5Sfw2DN",
+                "intrinsicHeight" : null,
+                "intrinsicWidth" : null,
+                "isExternalMaster" : null,
+                "isMaster" : false,
+                "isTarget" : false,
+                "left" : null,
+                "locked" : false,
+                "name" : "Column",
+                "opacity" : 1,
+                "originalid" : null,
+                "padding" : 0,
+                "paddingBottom" : 0,
+                "paddingLeft" : 0,
+                "paddingPerSide" : false,
+                "paddingRight" : 0,
+                "paddingTop" : 0,
+                "parentid" : "P1s0K6yGc",
+                "previewSettings" : null,
+                "radius" : 0,
+                "radiusBottomLeft" : 0,
+                "radiusBottomRight" : 0,
+                "radiusIsRelative" : false,
+                "radiusPerCorner" : false,
+                "radiusTopLeft" : 0,
+                "radiusTopRight" : 0,
+                "replicaInfo" : null,
+                "right" : 20,
+                "rotation" : 0,
+                "stackAlignment" : "start",
+                "stackDirection" : "vertical",
+                "stackDistribution" : "start",
+                "stackEnabled" : true,
+                "stackGap" : 0,
+                "top" : 20,
+                "visible" : true,
+                "width" : 1,
+                "widthType" : 3
               }
             ],
             "clip" : true,
@@ -9174,7 +12047,7 @@
             "stackGap" : 20,
             "top" : 664,
             "visible" : true,
-            "width" : 800,
+            "width" : 1200,
             "widthType" : 0
           },
           {
@@ -9296,7 +12169,7 @@
         "__class" : "ColorTokenNode",
         "id" : "4d927322-2b9a-47c5-aab4-a15e532e9cc7",
         "name" : "background.default",
-        "value" : "rgb(250, 250, 250)"
+        "value" : "rgb(239, 239, 239)"
       },
       "6ba764f4-0c2b-4db8-a130-c56aad675896" : {
         "__class" : "ColorTokenNode",

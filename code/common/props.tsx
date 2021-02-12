@@ -1,5 +1,6 @@
-type Color = "primary" | "secondary"
-type Size = "medium" | "small"
+type Color = "inherit" | "primary" | "secondary" | "default"
+type SizeSM = "small" | "medium"
+type SizeSML = "small" | "medium" | "large"
 type Variant = "filled" | "outlined" | "standard"
 
 interface FormControl {
@@ -10,6 +11,6 @@ interface FormControl {
     error: boolean
     fullWidth: boolean
     required: boolean
-    size: Size
+    size: SizeSM
     variant: Variant
 }

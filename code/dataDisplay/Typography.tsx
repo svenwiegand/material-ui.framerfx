@@ -1,7 +1,8 @@
 import * as React from "react"
 import { addPropertyControls, ControlType } from "framer"
-import { withTheme } from "../common/theme"
+import { withSelectedTheme } from "../common/theme"
 import { Typography as MuiTypography } from '@material-ui/core'
+import { DefaultControl } from "../common/propertyControl"
 
 
 export function Typography(props) {
@@ -9,7 +10,7 @@ export function Typography(props) {
     const text: string = props.text
     console.log(text)
     const lines = text.split("\n").map(line => line.trim().length > 0 ? (<div>{line}</div>) : <br />)
-    return withTheme(
+    return withSelectedTheme(props.theme,
         <MuiTypography
             style={{fontWeight: weight}}
             {...typoProps}
@@ -32,6 +33,7 @@ addPropertyControls(Typography, {
         options: ["h1", "h2", "h3", "h4", "h5", "h6", "subtitle1", "subtitle2", "body1", "body2", "caption", "button", "overline"],
         defaultValue: "body1"
     },
+    theme: DefaultControl.theme,
     color: {
         type: ControlType.Enum,
         title: "Color",

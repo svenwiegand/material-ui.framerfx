@@ -1,18 +1,22 @@
 import * as React from "react"
 import { addPropertyControls, ControlType, ControlDescription } from "framer"
-import { withTheme } from "../common/theme"
-import { propertyControls, propString } from "../common/propertyControl"
+import { ThemeChoice, withSelectedTheme } from "../common/theme"
+import { Control, DefaultControl, propertyControls, propString } from "../common/propertyControl"
 import { IconButton as MuiIconButton } from "@material-ui/core"
 import { Icon } from "../dataDisplay/Icon"
 
-interface ButtonProps {
+export interface IconButtonProps {
     icon?: string
-    size?: "small" | "medium"
+    size?: "small" | "medium",
+    theme?: ThemeChoice,
+    color?: "inherit" | "primary" | "secondary" | "default",
+    disabled?: boolean,
+    href?: string,
     onClick?: (event: React.MouseEvent<HTMLButtonElement>) => void
 }
-export function IconButton(props: ButtonProps) {
-    const { icon, size, ...buttonProps } = props
-    return withTheme(
+export function IconButton(props: IconButtonProps) {
+    const { icon, size, theme, ...buttonProps } = props
+    return withSelectedTheme(theme,
         <MuiIconButton
             size={size}
             {...buttonProps}
@@ -22,20 +26,12 @@ export function IconButton(props: ButtonProps) {
     )
 }
 
-addPropertyControls(IconButton, propertyControls(
-    propString("icon", "Icon", "star", "Icon name"),
-    "color",
-    ["size", {
-        type: ControlType.Enum,
-        title: "Size",
-        options: ["small", "medium", "large"],
-        defaultValue: "medium"
-    }],
-    "disabled",
-    ["href", {
-        type: ControlType.String,
-        title: "Link URL",
-        defaultValue: "",
-    }],
-    "onClick"
-))
+addPropertyControls(IconButton, {
+    icon: Control.String("Icon", "star", "Icon name"),
+    theme: DefaultControl.theme,
+    color: DefaultControl.color,
+    size: Control.Enum("Size", ["small", "medium"], "medium"),
+    disabled: DefaultControl.disabled,
+    href: Control.String("Link URL", ""),
+    onClick: DefaultControl.onClick
+})

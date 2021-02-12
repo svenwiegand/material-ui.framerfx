@@ -6,9 +6,11 @@ import {
     createStyles,
     makeStyles,
     Theme as MuiTheme,
+    ThemeOptions,
     ThemeProvider,
 } from "@material-ui/core/styles"
 import { Color } from "framer"
+import { PaletteOptions } from "@material-ui/core/styles/createPalette"
 
 const colorPattern = /(rgb\(\d+, \d+, \d+\))/
 export function color(colorKey: string): string {
@@ -53,15 +55,70 @@ const error = {
     dark: color("error.dark"),
 }
 
-export const theme = createMuiTheme({
-    palette: {
-        primary,
-        secondary,
-        info,
-        success,
-        warning,
-        error,
+const basePalette = {
+    primary,
+    secondary,
+    info,
+    success,
+    warning,
+    error,
+}
+const paletteLight: PaletteOptions = {
+    type: "light",
+    ...basePalette,
+    text: {
+        primary: "rgba(0, 0, 0, 0.87)",
+        secondary: "rgba(0, 0, 0, 0.54)",
+        disabled: "rgba(0, 0, 0, 0.38)",
     },
+    action: {
+        active: "rgba(0, 0, 0, 0.54)",
+        activatedOpacity: 0.54,
+        hover: "rgba(0, 0, 0, 0.04)",
+        hoverOpacity: 0.04,
+        selected: "rgba(0, 0, 0, 0.08)",
+        selectedOpacity: 0.08,
+        disabled: "rgba(0, 0, 0, 0.26)",
+        disabledOpacity: 0.26,
+        disabledBackground: "rgba(0, 0, 0, 0.12)",
+        // focus: string;
+        // focusOpacity: number;
+    },
+    background: {
+        default: "#cfcfcf",
+        paper: "#fff",
+    },
+    divider: "rgba(0, 0, 0, 0.12)",
+}
+const paletteDark: PaletteOptions = {
+    type: "dark",
+    ...basePalette,
+    text: {
+        primary: "#fff",
+        secondary: "rgba(255, 255, 255, 0.7)",
+        disabled: "rgba(255, 255, 255, 0.5)",
+    },
+    action: {
+        active: "#fff",
+        activatedOpacity: 1,
+        hover: "rgba(255, 255, 255, 0.08)",
+        hoverOpacity: 0.08,
+        selected: "rgba(255, 255, 255, 0.16)",
+        selectedOpacity: 0.16,
+        disabled: "rgba(255, 255, 255, 0.3)",
+        disabledOpacity: 0.3,
+        disabledBackground: "rgba(255, 255, 255, 0.12)",
+        // focus: string;
+        // focusOpacity: number;
+    },
+    background: {
+        default: "#303030",
+        paper: "#424242",
+    },
+    divider: "rgba(0, 0, 0, 0.12)",
+}
+
+const themeSpec: ThemeOptions = {
     typography: {
         fontFamily: [
             "FiraGO", 
@@ -158,7 +215,14 @@ export const theme = createMuiTheme({
             letterSpacing: 0.32
         }
     }
-})
+}
+export const themeLight = createMuiTheme({ palette: paletteLight, ...themeSpec})
+export const themeDark = createMuiTheme({ palette: paletteDark, ...themeSpec})
+
+export type ThemeChoice = "light" | "dark"
+export function theme(theme?: ThemeChoice): MuiTheme {
+    return theme === "dark" ? themeDark : themeLight
+}
 
 export const useStyles = makeStyles((theme: MuiTheme) =>
     createStyles({
@@ -171,10 +235,18 @@ export const useStyles = makeStyles((theme: MuiTheme) =>
     })
 )
 
-export function Theme(props) {
-    return <ThemeProvider theme={theme}>{props.children}</ThemeProvider>
+interface ThemeProps {
+    theme: MuiTheme,
+    children: React.ReactNode,
+}
+export function Theme(props: ThemeProps) {
+    return <ThemeProvider theme={props.theme}>{props.children}</ThemeProvider>
 }
 
 export function withTheme(component: JSX.Element) {
-    return <Theme>{component}</Theme>
+    return withSelectedTheme("light", component)
+}
+
+export function withSelectedTheme(themeChoice: ThemeChoice, component: JSX.Element) {
+    return <Theme theme={theme(themeChoice)}>{component}</Theme>
 }
