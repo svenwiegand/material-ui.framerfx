@@ -32,7 +32,7 @@ export function RadioGroup(props: Props) {
     const state = useDerivedState(selection, onChangeSelection)
     state.updateIfDefaultValueChanged(selection)
     const radios = radioLabels.map((radioLabel, n) => {
-        return buildRadio(radioLabel, (n + 1).toString(), radioProps)
+        return buildRadio(radioLabel, n.toString(), radioProps)
     })
     const handleChange = (event: React.ChangeEvent<HTMLInputElement>) => {
         state.setValue(Number((event.target as HTMLInputElement).value))
@@ -54,7 +54,7 @@ addPropertyControls(RadioGroup, propertyControls(
     ["selection", {
         type: ControlType.Number,
         title: "Selection #",
-        defaultValue: 1
+        defaultValue: 0
     } as ControlDescription],
     "helperText",
     ["radioLabels", {

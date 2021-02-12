@@ -619,7 +619,23 @@
                   "type" : "eventhandler"
                 },
                 "$control__onChangeSelection" : {
-                  "type" : "eventhandler"
+                  "type" : "eventhandler",
+                  "value" : [
+                    {
+                      "actionIdentifier" : "framer\/useLog",
+                      "controls" : {
+                        "message" : {
+                          "type" : "string",
+                          "value" : ""
+                        },
+                        "type" : {
+                          "type" : "enum",
+                          "value" : "event"
+                        }
+                      },
+                      "identifier" : "d5aa00bc-889c-4198-a3a7-b5142326040d"
+                    }
+                  ]
                 },
                 "$control__required" : {
                   "type" : "boolean",
@@ -724,7 +740,23 @@
                   ]
                 },
                 "$control__onChangeSelection" : {
-                  "type" : "eventhandler"
+                  "type" : "eventhandler",
+                  "value" : [
+                    {
+                      "actionIdentifier" : "framer\/useLog",
+                      "controls" : {
+                        "message" : {
+                          "type" : "string",
+                          "value" : ""
+                        },
+                        "type" : {
+                          "type" : "enum",
+                          "value" : "event"
+                        }
+                      },
+                      "identifier" : "6b3a5c66-d8b8-4c0e-88db-a29172b6413d"
+                    }
+                  ]
                 },
                 "$control__radioLabels" : {
                   "type" : "array",
@@ -752,7 +784,7 @@
                 },
                 "$control__selection" : {
                   "type" : "number",
-                  "value" : 1
+                  "value" : 0
                 },
                 "$control__size" : {
                   "type" : "enum",
@@ -1010,7 +1042,23 @@
                   ]
                 },
                 "$control__onChangeSelected" : {
-                  "type" : "eventhandler"
+                  "type" : "eventhandler",
+                  "value" : [
+                    {
+                      "actionIdentifier" : "framer\/useLog",
+                      "controls" : {
+                        "message" : {
+                          "type" : "string",
+                          "value" : ""
+                        },
+                        "type" : {
+                          "type" : "enum",
+                          "value" : "event"
+                        }
+                      },
+                      "identifier" : "634bf37c-913a-4fc8-b703-c33114e66432"
+                    }
+                  ]
                 },
                 "$control__options" : {
                   "type" : "array",

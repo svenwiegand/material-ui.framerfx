@@ -19,6 +19,7 @@ interface Props {
 export function Select(props: Props) {
     const { label, helperText, options, defaultOption, onChangeSelected, width, height, id, ...controlProps } = props
     const state = useDerivedState(defaultOption, onChangeSelected)
+    state.updateIfDefaultValueChanged(defaultOption)
     const handleChange = (event: React.ChangeEvent<HTMLInputElement>) => state.setValue(Number(event.target.value))
     return withTheme(
         <FormControl fullWidth {...controlProps}>
@@ -30,7 +31,7 @@ export function Select(props: Props) {
                 value={state.value}
                 onChange={handleChange}
             >
-                {options.map((option, n) => <MenuItem value={(n + 1).toString()}>{option}</MenuItem>)}
+                {options.map((option, n) => <MenuItem value={n.toString()}>{option}</MenuItem>)}
             </MuiSelect>
             <FormHelperText>{helperText}</FormHelperText>
         </FormControl>
