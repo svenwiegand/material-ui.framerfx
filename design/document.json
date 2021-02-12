@@ -2555,7 +2555,7 @@
                 },
                 "$control__theme" : {
                   "type" : "enum",
-                  "value" : "dark"
+                  "value" : "light"
                 },
                 "aspectRatio" : null,
                 "bottom" : 129,
