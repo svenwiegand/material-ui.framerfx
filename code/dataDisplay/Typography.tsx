@@ -8,7 +8,6 @@ import { DefaultControl } from "../common/propertyControl"
 export function Typography(props) {
     const { weight, ...typoProps } = props
     const text: string = props.text
-    console.log(text)
     const lines = text.split("\n").map(line => line.trim().length > 0 ? (<div>{line}</div>) : <br />)
     return withSelectedTheme(props.theme,
         <MuiTypography
