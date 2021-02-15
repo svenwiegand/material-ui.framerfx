@@ -36,7 +36,7 @@
                 },
                 "$control__text" : {
                   "type" : "string",
-                  "value" : "Headline"
+                  "value" : "Head_line_"
                 },
                 "$control__theme" : {
                   "type" : "enum",
@@ -52,7 +52,7 @@
                 },
                 "aspectRatio" : null,
                 "bottom" : null,
-                "centerAnchorX" : 0.56119402985074651,
+                "centerAnchorX" : 0.67164179104477639,
                 "centerAnchorY" : 0.066985645933014579,
                 "clip" : true,
                 "codeComponentIdentifier" : ".\/dataDisplay\/Typography.tsx_Typography",
@@ -92,11 +92,11 @@
                 "radiusPerCorner" : false,
                 "radiusTopLeft" : 0,
                 "radiusTopRight" : 0,
-                "right" : 47,
+                "right" : -27,
                 "rotation" : 0,
                 "top" : 20,
                 "visible" : true,
-                "width" : 200,
+                "width" : 274,
                 "widthType" : 0
               },
               {
@@ -131,11 +131,11 @@
                 },
                 "$control__helperText" : {
                   "type" : "string",
-                  "value" : ""
+                  "value" : "Helper text with **format**."
                 },
                 "$control__label" : {
                   "type" : "string",
-                  "value" : "Label"
+                  "value" : "Label with **format**"
                 },
                 "$control__margin" : {
                   "type" : "enum",
@@ -193,8 +193,8 @@
                 },
                 "aspectRatio" : null,
                 "bottom" : null,
-                "centerAnchorX" : 0.32933333333333331,
-                "centerAnchorY" : 0.071214392803598203,
+                "centerAnchorX" : 0.49866666666666687,
+                "centerAnchorY" : 0.16791604197901072,
                 "clip" : true,
                 "codeComponentIdentifier" : ".\/inputs\/TextField.tsx_TextField",
                 "codeComponentPackageVersion" : "1.76.0",
@@ -214,12 +214,12 @@
                 "fillImagePixelWidth" : null,
                 "fillImageResize" : "fill",
                 "fillType" : "color",
-                "height" : 55,
+                "height" : 76,
                 "heightType" : 0,
                 "id" : "Afi5dMNx7",
                 "intrinsicHeight" : 56,
                 "intrinsicWidth" : 280,
-                "left" : 20,
+                "left" : null,
                 "locked" : false,
                 "name" : null,
                 "opacity" : 1,
@@ -235,7 +235,7 @@
                 "radiusTopRight" : 0,
                 "right" : null,
                 "rotation" : 0,
-                "top" : 20,
+                "top" : 74,
                 "visible" : true,
                 "width" : 1,
                 "widthType" : 3
@@ -362,7 +362,7 @@
                 },
                 "$control__label" : {
                   "type" : "string",
-                  "value" : "Passwort automatisch generieren und per E-Mail zustellen"
+                  "value" : "Passwort **automatisch** generieren und per E-Mail zustellen"
                 },
                 "$control__labelPlacement" : {
                   "type" : "enum",
@@ -558,7 +558,7 @@
                     {
                       "id" : "migrated_array_value_m8BEfD1dn_checkboxLabels_1",
                       "type" : "string",
-                      "value" : "Zweiter Punkt (-)"
+                      "value" : "**Zweiter** Punkt (-)"
                     },
                     {
                       "id" : "migrated_array_value_m8BEfD1dn_checkboxLabels_2",
@@ -590,7 +590,7 @@
                 },
                 "$control__label" : {
                   "type" : "string",
-                  "value" : "Testlabel"
+                  "value" : "_Test_label"
                 },
                 "$control__labelPlacement" : {
                   "type" : "enum",
@@ -1016,11 +1016,11 @@
                 },
                 "$control__helperText" : {
                   "type" : "string",
-                  "value" : "Helper Text"
+                  "value" : "Helper Text with **format**"
                 },
                 "$control__label" : {
                   "type" : "string",
-                  "value" : "Label"
+                  "value" : "Label with format"
                 },
                 "$control__onChange" : {
                   "type" : "eventhandler",
@@ -1063,6 +1063,11 @@
                 "$control__options" : {
                   "type" : "array",
                   "value" : [
+                    {
+                      "id" : "gmXqlj4KB",
+                      "type" : "string",
+                      "value" : "_keine Auswahl_"
+                    },
                     {
                       "id" : "migrated_array_value_Ua9wPaXmM_options_0",
                       "type" : "string",
@@ -1578,7 +1583,7 @@
                     {
                       "id" : "nm4Ew4fJu",
                       "type" : "string",
-                      "value" : "![star] Item 1"
+                      "value" : "![star] **Item** 1"
                     },
                     {
                       "id" : "pwpaYAP8p",
@@ -1599,7 +1604,7 @@
                 },
                 "$control__label" : {
                   "type" : "string",
-                  "value" : "Menu Button"
+                  "value" : "Menu **Button**"
                 },
                 "$control__menuTheme" : {
                   "type" : "enum",
@@ -1634,8 +1639,8 @@
                 },
                 "aspectRatio" : null,
                 "bottom" : null,
-                "centerAnchorX" : 0.50066050198150613,
-                "centerAnchorY" : 0.43167305236270775,
+                "centerAnchorX" : 0.5327754532775455,
+                "centerAnchorY" : 0.34141414141414161,
                 "clip" : true,
                 "codeComponentIdentifier" : ".\/navigation\/MenuButton.tsx_MenuButton",
                 "codeComponentPackageVersion" : null,
@@ -1674,11 +1679,11 @@
                 "radiusPerCorner" : false,
                 "radiusTopLeft" : 0,
                 "radiusTopRight" : 0,
-                "right" : null,
+                "right" : 271,
                 "rotation" : 0,
                 "top" : 325,
                 "visible" : true,
-                "width" : 120,
+                "width" : 127,
                 "widthType" : 0
               },
               {
@@ -1882,11 +1887,11 @@
                 },
                 "$control__helperText" : {
                   "type" : "string",
-                  "value" : "Ein helper Text"
+                  "value" : "Ein **helper** Text"
                 },
                 "$control__label" : {
                   "type" : "string",
-                  "value" : "Datum"
+                  "value" : "Dat*um*"
                 },
                 "$control__margin" : {
                   "type" : "enum",
@@ -2260,11 +2265,11 @@
                 },
                 "$control__primary" : {
                   "type" : "string",
-                  "value" : "First <strong>line<\/strong>"
+                  "value" : "First **line**"
                 },
                 "$control__secondary" : {
                   "type" : "string",
-                  "value" : "Secondary <i>text<\/i>"
+                  "value" : "Secondary _text_"
                 },
                 "$control__secondaryAction" : {
                   "type" : "enum",
@@ -2493,7 +2498,7 @@
                 },
                 "$control__label" : {
                   "type" : "string",
-                  "value" : "Ein Chip"
+                  "value" : "_Ein_ Chip"
                 },
                 "$control__onClick" : {
                   "type" : "eventhandler",
@@ -2572,7 +2577,7 @@
                     {
                       "id" : "rCzxfMVLT",
                       "type" : "string",
-                      "value" : "Menu Item 1 ![star]"
+                      "value" : "Menu **Item** 1 ![star]"
                     },
                     {
                       "id" : "FO0AZJJW1",
@@ -2582,7 +2587,7 @@
                     {
                       "id" : "EMSfTVBWN",
                       "type" : "string",
-                      "value" : "![face] Item 2"
+                      "value" : "![face] _Item_ 2"
                     }
                   ]
                 },

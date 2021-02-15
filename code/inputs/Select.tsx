@@ -1,9 +1,10 @@
-import * as React from "react"
+import { FormControl, FormHelperText, InputLabel, MenuItem, Select as MuiSelect } from "@material-ui/core"
 import { addPropertyControls, ControlType } from "framer"
+import * as React from "react"
+import { Markdown } from "../common/markdown"
+import { InputVariant, propertyControls, propEventHandler } from "../common/propertyControl"
+import { useDerivedState } from "../common/state"
 import { withTheme } from "../common/theme"
-import { propertyControls, InputVariant, propEventHandler } from "../common/propertyControl"
-import { useDerivedState, useDerivedStateCalculatedFromProp } from "../common/state"
-import { FormControl, InputLabel, Select as MuiSelect, MenuItem, FormHelperText } from "@material-ui/core"
 
 interface Props {
     label: string
@@ -23,7 +24,7 @@ export function Select(props: Props) {
     const handleChange = (event: React.ChangeEvent<HTMLInputElement>) => state.setValue(Number(event.target.value))
     return withTheme(
         <FormControl fullWidth {...controlProps}>
-            <InputLabel id={id + "_label"}>{label}</InputLabel>
+            <InputLabel id={id + "_label"}><Markdown text={label}/></InputLabel>
             <MuiSelect 
                 labelId={id + "_label"}
                 id={id + "_select"}
@@ -31,9 +32,9 @@ export function Select(props: Props) {
                 value={state.value}
                 onChange={handleChange}
             >
-                {options.map((option, n) => <MenuItem value={n.toString()}>{option}</MenuItem>)}
+                {options.map((option, n) => <MenuItem value={n.toString()}><Markdown text={option}/></MenuItem>)}
             </MuiSelect>
-            <FormHelperText>{helperText}</FormHelperText>
+            <FormHelperText><Markdown text={helperText}/></FormHelperText>
         </FormControl>
     )
 }

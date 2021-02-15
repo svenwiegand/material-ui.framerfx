@@ -1,9 +1,10 @@
+import { Checkbox as MuiCheckbox, FormControlLabel } from "@material-ui/core"
+import { addPropertyControls, ControlDescription, ControlType } from "framer"
 import * as React from "react"
-import { addPropertyControls, ControlType, ControlDescription } from "framer"
-import { withTheme } from "../common/theme"
-import { propEventHandler, propertyControls } from "../common/propertyControl"
-import { FormControlLabel, Checkbox as MuiCheckbox } from "@material-ui/core"
+import { Markdown } from "../common/markdown"
+import { propertyControls, propEventHandler } from "../common/propertyControl"
 import { useDerivedState } from "../common/state"
+import { withTheme } from "../common/theme"
 
 interface Props {
     label: string,
@@ -21,7 +22,7 @@ export function Checkbox(props: Props) {
     return withTheme(
         <FormControlLabel
             control={checkbox}
-            label={label}
+            label={<Markdown text={label}/>}
             labelPlacement={labelPlacement}
         />
     )

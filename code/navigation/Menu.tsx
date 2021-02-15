@@ -1,6 +1,7 @@
-import { Divider, MenuList, MenuItem, PopoverOrigin, Paper, Typography, ListItemIcon } from "@material-ui/core"
-import { addPropertyControls, ControlDescription } from "framer"
+import { Divider, ListItemIcon, MenuItem, MenuList, Paper, Typography } from "@material-ui/core"
+import { addPropertyControls } from "framer"
 import * as React from "react"
+import { Markdown } from "../common/markdown"
 import { Control, DefaultControl } from "../common/propertyControl"
 import { ThemeChoice, withSelectedTheme } from "../common/theme"
 import { Icon } from "../dataDisplay/Icon"
@@ -50,7 +51,7 @@ function createItem(index: number, label: string, onClick?: ItemClickHandler) {
         return (
             <MenuItem onClick={clickHandler(index, sanitizedLabel, onClick)}>
                 <ItemIcon label={label}/>
-                <Typography variant="inherit">{sanitizedLabel}</Typography>
+                <Typography variant="inherit"><Markdown text={sanitizedLabel}/></Typography>
             </MenuItem>    
         )
     }

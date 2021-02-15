@@ -5,6 +5,7 @@ import { Control } from "../common/propertyControl"
 import { withTheme } from "../common/theme"
 import { Icon } from "./Icon"
 import { Avatar } from "./Avatar"
+import { Markdown } from "../common/markdown"
 
 export type ChipProps = {
     label: string
@@ -52,12 +53,13 @@ function buildDeleteIcon(props: ChipProps) {
 
 
 export function Chip(props: ChipProps) {
-    const { avatar: avatarChoice, avatarSrc, avatarIcon, avatarLetters, deletable, onDelete, deleteIcon, ...chipProps } = props
+    const { label, avatar: avatarChoice, avatarSrc, avatarIcon, avatarLetters, deletable, onDelete, deleteIcon, ...chipProps } = props
     const avatar = buildAvatar(props)
     const icon = buildIcon(props)
     const deleteProps = deletable ? { deleteIcon: buildDeleteIcon(props), onDelete: onDelete ? onDelete : () => {} } : {} 
     return withTheme(
         <MuiChip 
+            label={<Markdown text={label}/>}
             avatar={avatar}
             icon={icon}
             {...chipProps}

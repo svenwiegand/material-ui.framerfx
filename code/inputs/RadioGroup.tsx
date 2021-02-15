@@ -1,9 +1,10 @@
+import { FormControl, FormControlLabel, FormHelperText, FormLabel, Radio as MuiRadio, RadioGroup as MuiRadioGroup } from "@material-ui/core"
+import { addPropertyControls, ControlDescription, ControlType } from "framer"
 import * as React from "react"
-import { addPropertyControls, ControlType, ControlDescription } from "framer"
-import { withTheme } from "../common/theme"
-import { propEventHandler, propertyControls } from "../common/propertyControl"
-import { Radio as MuiRadio, FormControlLabel, FormLabel, RadioGroup as MuiRadioGroup, FormControl, FormHelperText } from "@material-ui/core"
+import { Markdown } from "../common/markdown"
+import { propertyControls, propEventHandler } from "../common/propertyControl"
 import { useDerivedState } from "../common/state"
+import { withTheme } from "../common/theme"
 
 function buildRadio(label: string, value: string, props) {
     const radio = <MuiRadio
@@ -12,7 +13,7 @@ function buildRadio(label: string, value: string, props) {
     return <FormControlLabel
         control={radio}
         value={value}
-        label={label}
+        label={<Markdown text={label}/>}
         labelPlacement={props.labelPlacement}
         key={value}
     />
@@ -40,11 +41,11 @@ export function RadioGroup(props: Props) {
 
     return withTheme(
         <FormControl component="fieldset" error={error} required={required}>
-            <FormLabel component="legend">{label}</FormLabel>
+            <FormLabel component="legend"><Markdown text={label}/></FormLabel>
             <MuiRadioGroup value={state.value.toString()} onChange={handleChange}>
                 {radios}
             </MuiRadioGroup>
-            <FormHelperText>{helperText}</FormHelperText>
+            <FormHelperText><Markdown text={helperText}/></FormHelperText>
         </FormControl>
     )
 }

@@ -3,18 +3,17 @@ import { addPropertyControls, ControlType } from "framer"
 import { withSelectedTheme } from "../common/theme"
 import { Typography as MuiTypography } from '@material-ui/core'
 import { DefaultControl } from "../common/propertyControl"
+import { MarkdownDiv } from "../common/markdown"
 
 
 export function Typography(props) {
     const { weight, ...typoProps } = props
-    const text: string = props.text
-    const lines = text.split("\n").map(line => line.trim().length > 0 ? (<div>{line}</div>) : <br />)
     return withSelectedTheme(props.theme,
         <MuiTypography
             style={{fontWeight: weight}}
             {...typoProps}
         >
-            {lines}
+            <MarkdownDiv text={props.text}/>
         </MuiTypography>
     )
 }

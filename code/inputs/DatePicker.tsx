@@ -1,31 +1,38 @@
-import * as React from "react"
-import { addPropertyControls, ControlType, ControlDescription } from "framer"
 import DateFnsUtils from "@date-io/date-fns"
 import { KeyboardDatePicker, MuiPickersUtilsProvider } from "@material-ui/pickers"
-import { withTheme } from "../common/theme"
-import { propEventHandler, propertyControls } from "../common/propertyControl"
+import { addPropertyControls, ControlDescription, ControlType } from "framer"
+import * as React from "react"
+import { Markdown } from "../common/markdown"
+import { propertyControls, propEventHandler } from "../common/propertyControl"
 import { useDerivedStateCalculatedFromProp } from "../common/state"
+import { withTheme } from "../common/theme"
 
 const dateUtil = new DateFnsUtils()
 
 interface Props {
-    value: string | null,
-    format: string,
-    onChangeDate: (date: Date | null) => void
+    label?: string,
+    helperText?: string,
+    value?: string | null,
+    format?: string,
+    onChangeDate?: (date: Date | null) => void
 }
 export function DatePicker(props: Props) {
-    const { value, format, onChangeDate, ...other } = props
+    const { label, helperText, value, format, onChangeDate, ...other } = props
     const defaultDate = value ? dateUtil.parse(value, format) : null as Date
-    const state = useDerivedStateCalculatedFromProp(defaultDate, value, onChangeDate)
+    const state = useDerivedStateCalculatedFromProp(defaultDate, value, (date: Date | null) => onChangeDate && onChangeDate(date))
     state.updateIfDefaultValueChanged(defaultDate, value)
-    return withTheme(<MuiPickersUtilsProvider utils={DateFnsUtils}>
-        <KeyboardDatePicker
-            format={format}
-            value={state.value}
-            onChange={state.setValue}
-            {...other}          
-        />
-    </MuiPickersUtilsProvider>)
+    return withTheme(
+        <MuiPickersUtilsProvider utils={DateFnsUtils}>
+            <KeyboardDatePicker
+                label={<Markdown text={label}/>}
+                helperText={<Markdown text={helperText}/>}
+                format={format}
+                value={state.value}
+                onChange={state.setValue}
+                {...other}          
+            />
+        </MuiPickersUtilsProvider>
+    )
 }
 
 addPropertyControls(DatePicker, propertyControls(

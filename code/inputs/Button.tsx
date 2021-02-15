@@ -1,6 +1,7 @@
 import { Button as MuiButton } from "@material-ui/core"
 import { addPropertyControls } from "framer"
 import * as React from "react"
+import { Markdown } from "../common/markdown"
 import { Control, DefaultControl } from "../common/propertyControl"
 import { ThemeChoice, withSelectedTheme } from "../common/theme"
 import { Icon } from "../dataDisplay/Icon"
@@ -21,7 +22,7 @@ export interface ButtonProps {
 }
 export function Button(props: ButtonProps) {
     const { theme, label, startIcon, endIcon, ...buttonProps } = props
-    const content = label.startsWith("icon:") ? <Icon icon={label.substring("icon:".length)} /> : label
+    const content = label.startsWith("icon:") ? <Icon icon={label.substring("icon:".length)} /> : <Markdown text={label}/>
     return withSelectedTheme(theme,
         <MuiButton
             startIcon={startIcon > "" ? <Icon icon={startIcon} /> : undefined}

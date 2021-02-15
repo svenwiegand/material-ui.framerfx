@@ -1,6 +1,7 @@
 import MuiTextField from "@material-ui/core/TextField"
 import { addPropertyControls } from "framer"
 import * as React from "react"
+import { Markdown } from "../common/markdown"
 import { Control, DefaultControl, FormControlControls, FormControlLabelControls } from "../common/propertyControl"
 import { useDerivedState } from "../common/state"
 import { withTheme } from "../common/theme"
@@ -14,11 +15,20 @@ interface Props extends FormControl {
     onChangeText: (text: string) => void
 }
 export function TextField(props: Props) {
-    const { value: value, onChangeText, ...other } = props
+    const { label, helperText, value: value, onChangeText, ...other } = props
     const state = useDerivedState(value, onChangeText)
     state.updateIfDefaultValueChanged(value)
     const handleChange = (event: React.ChangeEvent<HTMLInputElement>) => state.setValue(event.target.value)
-    return withTheme(<MuiTextField value={state.value} onChange={handleChange} {...other} />)
+    return withTheme(
+        // @ts-ignore
+        <MuiTextField 
+            label={<Markdown text={label}/>}
+            helperText={<Markdown text={helperText}/>}
+            value={state.value} 
+            onChange={handleChange} 
+            {...other} 
+        />
+    )
 }
 
 addPropertyControls(TextField, {

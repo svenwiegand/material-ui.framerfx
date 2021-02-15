@@ -1,9 +1,10 @@
-import * as React from "react"
-import { addPropertyControls } from "framer"
-import { withTheme } from "../common/theme"
-import { propEventHandler, propertyControls } from "../common/propertyControl"
 import { FormControlLabel, Radio as MuiRadio } from "@material-ui/core"
+import { addPropertyControls } from "framer"
+import * as React from "react"
+import { Markdown } from "../common/markdown"
+import { propertyControls, propEventHandler } from "../common/propertyControl"
 import { useDerivedState } from "../common/state"
+import { withTheme } from "../common/theme"
 
 interface Props {
     label: string,
@@ -20,7 +21,7 @@ export function Radio(props: Props) {
     return withTheme(
         <FormControlLabel
             control={radio}
-            label={label}
+            label={<Markdown text={label}/>}
             labelPlacement={labelPlacement}
         />
     )

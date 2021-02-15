@@ -1,10 +1,11 @@
+import { Checkbox as MuiCheckbox, FormControl, FormControlLabel, FormGroup, FormHelperText, FormLabel } from "@material-ui/core"
+import { addPropertyControls, ControlDescription, ControlType } from "framer"
 import * as React from "react"
-import { addPropertyControls, ControlType, ControlDescription } from "framer"
-import { withTheme } from "../common/theme"
-import { propertyControls, PropertyControl, propEventHandler } from "../common/propertyControl"
-import { Checkbox as MuiCheckbox, FormControlLabel, FormLabel, FormGroup, FormControl, FormHelperText } from "@material-ui/core"
-import { SetStateAction, Dispatch } from "react"
+import { Dispatch, SetStateAction } from "react"
+import { Markdown } from "../common/markdown"
+import { propertyControls, propEventHandler } from "../common/propertyControl"
 import { useDerivedStateCalculatedFromProp } from "../common/state"
+import { withTheme } from "../common/theme"
 
 interface CheckboxState {
     label: string,
@@ -35,7 +36,7 @@ function buildCheckbox(label: string, state: () => boolean, setState: Dispatch<S
     />
     return <FormControlLabel
         control={checkbox}
-        label={checkboxState.label}
+        label={<Markdown text={checkboxState.label}/>}
         labelPlacement={props.labelPlacement}
     />
 }
@@ -67,11 +68,11 @@ export function CheckboxGroup(props: Props) {
 
     return withTheme(
         <FormControl component="fieldset" error={error} required={required}>
-            <FormLabel component="legend">{label}</FormLabel>
+            <FormLabel component="legend"><Markdown text={label}/></FormLabel>
             <FormGroup>
                 {checkboxes}
             </FormGroup>
-            <FormHelperText>{helperText}</FormHelperText>
+            <FormHelperText><Markdown text={helperText}/></FormHelperText>
         </FormControl>
     )
 }

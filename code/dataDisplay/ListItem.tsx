@@ -1,11 +1,12 @@
-import * as React from "react"
-import { addPropertyControls, ControlType } from "framer"
-import { theme, themeLight, withTheme } from "../common/theme"
 import { ListItem as MuiListItem, ListItemAvatar, ListItemIcon, ListItemSecondaryAction, ListItemText } from "@material-ui/core"
+import { addPropertyControls } from "framer"
+import * as React from "react"
+import { Markdown } from "../common/markdown"
 import { Control, DefaultControl } from "../common/propertyControl"
-import { Icon } from "./Icon"
-import { Avatar, AvatarVariant } from "./Avatar"
+import { themeLight, withTheme } from "../common/theme"
 import { IconButton } from "../inputs/IconButton"
+import { Avatar, AvatarVariant } from "./Avatar"
+import { Icon } from "./Icon"
 
 type ActionType = "none" | "icon"
 interface Props {
@@ -64,10 +65,6 @@ function buildSecondaryAction(props: Props) {
         return undefined
 }
 
-function formatText(text: string) {
-    return <span dangerouslySetInnerHTML={{__html: text}} />
-}
-
 export function ListItem(props: Props) {
     const { 
         primary, secondary, 
@@ -83,8 +80,8 @@ export function ListItem(props: Props) {
             >
                 {buildAvatar(props)}
                 <ListItemText 
-                    primary={formatText(primary)}
-                    secondary={formatText(secondary)}
+                    primary={<Markdown text={primary}/>}
+                    secondary={<Markdown text={secondary}/>}
                 />
                 {buildSecondaryAction(props)}
             </MuiListItem>
