@@ -23,7 +23,7 @@ export function Select(props: Props) {
     state.updateIfDefaultValueChanged(defaultOption)
     const handleChange = (event: React.ChangeEvent<HTMLInputElement>) => state.setValue(Number(event.target.value))
     return withTheme(
-        <FormControl fullWidth {...controlProps}>
+        <FormControl fullWidth hiddenLabel={!label} {...controlProps}>
             <InputLabel id={id + "_label"}><Markdown text={label}/></InputLabel>
             <MuiSelect 
                 labelId={id + "_label"}

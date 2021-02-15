@@ -23,6 +23,7 @@ export function TextField(props: Props) {
         // @ts-ignore
         <MuiTextField 
             label={<Markdown text={label}/>}
+            hiddenLabel={!label}
             helperText={<Markdown text={helperText}/>}
             value={state.value} 
             onChange={handleChange} 

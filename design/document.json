@@ -131,7 +131,7 @@
                 },
                 "$control__helperText" : {
                   "type" : "string",
-                  "value" : "Helper text with **format**."
+                  "value" : "Helper _text_ with **format**"
                 },
                 "$control__label" : {
                   "type" : "string",
@@ -185,7 +185,7 @@
                 },
                 "$control__value" : {
                   "type" : "string",
-                  "value" : ""
+                  "value" : "Text without label"
                 },
                 "$control__variant" : {
                   "type" : "enum",
@@ -1099,8 +1099,8 @@
                 },
                 "aspectRatio" : null,
                 "bottom" : null,
-                "centerAnchorX" : 0.5,
-                "centerAnchorY" : 0.088455772113943024,
+                "centerAnchorX" : 0.49933949801849425,
+                "centerAnchorY" : 0.056310679611650705,
                 "clip" : true,
                 "codeComponentIdentifier" : ".\/inputs\/Select.tsx_Select",
                 "codeComponentPackageVersion" : "1.76.0",
@@ -1120,7 +1120,7 @@
                 "fillImagePixelWidth" : null,
                 "fillImageResize" : "fill",
                 "fillType" : "color",
-                "height" : 78,
+                "height" : 76,
                 "heightType" : 0,
                 "id" : "Ua9wPaXmM",
                 "intrinsicHeight" : null,
