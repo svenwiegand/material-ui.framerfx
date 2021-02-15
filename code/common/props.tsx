@@ -2,7 +2,8 @@ type Color = "inherit" | "primary" | "secondary" | "default"
 type SizeSM = "small" | "medium"
 type SizeSML = "small" | "medium" | "large"
 type Variant = "filled" | "outlined" | "standard"
-type ClickHandler = (event: React.MouseEvent<HTMLButtonElement>) => void
+type MouseEventHandler = (event: React.MouseEvent<HTMLButtonElement>) => void
+type InputEventHandler = (event: React.ChangeEvent<HTMLInputElement>) => void
 
 interface FormControl {
     label: string

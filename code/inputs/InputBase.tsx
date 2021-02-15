@@ -13,6 +13,7 @@ export interface Props {
     typography?: Typography
     color?: string
     disabled?: boolean
+    onChange: InputEventHandler
     onChangeText: (text: string) => void
     placeholder?: string
     autoFocus?: boolean
@@ -21,10 +22,13 @@ export interface Props {
     fullWidth?: boolean
 }
 export function InputBase(props: Props) {
-    const { value, typography, color, onChangeText, ...other } = props
+    const { value, typography, color, onChange, onChangeText, ...other } = props
     const state = useDerivedState(value, onChangeText)
     state.updateIfDefaultValueChanged(value)
-    const handleChange = (event: React.ChangeEvent<HTMLInputElement>) => state.setValue(event.target.value)
+    const handleChange = (event: React.ChangeEvent<HTMLInputElement>) => {
+        state.setValue(event.target.value)
+        onChange && onChange(event)
+    }
     const inputStyle: React.CSSProperties = { 
         ...(typography ? theme().typography[typography] as React.CSSProperties : {}),
         color: props.disabled ? undefined : color
@@ -42,5 +46,6 @@ addPropertyControls(InputBase, {
     typography: Control.Enum("Typography", [...typographyOptions], "button"),
     color: Control.Color("Color", theme().palette.text.primary),
     onChangeText: Control.EventHandler(),
+    onChange: Control.EventHandler(),
     fullWidth: DefaultControl.fullWidth,
 })
