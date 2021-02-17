@@ -8,9 +8,10 @@ import { MarkdownDiv } from "../common/markdown"
 
 export function Typography(props) {
     const { weight, ...typoProps } = props
+    const style = !weight || weight === "inherit" ? {} : { fontWeight: weight }
     return withSelectedTheme(props.theme,
         <MuiTypography
-            style={{fontWeight: weight}}
+            style={style}
             {...typoProps}
         >
             <MarkdownDiv text={props.text}/>
@@ -41,7 +42,7 @@ addPropertyControls(Typography, {
     weight: {
         type: ControlType.Enum,
         title: "Weight",
-        optionTitles: ["inherit", "thin", "extra light", "light", "regular", "medium", "semi bold", "bold", "extra bold", "heavy"],
+        optionTitles: ["inherit", "thin (100)", "extra light (200)", "light (300)", "regular (400)", "medium (500)", "semi bold (600)", "bold (700)", "extra bold (800)", "heavy (900)"],
         options: ["inherit", 100, 200, 300, 400, 500, 600, 700, 800, 900],
         defaultValue: 0
     },
