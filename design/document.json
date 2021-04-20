@@ -1310,7 +1310,7 @@
                 },
                 "$control__icon" : {
                   "type" : "string",
-                  "value" : "star"
+                  "value" : "far-star"
                 },
                 "$control__theme" : {
                   "type" : "enum",
@@ -1318,8 +1318,8 @@
                 },
                 "aspectRatio" : null,
                 "bottom" : null,
-                "centerAnchorX" : 0.26666666666666666,
-                "centerAnchorY" : 0.38080959520239882,
+                "centerAnchorX" : 0.47291941875825649,
+                "centerAnchorY" : 0.20000000000000023,
                 "clip" : true,
                 "codeComponentIdentifier" : ".\/dataDisplay\/Icon.tsx_Icon",
                 "codeComponentPackageVersion" : "1.76.0",
@@ -1344,7 +1344,7 @@
                 "id" : "MeaiDDSLT",
                 "intrinsicHeight" : null,
                 "intrinsicWidth" : null,
-                "left" : 0,
+                "left" : null,
                 "locked" : false,
                 "name" : null,
                 "opacity" : 1,
@@ -1360,7 +1360,7 @@
                 "radiusTopRight" : 0,
                 "right" : null,
                 "rotation" : 0,
-                "top" : 0,
+                "top" : null,
                 "visible" : true,
                 "width" : 24,
                 "widthType" : 0
@@ -1432,8 +1432,8 @@
                 },
                 "aspectRatio" : null,
                 "bottom" : null,
-                "centerAnchorX" : 0.49207397622192867,
-                "centerAnchorY" : 0.33129251700680273,
+                "centerAnchorX" : 0.45706737120211383,
+                "centerAnchorY" : 0.23398058252427206,
                 "clip" : true,
                 "codeComponentIdentifier" : ".\/inputs\/Button.tsx_Button",
                 "codeComponentPackageVersion" : "1.76.0",
@@ -1458,7 +1458,7 @@
                 "id" : "mrbxnw_27",
                 "intrinsicHeight" : null,
                 "intrinsicWidth" : null,
-                "left" : 319,
+                "left" : null,
                 "locked" : false,
                 "name" : null,
                 "opacity" : 1,
@@ -1474,7 +1474,7 @@
                 "radiusTopRight" : 0,
                 "right" : null,
                 "rotation" : 0,
-                "top" : 230,
+                "top" : null,
                 "visible" : true,
                 "width" : 107,
                 "widthType" : 0
@@ -2790,7 +2790,6 @@
                         "children" : [
                           {
                             "__class" : "TextNode",
-                            "autoSize" : false,
                             "bottom" : 0,
                             "centerAnchorX" : 0.5,
                             "centerAnchorY" : 0.5,
@@ -3156,7 +3155,6 @@
                           },
                           {
                             "__class" : "TextNode",
-                            "autoSize" : true,
                             "bottom" : null,
                             "centerAnchorX" : 0.32985074626865674,
                             "centerAnchorY" : 0.515625,
@@ -3168,7 +3166,7 @@
 
                             ],
                             "height" : 16,
-                            "heightType" : 0,
+                            "heightType" : 2,
                             "id" : "aCSrfLUKo",
                             "isTarget" : true,
                             "left" : null,
@@ -3236,7 +3234,7 @@
                             "top" : null,
                             "visible" : true,
                             "width" : 102,
-                            "widthType" : 0
+                            "widthType" : 2
                           }
                         ],
                         "clip" : false,
@@ -8884,7 +8882,7 @@
                               }
                             },
                             "hQiChFgqH" : {
-                              "fillColor" : "var(--token-92dd06a1-e3b1-4e62-a46d-46f5ee9ababb, rgb(255, 255, 255)) \/* {\"name\":\"background.paper\",\"packageIdentifier\":\"@framer\/4hpyr6fd.orgavision-material-ui\"} *\/"
+                              "fillColor" : "var(--token-4d927322-2b9a-47c5-aab4-a15e532e9cc7, rgb(239, 239, 239)) \/* {\"name\":\"background.default\",\"packageIdentifier\":\"@framer\/4hpyr6fd.orgavision-material-ui\"} *\/"
                             },
                             "IopySSPCB" : {
                               "bottom" : null,
@@ -12400,6 +12398,7 @@
     "name" : null,
     "originalid" : null,
     "parentid" : null,
+    "thumbnailNodeId" : "Mb7kjUS3r",
     "tokens" : {
       "0ded97c6-18cd-47ac-bed7-05fabd1c2856" : {
         "__class" : "ColorTokenNode",
@@ -12441,7 +12440,7 @@
         "__class" : "ColorTokenNode",
         "id" : "4d927322-2b9a-47c5-aab4-a15e532e9cc7",
         "name" : "background.default",
-        "value" : "rgb(239, 239, 239)"
+        "value" : "rgb(245, 245, 245)"
       },
       "6ba764f4-0c2b-4db8-a130-c56aad675896" : {
         "__class" : "ColorTokenNode",
@@ -12686,5 +12685,5 @@
     ],
     "visible" : false
   },
-  "version" : 75
+  "version" : 78
 }
