@@ -189,10 +189,10 @@ export const propString = (propertyName: string, title: string, defaultValue?: s
 // NEW WORLD STARTS HERE
 
 export const Control = {
-    Array: <P>(title: string, propertyControl: any, maxCount?: number): ControlDescription<P> => ({
+    Array: <P>(title: string, control: any, maxCount?: number): ControlDescription<P> => ({
         type: ControlType.Array,
         title,
-        propertyControl,
+        control,
         maxCount
     }),
     Boolean: <P>(title: string, defaultValue?: boolean, enabledTitle?: string, disabledTitle?: string): ControlDescription<P> => ({
