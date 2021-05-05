@@ -33,25 +33,28 @@ export interface DerivedState<T, Prop = undefined> {
  * updated. If not specified, `defaultValue` will be compared directly instead. This one is important if the `defaultValue` is an 
  * object which is calculated from a property. In this case each calculation will result in another object even if the property 
  * did not change at all and thus the state would always be changed.
- * @param onChange change listener that should be called each time the state is updated.
+ * @param onChange change listener that should be called each time the state is updated. 
+ * If it returns true, the new state will not be applied.
  */
 export function useDerivedStateCalculatedFromProp<T, Prop = undefined>(
     defaultValue: T, 
     defaultValueProp?: Prop,
-    onChange?: (newValue: T) => void
+    onChange?: (newValue: T) => boolean | void
 ): DerivedState<T, Prop> {
     const [value, setValue] = React.useState(defaultValue)
-    const [prevDefaultValue, setPrevDefaultValue] = React.useState(defaultValueProp ? defaultValueProp : defaultValue)
+    const [prevDefaultValue, setPrevDefaultValue] = React.useState(defaultValueProp ?? defaultValue)
     return new class implements DerivedState<T, Prop> {
         value = value
         setValue = (newState: T) => {
-            setValue(newState)
-            onChange && onChange(newState)
+            const preventState = onChange && onChange(newState)
+            if (preventState !== true) {
+                setValue(newState)
+            }
         }
         defaultValue = prevDefaultValue
         setDefaultValue = setPrevDefaultValue
         updateIfDefaultValueChanged(newDefaultValue: T, newDefaultValueProp?: Prop) {
-            const newDefault = newDefaultValueProp ? newDefaultValueProp : newDefaultValue
+            const newDefault = newDefaultValueProp ?? newDefaultValue
             if (newDefault !== this.defaultValue) {
                 this.setValue(defaultValue)
                 this.setDefaultValue(newDefault)
@@ -61,6 +64,6 @@ export function useDerivedStateCalculatedFromProp<T, Prop = undefined>(
 }
 
 /** Shorthand for {@link useDerivedStateCalculatedFromProp} */
-export function useDerivedState<T>(defaultValue: T, onChange?: (newValue: T) => void): DerivedState<T> {
+export function useDerivedState<T>(defaultValue: T, onChange?: (newValue: T) => boolean | void): DerivedState<T> {
     return useDerivedStateCalculatedFromProp(defaultValue, undefined, onChange)
 }
