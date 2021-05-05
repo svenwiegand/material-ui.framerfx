@@ -1036,6 +1036,10 @@
                   "type" : "boolean",
                   "value" : false
                 },
+                "$control__fullWidth" : {
+                  "type" : "boolean",
+                  "value" : true
+                },
                 "$control__helperText" : {
                   "type" : "string",
                   "value" : "Helper Text with **format**"
@@ -1115,6 +1119,10 @@
                   "type" : "enum",
                   "value" : "medium"
                 },
+                "$control__value" : {
+                  "type" : "number",
+                  "value" : 0
+                },
                 "$control__variant" : {
                   "type" : "enum",
                   "value" : "filled"
@@ -1186,6 +1194,10 @@
                   "type" : "boolean",
                   "value" : false
                 },
+                "$control__fullWidth" : {
+                  "type" : "boolean",
+                  "value" : true
+                },
                 "$control__helperText" : {
                   "type" : "string",
                   "value" : "Wähle Deine bevorzugte Sprache"
@@ -1214,7 +1226,10 @@
                   ]
                 },
                 "$control__onChangeSelected" : {
-                  "type" : "eventhandler"
+                  "type" : "eventhandler",
+                  "value" : [
+
+                  ]
                 },
                 "$control__options" : {
                   "type" : "array",
@@ -1243,6 +1258,10 @@
                 "$control__size" : {
                   "type" : "enum",
                   "value" : "medium"
+                },
+                "$control__value" : {
+                  "type" : "number",
+                  "value" : 0
                 },
                 "$control__variant" : {
                   "type" : "enum",
