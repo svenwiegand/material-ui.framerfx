@@ -2,25 +2,26 @@ import { FormControl, FormHelperText, InputLabel, MenuItem, Select as MuiSelect 
 import { addPropertyControls, ControlType } from "framer"
 import * as React from "react"
 import { Markdown } from "../common/markdown"
-import { InputVariant, propertyControls, propEventHandler } from "../common/propertyControl"
+import { Control, DefaultControl, FormControlControls, FormControlLabelControls, InputVariant, propertyControls, propEventHandler } from "../common/propertyControl"
 import { useDerivedState } from "../common/state"
 import { withTheme } from "../common/theme"
 
 interface Props {
     label: string
     options: string[]
-    defaultOption: number
+    value: number
     helperText: string
     variant: InputVariant
     onChangeSelected: (option: number) => void
+    calculateSelection?: (option: number) => number
     width: number
     height: number
     id: string
 }
 export function Select(props: Props) {
-    const { label, helperText, options, defaultOption, onChangeSelected, width, height, id, ...controlProps } = props
-    const state = useDerivedState(defaultOption, onChangeSelected)
-    state.updateIfDefaultValueChanged(defaultOption)
+    const { label, helperText, options, value, onChangeSelected, width, height, id, ...controlProps } = props
+    const state = useDerivedState(value, onChangeSelected)
+    state.updateIfDefaultValueChanged(value)
     const handleChange = (event: React.ChangeEvent<HTMLInputElement>) => state.setValue(Number(event.target.value))
     return withTheme(
         <FormControl fullWidth hiddenLabel={!label} {...controlProps}>
@@ -32,36 +33,17 @@ export function Select(props: Props) {
                 value={state.value}
                 onChange={handleChange}
             >
-                {options.map((option, n) => <MenuItem value={n.toString()}><Markdown text={option}/></MenuItem>)}
+                {options.map((option, n) => <MenuItem key={option} value={n.toString()}><Markdown text={option}/></MenuItem>)}
             </MuiSelect>
             <FormHelperText><Markdown text={helperText}/></FormHelperText>
         </FormControl>
     )
 }
 
-addPropertyControls(Select, propertyControls(
-    "label",
-    ["options", {
-        type: ControlType.Array,
-        propertyControl: {
-            type: ControlType.String,
-            placeholder: "Label",
-            defaultValue: ""
-        },
-        title: "Options",
-        defaultValue: []
-    }],
-    ["defaultOption", {
-        type: ControlType.Number,
-        title: "Selection #",
-        defaultValue: 0
-    }],
-    "helperText",
-    "variant",
-    "color",
-    "disabled",
-    "required",
-    "error",
-    "size",
-    propEventHandler("onChangeSelected")
-))
+addPropertyControls(Select, {
+    ...FormControlLabelControls,
+    options: Control.Array("Options", Control.String("Label", "", "Label")),
+    value: Control.Number("Selection #", 0),
+    ...FormControlControls,
+    onChangeSelected: Control.EventHandler()
+})
