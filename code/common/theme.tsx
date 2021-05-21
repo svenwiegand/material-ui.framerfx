@@ -11,6 +11,12 @@ import {
 } from "@material-ui/core/styles"
 import { Color } from "framer"
 import { PaletteOptions } from "@material-ui/core/styles/createPalette"
+import { loadStyle } from "./loadStyle"
+
+loadStyle(
+    "fira-sans",
+    "https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,400;0,500;0,600;1,400;1,500;1,600&display=swap"
+)
 
 const colorPattern = /(rgba?\(\d+, \d+, \d+(?:, [\d\.]+)?\))/
 function parseColor(colorKey: string): Color {
@@ -129,8 +135,8 @@ const paletteDark: PaletteOptions = {
 const themeSpec: ThemeOptions = {
     typography: {
         fontFamily: [
-            "FiraGO", 
-            "FiraSans", 
+            "Fira GO", 
+            "Fira Sans", 
             "-apple-system", 
             "BlinkMacSystemFont", 
             "Segoe UI", 

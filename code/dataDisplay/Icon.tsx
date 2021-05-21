@@ -1,21 +1,14 @@
 import { Icon as MuiIcon } from '@material-ui/core'
 import { addPropertyControls } from "framer"
 import * as React from "react"
+import { loadStyle } from '../common/loadStyle'
 import { Control } from "../common/propertyControl"
 import { withTheme } from "../common/theme"
 
-const styleId = "material-ui-fonts"
-async function importMuiFont() {
-    const link = document.createElement("link")
-    link.id = styleId
-    link.href = "https://fonts.googleapis.com/icon?family=Material+Icons"
-    link.rel = "stylesheet"
-    document.head.appendChild(link)
-}
-
-if (!document.getElementById(styleId)) {
-    importMuiFont()
-}
+loadStyle(
+    "mui-icon-font",
+    "https://fonts.googleapis.com/icon?family=Material+Icons"
+)
 
 interface Props {
     icon?: string
