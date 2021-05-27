@@ -1,4 +1,5 @@
 type Color = "inherit" | "primary" | "secondary" | "default"
+type Margin = "none" | "dense" | "normal"
 type SizeSM = "small" | "medium"
 type SizeSML = "small" | "medium" | "large"
 type Variant = "filled" | "outlined" | "standard"
@@ -16,4 +17,5 @@ interface FormControl {
     size?: SizeSM
     variant?: Variant
     disableUnderline?: boolean
+    autoFocus?: boolean
 }

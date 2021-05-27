@@ -1,33 +1,39 @@
 import DateFnsUtils from "@date-io/date-fns"
 import { KeyboardDatePicker, MuiPickersUtilsProvider } from "@material-ui/pickers"
-import { addPropertyControls, ControlDescription, ControlType } from "framer"
+import { addPropertyControls } from "framer"
 import * as React from "react"
 import { Markdown } from "../common/markdown"
-import { propertyControls, propEventHandler } from "../common/propertyControl"
+import { Control, DefaultControl, FormControlControls, FormControlLabelControls } from "../common/propertyControl"
 import { useDerivedStateCalculatedFromProp } from "../common/state"
 import { withTheme } from "../common/theme"
 
 const dateUtil = new DateFnsUtils()
 
-interface Props {
-    label?: string,
-    helperText?: string,
-    value?: string | null,
-    format?: string,
+interface Props extends FormControl {
+    placeholder?: string
+    value?: string | null
+    format?: string
+    pickerVariant?: "inline" | "dialog"
+    disableToolbar?: boolean
     onChangeDate?: (date: Date | null) => void
 }
 export function DatePicker(props: Props) {
-    const { label, helperText, value, format, onChangeDate, ...other } = props
+    const { label, helperText, value, format, variant, pickerVariant, disableUnderline, color, onChangeDate, ...other } = props
     const defaultDate = value ? dateUtil.parse(value, format) : null as Date
     const state = useDerivedStateCalculatedFromProp(defaultDate, value, (date: Date | null) => onChangeDate && onChangeDate(date))
     state.updateIfDefaultValueChanged(defaultDate, value)
     return withTheme(
         <MuiPickersUtilsProvider utils={DateFnsUtils}>
             <KeyboardDatePicker
-                label={<Markdown text={label}/>}
+                label={label ? <Markdown text={label}/> : undefined}
+                hiddenLabel={!label}
                 helperText={<Markdown text={helperText}/>}
                 format={format}
                 value={state.value}
+                variant={pickerVariant}
+                inputVariant={variant}
+                InputProps={{disableUnderline}}
+                color={color === "secondary" ? "secondary" : "primary"}
                 onChange={state.setValue}
                 {...other}          
             />
@@ -35,36 +41,13 @@ export function DatePicker(props: Props) {
     )
 }
 
-addPropertyControls(DatePicker, propertyControls(
-    "label",
-    ["value", {
-        type: ControlType.String,
-        title: "Date",
-        defaultValue: ""
-    }],
-    ["format", {
-        type: ControlType.String,
-        title: "Format",
-        defaultValue: "dd.MM.yyyy"
-    }],
-    "placeholder",
-    "helperText",
-    ["variant", {
-        type: ControlType.Enum,
-        title: "Variant",
-        options: ["inline", "dialog"],
-        default: "inline"
-    } as ControlDescription],
-    ["disableToolbar", {
-        type: ControlType.Boolean,
-        title: "Hide toolbar",
-        defaultValue: false
-    }],
-    "color",
-    "margin",
-    "disabled",
-    "required",
-    "error",
-    "size",
-    propEventHandler("onChangeDate")
-))
+addPropertyControls(DatePicker, {
+    ...FormControlLabelControls,
+    placeholder: DefaultControl.placeholder,
+    value: Control.String("Date", ""),
+    format: Control.String("Format", "dd.MM.yyyy"),
+    pickerVariant: Control.Enum("Picker variant", ["inline", "dialog"], "inline"),
+    disableToolbar: Control.Boolean("Hide toolbar"),
+    ...FormControlControls,
+    onChangeDate: Control.EventHandler(),
+})

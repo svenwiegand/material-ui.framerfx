@@ -1,4 +1,4 @@
-import { ControlDescription, ControlType, ObjectPropertyControlDescription, PropertyControls } from "framer"
+import { ControlDescription, ControlType, EnumControlDescription, ObjectPropertyControlDescription, PropertyControls } from "framer"
 
 export type InputColor = "primary" | "secondary" | "default"
 export type LabelPlacement = "top" | "end" | "bottom" | "start"
@@ -314,4 +314,5 @@ export const FormControlControls: PropertyControls<FormControl> = {
     disabled: DefaultControl.disabled,
     fullWidth: DefaultControl.fullWidth,
     size: DefaultControl.size,
+    autoFocus: DefaultControl.autoFocus,
 }

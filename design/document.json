@@ -107,7 +107,7 @@
                 },
                 "$control__color" : {
                   "type" : "enum",
-                  "value" : "primary"
+                  "value" : "default"
                 },
                 "$control__defaultValue" : {
                   "type" : "string",
@@ -143,7 +143,7 @@
                 },
                 "$control__margin" : {
                   "type" : "enum",
-                  "value" : "normal"
+                  "value" : "none"
                 },
                 "$control__multiline" : {
                   "type" : "boolean",
@@ -239,7 +239,7 @@
                 "radiusTopRight" : 0,
                 "right" : null,
                 "rotation" : 0,
-                "top" : 74,
+                "top" : null,
                 "visible" : true,
                 "width" : 1,
                 "widthType" : 3
@@ -1024,6 +1024,10 @@
             "children" : [
               {
                 "__class" : "CodeComponentNode",
+                "$control__autoFocus" : {
+                  "type" : "boolean",
+                  "value" : false
+                },
                 "$control__color" : {
                   "type" : "enum",
                   "value" : "primary"
@@ -1055,6 +1059,10 @@
                 "$control__label" : {
                   "type" : "string",
                   "value" : "Label with **format**"
+                },
+                "$control__margin" : {
+                  "type" : "enum",
+                  "value" : "normal"
                 },
                 "$control__onChange" : {
                   "type" : "eventhandler",
@@ -1186,6 +1194,10 @@
               },
               {
                 "__class" : "CodeComponentNode",
+                "$control__autoFocus" : {
+                  "type" : "boolean",
+                  "value" : false
+                },
                 "$control__color" : {
                   "type" : "enum",
                   "value" : "primary"
@@ -1217,6 +1229,10 @@
                 "$control__label" : {
                   "type" : "string",
                   "value" : "Sprache"
+                },
+                "$control__margin" : {
+                  "type" : "enum",
+                  "value" : "normal"
                 },
                 "$control__onChange" : {
                   "type" : "eventhandler",
@@ -1994,7 +2010,7 @@
                 },
                 "$control__color" : {
                   "type" : "enum",
-                  "value" : "default"
+                  "value" : "primary"
                 },
                 "$control__defaultValue" : {
                   "type" : "string",
@@ -2008,6 +2024,10 @@
                   "type" : "boolean",
                   "value" : false
                 },
+                "$control__disableUnderline" : {
+                  "type" : "boolean",
+                  "value" : false
+                },
                 "$control__error" : {
                   "type" : "boolean",
                   "value" : false
@@ -2015,6 +2035,10 @@
                 "$control__format" : {
                   "type" : "string",
                   "value" : "dd.MM.yyyy"
+                },
+                "$control__fullWidth" : {
+                  "type" : "boolean",
+                  "value" : true
                 },
                 "$control__helperText" : {
                   "type" : "string",
@@ -2026,7 +2050,7 @@
                 },
                 "$control__margin" : {
                   "type" : "enum",
-                  "value" : "none"
+                  "value" : "normal"
                 },
                 "$control__multiline" : {
                   "type" : "boolean",
@@ -2038,9 +2062,13 @@
                 "$control__onChangeDate" : {
                   "type" : "eventhandler"
                 },
+                "$control__pickerVariant" : {
+                  "type" : "enum",
+                  "value" : "inline"
+                },
                 "$control__placeholder" : {
                   "type" : "string",
-                  "value" : ""
+                  "value" : "Placeholder"
                 },
                 "$control__required" : {
                   "type" : "boolean",
@@ -2060,12 +2088,12 @@
                 },
                 "$control__variant" : {
                   "type" : "enum",
-                  "value" : "dialog"
+                  "value" : "filled"
                 },
                 "aspectRatio" : null,
-                "bottom" : 214,
-                "centerAnchorX" : 0.24504623513870541,
-                "centerAnchorY" : 0.61619190404797597,
+                "bottom" : null,
+                "centerAnchorX" : 0.4393305439330546,
+                "centerAnchorY" : 0.50505050505050531,
                 "clip" : true,
                 "codeComponentIdentifier" : ".\/inputs\/DatePicker.tsx_DatePicker",
                 "codeComponentPackageVersion" : "1.79.0",
@@ -2090,7 +2118,7 @@
                 "id" : "KTkA2t0UX",
                 "intrinsicHeight" : null,
                 "intrinsicWidth" : null,
-                "left" : 66,
+                "left" : null,
                 "locked" : false,
                 "name" : null,
                 "opacity" : 1,
@@ -2108,7 +2136,7 @@
                 "rotation" : 0,
                 "top" : null,
                 "visible" : true,
-                "width" : 239,
+                "width" : 327,
                 "widthType" : 0
               },
               {
