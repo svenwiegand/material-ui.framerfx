@@ -38,7 +38,7 @@ addPropertyControls(Avatar, {
     icon: Control.String("Icon name", "person"),
     iconColor: Control.Color("Icon color", themeLight.palette.action.active),
     variant: Control.Enum("Variant", ["circle", "rounded", "square"], "circle"),
-    color: Control.Color("Fallback color", "#b5b5b5"),
+    color: Control.Color("Fallback color", themeLight.palette.action.selected),
     size: Control.Enum("Size", ["native", "fill"], "native"),
     onClick: Control.EventHandler()
 })
