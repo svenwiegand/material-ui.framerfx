@@ -304,6 +304,10 @@ export const FormControlLabelControls: PropertyControls<FormControl> = {
 
 export const FormControlControls: PropertyControls<FormControl> = {
     variant: DefaultControl.inputVariant,
+    disableUnderline: Control.Conditional(
+        props => props.variant === "standard" || props.variant === "filled", 
+        Control.Boolean("Disable Underline")
+    ),
     color: DefaultControl.color,
     required: DefaultControl.required,
     error: DefaultControl.error,

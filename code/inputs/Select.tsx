@@ -40,10 +40,11 @@ export function Select(props: Props) {
     )
 }
 
+const { disableUnderline, ...formControlControls } = FormControlControls
 addPropertyControls(Select, {
     ...FormControlLabelControls,
     options: Control.Array("Options", Control.String("Label", "", "Label")),
     value: Control.Number("Selection #", 0),
-    ...FormControlControls,
+    ...formControlControls,
     onChangeSelected: Control.EventHandler()
 })

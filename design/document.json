@@ -117,6 +117,10 @@
                   "type" : "boolean",
                   "value" : false
                 },
+                "$control__disableUnderline" : {
+                  "type" : "boolean",
+                  "value" : false
+                },
                 "$control__error" : {
                   "type" : "boolean",
                   "value" : false
@@ -1032,6 +1036,10 @@
                   "type" : "boolean",
                   "value" : false
                 },
+                "$control__disableUnderline" : {
+                  "type" : "boolean",
+                  "value" : false
+                },
                 "$control__error" : {
                   "type" : "boolean",
                   "value" : false
@@ -1187,6 +1195,10 @@
                   "value" : 2
                 },
                 "$control__disabled" : {
+                  "type" : "boolean",
+                  "value" : false
+                },
+                "$control__disableUnderline" : {
                   "type" : "boolean",
                   "value" : false
                 },

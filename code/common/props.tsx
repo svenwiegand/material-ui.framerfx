@@ -15,4 +15,5 @@ interface FormControl {
     required?: boolean
     size?: SizeSM
     variant?: Variant
+    disableUnderline?: boolean
 }

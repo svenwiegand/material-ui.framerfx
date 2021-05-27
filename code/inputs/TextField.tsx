@@ -15,7 +15,7 @@ interface Props extends FormControl {
     onChangeText?: (text: string) => void
 }
 export function TextField(props: Props) {
-    const { label, helperText, value, onChangeText, ...other } = props
+    const { label, helperText, value, disableUnderline, onChangeText, ...other } = props
     const state = useDerivedState(value, onChangeText)
     state.updateIfDefaultValueChanged(value)
     const handleChange = (event: React.ChangeEvent<HTMLInputElement>) => state.setValue(event.target.value)
@@ -27,6 +27,7 @@ export function TextField(props: Props) {
             hiddenLabel={!label}
             helperText={<Markdown text={helperText}/>}
             value={state.value} 
+            InputProps={{ disableUnderline }}
             onChange={handleChange} 
             {...other} 
         />
