@@ -195,7 +195,7 @@ export const Control = {
         control,
         maxCount
     }),
-    Boolean: <P>(title: string, defaultValue?: boolean, enabledTitle?: string, disabledTitle?: string): ObjectPropertyControlDescription<P> => ({
+    Boolean: <P>(title: string, defaultValue: boolean = false, enabledTitle?: string, disabledTitle?: string): ObjectPropertyControlDescription<P> => ({
         type: ControlType.Boolean,
         title,
         defaultValue,
@@ -290,7 +290,7 @@ export const DefaultControl = {
     multiline: Control.Boolean("Multiline", false),
     onClick: Control.EventHandler(),
     padding: Control.FusedNumber("Padding", 0, "mixedPadding", ["Padding", "Padding per edge"], ["paddingTop", "paddingRight", "paddingBottom", "paddingLeft"], ["T", "R", "B", "L"], 0),
-    placeholder: Control.String("Placeholder", ""),
+    placeholder: Control.String("Placeholder"),
     required: Control.Boolean("Required", false),
     selected: Control.Boolean("Selected", false),
     size: Control.Enum("Size", ["medium", "small"], "medium"),
