@@ -1,8 +1,8 @@
-import * as React from "react"
-import { addPropertyControls, ControlType, ControlDescription } from "framer"
-import { ThemeChoice, withSelectedTheme } from "../common/theme"
-import { Control, DefaultControl, propertyControls, propString } from "../common/propertyControl"
 import { IconButton as MuiIconButton } from "@material-ui/core"
+import { addPropertyControls } from "framer"
+import * as React from "react"
+import { Control, DefaultControl } from "../common/propertyControl"
+import { ThemeChoice, withSelectedTheme } from "../common/theme"
 import { Icon } from "../dataDisplay/Icon"
 
 export interface IconButtonProps {
@@ -26,12 +26,15 @@ export function IconButton(props: IconButtonProps) {
     )
 }
 
-addPropertyControls(IconButton, {
+export const iconButtonPropertyControls = {
     icon: Control.String("Icon", "star", "Icon name"),
     theme: DefaultControl.theme,
     color: DefaultControl.color,
     size: Control.Enum("Size", ["small", "medium"], "medium"),
     disabled: DefaultControl.disabled,
     href: Control.String("Link URL", ""),
-    onClick: DefaultControl.onClick
+}
+addPropertyControls(IconButton, {
+    ...iconButtonPropertyControls,
+    onClick: DefaultControl.onClick,
 })
