@@ -63,7 +63,7 @@ export function createItems(items?: string[], onItemClicked?: ItemClickHandler) 
 
 export function Menu(props: MenuProps) {
     return withSelectedTheme(props.theme, 
-        <Paper elevation={8}>
+        <Paper elevation={8} style={{ zIndex: 1300, position: "relative" }}>
             <MenuList>
                 {createItems(props.items, props.onItemClicked)}
             </MenuList>

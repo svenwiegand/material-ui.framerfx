@@ -2689,62 +2689,111 @@
                 "widthType" : 0
               },
               {
-                "__class" : "CodeComponentNode",
-                "$control__items" : {
-                  "type" : "array",
-                  "value" : [
-                    {
-                      "id" : "rCzxfMVLT",
-                      "type" : "string",
-                      "value" : "Menu **Item** 1 ![star]"
-                    },
-                    {
-                      "id" : "FO0AZJJW1",
-                      "type" : "string",
-                      "value" : "---"
-                    },
-                    {
-                      "id" : "EMSfTVBWN",
-                      "type" : "string",
-                      "value" : "![face] _Item_ 2"
-                    }
-                  ]
-                },
-                "$control__onItemClicked" : {
-                  "type" : "eventhandler",
-                  "value" : [
-                    {
-                      "actionIdentifier" : "framer\/useLog",
-                      "controls" : {
-                        "message" : {
-                          "type" : "string",
-                          "value" : ""
-                        },
-                        "type" : {
-                          "type" : "enum",
-                          "value" : "event"
-                        }
-                      },
-                      "identifier" : "294b01cc-2eb4-4220-98a9-e498a9845f67"
-                    }
-                  ]
-                },
-                "$control__theme" : {
-                  "type" : "enum",
-                  "value" : "light"
-                },
+                "__class" : "FrameNode",
                 "aspectRatio" : null,
-                "bottom" : 129,
-                "centerAnchorX" : 0.50066050198150613,
-                "centerAnchorY" : 0.83009708737864096,
-                "clip" : true,
-                "codeComponentIdentifier" : ".\/navigation\/Menu.tsx_Menu",
-                "codeComponentPackageVersion" : null,
+                "bottom" : null,
+                "centerAnchorX" : 0.49933949801849425,
+                "centerAnchorY" : 0.87475728155339827,
+                "children" : [
+                  {
+                    "__class" : "CodeComponentNode",
+                    "$control__items" : {
+                      "type" : "array",
+                      "value" : [
+                        {
+                          "id" : "rCzxfMVLT",
+                          "type" : "string",
+                          "value" : "Menu **Item** 1 ![star]"
+                        },
+                        {
+                          "id" : "FO0AZJJW1",
+                          "type" : "string",
+                          "value" : "---"
+                        },
+                        {
+                          "id" : "EMSfTVBWN",
+                          "type" : "string",
+                          "value" : "![face] _Item_ 2"
+                        }
+                      ]
+                    },
+                    "$control__onItemClicked" : {
+                      "type" : "eventhandler",
+                      "value" : [
+                        {
+                          "actionIdentifier" : "framer\/useLog",
+                          "controls" : {
+                            "message" : {
+                              "type" : "string",
+                              "value" : ""
+                            },
+                            "type" : {
+                              "type" : "enum",
+                              "value" : "event"
+                            }
+                          },
+                          "identifier" : "294b01cc-2eb4-4220-98a9-e498a9845f67"
+                        }
+                      ]
+                    },
+                    "$control__theme" : {
+                      "type" : "enum",
+                      "value" : "light"
+                    },
+                    "aspectRatio" : null,
+                    "bottom" : 0,
+                    "centerAnchorX" : 0.50239234449760783,
+                    "centerAnchorY" : 0.49450549450549475,
+                    "clip" : true,
+                    "codeComponentIdentifier" : ".\/navigation\/Menu.tsx_Menu",
+                    "codeComponentPackageVersion" : null,
+                    "codeOverrideEnabled" : false,
+                    "constraintsLocked" : false,
+                    "duplicatedFrom" : [
+                      "KvkFnSz_U"
+                    ],
+                    "exportOptions" : [
+
+                    ],
+                    "fillColor" : "rgba(255,255,255,1)",
+                    "fillEnabled" : false,
+                    "fillImage" : null,
+                    "fillImageOriginalName" : null,
+                    "fillImagePixelHeight" : null,
+                    "fillImagePixelWidth" : null,
+                    "fillImageResize" : "fill",
+                    "fillType" : "color",
+                    "height" : 91,
+                    "heightType" : 0,
+                    "id" : "XN7GWIL6U",
+                    "intrinsicHeight" : null,
+                    "intrinsicWidth" : null,
+                    "left" : 1,
+                    "locked" : false,
+                    "name" : null,
+                    "opacity" : 1,
+                    "originalid" : null,
+                    "parentid" : "iL9cML7Jk",
+                    "previewSettings" : null,
+                    "radius" : 0,
+                    "radiusBottomLeft" : 0,
+                    "radiusBottomRight" : 0,
+                    "radiusIsRelative" : false,
+                    "radiusPerCorner" : false,
+                    "radiusTopLeft" : 0,
+                    "radiusTopRight" : 0,
+                    "right" : 0,
+                    "rotation" : 0,
+                    "top" : 0,
+                    "visible" : true,
+                    "width" : 208,
+                    "widthType" : 0
+                  }
+                ],
+                "clip" : false,
                 "codeOverrideEnabled" : false,
                 "constraintsLocked" : false,
-                "duplicatedFrom" : [
-                  "KvkFnSz_U"
-                ],
+                "duplicatedFrom" : null,
                 "exportOptions" : [
 
                 ],
@@ -2756,11 +2805,21 @@
                 "fillImagePixelWidth" : null,
                 "fillImageResize" : "fill",
                 "fillType" : "color",
-                "height" : 91,
+                "framePreset" : null,
+                "guidesX" : [
+
+                ],
+                "guidesY" : [
+
+                ],
+                "height" : 70,
                 "heightType" : 0,
-                "id" : "XN7GWIL6U",
+                "id" : "iL9cML7Jk",
                 "intrinsicHeight" : null,
                 "intrinsicWidth" : null,
+                "isExternalMaster" : null,
+                "isMaster" : false,
+                "isTarget" : false,
                 "left" : null,
                 "locked" : false,
                 "name" : null,
@@ -2775,12 +2834,117 @@
                 "radiusPerCorner" : false,
                 "radiusTopLeft" : 0,
                 "radiusTopRight" : 0,
+                "replicaInfo" : null,
                 "right" : null,
                 "rotation" : 0,
                 "top" : null,
                 "visible" : true,
-                "width" : 208,
+                "width" : 209,
                 "widthType" : 0
+              },
+              {
+                "__class" : "TextNode",
+                "bottom" : null,
+                "centerAnchorX" : 0.49933949801849425,
+                "centerAnchorY" : 0.88446601941747593,
+                "clip" : true,
+                "codeOverrideEnabled" : false,
+                "constraintsLocked" : false,
+                "duplicatedFrom" : [
+                  "XfeELn2B0"
+                ],
+                "exportOptions" : [
+
+                ],
+                "height" : 38,
+                "heightType" : 2,
+                "id" : "D_8AoL3le",
+                "isTarget" : false,
+                "left" : null,
+                "locked" : false,
+                "name" : null,
+                "opacity" : 1,
+                "originalid" : null,
+                "parentid" : "sFk8H4RoG",
+                "right" : null,
+                "rotation" : 0,
+                "styledText" : {
+                  "__class" : "StyledTextDraft",
+                  "blocks" : [
+                    {
+                      "data" : {
+                        "direction" : "ltr",
+                        "emptyStyle" : [
+
+                        ]
+                      },
+                      "depth" : 0,
+                      "entityRanges" : [
+
+                      ],
+                      "inlineStyleRanges" : [
+                        {
+                          "length" : 38,
+                          "offset" : 0,
+                          "style" : "FONT:Inter"
+                        },
+                        {
+                          "length" : 38,
+                          "offset" : 0,
+                          "style" : "COLOR:rgb(0, 0, 0)"
+                        },
+                        {
+                          "length" : 38,
+                          "offset" : 0,
+                          "style" : "SIZE:16"
+                        },
+                        {
+                          "length" : 38,
+                          "offset" : 0,
+                          "style" : "LETTERSPACING:0"
+                        },
+                        {
+                          "length" : 38,
+                          "offset" : 0,
+                          "style" : "LINEHEIGHT:1.2"
+                        }
+                      ],
+                      "key" : "pKauZ",
+                      "text" : "Text, der unter dem Menü liegen sollte",
+                      "type" : "unstyled"
+                    },
+                    {
+                      "data" : {
+                        "direction" : "ltr",
+                        "emptyStyle" : [
+                          "FONT:Inter",
+                          "COLOR:rgb(0, 0, 0)",
+                          "SIZE:16",
+                          "LETTERSPACING:0",
+                          "LINEHEIGHT:1.2"
+                        ]
+                      },
+                      "depth" : 0,
+                      "entityRanges" : [
+
+                      ],
+                      "inlineStyleRanges" : [
+
+                      ],
+                      "key" : "bva6m",
+                      "text" : "",
+                      "type" : "unstyled"
+                    }
+                  ],
+                  "entityMap" : {
+
+                  }
+                },
+                "textVerticalAlignment" : "top",
+                "top" : null,
+                "visible" : true,
+                "width" : 292,
+                "widthType" : 2
               }
             ],
             "clip" : true,
