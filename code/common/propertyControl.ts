@@ -1,4 +1,4 @@
-import { ControlType, ControlDescription, PropertyControls, NumberControlDescription } from "framer"
+import { ControlDescription, ControlType, ObjectPropertyControlDescription, PropertyControls } from "framer"
 
 export type InputColor = "primary" | "secondary" | "default"
 export type LabelPlacement = "top" | "end" | "bottom" | "start"
@@ -195,14 +195,14 @@ export const Control = {
         control,
         maxCount
     }),
-    Boolean: <P>(title: string, defaultValue?: boolean, enabledTitle?: string, disabledTitle?: string): ControlDescription<P> => ({
+    Boolean: <P>(title: string, defaultValue?: boolean, enabledTitle?: string, disabledTitle?: string): ObjectPropertyControlDescription<P> => ({
         type: ControlType.Boolean,
         title,
         defaultValue,
         enabledTitle,
         disabledTitle
     }),
-    Color: <P>(title: string, defaultValue?: string): ControlDescription<P> => ({
+    Color: <P>(title: string, defaultValue?: string): ObjectPropertyControlDescription<P> => ({
         type: ControlType.Color,
         title,
         defaultValue
@@ -212,10 +212,14 @@ export const Control = {
         title
     }),
     Conditional: <P>(show: (props: P) => boolean, control: ControlDescription<P>) => ({
+        ...control,
+        hidden: (props: P) => !show(props)
+    }),
+    ConditionalProperty: <P>(show: (props: P) => boolean, control: ObjectPropertyControlDescription<P>) => ({
         ... control,
         hidden: (props: P) => !show(props)
     }),
-    Enum: <P>(title: string, options: string[], defaultValue: string, optionTitles?: string[]): ControlDescription<P> => ({
+    Enum: <P>(title: string, options: string[], defaultValue: string, optionTitles?: string[]): ObjectPropertyControlDescription<P> => ({
         type: ControlType.Enum,
         title,
         defaultValue,
@@ -244,12 +248,12 @@ export const Control = {
         valueLabels,
         min
     }),
-    Image: <P>(title: string, defaultValue?: string): ControlDescription<P> => ({
+    Image: <P>(title: string, defaultValue?: string): ObjectPropertyControlDescription<P> => ({
         type: ControlType.Image,
         title,
         defaultValue
     }),
-    Number: <P>(title: string, defaultValue?: number, min?: number, max?: number, step?: number): ControlDescription<P> => ({
+    Number: <P>(title: string, defaultValue?: number, min?: number, max?: number, step?: number): ObjectPropertyControlDescription<P> => ({
         type: ControlType.Number,
         title,
         defaultValue,
@@ -257,7 +261,12 @@ export const Control = {
         max,
         step
     }),
-    String: <P>(title: string, defaultValue?: string, placeholder?: string, displayTextArea?: boolean): ControlDescription<P> => ({
+    Object: <P>(title: string, controls: { [key: string]: ObjectPropertyControlDescription }): ControlDescription<P> => ({
+        type: ControlType.Object,
+        title,
+        controls,
+    }),
+    String: <P>(title: string, defaultValue?: string, placeholder?: string, displayTextArea?: boolean): ObjectPropertyControlDescription<P> => ({
         type: ControlType.String,
         title,
         defaultValue,
