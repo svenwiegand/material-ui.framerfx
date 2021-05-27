@@ -37,7 +37,7 @@ addPropertyControls(TextField, {
     placeholder: DefaultControl.placeholder,
     value: Control.String("Value", "", "", true),
     multiline: Control.Boolean("Multiline"),
-    type: Control.Enum("Type", ["text", "number", "password"], "text"),
+    type: Control.Enum("Type", ["date", "datetime-local", "email", "month", "number", "password", "search", "tel", "time", "text", "url", "week"], "text"),
     ... FormControlControls,
     onChangeText: Control.EventHandler(),
 })
