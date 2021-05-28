@@ -2,25 +2,22 @@ import { Menu as MuiMenu, PopoverOrigin } from "@material-ui/core"
 import { addPropertyControls } from "framer"
 import * as React from "react"
 import { Control } from "../common/propertyControl"
-import { ThemeChoice, ThemeProvider } from "../common/theme"
+import { ThemeProvider } from "../common/theme"
 import { Button, buttonPropertyControls, ButtonProps } from "../inputs/Button"
 import { IconButton, iconButtonPropertyControls, IconButtonProps } from "../inputs/IconButton"
-import { createItems, ItemClickHandler } from "./Menu"
+import { createItems, menuPropertyControls, MenuProps } from "./Menu"
 
 type ButtonType = "default" | "icon"
 type MenuDefaultButtonProps = Omit<ButtonProps, "href" | "onClick">
 type MenuIconButtonProps = Omit<IconButtonProps, "href" | "onClick">
-interface MenuButtonProps {
-    buttonType?: ButtonType,
-    defaultButtonProps?: MenuDefaultButtonProps,
-    iconButtonProps?: MenuIconButtonProps,
-    theme?: ThemeChoice,
-    items?: string[],
+interface MenuButtonProps extends MenuProps {
+    buttonType?: ButtonType
+    defaultButtonProps?: MenuDefaultButtonProps
+    iconButtonProps?: MenuIconButtonProps
     verticalAnchorOrigin?: PopoverOrigin['vertical']
     horizontalAnchorOrigin?: PopoverOrigin['horizontal']
     verticalTransformOrigin?: PopoverOrigin['vertical']
     horizontalTransformOrigin?: PopoverOrigin['horizontal']
-    onItemClicked?: ItemClickHandler
 }
 
 export function MenuButton(props: MenuButtonProps) {
@@ -29,7 +26,6 @@ export function MenuButton(props: MenuButtonProps) {
         defaultButtonProps, 
         iconButtonProps,
         theme,
-        items,
         verticalAnchorOrigin, horizontalAnchorOrigin, verticalTransformOrigin, horizontalTransformOrigin, 
         onItemClicked
     } = props
@@ -57,7 +53,7 @@ export function MenuButton(props: MenuButtonProps) {
                     anchorOrigin={{vertical: verticalAnchorOrigin, horizontal: horizontalAnchorOrigin}}
                     transformOrigin={{vertical: verticalTransformOrigin, horizontal: horizontalTransformOrigin}}
                 >
-                    {createItems(items, handleItemClick)}
+                    {createItems(props)}
                 </MuiMenu>
             </ThemeProvider>
         </div>
@@ -74,11 +70,9 @@ addPropertyControls(MenuButton, {
         props => props.buttonType === "icon",
         Control.Object("Button", { ...iconButtonPropertyControls, href: undefined, onclick: undefined })
     ),
-    theme: Control.Enum("Theme", ["light", "dark"], "light"),
+    ...menuPropertyControls,
     verticalTransformOrigin: Control.Enum("Vertical transform origin", ["top", "center", "bottom"], "top"),
     horizontalTransformOrigin: Control.Enum("Horizontal transform origin", ["left", "center", "right"], "left"),
     verticalAnchorOrigin: Control.Enum("Vertical anchor origin", ["top", "center", "bottom"], "top"),
     horizontalAnchorOrigin: Control.Enum("Horizontal anchor origin", ["left", "center", "right"], "left"),
-    onItemClicked: Control.EventHandler(),
-    items: Control.Array("Items", Control.String("Label", "", "Label or ---")),
 })

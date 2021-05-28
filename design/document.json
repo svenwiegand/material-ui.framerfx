@@ -1667,6 +1667,10 @@
                     }
                   }
                 },
+                "$control__denseItems" : {
+                  "type" : "boolean",
+                  "value" : false
+                },
                 "$control__disabled" : {
                   "type" : "boolean",
                   "value" : false
@@ -1674,6 +1678,18 @@
                 "$control__disableElevation" : {
                   "type" : "boolean",
                   "value" : false
+                },
+                "$control__disableItemGutters" : {
+                  "type" : "boolean",
+                  "value" : false
+                },
+                "$control__dividerLight" : {
+                  "type" : "boolean",
+                  "value" : false
+                },
+                "$control__dividerVariant" : {
+                  "type" : "enum",
+                  "value" : "inset"
                 },
                 "$control__elevation" : {
                   "type" : "boolean",
@@ -1729,23 +1745,139 @@
                   "value" : [
                     {
                       "id" : "nm4Ew4fJu",
-                      "type" : "string",
-                      "value" : "![star] **Item** 1"
+                      "type" : "object",
+                      "value" : {
+                        "disabled" : {
+                          "type" : "boolean",
+                          "value" : false
+                        },
+                        "divider" : {
+                          "type" : "boolean",
+                          "value" : false
+                        },
+                        "dividerLight" : {
+                          "type" : "boolean",
+                          "value" : false
+                        },
+                        "dividerVariant" : {
+                          "type" : "enum",
+                          "value" : "fullWidth"
+                        },
+                        "icon" : {
+                          "type" : "string",
+                          "value" : "star"
+                        },
+                        "label" : {
+                          "type" : "string",
+                          "value" : "Stars"
+                        },
+                        "selected" : {
+                          "type" : "boolean",
+                          "value" : false
+                        }
+                      }
                     },
                     {
                       "id" : "pwpaYAP8p",
-                      "type" : "string",
-                      "value" : "![face] Item 2"
+                      "type" : "object",
+                      "value" : {
+                        "disabled" : {
+                          "type" : "boolean",
+                          "value" : false
+                        },
+                        "divider" : {
+                          "type" : "boolean",
+                          "value" : false
+                        },
+                        "dividerLight" : {
+                          "type" : "boolean",
+                          "value" : false
+                        },
+                        "dividerVariant" : {
+                          "type" : "enum",
+                          "value" : "fullWidth"
+                        },
+                        "icon" : {
+                          "type" : "string",
+                          "value" : "sun"
+                        },
+                        "label" : {
+                          "type" : "string",
+                          "value" : "Sonne"
+                        },
+                        "selected" : {
+                          "type" : "boolean",
+                          "value" : false
+                        }
+                      }
                     },
                     {
                       "id" : "PjxfMEcgg",
-                      "type" : "string",
-                      "value" : "---"
+                      "type" : "object",
+                      "value" : {
+                        "disabled" : {
+                          "type" : "boolean",
+                          "value" : false
+                        },
+                        "divider" : {
+                          "type" : "boolean",
+                          "value" : true
+                        },
+                        "dividerLight" : {
+                          "type" : "boolean",
+                          "value" : false
+                        },
+                        "dividerVariant" : {
+                          "type" : "enum",
+                          "value" : "fullWidth"
+                        },
+                        "icon" : {
+                          "type" : "string",
+                          "value" : ""
+                        },
+                        "label" : {
+                          "type" : "string",
+                          "value" : ""
+                        },
+                        "selected" : {
+                          "type" : "boolean",
+                          "value" : false
+                        }
+                      }
                     },
                     {
                       "id" : "MGRI0Jn0u",
-                      "type" : "string",
-                      "value" : "First item after separator"
+                      "type" : "object",
+                      "value" : {
+                        "disabled" : {
+                          "type" : "boolean",
+                          "value" : false
+                        },
+                        "divider" : {
+                          "type" : "boolean",
+                          "value" : false
+                        },
+                        "dividerLight" : {
+                          "type" : "boolean",
+                          "value" : false
+                        },
+                        "dividerVariant" : {
+                          "type" : "enum",
+                          "value" : "fullWidth"
+                        },
+                        "icon" : {
+                          "type" : "string",
+                          "value" : "exit"
+                        },
+                        "label" : {
+                          "type" : "string",
+                          "value" : "Beenden"
+                        },
+                        "selected" : {
+                          "type" : "boolean",
+                          "value" : false
+                        }
+                      }
                     }
                   ]
                 },
@@ -2141,140 +2273,6 @@
               },
               {
                 "__class" : "CodeComponentNode",
-                "$control__color" : {
-                  "type" : "enum",
-                  "value" : "primary"
-                },
-                "$control__disabled" : {
-                  "type" : "boolean",
-                  "value" : false
-                },
-                "$control__disableElevation" : {
-                  "type" : "boolean",
-                  "value" : false
-                },
-                "$control__endIcon" : {
-                  "type" : "string",
-                  "value" : ""
-                },
-                "$control__fullWidth" : {
-                  "type" : "boolean",
-                  "value" : false
-                },
-                "$control__horizontalAnchorOrigin" : {
-                  "type" : "enum",
-                  "value" : "center"
-                },
-                "$control__horizontalTransformOrigin" : {
-                  "type" : "enum",
-                  "value" : "center"
-                },
-                "$control__items" : {
-                  "type" : "array",
-                  "value" : [
-                    {
-                      "id" : "JnVxreUbg",
-                      "type" : "string",
-                      "value" : "Profile"
-                    },
-                    {
-                      "id" : "c7s7sLNW7",
-                      "type" : "string",
-                      "value" : "Change password"
-                    },
-                    {
-                      "id" : "uL8saIACj",
-                      "type" : "string",
-                      "value" : "---"
-                    },
-                    {
-                      "id" : "enfyyAjyI",
-                      "type" : "string",
-                      "value" : "Logout"
-                    }
-                  ]
-                },
-                "$control__label" : {
-                  "type" : "string",
-                  "value" : "Trigger"
-                },
-                "$control__onClick" : {
-                  "type" : "eventhandler"
-                },
-                "$control__onItemClicked" : {
-                  "type" : "eventhandler"
-                },
-                "$control__size" : {
-                  "type" : "enum",
-                  "value" : "medium"
-                },
-                "$control__startIcon" : {
-                  "type" : "string",
-                  "value" : ""
-                },
-                "$control__variant" : {
-                  "type" : "enum",
-                  "value" : "contained"
-                },
-                "$control__verticalAnchorOrigin" : {
-                  "type" : "enum",
-                  "value" : "bottom"
-                },
-                "$control__verticalTransformOrigin" : {
-                  "type" : "enum",
-                  "value" : "top"
-                },
-                "aspectRatio" : null,
-                "bottom" : 191,
-                "centerAnchorX" : 0.5,
-                "centerAnchorY" : 0.72176870748299315,
-                "clip" : true,
-                "codeComponentIdentifier" : ".\/navigation\/Menu.tsx_MenuButton",
-                "codeComponentPackageVersion" : "1.79.0",
-                "codeOverrideEnabled" : false,
-                "constraintsLocked" : false,
-                "duplicatedFrom" : [
-                  "mbfXrh67g"
-                ],
-                "exportOptions" : [
-
-                ],
-                "fillColor" : "rgba(255,255,255,1)",
-                "fillEnabled" : false,
-                "fillImage" : null,
-                "fillImageOriginalName" : null,
-                "fillImagePixelHeight" : null,
-                "fillImagePixelWidth" : null,
-                "fillImageResize" : "fill",
-                "fillType" : "color",
-                "height" : 27,
-                "heightType" : 0,
-                "id" : "TwYAUoUHg",
-                "intrinsicHeight" : null,
-                "intrinsicWidth" : null,
-                "left" : null,
-                "locked" : false,
-                "name" : null,
-                "opacity" : 1,
-                "originalid" : null,
-                "parentid" : "sFk8H4RoG",
-                "previewSettings" : null,
-                "radius" : 0,
-                "radiusBottomLeft" : 0,
-                "radiusBottomRight" : 0,
-                "radiusIsRelative" : false,
-                "radiusPerCorner" : false,
-                "radiusTopLeft" : 0,
-                "radiusTopRight" : 0,
-                "right" : null,
-                "rotation" : 0,
-                "top" : null,
-                "visible" : true,
-                "width" : 81,
-                "widthType" : 0
-              },
-              {
-                "__class" : "CodeComponentNode",
                 "$control__defaultValue" : {
                   "type" : "number",
                   "value" : 0
@@ -2341,6 +2339,311 @@
                 "top" : null,
                 "visible" : true,
                 "width" : 200,
+                "widthType" : 0
+              },
+              {
+                "__class" : "CodeComponentNode",
+                "$control__buttonType" : {
+                  "type" : "enum",
+                  "value" : "default"
+                },
+                "$control__defaultButtonProps" : {
+                  "type" : "object",
+                  "value" : {
+                    "color" : {
+                      "type" : "enum",
+                      "value" : "primary"
+                    },
+                    "disabled" : {
+                      "type" : "boolean",
+                      "value" : false
+                    },
+                    "elevation" : {
+                      "type" : "boolean",
+                      "value" : false
+                    },
+                    "endIcon" : {
+                      "type" : "string",
+                      "value" : ""
+                    },
+                    "fullWidth" : {
+                      "type" : "boolean",
+                      "value" : false
+                    },
+                    "label" : {
+                      "type" : "string",
+                      "value" : "Menu Button"
+                    },
+                    "size" : {
+                      "type" : "enum",
+                      "value" : "medium"
+                    },
+                    "startIcon" : {
+                      "type" : "string",
+                      "value" : ""
+                    },
+                    "theme" : {
+                      "type" : "enum",
+                      "value" : "light"
+                    },
+                    "variant" : {
+                      "type" : "enum",
+                      "value" : "contained"
+                    }
+                  }
+                },
+                "$control__denseItems" : {
+                  "type" : "boolean",
+                  "value" : false
+                },
+                "$control__disableItemGutters" : {
+                  "type" : "boolean",
+                  "value" : false
+                },
+                "$control__dividerLight" : {
+                  "type" : "boolean",
+                  "value" : false
+                },
+                "$control__dividerVariant" : {
+                  "type" : "enum",
+                  "value" : "fullWidth"
+                },
+                "$control__horizontalAnchorOrigin" : {
+                  "type" : "enum",
+                  "value" : "left"
+                },
+                "$control__horizontalTransformOrigin" : {
+                  "type" : "enum",
+                  "value" : "left"
+                },
+                "$control__iconButtonProps" : {
+                  "type" : "object",
+                  "value" : {
+                    "color" : {
+                      "type" : "enum",
+                      "value" : "primary"
+                    },
+                    "disabled" : {
+                      "type" : "boolean",
+                      "value" : false
+                    },
+                    "icon" : {
+                      "type" : "string",
+                      "value" : "star"
+                    },
+                    "size" : {
+                      "type" : "enum",
+                      "value" : "medium"
+                    },
+                    "theme" : {
+                      "type" : "enum",
+                      "value" : "light"
+                    }
+                  }
+                },
+                "$control__items" : {
+                  "type" : "array",
+                  "value" : [
+                    {
+                      "id" : "euMIZQ7pw",
+                      "type" : "object",
+                      "value" : {
+                        "disabled" : {
+                          "type" : "boolean",
+                          "value" : false
+                        },
+                        "divider" : {
+                          "type" : "boolean",
+                          "value" : false
+                        },
+                        "dividerLight" : {
+                          "type" : "boolean",
+                          "value" : false
+                        },
+                        "dividerVariant" : {
+                          "type" : "enum",
+                          "value" : "fullWidth"
+                        },
+                        "icon" : {
+                          "type" : "string",
+                          "value" : "star"
+                        },
+                        "label" : {
+                          "type" : "string",
+                          "value" : "Sterne"
+                        },
+                        "selected" : {
+                          "type" : "boolean",
+                          "value" : false
+                        }
+                      }
+                    },
+                    {
+                      "id" : "nVAluve03",
+                      "type" : "object",
+                      "value" : {
+                        "disabled" : {
+                          "type" : "boolean",
+                          "value" : false
+                        },
+                        "divider" : {
+                          "type" : "boolean",
+                          "value" : false
+                        },
+                        "dividerLight" : {
+                          "type" : "boolean",
+                          "value" : false
+                        },
+                        "dividerVariant" : {
+                          "type" : "enum",
+                          "value" : "fullWidth"
+                        },
+                        "icon" : {
+                          "type" : "string",
+                          "value" : "sun"
+                        },
+                        "label" : {
+                          "type" : "string",
+                          "value" : "Sonne"
+                        },
+                        "selected" : {
+                          "type" : "boolean",
+                          "value" : false
+                        }
+                      }
+                    },
+                    {
+                      "id" : "Mxz4jkz0s",
+                      "type" : "object",
+                      "value" : {
+                        "disabled" : {
+                          "type" : "boolean",
+                          "value" : false
+                        },
+                        "divider" : {
+                          "type" : "boolean",
+                          "value" : true
+                        },
+                        "dividerLight" : {
+                          "type" : "boolean",
+                          "value" : false
+                        },
+                        "dividerVariant" : {
+                          "type" : "enum",
+                          "value" : "fullWidth"
+                        },
+                        "icon" : {
+                          "type" : "string",
+                          "value" : ""
+                        },
+                        "label" : {
+                          "type" : "string",
+                          "value" : ""
+                        },
+                        "selected" : {
+                          "type" : "boolean",
+                          "value" : false
+                        }
+                      }
+                    },
+                    {
+                      "id" : "rBBAWvRKK",
+                      "type" : "object",
+                      "value" : {
+                        "disabled" : {
+                          "type" : "boolean",
+                          "value" : false
+                        },
+                        "divider" : {
+                          "type" : "boolean",
+                          "value" : false
+                        },
+                        "dividerLight" : {
+                          "type" : "boolean",
+                          "value" : false
+                        },
+                        "dividerVariant" : {
+                          "type" : "enum",
+                          "value" : "fullWidth"
+                        },
+                        "icon" : {
+                          "type" : "string",
+                          "value" : ""
+                        },
+                        "label" : {
+                          "type" : "string",
+                          "value" : "Beenden"
+                        },
+                        "selected" : {
+                          "type" : "boolean",
+                          "value" : false
+                        }
+                      }
+                    }
+                  ]
+                },
+                "$control__onItemClicked" : {
+                  "type" : "eventhandler"
+                },
+                "$control__theme" : {
+                  "type" : "enum",
+                  "value" : "light"
+                },
+                "$control__verticalAnchorOrigin" : {
+                  "type" : "enum",
+                  "value" : "top"
+                },
+                "$control__verticalTransformOrigin" : {
+                  "type" : "enum",
+                  "value" : "top"
+                },
+                "aspectRatio" : null,
+                "bottom" : null,
+                "centerAnchorX" : 0.58298465829846602,
+                "centerAnchorY" : 0.61616161616161635,
+                "clip" : true,
+                "codeComponentIdentifier" : ".\/navigation\/MenuButton.tsx_MenuButton",
+                "codeComponentPackageVersion" : null,
+                "codeOverrideEnabled" : false,
+                "constraintsLocked" : false,
+                "duplicatedFrom" : [
+                  "TZ3kJaJRz"
+                ],
+                "exportOptions" : [
+
+                ],
+                "fillColor" : "rgba(255,255,255,1)",
+                "fillEnabled" : false,
+                "fillImage" : null,
+                "fillImageOriginalName" : null,
+                "fillImagePixelHeight" : null,
+                "fillImagePixelWidth" : null,
+                "fillImageResize" : "fill",
+                "fillType" : "color",
+                "height" : 27,
+                "heightType" : 0,
+                "id" : "kdczIncRe",
+                "intrinsicHeight" : null,
+                "intrinsicWidth" : null,
+                "left" : null,
+                "locked" : false,
+                "name" : null,
+                "opacity" : 1,
+                "originalid" : null,
+                "parentid" : "sFk8H4RoG",
+                "previewSettings" : null,
+                "radius" : 0,
+                "radiusBottomLeft" : 0,
+                "radiusBottomRight" : 0,
+                "radiusIsRelative" : false,
+                "radiusPerCorner" : false,
+                "radiusTopLeft" : 0,
+                "radiusTopRight" : 0,
+                "right" : null,
+                "rotation" : 0,
+                "top" : null,
+                "visible" : true,
+                "width" : 121,
                 "widthType" : 0
               },
               {
@@ -2737,23 +3040,120 @@
                 "children" : [
                   {
                     "__class" : "CodeComponentNode",
+                    "$control__denseItems" : {
+                      "type" : "boolean",
+                      "value" : false
+                    },
+                    "$control__disableItemGutters" : {
+                      "type" : "boolean",
+                      "value" : false
+                    },
+                    "$control__dividerLight" : {
+                      "type" : "boolean",
+                      "value" : false
+                    },
+                    "$control__dividerVariant" : {
+                      "type" : "enum",
+                      "value" : "fullWidth"
+                    },
                     "$control__items" : {
                       "type" : "array",
                       "value" : [
                         {
                           "id" : "rCzxfMVLT",
-                          "type" : "string",
-                          "value" : "Menu **Item** 1 ![star]"
+                          "type" : "object",
+                          "value" : {
+                            "disabled" : {
+                              "type" : "boolean",
+                              "value" : false
+                            },
+                            "divider" : {
+                              "type" : "boolean",
+                              "value" : false
+                            },
+                            "dividerLight" : {
+                              "type" : "boolean",
+                              "value" : false
+                            },
+                            "dividerVariant" : {
+                              "type" : "enum",
+                              "value" : "fullWidth"
+                            },
+                            "icon" : {
+                              "type" : "string",
+                              "value" : ""
+                            },
+                            "label" : {
+                              "type" : "string",
+                              "value" : "Punkt 1"
+                            },
+                            "selected" : {
+                              "type" : "boolean",
+                              "value" : false
+                            }
+                          }
+                        },
+                        {
+                          "id" : "jIIt3a4pp",
+                          "type" : "object",
+                          "value" : {
+                            "disabled" : {
+                              "type" : "boolean",
+                              "value" : false
+                            },
+                            "divider" : {
+                              "type" : "boolean",
+                              "value" : true
+                            },
+                            "dividerLight" : {
+                              "type" : "boolean",
+                              "value" : false
+                            },
+                            "dividerVariant" : {
+                              "type" : "enum",
+                              "value" : "fullWidth"
+                            },
+                            "icon" : {
+                              "type" : "string",
+                              "value" : ""
+                            },
+                            "label" : {
+                              "type" : "string",
+                              "value" : ""
+                            },
+                            "selected" : {
+                              "type" : "boolean",
+                              "value" : false
+                            }
+                          }
                         },
                         {
                           "id" : "FO0AZJJW1",
-                          "type" : "string",
-                          "value" : "---"
+                          "type" : "object",
+                          "value" : {
+                            "label" : {
+                              "type" : "string",
+                              "value" : "Punkt 2"
+                            },
+                            "selected" : {
+                              "type" : "boolean",
+                              "value" : false
+                            }
+                          }
                         },
                         {
                           "id" : "EMSfTVBWN",
-                          "type" : "string",
-                          "value" : "![face] _Item_ 2"
+                          "type" : "object",
+                          "value" : {
+                            "label" : {
+                              "type" : "string",
+                              "value" : "Punkt 3"
+                            },
+                            "selected" : {
+                              "type" : "boolean",
+                              "value" : true
+                            }
+                          }
                         }
                       ]
                     },
@@ -2985,6 +3385,130 @@
                 "visible" : true,
                 "width" : 292,
                 "widthType" : 2
+              },
+              {
+                "__class" : "CodeComponentNode",
+                "$control__avatar" : {
+                  "type" : "enum",
+                  "value" : "none"
+                },
+                "$control__avatarColor" : {
+                  "type" : "color",
+                  "value" : "#b5b5b5"
+                },
+                "$control__avatarIcon" : {
+                  "type" : "string",
+                  "value" : "person"
+                },
+                "$control__avatarIconColor" : {
+                  "type" : "color",
+                  "value" : "rgba(0, 0, 0, 0.54)"
+                },
+                "$control__avatarLetters" : {
+                  "type" : "string",
+                  "value" : ""
+                },
+                "$control__avatarSrc" : {
+                  "type" : "image"
+                },
+                "$control__avatarVariant" : {
+                  "type" : "enum",
+                  "value" : "circle"
+                },
+                "$control__button" : {
+                  "type" : "boolean",
+                  "value" : true
+                },
+                "$control__dense" : {
+                  "type" : "boolean",
+                  "value" : true
+                },
+                "$control__disabled" : {
+                  "type" : "boolean",
+                  "value" : false
+                },
+                "$control__disableGutters" : {
+                  "type" : "boolean",
+                  "value" : false
+                },
+                "$control__divider" : {
+                  "type" : "boolean",
+                  "value" : false
+                },
+                "$control__onClick" : {
+                  "type" : "eventhandler"
+                },
+                "$control__onSeconaryActionClick" : {
+                  "type" : "eventhandler"
+                },
+                "$control__primary" : {
+                  "type" : "string",
+                  "value" : "Text"
+                },
+                "$control__secondary" : {
+                  "type" : "string",
+                  "value" : ""
+                },
+                "$control__secondaryAction" : {
+                  "type" : "enum",
+                  "value" : "none"
+                },
+                "$control__secondaryActionIcon" : {
+                  "type" : "string",
+                  "value" : "delete"
+                },
+                "$control__selected" : {
+                  "type" : "boolean",
+                  "value" : false
+                },
+                "aspectRatio" : null,
+                "bottom" : null,
+                "centerAnchorX" : 0.49933949801849425,
+                "centerAnchorY" : 0.92815533980582543,
+                "clip" : true,
+                "codeComponentIdentifier" : ".\/dataDisplay\/ListItem.tsx_ListItem",
+                "codeComponentPackageVersion" : null,
+                "codeOverrideEnabled" : false,
+                "constraintsLocked" : false,
+                "duplicatedFrom" : [
+                  "NfrXfJ3O_"
+                ],
+                "exportOptions" : [
+
+                ],
+                "fillColor" : "rgba(255,255,255,1)",
+                "fillEnabled" : false,
+                "fillImage" : null,
+                "fillImageOriginalName" : null,
+                "fillImagePixelHeight" : null,
+                "fillImagePixelWidth" : null,
+                "fillImageResize" : "fill",
+                "fillType" : "color",
+                "height" : 41,
+                "heightType" : 0,
+                "id" : "zxzeWj59O",
+                "intrinsicHeight" : null,
+                "intrinsicWidth" : null,
+                "left" : null,
+                "locked" : false,
+                "name" : null,
+                "opacity" : 1,
+                "originalid" : null,
+                "parentid" : "sFk8H4RoG",
+                "previewSettings" : null,
+                "radius" : 0,
+                "radiusBottomLeft" : 0,
+                "radiusBottomRight" : 0,
+                "radiusIsRelative" : false,
+                "radiusPerCorner" : false,
+                "radiusTopLeft" : 0,
+                "radiusTopRight" : 0,
+                "right" : null,
+                "rotation" : 0,
+                "top" : null,
+                "visible" : true,
+                "width" : 200,
+                "widthType" : 0
               }
             ],
             "clip" : true,

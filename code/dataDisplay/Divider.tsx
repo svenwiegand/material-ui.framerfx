@@ -4,11 +4,12 @@ import * as React from "react"
 import { Control } from "../common/propertyControl"
 import { withTheme } from "../common/theme"
 
+export type DividerVariant = "fullWidth" | "inset" | "middle"
 type Props = Partial<FrameProps> & {
     flexItem: boolean
     light: boolean,
     orientation: "horizontal" | "vertical"
-    variant: "fullWidth" | "inset" | "middle"
+    variant: DividerVariant
 }
 export function Divider(props: Props) {
     const { flexItem, light, orientation, variant } = props
