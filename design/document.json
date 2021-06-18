@@ -18,6 +18,39 @@
                   "type" : "enum",
                   "value" : "inherit"
                 },
+                "$control__badge" : {
+                  "type" : "object",
+                  "value" : {
+                    "anchorHorizontal" : {
+                      "type" : "enum",
+                      "value" : "right"
+                    },
+                    "anchorVertical" : {
+                      "type" : "enum",
+                      "value" : "top"
+                    },
+                    "badgeContent" : {
+                      "type" : "string",
+                      "value" : ""
+                    },
+                    "color" : {
+                      "type" : "enum",
+                      "value" : "primary"
+                    },
+                    "overlap" : {
+                      "type" : "enum",
+                      "value" : "rectangle"
+                    },
+                    "variant" : {
+                      "type" : "enum",
+                      "value" : "dot"
+                    },
+                    "visible" : {
+                      "type" : "boolean",
+                      "value" : false
+                    }
+                  }
+                },
                 "$control__color" : {
                   "type" : "enum",
                   "value" : "textPrimary"
@@ -1347,6 +1380,39 @@
               },
               {
                 "__class" : "CodeComponentNode",
+                "$control__badge" : {
+                  "type" : "object",
+                  "value" : {
+                    "anchorHorizontal" : {
+                      "type" : "enum",
+                      "value" : "right"
+                    },
+                    "anchorVertical" : {
+                      "type" : "enum",
+                      "value" : "top"
+                    },
+                    "badgeContent" : {
+                      "type" : "string",
+                      "value" : ""
+                    },
+                    "color" : {
+                      "type" : "enum",
+                      "value" : "default"
+                    },
+                    "overlap" : {
+                      "type" : "enum",
+                      "value" : "rectangle"
+                    },
+                    "variant" : {
+                      "type" : "enum",
+                      "value" : "standard"
+                    },
+                    "visible" : {
+                      "type" : "boolean",
+                      "value" : false
+                    }
+                  }
+                },
                 "$control__color" : {
                   "type" : "color",
                   "value" : "var(--token-b3018294-2656-434f-97bc-223c9bdc026e, rgb(0, 110, 230)) \/* {\"name\":\"primary.main\"} *\/"
@@ -1414,6 +1480,39 @@
               },
               {
                 "__class" : "CodeComponentNode",
+                "$control__badge" : {
+                  "type" : "object",
+                  "value" : {
+                    "anchorHorizontal" : {
+                      "type" : "enum",
+                      "value" : "right"
+                    },
+                    "anchorVertical" : {
+                      "type" : "enum",
+                      "value" : "top"
+                    },
+                    "badgeContent" : {
+                      "type" : "string",
+                      "value" : "3"
+                    },
+                    "color" : {
+                      "type" : "enum",
+                      "value" : "error"
+                    },
+                    "overlap" : {
+                      "type" : "enum",
+                      "value" : "rectangle"
+                    },
+                    "variant" : {
+                      "type" : "enum",
+                      "value" : "standard"
+                    },
+                    "visible" : {
+                      "type" : "boolean",
+                      "value" : false
+                    }
+                  }
+                },
                 "$control__color" : {
                   "type" : "enum",
                   "value" : "primary"
@@ -1532,6 +1631,135 @@
               },
               {
                 "__class" : "CodeComponentNode",
+                "$control__badge" : {
+                  "type" : "object",
+                  "value" : {
+                    "anchorHorizontal" : {
+                      "type" : "enum",
+                      "value" : "right"
+                    },
+                    "anchorVertical" : {
+                      "type" : "enum",
+                      "value" : "top"
+                    },
+                    "badgeContent" : {
+                      "type" : "string",
+                      "value" : "3"
+                    },
+                    "color" : {
+                      "type" : "enum",
+                      "value" : "primary"
+                    },
+                    "overlap" : {
+                      "type" : "enum",
+                      "value" : "circle"
+                    },
+                    "variant" : {
+                      "type" : "enum",
+                      "value" : "standard"
+                    },
+                    "visible" : {
+                      "type" : "boolean",
+                      "value" : false
+                    }
+                  }
+                },
+                "$control__color" : {
+                  "type" : "color",
+                  "value" : "var(--token-591a5859-9eaa-44e2-ac4c-83717a2a2ee6, rgba(0, 0, 0, 0.54)) \/* {\"name\":\"action.active\",\"packageIdentifier\":\"@framer\/4hpyr6fd.orgavision-material-ui\"} *\/"
+                },
+                "$control__fontSize" : {
+                  "type" : "number",
+                  "value" : 24
+                },
+                "$control__icon" : {
+                  "type" : "string",
+                  "value" : "add_circle"
+                },
+                "aspectRatio" : null,
+                "bottom" : null,
+                "centerAnchorX" : 0.49933949801849425,
+                "centerAnchorY" : 0.2689320388349517,
+                "clip" : true,
+                "codeComponentIdentifier" : ".\/dataDisplay\/Icon.tsx_Icon",
+                "codeComponentPackageVersion" : null,
+                "codeOverrideEnabled" : false,
+                "constraintsLocked" : false,
+                "duplicatedFrom" : [
+                  "MvOmxT2FY"
+                ],
+                "exportOptions" : [
+
+                ],
+                "fillColor" : "rgba(255,255,255,1)",
+                "fillEnabled" : false,
+                "fillImage" : null,
+                "fillImageOriginalName" : null,
+                "fillImagePixelHeight" : null,
+                "fillImagePixelWidth" : null,
+                "fillImageResize" : "fill",
+                "fillType" : "color",
+                "height" : 24,
+                "heightType" : 0,
+                "id" : "lQS84dKfq",
+                "intrinsicHeight" : null,
+                "intrinsicWidth" : null,
+                "left" : null,
+                "locked" : false,
+                "name" : null,
+                "opacity" : 1,
+                "originalid" : null,
+                "parentid" : "sFk8H4RoG",
+                "previewSettings" : null,
+                "radius" : 0,
+                "radiusBottomLeft" : 0,
+                "radiusBottomRight" : 0,
+                "radiusIsRelative" : false,
+                "radiusPerCorner" : false,
+                "radiusTopLeft" : 0,
+                "radiusTopRight" : 0,
+                "right" : null,
+                "rotation" : 0,
+                "top" : null,
+                "visible" : true,
+                "width" : 24,
+                "widthType" : 0
+              },
+              {
+                "__class" : "CodeComponentNode",
+                "$control__badge" : {
+                  "type" : "object",
+                  "value" : {
+                    "anchorHorizontal" : {
+                      "type" : "enum",
+                      "value" : "right"
+                    },
+                    "anchorVertical" : {
+                      "type" : "enum",
+                      "value" : "top"
+                    },
+                    "badgeContent" : {
+                      "type" : "string",
+                      "value" : ""
+                    },
+                    "color" : {
+                      "type" : "enum",
+                      "value" : "primary"
+                    },
+                    "overlap" : {
+                      "type" : "enum",
+                      "value" : "circle"
+                    },
+                    "variant" : {
+                      "type" : "enum",
+                      "value" : "dot"
+                    },
+                    "visible" : {
+                      "type" : "boolean",
+                      "value" : false
+                    }
+                  }
+                },
                 "$control__color" : {
                   "type" : "enum",
                   "value" : "default"
@@ -1610,6 +1838,35 @@
               },
               {
                 "__class" : "CodeComponentNode",
+                "$control__badge" : {
+                  "type" : "object",
+                  "value" : {
+                    "anchorHorizontal" : {
+                      "type" : "enum",
+                      "value" : "right"
+                    },
+                    "anchorVertical" : {
+                      "type" : "enum",
+                      "value" : "top"
+                    },
+                    "badgeContent" : {
+                      "type" : "string",
+                      "value" : ""
+                    },
+                    "color" : {
+                      "type" : "enum",
+                      "value" : "primary"
+                    },
+                    "overlap" : {
+                      "type" : "enum",
+                      "value" : "rectangle"
+                    },
+                    "visible" : {
+                      "type" : "boolean",
+                      "value" : false
+                    }
+                  }
+                },
                 "$control__buttonTheme" : {
                   "type" : "enum",
                   "value" : "light"
@@ -1971,6 +2228,39 @@
                   "type" : "enum",
                   "value" : "center"
                 },
+                "$control__badge" : {
+                  "type" : "object",
+                  "value" : {
+                    "anchorHorizontal" : {
+                      "type" : "enum",
+                      "value" : "right"
+                    },
+                    "anchorVertical" : {
+                      "type" : "enum",
+                      "value" : "top"
+                    },
+                    "badgeContent" : {
+                      "type" : "string",
+                      "value" : ""
+                    },
+                    "color" : {
+                      "type" : "enum",
+                      "value" : "primary"
+                    },
+                    "overlap" : {
+                      "type" : "enum",
+                      "value" : "rectangle"
+                    },
+                    "variant" : {
+                      "type" : "enum",
+                      "value" : "standard"
+                    },
+                    "visible" : {
+                      "type" : "boolean",
+                      "value" : false
+                    }
+                  }
+                },
                 "$control__color" : {
                   "type" : "enum",
                   "value" : "textSecondary"
@@ -2005,8 +2295,8 @@
                 },
                 "aspectRatio" : null,
                 "bottom" : null,
-                "centerAnchorX" : 0.5,
-                "centerAnchorY" : 0.44227886056971516,
+                "centerAnchorX" : 0.49933949801849425,
+                "centerAnchorY" : 0.39223300970873809,
                 "clip" : true,
                 "codeComponentIdentifier" : ".\/dataDisplay\/Typography.tsx_Typography",
                 "codeComponentPackageVersion" : "1.76.0",
@@ -2026,7 +2316,7 @@
                 "fillImagePixelWidth" : null,
                 "fillImageResize" : "fill",
                 "fillType" : "color",
-                "height" : 38,
+                "height" : 0,
                 "heightType" : 0,
                 "id" : "nkY4dqRKh",
                 "intrinsicHeight" : null,
@@ -2047,13 +2337,42 @@
                 "radiusTopRight" : 0,
                 "right" : null,
                 "rotation" : 0,
-                "top" : 276,
+                "top" : null,
                 "visible" : true,
                 "width" : 1,
                 "widthType" : 3
               },
               {
                 "__class" : "CodeComponentNode",
+                "$control__badge" : {
+                  "type" : "object",
+                  "value" : {
+                    "anchorHorizontal" : {
+                      "type" : "enum",
+                      "value" : "right"
+                    },
+                    "anchorVertical" : {
+                      "type" : "enum",
+                      "value" : "top"
+                    },
+                    "badgeContent" : {
+                      "type" : "string",
+                      "value" : "3"
+                    },
+                    "color" : {
+                      "type" : "enum",
+                      "value" : "primary"
+                    },
+                    "overlap" : {
+                      "type" : "enum",
+                      "value" : "circle"
+                    },
+                    "visible" : {
+                      "type" : "boolean",
+                      "value" : true
+                    }
+                  }
+                },
                 "$control__color" : {
                   "type" : "color",
                   "value" : "#b5b5b5"
@@ -2343,6 +2662,35 @@
               },
               {
                 "__class" : "CodeComponentNode",
+                "$control__badge" : {
+                  "type" : "object",
+                  "value" : {
+                    "anchorHorizontal" : {
+                      "type" : "enum",
+                      "value" : "right"
+                    },
+                    "anchorVertical" : {
+                      "type" : "enum",
+                      "value" : "top"
+                    },
+                    "badgeContent" : {
+                      "type" : "string",
+                      "value" : "3"
+                    },
+                    "color" : {
+                      "type" : "enum",
+                      "value" : "error"
+                    },
+                    "overlap" : {
+                      "type" : "enum",
+                      "value" : "rectangle"
+                    },
+                    "visible" : {
+                      "type" : "boolean",
+                      "value" : true
+                    }
+                  }
+                },
                 "$control__buttonType" : {
                   "type" : "enum",
                   "value" : "default"
@@ -4482,9 +4830,9 @@
                       {
                         "__class" : "FrameNode",
                         "aspectRatio" : null,
-                        "bottom" : -120,
-                        "centerAnchorX" : 0.55970149253731338,
-                        "centerAnchorY" : 1.5977011494252873,
+                        "bottom" : null,
+                        "centerAnchorX" : 0.49915682967959552,
+                        "centerAnchorY" : 0.26896551724137951,
                         "children" : [
 
                         ],
@@ -4600,21 +4948,21 @@
                               }
                             },
                             "hQiChFgqH" : {
-                              "fillColor" : "var(--token-f78e39bc-d094-498d-8bdf-6f6c5da603a1, rgb(232, 135, 53)) \/* {\"name\":\"secondary.light\"} *\/"
+                              "fillColor" : "var(--token-f78e39bc-d094-498d-8bdf-6f6c5da603a1, rgb(224, 224, 224)) \/* {\"name\":\"secondary.light\",\"packageIdentifier\":\"@framer\/4hpyr6fd.orgavision-material-ui\"} *\/"
                             },
                             "IopySSPCB" : {
-                              "bottom" : -120,
-                              "centerAnchorX" : 0.55970149253731338,
-                              "centerAnchorY" : 1.5977011494252873,
+                              "bottom" : null,
+                              "centerAnchorX" : 0.49915682967959552,
+                              "centerAnchorY" : 0.26896551724137951,
                               "left" : null,
-                              "right" : -20,
+                              "right" : null,
                               "top" : null,
                               "width" : 1,
                               "widthType" : 3
                             }
                           }
                         },
-                        "right" : -20,
+                        "right" : null,
                         "rotation" : 0,
                         "stackAlignment" : "center",
                         "stackDirection" : "horizontal",
@@ -4775,9 +5123,9 @@
                       {
                         "__class" : "FrameNode",
                         "aspectRatio" : null,
-                        "bottom" : -204,
-                        "centerAnchorX" : 0.55970149253731338,
-                        "centerAnchorY" : 2.0804597701149423,
+                        "bottom" : null,
+                        "centerAnchorX" : 0.49915682967959552,
+                        "centerAnchorY" : 0.76551724137931054,
                         "children" : [
 
                         ],
@@ -4894,21 +5242,21 @@
                               }
                             },
                             "hQiChFgqH" : {
-                              "fillColor" : "var(--token-3eea6f71-9d40-48ec-97b7-060598b65b36, rgb(244, 195, 76)) \/* {\"name\":\"secondary.dark\"} *\/"
+                              "fillColor" : "var(--token-3eea6f71-9d40-48ec-97b7-060598b65b36, rgb(232, 135, 53)) \/* {\"name\":\"secondary.dark\",\"packageIdentifier\":\"@framer\/4hpyr6fd.orgavision-material-ui\"} *\/"
                             },
                             "IopySSPCB" : {
-                              "bottom" : -204,
-                              "centerAnchorX" : 0.55970149253731338,
-                              "centerAnchorY" : 2.0804597701149423,
+                              "bottom" : null,
+                              "centerAnchorX" : 0.49915682967959552,
+                              "centerAnchorY" : 0.76551724137931054,
                               "left" : null,
-                              "right" : -20,
+                              "right" : null,
                               "top" : null,
                               "width" : 1,
                               "widthType" : 3
                             }
                           }
                         },
-                        "right" : -20,
+                        "right" : null,
                         "rotation" : 0,
                         "stackAlignment" : "center",
                         "stackDirection" : "horizontal",
@@ -13259,7 +13607,7 @@
         "__class" : "ColorTokenNode",
         "id" : "3eea6f71-9d40-48ec-97b7-060598b65b36",
         "name" : "secondary.dark",
-        "value" : "rgb(232, 135, 53)"
+        "value" : "rgb(66, 66, 66)"
       },
       "4d927322-2b9a-47c5-aab4-a15e532e9cc7" : {
         "__class" : "ColorTokenNode",
@@ -13277,7 +13625,7 @@
         "__class" : "ColorTokenNode",
         "id" : "9bb16048-40c6-49e4-a8ad-30a699fc7591",
         "name" : "secondary.main",
-        "value" : "rgb(240, 172, 67)"
+        "value" : "rgb(158, 158, 158)"
       },
       "31bd9d29-3aa6-445e-a848-2c96a5263afa" : {
         "__class" : "ColorTokenNode",
@@ -13445,7 +13793,7 @@
         "__class" : "ColorTokenNode",
         "id" : "f78e39bc-d094-498d-8bdf-6f6c5da603a1",
         "name" : "secondary.light",
-        "value" : "rgb(244, 195, 76)"
+        "value" : "rgb(224, 224, 224)"
       },
       "f3716bbd-3c6a-4526-9766-a47813435703" : {
         "__class" : "ColorTokenNode",

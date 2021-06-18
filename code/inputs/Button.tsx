@@ -4,6 +4,7 @@ import * as React from "react"
 import { Markdown } from "../common/markdown"
 import { Control, DefaultControl } from "../common/propertyControl"
 import { ThemeChoice, withSelectedTheme } from "../common/theme"
+import { Badge, badgePropertyControl, BadgeProps } from "../dataDisplay/Badge"
 import { Icon } from "../dataDisplay/Icon"
 
 export interface ButtonProps {
@@ -18,20 +19,23 @@ export interface ButtonProps {
     disabled?: boolean
     size?: SizeSML
     fullWidth?: boolean
+    badge?: BadgeProps
     onClick?: (event: React.MouseEvent<HTMLButtonElement>) => void
 }
 export function Button(props: ButtonProps) {
-    const { elevation, theme, label, startIcon, endIcon, ...buttonProps } = props
+    const { elevation, theme, label, startIcon, endIcon, badge, ...buttonProps } = props
     const content = label.startsWith("icon:") ? <Icon icon={label.substring("icon:".length)} /> : <Markdown text={label} />
     return withSelectedTheme(theme,
-        <MuiButton
-            startIcon={startIcon > "" ? <Icon icon={startIcon} /> : undefined}
-            endIcon={endIcon > "" ? <Icon icon={endIcon} /> : undefined}
-            disableElevation={!elevation}
-            {...buttonProps}
-        >
-            {content}
-        </MuiButton>
+        <Badge {...badge}>
+            <MuiButton
+                startIcon={startIcon > "" ? <Icon icon={startIcon} /> : undefined}
+                endIcon={endIcon > "" ? <Icon icon={endIcon} /> : undefined}
+                disableElevation={!elevation}
+                {...buttonProps}
+            >
+                {content}
+            </MuiButton>
+        </Badge>
     )
 }
 
@@ -47,6 +51,7 @@ export const buttonPropertyControls = {
     disabled: DefaultControl.disabled,
     size: Control.Enum("Size", ["small", "medium", "large"], "medium"),
     fullWidth: Control.Boolean("Full width", false),
+    ...badgePropertyControl,
 }
 addPropertyControls(Button, {
     ...buttonPropertyControls,

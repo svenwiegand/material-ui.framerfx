@@ -1,21 +1,24 @@
-import * as React from "react"
-import { addPropertyControls, ControlType } from "framer"
-import { withSelectedTheme } from "../common/theme"
 import { Typography as MuiTypography } from '@material-ui/core'
-import { DefaultControl } from "../common/propertyControl"
+import { addPropertyControls, ControlType } from "framer"
+import * as React from "react"
 import { MarkdownDiv } from "../common/markdown"
+import { DefaultControl } from "../common/propertyControl"
+import { withSelectedTheme } from "../common/theme"
+import { Badge, badgePropertyControl } from "./Badge"
 
 
 export function Typography(props) {
-    const { weight, ...typoProps } = props
+    const { weight, badge, ...typoProps } = props
     const style = !weight || weight === "inherit" ? {} : { fontWeight: weight }
     return withSelectedTheme(props.theme,
-        <MuiTypography
-            style={style}
-            {...typoProps}
-        >
-            <MarkdownDiv text={props.text}/>
-        </MuiTypography>
+        <Badge {...badge}>
+            <MuiTypography
+                style={style}
+                {...typoProps}
+            >
+                <MarkdownDiv text={props.text}/>
+            </MuiTypography>
+        </Badge>
     )
 }
 
@@ -66,5 +69,6 @@ addPropertyControls(Typography, {
         type: ControlType.Boolean,
         title: "Paragraph",
         defaultValue: false
-    }
+    },
+    ...badgePropertyControl,
 })

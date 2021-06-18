@@ -3,26 +3,30 @@ import { addPropertyControls } from "framer"
 import * as React from "react"
 import { Control, DefaultControl } from "../common/propertyControl"
 import { ThemeChoice, withSelectedTheme } from "../common/theme"
+import { Badge, badgePropertyControl, BadgeProps } from "../dataDisplay/Badge"
 import { Icon } from "../dataDisplay/Icon"
 
 export interface IconButtonProps {
     icon?: string
-    size?: "small" | "medium",
-    theme?: ThemeChoice,
-    color?: "inherit" | "primary" | "secondary" | "default",
-    disabled?: boolean,
-    href?: string,
+    size?: "small" | "medium"
+    theme?: ThemeChoice
+    color?: "inherit" | "primary" | "secondary" | "default"
+    disabled?: boolean
+    href?: string
+    badge?: BadgeProps
     onClick?: (event: React.MouseEvent<HTMLButtonElement>) => void
 }
 export function IconButton(props: IconButtonProps) {
-    const { icon, size, theme, ...buttonProps } = props
+    const { icon, size, theme, badge, ...buttonProps } = props
     return withSelectedTheme(theme,
-        <MuiIconButton
-            size={size}
-            {...buttonProps}
-        >
-            <Icon icon={icon} fontSize={size} />
-        </MuiIconButton>
+        <Badge {...badge}>
+            <MuiIconButton
+                size={size}
+                {...buttonProps}
+            >
+                <Icon icon={icon} fontSize={size} />
+            </MuiIconButton>
+        </Badge>
     )
 }
 
@@ -37,4 +41,5 @@ export const iconButtonPropertyControls = {
 addPropertyControls(IconButton, {
     ...iconButtonPropertyControls,
     onClick: DefaultControl.onClick,
+    ...badgePropertyControl,
 })

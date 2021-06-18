@@ -3,6 +3,7 @@ import { addPropertyControls } from "framer"
 import * as React from "react"
 import { Control } from "../common/propertyControl"
 import { ThemeProvider } from "../common/theme"
+import { Badge, badgePropertyControl, BadgeProps } from "../dataDisplay/Badge"
 import { Button, buttonPropertyControls, ButtonProps } from "../inputs/Button"
 import { IconButton, iconButtonPropertyControls, IconButtonProps } from "../inputs/IconButton"
 import { createItems, menuPropertyControls, MenuProps } from "./Menu"
@@ -18,6 +19,7 @@ interface MenuButtonProps extends MenuProps {
     horizontalAnchorOrigin?: PopoverOrigin['horizontal']
     verticalTransformOrigin?: PopoverOrigin['vertical']
     horizontalTransformOrigin?: PopoverOrigin['horizontal']
+    badge?: BadgeProps
 }
 
 export function MenuButton(props: MenuButtonProps) {
@@ -27,7 +29,8 @@ export function MenuButton(props: MenuButtonProps) {
         iconButtonProps,
         theme,
         verticalAnchorOrigin, horizontalAnchorOrigin, verticalTransformOrigin, horizontalTransformOrigin, 
-        onItemClicked
+        onItemClicked,
+        badge
     } = props
     const [anchor, setAnchor] = React.useState<null | HTMLElement>(null)
     const handleClick = (event: React.MouseEvent<HTMLButtonElement>) => {
@@ -41,8 +44,8 @@ export function MenuButton(props: MenuButtonProps) {
     return (
         <div>
             {buttonType === "icon" ?
-                <IconButton {...iconButtonProps} onClick={handleClick} /> :
-                <Button {...defaultButtonProps} onClick={handleClick} />
+                <IconButton {...iconButtonProps} badge={badge} onClick={handleClick} /> :
+                <Button {...defaultButtonProps} badge={badge} onClick={handleClick} />
             }
             <ThemeProvider theme={theme}>
                 <MuiMenu
@@ -64,15 +67,16 @@ addPropertyControls(MenuButton, {
     buttonType: Control.Enum("Button type", ["default", "icon"], "default"),
     defaultButtonProps: Control.Conditional(
         props => props.buttonType === "default", 
-        Control.Object("Button", { ...buttonPropertyControls, href: undefined, onClick: undefined })
+        Control.Object("Button", { ...buttonPropertyControls, href: undefined, onClick: undefined, badge: undefined })
     ),
     iconButtonProps: Control.Conditional(
         props => props.buttonType === "icon",
-        Control.Object("Button", { ...iconButtonPropertyControls, href: undefined, onclick: undefined })
+        Control.Object("Button", { ...iconButtonPropertyControls, href: undefined, onclick: undefined, badge: undefined })
     ),
     ...menuPropertyControls,
     verticalTransformOrigin: Control.Enum("Vertical transform origin", ["top", "center", "bottom"], "top"),
     horizontalTransformOrigin: Control.Enum("Horizontal transform origin", ["left", "center", "right"], "left"),
     verticalAnchorOrigin: Control.Enum("Vertical anchor origin", ["top", "center", "bottom"], "top"),
     horizontalAnchorOrigin: Control.Enum("Horizontal anchor origin", ["left", "center", "right"], "left"),
+    ...badgePropertyControl,
 })
