@@ -16,10 +16,10 @@
 	"dependencies": {
 		"@date-io/date-fns": "v1",
 		"@framer/framer.default": "^1.102.0",
-		"@material-ui/core": "^4.11.2",
-		"@material-ui/lab": "^4.0.0-alpha.57",
-		"@material-ui/pickers": "^3.2.10",
-		"date-fns": "^2.16.1",
+		"@material-ui/core": "^4.11.4",
+		"@material-ui/lab": "^4.0.0-alpha.58",
+		"@material-ui/pickers": "^3.3.10",
+		"date-fns": "^2.22.1",
 		"snarkdown": "^2.0.0"
 	},
 	"name": "@framer/4hpyr6fd.orgavision-material-ui",
