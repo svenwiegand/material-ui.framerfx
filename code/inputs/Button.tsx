@@ -22,14 +22,20 @@ export interface ButtonProps {
     badge?: BadgeProps
     onClick?: (event: React.MouseEvent<HTMLButtonElement>) => void
 }
+
+function ButtonIcon( {icon, size} : {icon: string, size: SizeSML}) {
+    const fontSize = size === "small" ? 14 : size === "medium" ? 16 : 18
+    return <Icon icon={icon} fontSize={fontSize}/>
+}
+
 export function Button(props: ButtonProps) {
     const { elevation, theme, label, startIcon, endIcon, badge, ...buttonProps } = props
-    const content = label.startsWith("icon:") ? <Icon icon={label.substring("icon:".length)} /> : <Markdown text={label} />
+    const content = label.startsWith("icon:") ? <ButtonIcon icon={label.substring("icon:".length)} size={props.size} /> : <Markdown text={label} />
     return withSelectedTheme(theme,
         <Badge {...badge}>
             <MuiButton
-                startIcon={startIcon > "" ? <Icon icon={startIcon} /> : undefined}
-                endIcon={endIcon > "" ? <Icon icon={endIcon} /> : undefined}
+                startIcon={startIcon > "" ? <ButtonIcon icon={startIcon} size={props.size} /> : undefined}
+                endIcon={endIcon > "" ? <ButtonIcon icon={endIcon} size={props.size} /> : undefined}
                 disableElevation={!elevation}
                 {...buttonProps}
             >

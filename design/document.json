@@ -1543,7 +1543,7 @@
                 },
                 "$control__label" : {
                   "type" : "string",
-                  "value" : "Abbrechen"
+                  "value" : "Speichern"
                 },
                 "$control__onClick" : {
                   "type" : "eventhandler",
@@ -1570,7 +1570,7 @@
                 },
                 "$control__startIcon" : {
                   "type" : "string",
-                  "value" : ""
+                  "value" : "save"
                 },
                 "$control__theme" : {
                   "type" : "enum",
@@ -1582,8 +1582,8 @@
                 },
                 "aspectRatio" : null,
                 "bottom" : null,
-                "centerAnchorX" : 0.45706737120211383,
-                "centerAnchorY" : 0.23398058252427206,
+                "centerAnchorX" : 0.49009247027741104,
+                "centerAnchorY" : 0.23495145631067985,
                 "clip" : true,
                 "codeComponentIdentifier" : ".\/inputs\/Button.tsx_Button",
                 "codeComponentPackageVersion" : "1.76.0",
@@ -1603,7 +1603,7 @@
                 "fillImagePixelWidth" : null,
                 "fillImageResize" : "fill",
                 "fillType" : "color",
-                "height" : 27,
+                "height" : 28,
                 "heightType" : 0,
                 "id" : "mrbxnw_27",
                 "intrinsicHeight" : null,
@@ -1626,7 +1626,7 @@
                 "rotation" : 0,
                 "top" : null,
                 "visible" : true,
-                "width" : 107,
+                "width" : 120,
                 "widthType" : 0
               },
               {
