@@ -11,12 +11,12 @@ export const colors = Object.freeze({
     "primary.main": "var(--token-b3018294-2656-434f-97bc-223c9bdc026e, rgb(0, 110, 230))",
     /** #006EE6 */
     "primary.dark": "var(--token-31bd9d29-3aa6-445e-a848-2c96a5263afa, rgb(0, 110, 230))",
-    /** #F4C34C */
-    "secondary.light": "var(--token-f78e39bc-d094-498d-8bdf-6f6c5da603a1, rgb(244, 195, 76))",
-    /** #F0AC43 */
-    "secondary.main": "var(--token-9bb16048-40c6-49e4-a8ad-30a699fc7591, rgb(240, 172, 67))",
-    /** #E88735 */
-    "secondary.dark": "var(--token-3eea6f71-9d40-48ec-97b7-060598b65b36, rgb(232, 135, 53))",
+    /** #E0E0E0 */
+    "secondary.light": "var(--token-f78e39bc-d094-498d-8bdf-6f6c5da603a1, rgb(224, 224, 224))",
+    /** #9E9E9E */
+    "secondary.main": "var(--token-9bb16048-40c6-49e4-a8ad-30a699fc7591, rgb(158, 158, 158))",
+    /** #424242 */
+    "secondary.dark": "var(--token-3eea6f71-9d40-48ec-97b7-060598b65b36, rgb(66, 66, 66))",
     /** #00B4FF */
     "info.light": "var(--token-f2397174-f588-47d1-8df8-d1c96f724ee9, rgb(0, 180, 255))",
     /** #0078FF */
