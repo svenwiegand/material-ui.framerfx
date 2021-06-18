@@ -38,17 +38,21 @@ function buildAvatar(props: ChipProps) {
 }
 
 function buildIcon(props: ChipProps) {
-    if (props.avatar === "icon")
+    if (props.avatar === "icon") {
+        const size = props.size === "small" ? 18 : 24 // reengineered values from MUI chip default behaviour
         return <Icon icon={props.avatarIcon} fontSize={props.size} />
-    else
+    } else {
         return undefined
+    }
 }
 
 function buildDeleteIcon(props: ChipProps) {
-    if (props.deletable && props.deleteIcon && props.deleteIcon !== "")
-        return <Icon icon={props.deleteIcon}/>
-    else
+    if (props.deletable && props.deleteIcon && props.deleteIcon !== "") {
+        const size = props.size === "small" ? 16 : 22 // reengineered values from MUI chip default behaviour
+        return <Icon icon={props.deleteIcon} fontSize={size}/>
+    } else {
         return undefined
+    }
 }
 
 
@@ -93,6 +97,6 @@ addPropertyControls(Chip, {
 
     // delete action
     deletable: Control.Boolean("Deletable", false),
-    deleteIcon: Control.Conditional((props: ChipProps) => props.deletable, Control.String("• Icon", "cancel")),
+    deleteIcon: Control.Conditional((props: ChipProps) => props.deletable, Control.String("• Icon", "", "default")),
     onDelete: Control.EventHandler(),
 })
